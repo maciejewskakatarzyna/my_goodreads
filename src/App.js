@@ -10,6 +10,7 @@ const App = () => {
   const [booksToRead, setBooksToRead] = useState([])
   const [booksRead, setBooksRead] = useState([])
   const [currentBooks, setCurrentBooks] = useState([])
+  const [randomBook, setRandomBook] = useState(null)
 
   useEffect( () => {
     const getBooks = async () => {
@@ -42,19 +43,28 @@ const App = () => {
     getCurrentBooks();
   },[]);
 
+  const getRandomBook = () => {
+      const randomBook =
+         booksToRead[Math.floor(Math.random() * booksToRead.length)];
+        setRandomBook(randomBook.title)
+    }
+
+
   return (
     <div>
+      <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
+      <p>Kolejna książka do przeczytania: {randomBook}</p>
       <h1>Do przeczytania</h1>
         {booksToRead.map(book => (
-            <p key={book.Book_Id}>{book.Title}</p>
+            <p key={book.bookId}>{book.title}</p>
             ))}
       <h1>Przeczytane</h1>
       {booksRead.map(book => (
-          <p key={book.Book_Id}>{book.Title}</p>
+          <p key={book.bookId}>{book.title}</p>
       ))}
       <h1>Obecnie czytane</h1>
       {currentBooks.map(book => (
-          <p key={book.Book_Id}>{book.Title}</p>
+          <p key={book.bookId}>{book.title}</p>
       ))}
     </div>
   );

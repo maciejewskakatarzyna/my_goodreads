@@ -1,8 +1,8 @@
 {"books":
 [
   {
-    "BookId": 54704301,
-    "Title": "Prawa ludzkiej natury",
+    "bookId": 54704301,
+    "title": "Prawa ludzkiej natury",
     "Author": "Robert Greene",
     "Author l-f": "Greene, Robert",
     "Additional Authors": "Leszek Sielicki",
@@ -34,8 +34,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51906054,
-    "Title": "Kasztanowy ludzik",
+    "bookId": 51906054,
+    "title": "Kasztanowy ludzik",
     "Author": "Søren Sveistrup",
     "Author l-f": "Sveistrup, Søren",
     "Additional Authors": "Justyna Haber-Biały",
@@ -67,8 +67,8 @@
     "BCID": ""
   },
   {
-    "BookId": 242472,
-    "Title": "The Black Swan: The Impact of the Highly Improbable",
+    "bookId": 242472,
+    "title": "The Black Swan: The Impact of the Highly Improbable",
     "Author": "Nassim Nicholas Taleb",
     "Author l-f": "Taleb, Nassim Nicholas",
     "Additional Authors": "David Chandler, Микола Климчук",
@@ -100,8 +100,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58483537,
-    "Title": "Sakrament obłudy. Wspomnienia z seminarium",
+    "bookId": 58483537,
+    "title": "Sakrament obłudy. Wspomnienia z seminarium",
     "Author": "Robert Samborski",
     "Author l-f": "Samborski, Robert",
     "Additional Authors": "",
@@ -133,8 +133,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55781263,
-    "Title": "TypeScript na poważnie",
+    "bookId": 55781263,
+    "title": "TypeScript na poważnie",
     "Author": "Michał Miszczyszyn",
     "Author l-f": "Miszczyszyn, Michał",
     "Additional Authors": "",
@@ -166,8 +166,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58483665,
-    "Title": "Gomora. Władza, strach i pieniądze w polskim Kościele",
+    "bookId": 58483665,
+    "title": "Gomora. Władza, strach i pieniądze w polskim Kościele",
     "Author": "Artur Nowak",
     "Author l-f": "Nowak, Artur",
     "Additional Authors": "Stanisław Obirek",
@@ -199,8 +199,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58153481,
-    "Title": "React Cookbook: Recipes for Mastering the React Framework",
+    "bookId": 58153481,
+    "title": "React Cookbook: Recipes for Mastering the React Framework",
     "Author": "David Griffiths",
     "Author l-f": "Griffiths, David",
     "Additional Authors": "Dawn Griffiths",
@@ -232,8 +232,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48578305,
-    "Title": "#wrzenie. Lewaczka, ksiądz i polski kocioł",
+    "bookId": 48578305,
+    "title": "#wrzenie. Lewaczka, ksiądz i polski kocioł",
     "Author": "Karolina Korwin Piotrowska",
     "Author l-f": "Piotrowska, Karolina Korwin",
     "Additional Authors": "Grzegorz Kramer",
@@ -265,8 +265,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34876358,
-    "Title": "Wzgórze psów",
+    "bookId": 34876358,
+    "title": "Wzgórze psów",
     "Author": "Jakub Żulczyk",
     "Author l-f": "Żulczyk, Jakub",
     "Additional Authors": "",
@@ -298,8 +298,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56587838,
-    "Title": "Jak otworzyłem mózg. Lekcje życia od neurochirurga",
+    "bookId": 56587838,
+    "title": "Jak otworzyłem mózg. Lekcje życia od neurochirurga",
     "Author": "Rahul Jandial",
     "Author l-f": "Jandial, Rahul",
     "Additional Authors": "Dariusz Rossowski",
@@ -331,8 +331,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56269663,
-    "Title": "Zmierzch demokracji. Zwodniczy powab autorytaryzmu",
+    "bookId": 56269663,
+    "title": "Zmierzch demokracji. Zwodniczy powab autorytaryzmu",
     "Author": "Anne Applebaum",
     "Author l-f": "Applebaum, Anne",
     "Additional Authors": "Piotr Tarczyński",
@@ -364,8 +364,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13487323,
-    "Title": "Człowiek w poszukiwaniu sensu. Głos nadziei z otchłani Holokaustu",
+    "bookId": 13487323,
+    "title": "Człowiek w poszukiwaniu sensu. Głos nadziei z otchłani Holokaustu",
     "Author": "Viktor E. Frankl",
     "Author l-f": "Frankl, Viktor E.",
     "Additional Authors": "Aleksandra Wolnicka",
@@ -397,8 +397,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55378110,
-    "Title": "Netflix. To się nigdy nie uda",
+    "bookId": 55378110,
+    "title": "Netflix. To się nigdy nie uda",
     "Author": "Marc Randolph",
     "Author l-f": "Randolph, Marc",
     "Additional Authors": "",
@@ -430,8 +430,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54110137,
-    "Title": "Sapiens: a Graphic History, Volume 1 - The Birth of Humankind",
+    "bookId": 54110137,
+    "title": "Sapiens: a Graphic History, Volume 1 - The Birth of Humankind",
     "Author": "Yuval Noah Harari",
     "Author l-f": "Harari, Yuval Noah",
     "Additional Authors": "David Vandermeulen, Daniel Casanave",
@@ -463,8 +463,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58446621,
-    "Title": "Ból. Mózg, opioidy i zagadki medycyny",
+    "bookId": 58446621,
+    "title": "Ból. Mózg, opioidy i zagadki medycyny",
     "Author": "Abdul-Ghaaliq Lalkhen",
     "Author l-f": "Lalkhen, Abdul-Ghaaliq",
     "Additional Authors": "Łukasz Müller",
@@ -496,8 +496,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21,
-    "Title": "A Short History of Nearly Everything",
+    "bookId": 21,
+    "title": "A Short History of Nearly Everything",
     "Author": "Bill Bryson",
     "Author l-f": "Bryson, Bill",
     "Additional Authors": "",
@@ -529,8 +529,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58413779,
-    "Title": "Ucieczka od bezradności",
+    "bookId": 58413779,
+    "title": "Ucieczka od bezradności",
     "Author": "Tomasz Stawiszyński",
     "Author l-f": "Stawiszyński, Tomasz",
     "Additional Authors": "",
@@ -562,8 +562,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57449357,
-    "Title": "Świat bez kobiet. Płeć w polskim życiu publicznym",
+    "bookId": 57449357,
+    "title": "Świat bez kobiet. Płeć w polskim życiu publicznym",
     "Author": "Agnieszka Graff",
     "Author l-f": "Graff, Agnieszka",
     "Additional Authors": "",
@@ -595,8 +595,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18338962,
-    "Title": "Obłęd '44. Czyli jak Polacy zrobili prezent Stalinowi, wywołując Powstanie Warszawskie",
+    "bookId": 18338962,
+    "title": "Obłęd '44. Czyli jak Polacy zrobili prezent Stalinowi, wywołując Powstanie Warszawskie",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -628,8 +628,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44230005,
-    "Title": "Tajemnice wydarte zmarłym",
+    "bookId": 44230005,
+    "title": "Tajemnice wydarte zmarłym",
     "Author": "Emily Craig",
     "Author l-f": "Craig, Emily",
     "Additional Authors": "",
@@ -661,8 +661,8 @@
     "BCID": ""
   },
   {
-    "BookId": 15770319,
-    "Title": "Trupia Farma. Sekrety legendarnego laboratorium sądowego, gdzie zmarli opowiadają swoje historie",
+    "bookId": 15770319,
+    "title": "Trupia Farma. Sekrety legendarnego laboratorium sądowego, gdzie zmarli opowiadają swoje historie",
     "Author": "William M. Bass",
     "Author l-f": "Bass, William M.",
     "Additional Authors": "Jon Jefferson, Janusz Ochab",
@@ -694,8 +694,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54228180,
-    "Title": "Niewidzialne kobiety. Jak dane tworzą świat skrojony pod mężczyzn",
+    "bookId": 54228180,
+    "title": "Niewidzialne kobiety. Jak dane tworzą świat skrojony pod mężczyzn",
     "Author": "Caroline Criado Pérez",
     "Author l-f": "Pérez, Caroline Criado",
     "Additional Authors": "Anna Sak",
@@ -727,8 +727,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6732019,
-    "Title": "Rework",
+    "bookId": 6732019,
+    "title": "Rework",
     "Author": "Jason Fried",
     "Author l-f": "Fried, Jason",
     "Additional Authors": "David Heinemeier Hansson",
@@ -760,8 +760,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52485076,
-    "Title": "Refaktoryzacja. Ulepszanie struktury istniejącego kodu.",
+    "bookId": 52485076,
+    "title": "Refaktoryzacja. Ulepszanie struktury istniejącego kodu.",
     "Author": "Martin Fowler",
     "Author l-f": "Fowler, Martin",
     "Additional Authors": "",
@@ -793,8 +793,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51959230,
-    "Title": "Micro Frontends in Action",
+    "bookId": 51959230,
+    "title": "Micro Frontends in Action",
     "Author": "Michael Geers",
     "Author l-f": "Geers, Michael",
     "Additional Authors": "",
@@ -826,8 +826,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55460593,
-    "Title": "Klerycy. O życiu w polskich seminariach",
+    "bookId": 55460593,
+    "title": "Klerycy. O życiu w polskich seminariach",
     "Author": "Mariusz Sepioło",
     "Author l-f": "Sepioło, Mariusz",
     "Additional Authors": "",
@@ -859,8 +859,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3471257,
-    "Title": "Pan Lodowego Ogrodu. Tom 2 (Pan Lodowego Ogrodu, #2)",
+    "bookId": 3471257,
+    "title": "Pan Lodowego Ogrodu. Tom 2 (Pan Lodowego Ogrodu, #2)",
     "Author": "Jarosław Grzędowicz",
     "Author l-f": "Grzędowicz, Jarosław",
     "Additional Authors": "",
@@ -892,8 +892,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44769035,
-    "Title": "Instytut",
+    "bookId": 44769035,
+    "title": "Instytut",
     "Author": "Jakub Żulczyk",
     "Author l-f": "Żulczyk, Jakub",
     "Additional Authors": "",
@@ -925,8 +925,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34107392,
-    "Title": "The Brain: What Everyone Needs To Know®",
+    "bookId": 34107392,
+    "title": "The Brain: What Everyone Needs To Know®",
     "Author": "Gary L. Wenk",
     "Author l-f": "Wenk, Gary L.",
     "Additional Authors": "",
@@ -958,8 +958,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49099937,
-    "Title": "No Rules Rules: Netflix and the Culture of Reinvention",
+    "bookId": 49099937,
+    "title": "No Rules Rules: Netflix and the Culture of Reinvention",
     "Author": "Reed Hastings",
     "Author l-f": "Hastings, Reed",
     "Additional Authors": "Erin Meyer",
@@ -991,8 +991,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56852407,
-    "Title": "Billy Summers",
+    "bookId": 56852407,
+    "title": "Billy Summers",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "",
@@ -1024,8 +1024,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57191615,
-    "Title": "End-to-End Web Testing with Cypress: Explore techniques for automated frontend web testing with Cypress and JavaScript",
+    "bookId": 57191615,
+    "title": "End-to-End Web Testing with Cypress: Explore techniques for automated frontend web testing with Cypress and JavaScript",
     "Author": "Waweru Mwaura",
     "Author l-f": "Mwaura, Waweru",
     "Additional Authors": "",
@@ -1057,8 +1057,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54315341,
-    "Title": "Gambit królowej",
+    "bookId": 54315341,
+    "title": "Gambit królowej",
     "Author": "Walter Tevis",
     "Author l-f": "Tevis, Walter",
     "Additional Authors": "Hanna Pustuła-Lewicka",
@@ -1090,8 +1090,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52290273,
-    "Title": "The Future Is Faster Than You Think: How Converging Technologies Are Transforming Business, Industries, and Our Lives",
+    "bookId": 52290273,
+    "title": "The Future Is Faster Than You Think: How Converging Technologies Are Transforming Business, Industries, and Our Lives",
     "Author": "Peter H. Diamandis",
     "Author l-f": "Diamandis, Peter H.",
     "Additional Authors": "Steven Kotler",
@@ -1123,8 +1123,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50772888,
-    "Title": "No Filter: The Inside Story of Instagram",
+    "bookId": 50772888,
+    "title": "No Filter: The Inside Story of Instagram",
     "Author": "Sarah Frier",
     "Author l-f": "Frier, Sarah",
     "Additional Authors": "",
@@ -1156,8 +1156,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55688875,
-    "Title": "Wiek kapitalizmu inwigilacji. Walka o przyszłość ludzkości na nowej granicy władzy",
+    "bookId": 55688875,
+    "title": "Wiek kapitalizmu inwigilacji. Walka o przyszłość ludzkości na nowej granicy władzy",
     "Author": "Shoshana Zuboff",
     "Author l-f": "Zuboff, Shoshana",
     "Additional Authors": "Alicja Unterschuetz",
@@ -1189,8 +1189,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53501866,
-    "Title": "JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language",
+    "bookId": 53501866,
+    "title": "JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language",
     "Author": "David Flanagan",
     "Author l-f": "Flanagan, David",
     "Additional Authors": "",
@@ -1222,8 +1222,8 @@
     "BCID": ""
   },
   {
-    "BookId": 45901664,
-    "Title": "Pokolenie '89. Młodzi o polskiej transformacji",
+    "bookId": 45901664,
+    "title": "Pokolenie '89. Młodzi o polskiej transformacji",
     "Author": "Jakub Sawulski",
     "Author l-f": "Sawulski, Jakub",
     "Additional Authors": "",
@@ -1255,8 +1255,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29079223,
-    "Title": "Głód",
+    "bookId": 29079223,
+    "title": "Głód",
     "Author": "Martín Caparrós",
     "Author l-f": "Caparrós, Martín",
     "Additional Authors": "Marta Szafrańska-Brandt",
@@ -1288,8 +1288,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28257707,
-    "Title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+    "bookId": 28257707,
+    "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
     "Author": "Mark Manson",
     "Author l-f": "Manson, Mark",
     "Additional Authors": "",
@@ -1321,8 +1321,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41724721,
-    "Title": "Wielka czwórka. Ukryte DNA: Amazon, Apple, Facebook i Google",
+    "bookId": 41724721,
+    "title": "Wielka czwórka. Ukryte DNA: Amazon, Apple, Facebook i Google",
     "Author": "Scott Galloway",
     "Author l-f": "Galloway, Scott",
     "Additional Authors": "Jolanta Kubiak",
@@ -1354,8 +1354,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57514411,
-    "Title": "Clint. Życie i legenda",
+    "bookId": 57514411,
+    "title": "Clint. Życie i legenda",
     "Author": "Patrick McGilligan",
     "Author l-f": "McGilligan, Patrick",
     "Additional Authors": "Ewa Penksyk-Kluczkowska",
@@ -1387,8 +1387,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54129956,
-    "Title": "Learning React: Modern Patterns for Developing React Apps",
+    "bookId": 54129956,
+    "title": "Learning React: Modern Patterns for Developing React Apps",
     "Author": "Alex Banks",
     "Author l-f": "Banks, Alex",
     "Additional Authors": "Eve Porcello",
@@ -1420,8 +1420,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52962224,
-    "Title": "React Hooks in Action: With Suspense and Concurrent Mode",
+    "bookId": 52962224,
+    "title": "React Hooks in Action: With Suspense and Concurrent Mode",
     "Author": "John Larsen",
     "Author l-f": "Larsen, John",
     "Additional Authors": "",
@@ -1453,8 +1453,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54229030,
-    "Title": "Benjamin Franklin",
+    "bookId": 54229030,
+    "title": "Benjamin Franklin",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "Jan Szkudliński",
@@ -1486,8 +1486,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40088132,
-    "Title": "Gdyby nasze ciało potrafiło mówić. Podręcznik użytkownika",
+    "bookId": 40088132,
+    "title": "Gdyby nasze ciało potrafiło mówić. Podręcznik użytkownika",
     "Author": "James Hamblin",
     "Author l-f": "Hamblin, James",
     "Additional Authors": "Jacek Konieczny",
@@ -1519,8 +1519,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51517179,
-    "Title": "Clean Code in JavaScript: Develop reliable, maintainable, and robust JavaScript",
+    "bookId": 51517179,
+    "title": "Clean Code in JavaScript: Develop reliable, maintainable, and robust JavaScript",
     "Author": "James Padolsey",
     "Author l-f": "Padolsey, James",
     "Additional Authors": "",
@@ -1552,8 +1552,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53828370,
-    "Title": "Testing JavaScript Applications",
+    "bookId": 53828370,
+    "title": "Testing JavaScript Applications",
     "Author": "Lucas da Costa",
     "Author l-f": "Costa, Lucas da",
     "Additional Authors": "",
@@ -1585,8 +1585,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40745,
-    "Title": "Mindset: The New Psychology of Success",
+    "bookId": 40745,
+    "title": "Mindset: The New Psychology of Success",
     "Author": "Carol S. Dweck",
     "Author l-f": "Dweck, Carol S.",
     "Additional Authors": "",
@@ -1618,8 +1618,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25847352,
-    "Title": "Professor Frisby's Mostly Adequate Guide to Functional Programming",
+    "bookId": 25847352,
+    "title": "Professor Frisby's Mostly Adequate Guide to Functional Programming",
     "Author": "Brian Lonsdorf",
     "Author l-f": "Lonsdorf, Brian",
     "Additional Authors": "",
@@ -1651,8 +1651,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58459687,
-    "Title": "Wiek paradoksów. Czy technologia nas ocali?",
+    "bookId": 58459687,
+    "title": "Wiek paradoksów. Czy technologia nas ocali?",
     "Author": "Natalia Hatalska",
     "Author l-f": "Hatalska, Natalia",
     "Additional Authors": "",
@@ -1684,8 +1684,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55562978,
-    "Title": "Tajemnica Spotify. Muzyczna rewolucja",
+    "bookId": 55562978,
+    "title": "Tajemnica Spotify. Muzyczna rewolucja",
     "Author": "Sven Carlsson",
     "Author l-f": "Carlsson, Sven",
     "Additional Authors": "Jonas Leijonhufvud, Patrycja Włóczyk",
@@ -1717,8 +1717,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40780388,
-    "Title": "Ego to Twój wróg",
+    "bookId": 40780388,
+    "title": "Ego to Twój wróg",
     "Author": "Ryan Holiday",
     "Author l-f": "Holiday, Ryan",
     "Additional Authors": "",
@@ -1750,8 +1750,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52512970,
-    "Title": "Pamięć nieulotna",
+    "bookId": 52512970,
+    "title": "Pamięć nieulotna",
     "Author": "Edward Snowden",
     "Author l-f": "Snowden, Edward",
     "Additional Authors": "Michał Jóźwiak, Michał Strąkow, Bożena Jóźwiak",
@@ -1783,8 +1783,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41881472,
-    "Title": "The Psychology of Money",
+    "bookId": 41881472,
+    "title": "The Psychology of Money",
     "Author": "Morgan Housel",
     "Author l-f": "Housel, Morgan",
     "Additional Authors": "",
@@ -1816,8 +1816,8 @@
     "BCID": ""
   },
   {
-    "BookId": 26156469,
-    "Title": "Never Split the Difference: Negotiating As If Your Life Depended On It",
+    "bookId": 26156469,
+    "title": "Never Split the Difference: Negotiating As If Your Life Depended On It",
     "Author": "Chris Voss",
     "Author l-f": "Voss, Chris",
     "Additional Authors": "Tahl Raz",
@@ -1849,8 +1849,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40917616,
-    "Title": "Obsesja piękna. Jak kultura popularna krzywdzi dziewczynki i kobiety",
+    "bookId": 40917616,
+    "title": "Obsesja piękna. Jak kultura popularna krzywdzi dziewczynki i kobiety",
     "Author": "Renee Engeln",
     "Author l-f": "Engeln, Renee",
     "Additional Authors": "Marta Komorowska",
@@ -1882,8 +1882,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38313786,
-    "Title": "Algorytmy. Ilustrowany przewodnik",
+    "bookId": 38313786,
+    "title": "Algorytmy. Ilustrowany przewodnik",
     "Author": "Aditya Y. Bhargava",
     "Author l-f": "Bhargava, Aditya Y.",
     "Additional Authors": "Łukasz Piwko",
@@ -1915,8 +1915,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21413662,
-    "Title": "What If? Serious Scientific Answers to Absurd Hypothetical Questions",
+    "bookId": 21413662,
+    "title": "What If? Serious Scientific Answers to Absurd Hypothetical Questions",
     "Author": "Randall Munroe",
     "Author l-f": "Munroe, Randall",
     "Additional Authors": "",
@@ -1948,8 +1948,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54858539,
-    "Title": "Nienawiść sp. z o.o. Jak dzisiejsze media każą nam gardzić sobą nawzajem",
+    "bookId": 54858539,
+    "title": "Nienawiść sp. z o.o. Jak dzisiejsze media każą nam gardzić sobą nawzajem",
     "Author": "Matt Taibbi",
     "Author l-f": "Taibbi, Matt",
     "Additional Authors": "Tomasz S. Gałązka",
@@ -1981,8 +1981,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1319,
-    "Title": "The War of Art: Winning the Inner Creative Battle",
+    "bookId": 1319,
+    "title": "The War of Art: Winning the Inner Creative Battle",
     "Author": "Steven Pressfield",
     "Author l-f": "Pressfield, Steven",
     "Additional Authors": "Robert McKee",
@@ -2014,8 +2014,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13525945,
-    "Title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
+    "bookId": 13525945,
+    "title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
     "Author": "Cal Newport",
     "Author l-f": "Newport, Cal",
     "Additional Authors": "",
@@ -2047,8 +2047,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50039497,
-    "Title": "Margaret Thatcher: Herself Alone: The Authorized Biography",
+    "bookId": 50039497,
+    "title": "Margaret Thatcher: Herself Alone: The Authorized Biography",
     "Author": "Charles   Moore",
     "Author l-f": "Moore, Charles",
     "Additional Authors": "",
@@ -2080,8 +2080,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34684622,
-    "Title": "Leonardo da Vinci",
+    "bookId": 34684622,
+    "title": "Leonardo da Vinci",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "",
@@ -2113,8 +2113,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10884,
-    "Title": "Einstein: His Life and Universe",
+    "bookId": 10884,
+    "title": "Einstein: His Life and Universe",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "",
@@ -2146,8 +2146,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54968118,
-    "Title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+    "bookId": 54968118,
+    "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "",
@@ -2179,8 +2179,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41721428,
-    "Title": "Can't Hurt Me: Master Your Mind and Defy the Odds",
+    "bookId": 41721428,
+    "title": "Can't Hurt Me: Master Your Mind and Defy the Odds",
     "Author": "David Goggins",
     "Author l-f": "Goggins, David",
     "Additional Authors": "",
@@ -2212,8 +2212,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56695159,
-    "Title": "Amazon Unbound: Jeff Bezos and the Invention of a Global Empire",
+    "bookId": 56695159,
+    "title": "Amazon Unbound: Jeff Bezos and the Invention of a Global Empire",
     "Author": "Brad Stone",
     "Author l-f": "Stone, Brad",
     "Additional Authors": "",
@@ -2245,8 +2245,8 @@
     "BCID": ""
   },
   {
-    "BookId": 324748,
-    "Title": "The Dip: A Little Book That Teaches You When to Quit (and When to Stick)",
+    "bookId": 324748,
+    "title": "The Dip: A Little Book That Teaches You When to Quit (and When to Stick)",
     "Author": "Seth Godin",
     "Author l-f": "Godin, Seth",
     "Additional Authors": "",
@@ -2278,8 +2278,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34466963,
-    "Title": "Why We Sleep: Unlocking the Power of Sleep and Dreams",
+    "bookId": 34466963,
+    "title": "Why We Sleep: Unlocking the Power of Sleep and Dreams",
     "Author": "Matthew Walker",
     "Author l-f": "Walker, Matthew",
     "Additional Authors": "",
@@ -2311,8 +2311,8 @@
     "BCID": ""
   },
   {
-    "BookId": 15751404,
-    "Title": "David and Goliath: Underdogs, Misfits, and the Art of Battling Giants",
+    "bookId": 15751404,
+    "title": "David and Goliath: Underdogs, Misfits, and the Art of Battling Giants",
     "Author": "Malcolm Gladwell",
     "Author l-f": "Gladwell, Malcolm",
     "Additional Authors": "",
@@ -2344,8 +2344,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2612,
-    "Title": "The Tipping Point: How Little Things Can Make a Big Difference",
+    "bookId": 2612,
+    "title": "The Tipping Point: How Little Things Can Make a Big Difference",
     "Author": "Malcolm Gladwell",
     "Author l-f": "Gladwell, Malcolm",
     "Additional Authors": "",
@@ -2377,8 +2377,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40102,
-    "Title": "Blink: The Power of Thinking Without Thinking",
+    "bookId": 40102,
+    "title": "Blink: The Power of Thinking Without Thinking",
     "Author": "Malcolm Gladwell",
     "Author l-f": "Gladwell, Malcolm",
     "Additional Authors": "",
@@ -2410,8 +2410,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18668059,
-    "Title": "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph",
+    "bookId": 18668059,
+    "title": "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph",
     "Author": "Ryan Holiday",
     "Author l-f": "Holiday, Ryan",
     "Additional Authors": "",
@@ -2443,8 +2443,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30257963,
-    "Title": "12 Rules for Life: An Antidote to Chaos",
+    "bookId": 30257963,
+    "title": "12 Rules for Life: An Antidote to Chaos",
     "Author": "Jordan B. Peterson",
     "Author l-f": "Peterson, Jordan B.",
     "Additional Authors": "Norman Doidge, Ethan Van Sciver",
@@ -2476,8 +2476,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3228917,
-    "Title": "Outliers: The Story of Success",
+    "bookId": 3228917,
+    "title": "Outliers: The Story of Success",
     "Author": "Malcolm Gladwell",
     "Author l-f": "Gladwell, Malcolm",
     "Additional Authors": "",
@@ -2509,8 +2509,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55339408,
-    "Title": "Noise: A Flaw in Human Judgment",
+    "bookId": 55339408,
+    "title": "Noise: A Flaw in Human Judgment",
     "Author": "Daniel Kahneman",
     "Author l-f": "Kahneman, Daniel",
     "Additional Authors": "Olivier Sibony, Cass R. Sunstein",
@@ -2542,8 +2542,8 @@
     "BCID": ""
   },
   {
-    "BookId": 45879931,
-    "Title": "Essential Typescript: From Beginner to Pro",
+    "bookId": 45879931,
+    "title": "Essential Typescript: From Beginner to Pro",
     "Author": "Adam Freeman",
     "Author l-f": "Freeman, Adam",
     "Additional Authors": "",
@@ -2575,8 +2575,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58300797,
-    "Title": "Pi razy oko. Komedia matematycznych pomyłek",
+    "bookId": 58300797,
+    "title": "Pi razy oko. Komedia matematycznych pomyłek",
     "Author": "Matt    Parker",
     "Author l-f": "Parker, Matt",
     "Additional Authors": "Jakub Radzimiński",
@@ -2608,8 +2608,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55846238,
-    "Title": "Jak ocalić świat od katastrofy klimatycznej. Rozwiązania, które już mamy, zmiany, jakich potrzebujemy",
+    "bookId": 55846238,
+    "title": "Jak ocalić świat od katastrofy klimatycznej. Rozwiązania, które już mamy, zmiany, jakich potrzebujemy",
     "Author": "Bill  Gates",
     "Author l-f": "Gates, Bill",
     "Additional Authors": "Michał Rogalski",
@@ -2641,8 +2641,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44091909,
-    "Title": "Nawyk nieodwlekania. Proste sposoby pokonania prokrastynacji",
+    "bookId": 44091909,
+    "title": "Nawyk nieodwlekania. Proste sposoby pokonania prokrastynacji",
     "Author": "S.J. Scott",
     "Author l-f": "Scott, S.J.",
     "Additional Authors": "Piotr Cieślak",
@@ -2674,8 +2674,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57348283,
-    "Title": "Afekt (Chyłka i Zordon, #13)",
+    "bookId": 57348283,
+    "title": "Afekt (Chyłka i Zordon, #13)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -2707,8 +2707,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56928940,
-    "Title": "Od Z do A. Jak to zrobiliśmy?",
+    "bookId": 56928940,
+    "title": "Od Z do A. Jak to zrobiliśmy?",
     "Author": "Colin Bryar",
     "Author l-f": "Bryar, Colin",
     "Additional Authors": "Bill Carr, Magda Witkowska",
@@ -2740,8 +2740,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40183013,
-    "Title": "Proste rzeczy o rodzicielstwie",
+    "bookId": 40183013,
+    "title": "Proste rzeczy o rodzicielstwie",
     "Author": "Luis Timm",
     "Author l-f": "Timm, Luis",
     "Additional Authors": "",
@@ -2773,8 +2773,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29066539,
-    "Title": "Dziewczyna z pociągu",
+    "bookId": 29066539,
+    "title": "Dziewczyna z pociągu",
     "Author": "Paula Hawkins",
     "Author l-f": "Hawkins, Paula",
     "Additional Authors": "Jan Kraśko",
@@ -2806,8 +2806,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31823677,
-    "Title": "Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers",
+    "bookId": 31823677,
+    "title": "Tools of Titans: The Tactics, Routines, and Habits of Billionaires, Icons, and World-Class Performers",
     "Author": "Timothy Ferriss",
     "Author l-f": "Ferriss, Timothy",
     "Additional Authors": "Arnold Schwarzenegger",
@@ -2839,8 +2839,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28393998,
-    "Title": "Człowiek. Biografia",
+    "bookId": 28393998,
+    "title": "Człowiek. Biografia",
     "Author": "Robin I.M. Dunbar",
     "Author l-f": "Dunbar, Robin I.M.",
     "Additional Authors": "Łukasz Lamża",
@@ -2872,8 +2872,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42955165,
-    "Title": "Plemię mentorów",
+    "bookId": 42955165,
+    "title": "Plemię mentorów",
     "Author": "Timothy Ferriss",
     "Author l-f": "Ferriss, Timothy",
     "Additional Authors": "",
@@ -2905,8 +2905,8 @@
     "BCID": ""
   },
   {
-    "BookId": 20411325,
-    "Title": "Nawyk samodyscypliny. Zaprogramuj wewnętrznego stróża",
+    "bookId": 20411325,
+    "title": "Nawyk samodyscypliny. Zaprogramuj wewnętrznego stróża",
     "Author": "Neil A. Fiore",
     "Author l-f": "Fiore, Neil A.",
     "Additional Authors": "Małgorzata Głogowska",
@@ -2938,8 +2938,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56267591,
-    "Title": "Sztuka blyskawicznej koncentracji. Mistrzostwo w zarzadzaniu uwaga",
+    "bookId": 56267591,
+    "title": "Sztuka blyskawicznej koncentracji. Mistrzostwo w zarzadzaniu uwaga",
     "Author": "Damon Zahariades",
     "Author l-f": "Zahariades, Damon",
     "Additional Authors": "",
@@ -2971,8 +2971,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31324473,
-    "Title": "Co ludzie sukcesu robią przed śniadaniem",
+    "bookId": 31324473,
+    "title": "Co ludzie sukcesu robią przed śniadaniem",
     "Author": "Laura Vanderkam",
     "Author l-f": "Vanderkam, Laura",
     "Additional Authors": "Joanna Sugiero",
@@ -3004,8 +3004,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57674489,
-    "Title": "Projekt Hail Mary",
+    "bookId": 57674489,
+    "title": "Projekt Hail Mary",
     "Author": "Andy Weir",
     "Author l-f": "Weir, Andy",
     "Additional Authors": "Radosław Madejski",
@@ -3037,8 +3037,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25498005,
-    "Title": "Magia sprzątania. Japońska sztuka porządkowania i organizacji",
+    "bookId": 25498005,
+    "title": "Magia sprzątania. Japońska sztuka porządkowania i organizacji",
     "Author": "Marie Kondō",
     "Author l-f": "Kondō, Marie",
     "Additional Authors": "Magdalena Macińska",
@@ -3070,8 +3070,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53328332,
-    "Title": "Less is More: How Degrowth Will Save the World",
+    "bookId": 53328332,
+    "title": "Less is More: How Degrowth Will Save the World",
     "Author": "Jason Hickel",
     "Author l-f": "Hickel, Jason",
     "Additional Authors": "",
@@ -3103,8 +3103,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18290401,
-    "Title": "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered",
+    "bookId": 18290401,
+    "title": "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered",
     "Author": "Austin Kleon",
     "Author l-f": "Kleon, Austin",
     "Additional Authors": "",
@@ -3136,8 +3136,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43848929,
-    "Title": "Talking to Strangers: What We Should Know About the People We Don’t Know",
+    "bookId": 43848929,
+    "title": "Talking to Strangers: What We Should Know About the People We Don’t Know",
     "Author": "Malcolm Gladwell",
     "Author l-f": "Gladwell, Malcolm",
     "Additional Authors": "",
@@ -3169,8 +3169,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17206225,
-    "Title": "Jednym kliknięciem. Historia Jeffa Bezosa i rosnącej potęgi Amazon.com",
+    "bookId": 17206225,
+    "title": "Jednym kliknięciem. Historia Jeffa Bezosa i rosnącej potęgi Amazon.com",
     "Author": "Richard L. Brandt",
     "Author l-f": "Brandt, Richard L.",
     "Additional Authors": "Magda Witkowska",
@@ -3202,8 +3202,8 @@
     "BCID": ""
   },
   {
-    "BookId": 95887,
-    "Title": "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
+    "bookId": 95887,
+    "title": "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
     "Author": "Brian Tracy",
     "Author l-f": "Tracy, Brian",
     "Additional Authors": "",
@@ -3235,8 +3235,8 @@
     "BCID": ""
   },
   {
-    "BookId": 590652,
-    "Title": "The Slight Edge",
+    "bookId": 590652,
+    "title": "The Slight Edge",
     "Author": "Jeff Olson",
     "Author l-f": "Olson, Jeff",
     "Additional Authors": "",
@@ -3268,8 +3268,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13589182,
-    "Title": "Mastery",
+    "bookId": 13589182,
+    "title": "Mastery",
     "Author": "Robert Greene",
     "Author l-f": "Greene, Robert",
     "Additional Authors": "",
@@ -3301,8 +3301,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1303,
-    "Title": "The 48 Laws of Power",
+    "bookId": 1303,
+    "title": "The 48 Laws of Power",
     "Author": "Robert Greene",
     "Author l-f": "Greene, Robert",
     "Additional Authors": "Joost Elffers",
@@ -3334,8 +3334,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44000884,
-    "Title": "Odwaga bycia nielubianym. Japoński fenomen, który pokazuje, jak być wolnym i odmienić własne życie",
+    "bookId": 44000884,
+    "title": "Odwaga bycia nielubianym. Japoński fenomen, który pokazuje, jak być wolnym i odmienić własne życie",
     "Author": "Ichiro Kishimi",
     "Author l-f": "Kishimi, Ichiro",
     "Additional Authors": "Fumitake Koga, Piotr Cieślak",
@@ -3367,8 +3367,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43701534,
-    "Title": "A Philosophy of Software Design",
+    "bookId": 43701534,
+    "title": "A Philosophy of Software Design",
     "Author": "John Ousterhout",
     "Author l-f": "Ousterhout, John",
     "Additional Authors": "",
@@ -3400,8 +3400,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44424488,
-    "Title": "Nowe życie, czyli jak największe umysły wszechczasów odkryły, skąd się biorą dzieci",
+    "bookId": 44424488,
+    "title": "Nowe życie, czyli jak największe umysły wszechczasów odkryły, skąd się biorą dzieci",
     "Author": "Edward Dolnick",
     "Author l-f": "Dolnick, Edward",
     "Additional Authors": "",
@@ -3433,8 +3433,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54898389,
-    "Title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+    "bookId": 54898389,
+    "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
     "Author": "Eric Jorgenson",
     "Author l-f": "Jorgenson, Eric",
     "Additional Authors": "",
@@ -3466,8 +3466,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56656859,
-    "Title": "Czuła przewodniczka. Kobieca droga do siebie",
+    "bookId": 56656859,
+    "title": "Czuła przewodniczka. Kobieca droga do siebie",
     "Author": "Natalia de Barbaro",
     "Author l-f": "Barbaro, Natalia de",
     "Additional Authors": "Aneta Klejnowska",
@@ -3499,8 +3499,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23710228,
-    "Title": "Prawy umysł. Dlaczego dobrych ludzi dzieli religia i polityka",
+    "bookId": 23710228,
+    "title": "Prawy umysł. Dlaczego dobrych ludzi dzieli religia i polityka",
     "Author": "Jonathan Haidt",
     "Author l-f": "Haidt, Jonathan",
     "Additional Authors": "Agnieszka Nowak-Młynikowska",
@@ -3532,8 +3532,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5553,
-    "Title": "Six Easy Pieces: Essentials of Physics By Its Most Brilliant Teacher",
+    "bookId": 5553,
+    "title": "Six Easy Pieces: Essentials of Physics By Its Most Brilliant Teacher",
     "Author": "Richard P. Feynman",
     "Author l-f": "Feynman, Richard P.",
     "Additional Authors": "",
@@ -3565,8 +3565,8 @@
     "BCID": ""
   },
   {
-    "BookId": 12228097,
-    "Title": "The Chimp Paradox: The Acclaimed Mind Management Programme to Help You Achieve Success, Confidence and Happiness",
+    "bookId": 12228097,
+    "title": "The Chimp Paradox: The Acclaimed Mind Management Programme to Help You Achieve Success, Confidence and Happiness",
     "Author": "Steve   Peters",
     "Author l-f": "Peters, Steve",
     "Additional Authors": "",
@@ -3598,8 +3598,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36064445,
-    "Title": "Skin in the Game: The Hidden Asymmetries in Daily Life",
+    "bookId": 36064445,
+    "title": "Skin in the Game: The Hidden Asymmetries in Daily Life",
     "Author": "Nassim Nicholas Taleb",
     "Author l-f": "Taleb, Nassim Nicholas",
     "Additional Authors": "",
@@ -3631,8 +3631,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55829598,
-    "Title": "Pasja testowania",
+    "bookId": 55829598,
+    "title": "Pasja testowania",
     "Author": "Krzysztof Jadczyk",
     "Author l-f": "Jadczyk, Krzysztof",
     "Additional Authors": "",
@@ -3664,8 +3664,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43506094,
-    "Title": "Pro React 16",
+    "bookId": 43506094,
+    "title": "Pro React 16",
     "Author": "Adam Freeman",
     "Author l-f": "Freeman, Adam",
     "Additional Authors": "",
@@ -3697,8 +3697,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50075697,
-    "Title": "Lego. Jak pokonać kryzys, zawojować świat i zbudować potęgę z klocków",
+    "bookId": 50075697,
+    "title": "Lego. Jak pokonać kryzys, zawojować świat i zbudować potęgę z klocków",
     "Author": "Niels Lunde",
     "Author l-f": "Lunde, Niels",
     "Additional Authors": "Agnieszka Świerk",
@@ -3730,8 +3730,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54849642,
-    "Title": "#takietampieprzenie2020",
+    "bookId": 54849642,
+    "title": "#takietampieprzenie2020",
     "Author": "Anna Makowska",
     "Author l-f": "Makowska, Anna",
     "Additional Authors": "",
@@ -3763,8 +3763,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48718398,
-    "Title": "Bezpieczeństwo aplikacji webowych",
+    "bookId": 48718398,
+    "title": "Bezpieczeństwo aplikacji webowych",
     "Author": "Michał Bentkowski",
     "Author l-f": "Bentkowski, Michał",
     "Additional Authors": "Artur Czyż, Rafał Janicki, Jarosław Kamiński, Adrian Michalczyk, Mateusz Niezabitowski, Marcin Piosek, Michał Sajdak, Grzegorz Trawiński, Bohdan Widła",
@@ -3796,8 +3796,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18077875,
-    "Title": "Essentialism: The Disciplined Pursuit of Less",
+    "bookId": 18077875,
+    "title": "Essentialism: The Disciplined Pursuit of Less",
     "Author": "Greg McKeown",
     "Author l-f": "McKeown, Greg",
     "Additional Authors": "",
@@ -3829,8 +3829,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54895700,
-    "Title": "Effortless: Make It Easier to Do What Matters Most",
+    "bookId": 54895700,
+    "title": "Effortless: Make It Easier to Do What Matters Most",
     "Author": "Greg McKeown",
     "Author l-f": "McKeown, Greg",
     "Additional Authors": "",
@@ -3862,8 +3862,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24611735,
-    "Title": "Black Box Thinking: Why Some People Never Learn from Their Mistakes - But Some Do",
+    "bookId": 24611735,
+    "title": "Black Box Thinking: Why Some People Never Learn from Their Mistakes - But Some Do",
     "Author": "Matthew Syed",
     "Author l-f": "Syed, Matthew",
     "Additional Authors": "",
@@ -3895,8 +3895,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51720411,
-    "Title": "Think Like a Rocket Scientist: Simple Strategies You Can Use to Make Giant Leaps in Work and Life",
+    "bookId": 51720411,
+    "title": "Think Like a Rocket Scientist: Simple Strategies You Can Use to Make Giant Leaps in Work and Life",
     "Author": "Ozan Varol",
     "Author l-f": "Varol, Ozan",
     "Additional Authors": "",
@@ -3928,8 +3928,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35228596,
-    "Title": "10 kroków do maksymalnej produktywności",
+    "bookId": 35228596,
+    "title": "10 kroków do maksymalnej produktywności",
     "Author": "Michael Sliwinski",
     "Author l-f": "Sliwinski, Michael",
     "Additional Authors": "Michał Śliwiński",
@@ -3961,8 +3961,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23215733,
-    "Title": "The Software Craftsman: Professionalism, Pragmatism, Pride",
+    "bookId": 23215733,
+    "title": "The Software Craftsman: Professionalism, Pragmatism, Pride",
     "Author": "Sandro Mancuso",
     "Author l-f": "Mancuso, Sandro",
     "Additional Authors": "",
@@ -3994,8 +3994,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57843905,
-    "Title": "Zadbana finansowo",
+    "bookId": 57843905,
+    "title": "Zadbana finansowo",
     "Author": "Justyna Kwiatkowska",
     "Author l-f": "Kwiatkowska, Justyna",
     "Additional Authors": "",
@@ -4027,8 +4027,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10027945,
-    "Title": "Tylko martwi nie kłamią (Hubert Meyer, #2)",
+    "bookId": 10027945,
+    "title": "Tylko martwi nie kłamią (Hubert Meyer, #2)",
     "Author": "Katarzyna Bonda",
     "Author l-f": "Bonda, Katarzyna",
     "Additional Authors": "",
@@ -4060,8 +4060,8 @@
     "BCID": ""
   },
   {
-    "BookId": 27840436,
-    "Title": "Sprawa Niny Frank (Hubert Meyer, #1)",
+    "bookId": 27840436,
+    "title": "Sprawa Niny Frank (Hubert Meyer, #1)",
     "Author": "Katarzyna Bonda",
     "Author l-f": "Bonda, Katarzyna",
     "Additional Authors": "",
@@ -4093,8 +4093,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25111637,
-    "Title": "Okularnik (Cztery żywioły Saszy Załuskiej, #2)",
+    "bookId": 25111637,
+    "title": "Okularnik (Cztery żywioły Saszy Załuskiej, #2)",
     "Author": "Katarzyna Bonda",
     "Author l-f": "Bonda, Katarzyna",
     "Additional Authors": "",
@@ -4126,8 +4126,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4866,
-    "Title": "How to Stop Worrying and Start Living",
+    "bookId": 4866,
+    "title": "How to Stop Worrying and Start Living",
     "Author": "Dale Carnegie",
     "Author l-f": "Carnegie, Dale",
     "Additional Authors": "",
@@ -4159,8 +4159,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17316682,
-    "Title": "Remote: Office Not Required",
+    "bookId": 17316682,
+    "title": "Remote: Office Not Required",
     "Author": "David Heinemeier Hansson",
     "Author l-f": "Hansson, David Heinemeier",
     "Additional Authors": "Jason Fried, Rebecca Lowman",
@@ -4192,8 +4192,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55748126,
-    "Title": "inaczej",
+    "bookId": 55748126,
+    "title": "inaczej",
     "Author": "Radosław Kotarski",
     "Author l-f": "Kotarski, Radosław",
     "Additional Authors": "",
@@ -4225,8 +4225,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28245875,
-    "Title": "Blogging for Busy Programmers",
+    "bookId": 28245875,
+    "title": "Blogging for Busy Programmers",
     "Author": "Andrzej Krzywda",
     "Author l-f": "Krzywda, Andrzej",
     "Additional Authors": "",
@@ -4258,8 +4258,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16256798,
-    "Title": "The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results",
+    "bookId": 16256798,
+    "title": "The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results",
     "Author": "Gary Keller",
     "Author l-f": "Keller, Gary",
     "Additional Authors": "Jay Papasan",
@@ -4291,8 +4291,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23513617,
-    "Title": "Skazani na Shawshank",
+    "bookId": 23513617,
+    "title": "Skazani na Shawshank",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "",
@@ -4324,8 +4324,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22310875,
-    "Title": "Zaczynaj od DLACZEGO. Jak wielcy liderzy inspirują innych do działania",
+    "bookId": 22310875,
+    "title": "Zaczynaj od DLACZEGO. Jak wielcy liderzy inspirują innych do działania",
     "Author": "Simon Sinek",
     "Author l-f": "Sinek, Simon",
     "Additional Authors": "Zbigniew Waśko",
@@ -4357,8 +4357,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58154651,
-    "Title": "Kierunek jakość. Jak unikać błędów w projekcie",
+    "bookId": 58154651,
+    "title": "Kierunek jakość. Jak unikać błędów w projekcie",
     "Author": "Aleksandra Kunysz",
     "Author l-f": "Kunysz, Aleksandra",
     "Additional Authors": "",
@@ -4390,8 +4390,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29848875,
-    "Title": "Głowa do liczb",
+    "bookId": 29848875,
+    "title": "Głowa do liczb",
     "Author": "Barbara Oakley",
     "Author l-f": "Oakley, Barbara",
     "Additional Authors": "",
@@ -4423,8 +4423,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54460981,
-    "Title": "Prosta sprawa (Bezimienny, #1)",
+    "bookId": 54460981,
+    "title": "Prosta sprawa (Bezimienny, #1)",
     "Author": "Wojciech Chmielarz",
     "Author l-f": "Chmielarz, Wojciech",
     "Additional Authors": "",
@@ -4456,8 +4456,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56469273,
-    "Title": "Informacja zwrotna",
+    "bookId": 56469273,
+    "title": "Informacja zwrotna",
     "Author": "Jakub Żulczyk",
     "Author l-f": "Żulczyk, Jakub",
     "Additional Authors": "",
@@ -4489,8 +4489,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56242760,
-    "Title": "Maria Curie",
+    "bookId": 56242760,
+    "title": "Maria Curie",
     "Author": "Ève Curie",
     "Author l-f": "Curie, Ève",
     "Additional Authors": "Ewa Curie, Hanna Szyllerowa, Agnieszka Rasińska-Bóbr",
@@ -4522,8 +4522,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56804403,
-    "Title": "Alianci (Opowieści niepoprawne politycznie, #5)",
+    "bookId": 56804403,
+    "title": "Alianci (Opowieści niepoprawne politycznie, #5)",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -4555,8 +4555,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57962904,
-    "Title": "Miasto szpiegów",
+    "bookId": 57962904,
+    "title": "Miasto szpiegów",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -4588,8 +4588,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57873872,
-    "Title": "Ekstremista (Gerard Edling, #3)",
+    "bookId": 57873872,
+    "title": "Ekstremista (Gerard Edling, #3)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -4621,8 +4621,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13553636,
-    "Title": "Potęga checklisty. Jak opanować chaos i zyskać swobodę w działaniu",
+    "bookId": 13553636,
+    "title": "Potęga checklisty. Jak opanować chaos i zyskać swobodę w działaniu",
     "Author": "Atul Gawande",
     "Author l-f": "Gawande, Atul",
     "Additional Authors": "Rafał Śmietana",
@@ -4654,8 +4654,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55361205,
-    "Title": "A Promised Land",
+    "bookId": 55361205,
+    "title": "A Promised Land",
     "Author": "Barack Obama",
     "Author l-f": "Obama, Barack",
     "Additional Authors": "",
@@ -4687,8 +4687,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32883490,
-    "Title": "Async Remote",
+    "bookId": 32883490,
+    "title": "Async Remote",
     "Author": "Robert Pankowecki",
     "Author l-f": "Pankowecki, Robert",
     "Additional Authors": "",
@@ -4720,8 +4720,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51918553,
-    "Title": "Ochotnik",
+    "bookId": 51918553,
+    "title": "Ochotnik",
     "Author": "Jack Fairweather",
     "Author l-f": "Fairweather, Jack",
     "Additional Authors": "Arkadiusz Romanek",
@@ -4753,8 +4753,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21856367,
-    "Title": "The Innovators: How a Group of Hackers, Geniuses and Geeks Created the Digital Revolution",
+    "bookId": 21856367,
+    "title": "The Innovators: How a Group of Hackers, Geniuses and Geeks Created the Digital Revolution",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "",
@@ -4786,8 +4786,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57532397,
-    "Title": "Jezus Niechrystus",
+    "bookId": 57532397,
+    "title": "Jezus Niechrystus",
     "Author": "Piotr Augustyniak",
     "Author l-f": "Augustyniak, Piotr",
     "Additional Authors": "",
@@ -4819,8 +4819,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56613808,
-    "Title": "Później",
+    "bookId": 56613808,
+    "title": "Później",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Rafał Lisowski",
@@ -4852,8 +4852,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56082871,
-    "Title": "Co robić przed końcem świata",
+    "bookId": 56082871,
+    "title": "Co robić przed końcem świata",
     "Author": "Tomasz Stawiszyński",
     "Author l-f": "Stawiszyński, Tomasz",
     "Additional Authors": "",
@@ -4885,8 +4885,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23848190,
-    "Title": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
+    "bookId": 23848190,
+    "title": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
     "Author": "Jocko Willink",
     "Author l-f": "Willink, Jocko",
     "Additional Authors": "Leif Babin",
@@ -4918,8 +4918,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22085568,
-    "Title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
+    "bookId": 22085568,
+    "title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
     "Author": "Erin Meyer",
     "Author l-f": "Meyer, Erin",
     "Additional Authors": "",
@@ -4951,8 +4951,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54460870,
-    "Title": "Zła krew. Największy skandal w historii start-upów",
+    "bookId": 54460870,
+    "title": "Zła krew. Największy skandal w historii start-upów",
     "Author": "John Carreyrou",
     "Author l-f": "Carreyrou, John",
     "Additional Authors": "Maria Jaszczurowska",
@@ -4984,8 +4984,8 @@
     "BCID": ""
   },
   {
-    "BookId": 9671907,
-    "Title": "Atlas zbuntowany",
+    "bookId": 9671907,
+    "title": "Atlas zbuntowany",
     "Author": "Ayn Rand",
     "Author l-f": "Rand, Ayn",
     "Additional Authors": "Iwona Michałowska",
@@ -5017,8 +5017,8 @@
     "BCID": ""
   },
   {
-    "BookId": 54858610,
-    "Title": "Ludowa historia Polski",
+    "bookId": 54858610,
+    "title": "Ludowa historia Polski",
     "Author": "Adam Leszczyński",
     "Author l-f": "Leszczyński, Adam",
     "Additional Authors": "",
@@ -5050,8 +5050,8 @@
     "BCID": ""
   },
   {
-    "BookId": 57480865,
-    "Title": "Czas na języki",
+    "bookId": 57480865,
+    "title": "Czas na języki",
     "Author": "Sandra Scholz",
     "Author l-f": "Scholz, Sandra",
     "Additional Authors": "",
@@ -5083,8 +5083,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28602838,
-    "Title": "Marsjanin",
+    "bookId": 28602838,
+    "title": "Marsjanin",
     "Author": "Andy Weir",
     "Author l-f": "Weir, Andy",
     "Additional Authors": "Marcin Ring",
@@ -5116,8 +5116,8 @@
     "BCID": ""
   },
   {
-    "BookId": 56655366,
-    "Title": "Szepty spoza nicości (Seweryn Zaorski, #3)",
+    "bookId": 56655366,
+    "title": "Szepty spoza nicości (Seweryn Zaorski, #3)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -5149,8 +5149,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28405277,
-    "Title": "Chop Wood Carry Water: How to Fall In Love With the Process of Becoming Great",
+    "bookId": 28405277,
+    "title": "Chop Wood Carry Water: How to Fall In Love With the Process of Becoming Great",
     "Author": "Joshua Medcalf",
     "Author l-f": "Medcalf, Joshua",
     "Additional Authors": "",
@@ -5182,8 +5182,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6177371,
-    "Title": "Pan Lodowego Ogrodu. Tom 1 (Pan Lodowego Ogrodu, #1)",
+    "bookId": 6177371,
+    "title": "Pan Lodowego Ogrodu. Tom 1 (Pan Lodowego Ogrodu, #1)",
     "Author": "Jarosław Grzędowicz",
     "Author l-f": "Grzędowicz, Jarosław",
     "Additional Authors": "",
@@ -5215,8 +5215,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18194,
-    "Title": "The Cyberiad",
+    "bookId": 18194,
+    "title": "The Cyberiad",
     "Author": "Stanisław Lem",
     "Author l-f": "Lem, Stanisław",
     "Additional Authors": "Michael Kandel, Daniel Mróz",
@@ -5248,8 +5248,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11741685,
-    "Title": "Pan Lodowego Ogrodu. Tom 4 (Pan Lodowego Ogrodu, #4)",
+    "bookId": 11741685,
+    "title": "Pan Lodowego Ogrodu. Tom 4 (Pan Lodowego Ogrodu, #4)",
     "Author": "Jarosław Grzędowicz",
     "Author l-f": "Grzędowicz, Jarosław",
     "Additional Authors": "",
@@ -5281,8 +5281,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7147249,
-    "Title": "Pan Lodowego Ogrodu. Tom 3 (Pan Lodowego Ogrodu, #3)",
+    "bookId": 7147249,
+    "title": "Pan Lodowego Ogrodu. Tom 3 (Pan Lodowego Ogrodu, #3)",
     "Author": "Jarosław Grzędowicz",
     "Author l-f": "Grzędowicz, Jarosław",
     "Additional Authors": "",
@@ -5314,8 +5314,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40673614,
-    "Title": "Pucio uczy się mówić",
+    "bookId": 40673614,
+    "title": "Pucio uczy się mówić",
     "Author": "Marta Galewska-Kustra",
     "Author l-f": "Galewska-Kustra, Marta",
     "Additional Authors": "Joanna Kłos",
@@ -5347,8 +5347,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48577290,
-    "Title": "Pucio i ćwiczenia z mówienia",
+    "bookId": 48577290,
+    "title": "Pucio i ćwiczenia z mówienia",
     "Author": "Marta Galewska-Kustra",
     "Author l-f": "Galewska-Kustra, Marta",
     "Additional Authors": "Joanna Kłos",
@@ -5380,8 +5380,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48649811,
-    "Title": "Atomowe nawyki. Drobne zmiany, niezwykłe efekty",
+    "bookId": 48649811,
+    "title": "Atomowe nawyki. Drobne zmiany, niezwykłe efekty",
     "Author": "James Clear",
     "Author l-f": "Clear, James",
     "Additional Authors": "Piotr Cieślak",
@@ -5413,8 +5413,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18363491,
-    "Title": "NIE z miłości. Mądrzy rodzice - silne dzieci",
+    "bookId": 18363491,
+    "title": "NIE z miłości. Mądrzy rodzice - silne dzieci",
     "Author": "Jesper Juul",
     "Author l-f": "Juul, Jesper",
     "Additional Authors": "Dariusz Syska",
@@ -5446,8 +5446,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51006665,
-    "Title": "Wąska ścieżka. Dlaczego odszedłem z Kościoła",
+    "bookId": 51006665,
+    "title": "Wąska ścieżka. Dlaczego odszedłem z Kościoła",
     "Author": "Stanisław Obirek",
     "Author l-f": "Obirek, Stanisław",
     "Additional Authors": "Artur Nowak",
@@ -5479,8 +5479,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44662007,
-    "Title": "Sodoma. Hipokryzja i władza w Watykanie",
+    "bookId": 44662007,
+    "title": "Sodoma. Hipokryzja i władza w Watykanie",
     "Author": "Frédéric Martel‏",
     "Author l-f": "Martel‏, Frédéric",
     "Additional Authors": "Anastazja Dwulit, Elżbieta Derelkowska, Jagna Wisz",
@@ -5512,8 +5512,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51477728,
-    "Title": "Statystycznie rzecz biorąc, czyli ile trzeba zjeść czekolady, żeby dostać Nobla?",
+    "bookId": 51477728,
+    "title": "Statystycznie rzecz biorąc, czyli ile trzeba zjeść czekolady, żeby dostać Nobla?",
     "Author": "Janina Bąk",
     "Author l-f": "Bąk, Janina",
     "Additional Authors": "",
@@ -5545,8 +5545,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40964071,
-    "Title": "Zrozumiec JavaScript Wprowadzenie do programowania",
+    "bookId": 40964071,
+    "title": "Zrozumiec JavaScript Wprowadzenie do programowania",
     "Author": "Marijn Haverbeke",
     "Author l-f": "Haverbeke, Marijn",
     "Additional Authors": "",
@@ -5578,8 +5578,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48927138,
-    "Title": "Unit Testing: Principles, Practices, and Patterns",
+    "bookId": 48927138,
+    "title": "Unit Testing: Principles, Practices, and Patterns",
     "Author": "Vladimir Khorikov",
     "Author l-f": "Khorikov, Vladimir",
     "Additional Authors": "",
@@ -5611,8 +5611,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53302023,
-    "Title": "Lot 202",
+    "bookId": 53302023,
+    "title": "Lot 202",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -5644,8 +5644,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50790069,
-    "Title": "Tragedia na Przełęczy Diatłowa. Historia bez końca",
+    "bookId": 50790069,
+    "title": "Tragedia na Przełęczy Diatłowa. Historia bez końca",
     "Author": "Alice Lugen",
     "Author l-f": "Lugen, Alice",
     "Additional Authors": "",
@@ -5677,8 +5677,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7494531,
-    "Title": "Czas zabijania",
+    "bookId": 7494531,
+    "title": "Czas zabijania",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "",
@@ -5710,8 +5710,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11766256,
-    "Title": "Karaibska tajemnica",
+    "bookId": 11766256,
+    "title": "Karaibska tajemnica",
     "Author": "Agatha Christie",
     "Author l-f": "Christie, Agatha",
     "Additional Authors": "",
@@ -5743,8 +5743,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55204324,
-    "Title": "Wojna o szczepionki. Jak doktor Wakefield oszukał świat?",
+    "bookId": 55204324,
+    "title": "Wojna o szczepionki. Jak doktor Wakefield oszukał świat?",
     "Author": "Brian Deer",
     "Author l-f": "Deer, Brian",
     "Additional Authors": "Katarzyna Bażyńska-Chojnacka, Piotr Chojnacki",
@@ -5776,8 +5776,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36096111,
-    "Title": "Astrofizyka dla zabieganych",
+    "bookId": 36096111,
+    "title": "Astrofizyka dla zabieganych",
     "Author": "Neil deGrasse Tyson",
     "Author l-f": "Tyson, Neil deGrasse",
     "Additional Authors": "Jeremi K. Ochab",
@@ -5809,8 +5809,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6463532,
-    "Title": "Dawca",
+    "bookId": 6463532,
+    "title": "Dawca",
     "Author": "Tess Gerritsen",
     "Author l-f": "Gerritsen, Tess",
     "Additional Authors": "Jerzy Żebrowski",
@@ -5842,8 +5842,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24674971,
-    "Title": "Wydział spraw zamkniętych (Harry Bosch, #11)",
+    "bookId": 24674971,
+    "title": "Wydział spraw zamkniętych (Harry Bosch, #11)",
     "Author": "Michael Connelly",
     "Author l-f": "Connelly, Michael",
     "Additional Authors": "",
@@ -5875,8 +5875,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32998879,
-    "Title": "Junior Developer. Wszystko co trzeba wiedzieć, by zacząć pracę jako programista.",
+    "bookId": 32998879,
+    "title": "Junior Developer. Wszystko co trzeba wiedzieć, by zacząć pracę jako programista.",
     "Author": "Mateusz Kupilas",
     "Author l-f": "Kupilas, Mateusz",
     "Additional Authors": "",
@@ -5908,8 +5908,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42733742,
-    "Title": "Podrecznik frontendowca. The Big Nerd Ranch Guide",
+    "bookId": 42733742,
+    "title": "Podrecznik frontendowca. The Big Nerd Ranch Guide",
     "Author": "Todd Gandee Chris Aquino",
     "Author l-f": "Aquino, Todd Gandee Chris",
     "Additional Authors": "",
@@ -5941,8 +5941,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10485654,
-    "Title": "Uciekinier",
+    "bookId": 10485654,
+    "title": "Uciekinier",
     "Author": "Ken Follett",
     "Author l-f": "Follett, Ken",
     "Additional Authors": "Jacek Manicki, Michał Wroczyński",
@@ -5974,8 +5974,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13064725,
-    "Title": "Miliarderzy z przypadku. Początki Facebooka. Opowieść o seksie, pieniądzach, geniuszu i zdradzie",
+    "bookId": 13064725,
+    "title": "Miliarderzy z przypadku. Początki Facebooka. Opowieść o seksie, pieniądzach, geniuszu i zdradzie",
     "Author": "Ben Mezrich",
     "Author l-f": "Mezrich, Ben",
     "Additional Authors": "Jacek Konieczny",
@@ -6007,8 +6007,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24949916,
-    "Title": "Ludzie czy bogowie. 27 rozmów z najsłynniejszymi polskimi lekarzami",
+    "bookId": 24949916,
+    "title": "Ludzie czy bogowie. 27 rozmów z najsłynniejszymi polskimi lekarzami",
     "Author": "Dariusz Kortko",
     "Author l-f": "Kortko, Dariusz",
     "Additional Authors": "Krystyna Bochenek",
@@ -6040,8 +6040,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30233392,
-    "Title": "Halo człowiek. Rozmowy o tym, co ważne",
+    "bookId": 30233392,
+    "title": "Halo człowiek. Rozmowy o tym, co ważne",
     "Author": "Konrad Kruczkowski",
     "Author l-f": "Kruczkowski, Konrad",
     "Additional Authors": "",
@@ -6073,8 +6073,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35139047,
-    "Title": "Halo Tato. Reportaże o dobrym ojcostwie",
+    "bookId": 35139047,
+    "title": "Halo Tato. Reportaże o dobrym ojcostwie",
     "Author": "Konrad Kruczkowski",
     "Author l-f": "Kruczkowski, Konrad",
     "Additional Authors": "",
@@ -6106,8 +6106,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33953793,
-    "Title": "Świat Andrzeja Fidyka",
+    "bookId": 33953793,
+    "title": "Świat Andrzeja Fidyka",
     "Author": "Andrzej Fidyk",
     "Author l-f": "Fidyk, Andrzej",
     "Additional Authors": "Aleksandra Szarłat",
@@ -6139,8 +6139,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16878851,
-    "Title": "Człowiek nietoperz (Harry Hole, #1)",
+    "bookId": 16878851,
+    "title": "Człowiek nietoperz (Harry Hole, #1)",
     "Author": "Jo Nesbø",
     "Author l-f": "Nesbø, Jo",
     "Additional Authors": "Iwona Zimnicka",
@@ -6172,8 +6172,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31785760,
-    "Title": "Istota zła",
+    "bookId": 31785760,
+    "title": "Istota zła",
     "Author": "Luca D'Andrea",
     "Author l-f": "D'Andrea, Luca",
     "Additional Authors": "Stanisław Kasprzysiak",
@@ -6205,8 +6205,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31378337,
-    "Title": "Wy wszyscy moi ja",
+    "bookId": 31378337,
+    "title": "Wy wszyscy moi ja",
     "Author": "Miłosz Brzeziński",
     "Author l-f": "Brzeziński, Miłosz",
     "Additional Authors": "",
@@ -6238,8 +6238,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40211324,
-    "Title": "Gdzie rosną pieniądze",
+    "bookId": 40211324,
+    "title": "Gdzie rosną pieniądze",
     "Author": "Joanna Dymmel",
     "Author l-f": "Dymmel, Joanna",
     "Additional Authors": "",
@@ -6271,8 +6271,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34838263,
-    "Title": "Narratologia",
+    "bookId": 34838263,
+    "title": "Narratologia",
     "Author": "Paweł Tkaczyk",
     "Author l-f": "Tkaczyk, Paweł",
     "Additional Authors": "",
@@ -6304,8 +6304,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30688441,
-    "Title": "Mamo tato co ty na to? 3",
+    "bookId": 30688441,
+    "title": "Mamo tato co ty na to? 3",
     "Author": "Paweł Zawitkowski",
     "Author l-f": "Zawitkowski, Paweł",
     "Additional Authors": "Joanna Szulc",
@@ -6337,8 +6337,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30688416,
-    "Title": "Mamo tato co ty na to? 2",
+    "bookId": 30688416,
+    "title": "Mamo tato co ty na to? 2",
     "Author": "Paweł Zawitkowski",
     "Author l-f": "Zawitkowski, Paweł",
     "Additional Authors": "",
@@ -6370,8 +6370,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13456437,
-    "Title": "Mamo Tato co Ty na to?",
+    "bookId": 13456437,
+    "title": "Mamo Tato co Ty na to?",
     "Author": "Paweł Zawitkowski",
     "Author l-f": "Zawitkowski, Paweł",
     "Additional Authors": "",
@@ -6403,8 +6403,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48910168,
-    "Title": "Prawda. Krótka historia wciskania kitu",
+    "bookId": 48910168,
+    "title": "Prawda. Krótka historia wciskania kitu",
     "Author": "Tom     Phillips",
     "Author l-f": "Phillips, Tom",
     "Additional Authors": "Maria Gębicka-Frąc",
@@ -6436,8 +6436,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43681151,
-    "Title": "Po piśmie",
+    "bookId": 43681151,
+    "title": "Po piśmie",
     "Author": "Jacek Dukaj",
     "Author l-f": "Dukaj, Jacek",
     "Additional Authors": "",
@@ -6469,8 +6469,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1451628,
-    "Title": "Inne Pieśni",
+    "bookId": 1451628,
+    "title": "Inne Pieśni",
     "Author": "Jacek Dukaj",
     "Author l-f": "Dukaj, Jacek",
     "Additional Authors": "",
@@ -6502,8 +6502,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49695371,
-    "Title": "Instytut",
+    "bookId": 49695371,
+    "title": "Instytut",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Rafał Lisowski",
@@ -6535,8 +6535,8 @@
     "BCID": ""
   },
   {
-    "BookId": 26104674,
-    "Title": "Więzienny prawnik",
+    "bookId": 26104674,
+    "title": "Więzienny prawnik",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "Lech Z. Żołędziowski",
@@ -6568,8 +6568,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25824175,
-    "Title": "Zeznanie",
+    "bookId": 25824175,
+    "title": "Zeznanie",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "",
@@ -6601,8 +6601,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43160820,
-    "Title": "Gdzie jest Prezydent",
+    "bookId": 43160820,
+    "title": "Gdzie jest Prezydent",
     "Author": "Bill Clinton",
     "Author l-f": "Clinton, Bill",
     "Additional Authors": "James Patterson, Karolina Rybicka-Tomala",
@@ -6634,8 +6634,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24746541,
-    "Title": "Chłód granitu (Logan McRae, #1)",
+    "bookId": 24746541,
+    "title": "Chłód granitu (Logan McRae, #1)",
     "Author": "Stuart MacBride",
     "Author l-f": "MacBride, Stuart",
     "Additional Authors": "",
@@ -6667,8 +6667,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21496112,
-    "Title": "Spisek franciszkanów",
+    "bookId": 21496112,
+    "title": "Spisek franciszkanów",
     "Author": "John R. Sack",
     "Author l-f": "Sack, John R.",
     "Additional Authors": "",
@@ -6700,8 +6700,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40023499,
-    "Title": "Napad",
+    "bookId": 40023499,
+    "title": "Napad",
     "Author": "Robin Cook",
     "Author l-f": "Cook, Robin",
     "Additional Authors": "",
@@ -6733,8 +6733,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38479020,
-    "Title": "Czy Nowy Jork płonie?",
+    "bookId": 38479020,
+    "title": "Czy Nowy Jork płonie?",
     "Author": "Larry Collins",
     "Author l-f": "Collins, Larry",
     "Additional Authors": "Dominique Lapierre, Hanna Zbonikowska",
@@ -6766,8 +6766,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38746485,
-    "Title": "Becoming",
+    "bookId": 38746485,
+    "title": "Becoming",
     "Author": "Michelle Obama",
     "Author l-f": "Obama, Michelle",
     "Additional Authors": "",
@@ -6799,8 +6799,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35450215,
-    "Title": "Mój ojciec Pablo Escobar",
+    "bookId": 35450215,
+    "title": "Mój ojciec Pablo Escobar",
     "Author": "Juan Pablo Escobar",
     "Author l-f": "Escobar, Juan Pablo",
     "Additional Authors": "Magdalena Olejnik",
@@ -6832,8 +6832,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55289532,
-    "Title": "Finansowa Forteca",
+    "bookId": 55289532,
+    "title": "Finansowa Forteca",
     "Author": "Marcin Iwuć",
     "Author l-f": "Iwuć, Marcin",
     "Additional Authors": "",
@@ -6865,8 +6865,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11084145,
-    "Title": "Steve Jobs",
+    "bookId": 11084145,
+    "title": "Steve Jobs",
     "Author": "Walter Isaacson",
     "Author l-f": "Isaacson, Walter",
     "Additional Authors": "",
@@ -6898,8 +6898,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25744928,
-    "Title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "bookId": 25744928,
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
     "Author": "Cal Newport",
     "Author l-f": "Newport, Cal",
     "Additional Authors": "",
@@ -6931,8 +6931,8 @@
     "BCID": ""
   },
   {
-    "BookId": 27259586,
-    "Title": "Nic bardziej mylnego!",
+    "bookId": 27259586,
+    "title": "Nic bardziej mylnego!",
     "Author": "Radosław Kotarski",
     "Author l-f": "Kotarski, Radosław",
     "Additional Authors": "",
@@ -6964,8 +6964,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48582774,
-    "Title": "Władaj i gadaj, Tom 2",
+    "bookId": 48582774,
+    "title": "Władaj i gadaj, Tom 2",
     "Author": "Arlena Witt",
     "Author l-f": "Witt, Arlena",
     "Additional Authors": "",
@@ -6997,8 +6997,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48582758,
-    "Title": "Władaj i gadaj, Tom 1",
+    "bookId": 48582758,
+    "title": "Władaj i gadaj, Tom 1",
     "Author": "Arlena Witt",
     "Author l-f": "Witt, Arlena",
     "Additional Authors": "",
@@ -7030,8 +7030,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36278861,
-    "Title": "Grama to nie drama. Tom 1",
+    "bookId": 36278861,
+    "title": "Grama to nie drama. Tom 1",
     "Author": "Arlena Witt",
     "Author l-f": "Witt, Arlena",
     "Additional Authors": "",
@@ -7063,8 +7063,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36278876,
-    "Title": "Grama to nie drama. Tom 2",
+    "bookId": 36278876,
+    "title": "Grama to nie drama. Tom 2",
     "Author": "Arlena Witt",
     "Author l-f": "Witt, Arlena",
     "Additional Authors": "",
@@ -7096,8 +7096,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34440834,
-    "Title": "Oto człowiek. Droga krzyżowa z Jerozolimy.",
+    "bookId": 34440834,
+    "title": "Oto człowiek. Droga krzyżowa z Jerozolimy.",
     "Author": "Adam Szustak",
     "Author l-f": "Szustak, Adam",
     "Additional Authors": "",
@@ -7129,8 +7129,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32312270,
-    "Title": "Jeszcze pięć minutek",
+    "bookId": 32312270,
+    "title": "Jeszcze pięć minutek",
     "Author": "Adam Szustak",
     "Author l-f": "Szustak, Adam",
     "Additional Authors": "",
@@ -7162,8 +7162,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23562483,
-    "Title": "Wilki dwa",
+    "bookId": 23562483,
+    "title": "Wilki dwa",
     "Author": "Adam Szustak",
     "Author l-f": "Szustak, Adam",
     "Additional Authors": "Robert Litza Friedrich",
@@ -7195,8 +7195,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31118820,
-    "Title": "MAMO, TATO, A GDZIE JEST BÓG?",
+    "bookId": 31118820,
+    "title": "MAMO, TATO, A GDZIE JEST BÓG?",
     "Author": "Marta Babik, Marek Babik",
     "Author l-f": "Babik, Marta Babik, Marek",
     "Additional Authors": "",
@@ -7228,8 +7228,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7693756,
-    "Title": "Marker (Jack Stapleton & Laurie Montgomery, #5)",
+    "bookId": 7693756,
+    "title": "Marker (Jack Stapleton & Laurie Montgomery, #5)",
     "Author": "Robin Cook",
     "Author l-f": "Cook, Robin",
     "Additional Authors": "Norbert Radomski",
@@ -7261,8 +7261,8 @@
     "BCID": ""
   },
   {
-    "BookId": 9639482,
-    "Title": "Mutant",
+    "bookId": 9639482,
+    "title": "Mutant",
     "Author": "Robin Cook",
     "Author l-f": "Cook, Robin",
     "Additional Authors": "",
@@ -7294,8 +7294,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41746576,
-    "Title": "Coma",
+    "bookId": 41746576,
+    "title": "Coma",
     "Author": "Robin Cook",
     "Author l-f": "Cook, Robin",
     "Additional Authors": "",
@@ -7327,8 +7327,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16146731,
-    "Title": "Trafny wybór",
+    "bookId": 16146731,
+    "title": "Trafny wybór",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Anna Gralak",
@@ -7360,8 +7360,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13536860,
-    "Title": "Fifty Shades Freed (Fifty Shades, #3)",
+    "bookId": 13536860,
+    "title": "Fifty Shades Freed (Fifty Shades, #3)",
     "Author": "E.L. James",
     "Author l-f": "James, E.L.",
     "Additional Authors": "",
@@ -7393,8 +7393,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11857408,
-    "Title": "Fifty Shades Darker (Fifty Shades, #2)",
+    "bookId": 11857408,
+    "title": "Fifty Shades Darker (Fifty Shades, #2)",
     "Author": "E.L. James",
     "Author l-f": "James, E.L.",
     "Additional Authors": "",
@@ -7426,8 +7426,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10818853,
-    "Title": "Fifty Shades of Grey (Fifty Shades, #1)",
+    "bookId": 10818853,
+    "title": "Fifty Shades of Grey (Fifty Shades, #1)",
     "Author": "E.L. James",
     "Author l-f": "James, E.L.",
     "Additional Authors": "",
@@ -7459,8 +7459,8 @@
     "BCID": ""
   },
   {
-    "BookId": 45019906,
-    "Title": "Ludzie. Krótka historia o tym, jak spieprzyliśmy wszystko",
+    "bookId": 45019906,
+    "title": "Ludzie. Krótka historia o tym, jak spieprzyliśmy wszystko",
     "Author": "Tom     Phillips",
     "Author l-f": "Phillips, Tom",
     "Additional Authors": "Maria Gębicka-Frąc",
@@ -7492,8 +7492,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16156881,
-    "Title": "Katarzyna Wielka. Gra o władzę",
+    "bookId": 16156881,
+    "title": "Katarzyna Wielka. Gra o władzę",
     "Author": "Eva Stachniak",
     "Author l-f": "Stachniak, Eva",
     "Additional Authors": "Ewa Rajewska",
@@ -7525,8 +7525,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6294491,
-    "Title": "Sprzedawca broni",
+    "bookId": 6294491,
+    "title": "Sprzedawca broni",
     "Author": "Hugh Laurie",
     "Author l-f": "Laurie, Hugh",
     "Additional Authors": "Jacek Konieczny",
@@ -7558,8 +7558,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1720478,
-    "Title": "Cień wiatru (Cmentarz Zapomnianych Książek, #1)",
+    "bookId": 1720478,
+    "title": "Cień wiatru (Cmentarz Zapomnianych Książek, #1)",
     "Author": "Carlos Ruiz Zafón",
     "Author l-f": "Zafón, Carlos Ruiz",
     "Additional Authors": "Beata Fabjańska-Potapczuk, Carlos Marrodán Casas",
@@ -7591,8 +7591,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24232842,
-    "Title": "Ziarno prawdy (Teodor Szacki, #2)",
+    "bookId": 24232842,
+    "title": "Ziarno prawdy (Teodor Szacki, #2)",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -7624,8 +7624,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30986989,
-    "Title": "Uwikłanie",
+    "bookId": 30986989,
+    "title": "Uwikłanie",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -7657,8 +7657,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4492850,
-    "Title": "Pielgrzym",
+    "bookId": 4492850,
+    "title": "Pielgrzym",
     "Author": "Paulo Coelho",
     "Author l-f": "Coelho, Paulo",
     "Additional Authors": "Krystyna Szeżyńska-Maćkowiak",
@@ -7690,8 +7690,8 @@
     "BCID": ""
   },
   {
-    "BookId": 865,
-    "Title": "The Alchemist",
+    "bookId": 865,
+    "title": "The Alchemist",
     "Author": "Paulo Coelho",
     "Author l-f": "Coelho, Paulo",
     "Additional Authors": "Alan R. Clarke, กอบชลี และ กันเกรา",
@@ -7723,8 +7723,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22597781,
-    "Title": "Bez znieczulenia. Jak powstaje człowiek",
+    "bookId": 22597781,
+    "title": "Bez znieczulenia. Jak powstaje człowiek",
     "Author": "Magdalena Rigamonti",
     "Author l-f": "Rigamonti, Magdalena",
     "Additional Authors": "Marzena Dębska, Romuald Dębski",
@@ -7756,8 +7756,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6402408,
-    "Title": "Boże igrzysko: Historia Polski",
+    "bookId": 6402408,
+    "title": "Boże igrzysko: Historia Polski",
     "Author": "Norman Davies",
     "Author l-f": "Davies, Norman",
     "Additional Authors": "",
@@ -7789,8 +7789,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32809731,
-    "Title": "JavaScript. Programowanie zaawansowane",
+    "bookId": 32809731,
+    "title": "JavaScript. Programowanie zaawansowane",
     "Author": "Tomasz \"Comandeer\" Jakut",
     "Author l-f": "Jakut, Tomasz \"Comandeer",
     "Additional Authors": "",
@@ -7822,8 +7822,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42443704,
-    "Title": "„Pan raczy żartować, panie Feynman!” Przypadki ciekawego człowieka",
+    "bookId": 42443704,
+    "title": "„Pan raczy żartować, panie Feynman!” Przypadki ciekawego człowieka",
     "Author": "Richard P. Feynman",
     "Author l-f": "Feynman, Richard P.",
     "Additional Authors": "Tomasz Bieroń",
@@ -7855,8 +7855,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29867533,
-    "Title": "Mówiąc inaczej. Jak pisać i mówić, żeby się nie pogubić",
+    "bookId": 29867533,
+    "title": "Mówiąc inaczej. Jak pisać i mówić, żeby się nie pogubić",
     "Author": "Paulina Mikuła",
     "Author l-f": "Mikuła, Paulina",
     "Additional Authors": "",
@@ -7888,8 +7888,8 @@
     "BCID": ""
   },
   {
-    "BookId": 26133153,
-    "Title": "Cudowny lek. Robert Koch, Ludwik Pasteur i prątki gruźlicy",
+    "bookId": 26133153,
+    "title": "Cudowny lek. Robert Koch, Ludwik Pasteur i prątki gruźlicy",
     "Author": "Thomas Goetz",
     "Author l-f": "Goetz, Thomas",
     "Additional Authors": "Robert  Śmietana",
@@ -7921,8 +7921,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49697598,
-    "Title": "Wirus paniki. Historia kontrowersji wokół szczepionek i autyzmu",
+    "bookId": 49697598,
+    "title": "Wirus paniki. Historia kontrowersji wokół szczepionek i autyzmu",
     "Author": "Seth Mnookin",
     "Author l-f": "Mnookin, Seth",
     "Additional Authors": "Hanna Pustuła-Lewicka",
@@ -7954,8 +7954,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53349656,
-    "Title": "Kwestia ceny (Zofia Lorentz, #2)",
+    "bookId": 53349656,
+    "title": "Kwestia ceny (Zofia Lorentz, #2)",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -7987,8 +7987,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23358242,
-    "Title": "Religa. Biografia najsłynniejszego polskiego kardiochirurga",
+    "bookId": 23358242,
+    "title": "Religa. Biografia najsłynniejszego polskiego kardiochirurga",
     "Author": "Dariusz Kortko",
     "Author l-f": "Kortko, Dariusz",
     "Additional Authors": "Judyta Watoła",
@@ -8020,8 +8020,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41726541,
-    "Title": "Masters of sex",
+    "bookId": 41726541,
+    "title": "Masters of sex",
     "Author": "Thomas Maier",
     "Author l-f": "Maier, Thomas",
     "Additional Authors": "",
@@ -8053,8 +8053,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24148540,
-    "Title": "Kancelaria",
+    "bookId": 24148540,
+    "title": "Kancelaria",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "Krzysztof Obłucki",
@@ -8086,8 +8086,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34340632,
-    "Title": "Dziennik watykański. Władza, ludzie, polityka.",
+    "bookId": 34340632,
+    "title": "Dziennik watykański. Władza, ludzie, polityka.",
     "Author": "John Thavis",
     "Author l-f": "Thavis, John",
     "Additional Authors": "",
@@ -8119,8 +8119,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32730870,
-    "Title": "Ćwiczenia duszy, rozciąganie mózgu",
+    "bookId": 32730870,
+    "title": "Ćwiczenia duszy, rozciąganie mózgu",
     "Author": "Jerzy Vetulani",
     "Author l-f": "Vetulani, Jerzy",
     "Additional Authors": "Ks. Grzegorz Strzelczyk",
@@ -8152,8 +8152,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36223075,
-    "Title": "Zawód: Programista",
+    "bookId": 36223075,
+    "title": "Zawód: Programista",
     "Author": "Maciej Aniserowicz",
     "Author l-f": "Aniserowicz, Maciej",
     "Additional Authors": "",
@@ -8185,8 +8185,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43494996,
-    "Title": "Kariera programisty. Jak budować doświadczenie, przejść rekrutację i zdobyć pracę marzeń",
+    "bookId": 43494996,
+    "title": "Kariera programisty. Jak budować doświadczenie, przejść rekrutację i zdobyć pracę marzeń",
     "Author": "John Z. Sonmez",
     "Author l-f": "Sonmez, John Z.",
     "Additional Authors": "Wojciech Usarzewicz",
@@ -8218,8 +8218,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29858413,
-    "Title": "Nowy jednominutowy menedżer",
+    "bookId": 29858413,
+    "title": "Nowy jednominutowy menedżer",
     "Author": "Kenneth H. Blanchard",
     "Author l-f": "Blanchard, Kenneth H.",
     "Additional Authors": "Spencer Johanson",
@@ -8251,8 +8251,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44596183,
-    "Title": "Kontra (Inwazja, #3)",
+    "bookId": 44596183,
+    "title": "Kontra (Inwazja, #3)",
     "Author": "Wojtek Miłoszewski",
     "Author l-f": "Miłoszewski, Wojtek",
     "Additional Authors": "",
@@ -8284,8 +8284,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39892851,
-    "Title": "Farba (Inwazja, #2)",
+    "bookId": 39892851,
+    "title": "Farba (Inwazja, #2)",
     "Author": "Wojtek Miłoszewski",
     "Author l-f": "Miłoszewski, Wojtek",
     "Additional Authors": "",
@@ -8317,8 +8317,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34973032,
-    "Title": "Inwazja (Inwazja, #1)",
+    "bookId": 34973032,
+    "title": "Inwazja (Inwazja, #1)",
     "Author": "Wojtek Miłoszewski",
     "Author l-f": "Miłoszewski, Wojtek",
     "Additional Authors": "",
@@ -8350,8 +8350,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42510008,
-    "Title": "Kastor (Kastor, #1)",
+    "bookId": 42510008,
+    "title": "Kastor (Kastor, #1)",
     "Author": "Wojtek Miłoszewski",
     "Author l-f": "Miłoszewski, Wojtek",
     "Additional Authors": "",
@@ -8383,8 +8383,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51316380,
-    "Title": "Kobieta w Watykanie. Jak żyje się w najmniejszym państwie świata",
+    "bookId": 51316380,
+    "title": "Kobieta w Watykanie. Jak żyje się w najmniejszym państwie świata",
     "Author": "Magdalena Wolińska-Riedi",
     "Author l-f": "Wolińska-Riedi, Magdalena",
     "Additional Authors": "",
@@ -8416,8 +8416,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43683806,
-    "Title": "Pacjentka",
+    "bookId": 43683806,
+    "title": "Pacjentka",
     "Author": "Alex Michaelides",
     "Author l-f": "Michaelides, Alex",
     "Additional Authors": "Agnieszka Patrycja Wyszogrodzka-Gaik",
@@ -8449,8 +8449,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53333665,
-    "Title": "Bezcenny (Zofia Lorentz, #1)",
+    "bookId": 53333665,
+    "title": "Bezcenny (Zofia Lorentz, #1)",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -8482,8 +8482,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23400181,
-    "Title": "Ziarno prawdy (Teodor Szacki, #2)",
+    "bookId": 23400181,
+    "title": "Ziarno prawdy (Teodor Szacki, #2)",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -8515,8 +8515,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23289773,
-    "Title": "Gniew (Teodor Szacki, #3)",
+    "bookId": 23289773,
+    "title": "Gniew (Teodor Szacki, #3)",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -8548,8 +8548,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11317128,
-    "Title": "Gra o tron (A Song of Ice and Fire, #1)",
+    "bookId": 11317128,
+    "title": "Gra o tron (A Song of Ice and Fire, #1)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "Paweł Kruk",
@@ -8581,8 +8581,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17364615,
-    "Title": "Starcie królów (Pieśń Lodu i Ognia, #2)",
+    "bookId": 17364615,
+    "title": "Starcie królów (Pieśń Lodu i Ognia, #2)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "Michał Jakuszewski",
@@ -8614,8 +8614,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53820104,
-    "Title": "Nawałnica mieczy (A Song of Ice and Fire, #3)",
+    "bookId": 53820104,
+    "title": "Nawałnica mieczy (A Song of Ice and Fire, #3)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "Michał Jakuszewski",
@@ -8647,8 +8647,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40882793,
-    "Title": "Piesn Lodu i Ognia Tom 4 Czesc 2 Uczta dla wron: Siec spiskow",
+    "bookId": 40882793,
+    "title": "Piesn Lodu i Ognia Tom 4 Czesc 2 Uczta dla wron: Siec spiskow",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "",
@@ -8680,8 +8680,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53820170,
-    "Title": "Taniec ze smokami (A Song of Ice and Fire, #5)",
+    "bookId": 53820170,
+    "title": "Taniec ze smokami (A Song of Ice and Fire, #5)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "Michał Jakuszewski",
@@ -8713,8 +8713,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31437256,
-    "Title": "Nawałnica mieczy, część 2: Krew i złoto (A Song of Ice and Fire, #3.2)",
+    "bookId": 31437256,
+    "title": "Nawałnica mieczy, część 2: Krew i złoto (A Song of Ice and Fire, #3.2)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "",
@@ -8746,8 +8746,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31276511,
-    "Title": "Nawałnica mieczy. Stal i śnieg (Pieśń Lodu i Ognia, #3.1)",
+    "bookId": 31276511,
+    "title": "Nawałnica mieczy. Stal i śnieg (Pieśń Lodu i Ognia, #3.1)",
     "Author": "George R.R. Martin",
     "Author l-f": "Martin, George R.R.",
     "Additional Authors": "",
@@ -8779,8 +8779,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13580647,
-    "Title": "Czarnobylska modlitwa. Kronika przyszłości",
+    "bookId": 13580647,
+    "title": "Czarnobylska modlitwa. Kronika przyszłości",
     "Author": "Svetlana Alexievich",
     "Author l-f": "Alexievich, Svetlana",
     "Additional Authors": "Jerzy Czech",
@@ -8812,8 +8812,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4460688,
-    "Title": "Wyznania gejszy",
+    "bookId": 4460688,
+    "title": "Wyznania gejszy",
     "Author": "Arthur Golden",
     "Author l-f": "Golden, Arthur",
     "Additional Authors": "Witold Nowakowski",
@@ -8845,8 +8845,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18770603,
-    "Title": "Cesarz wszech chorób. Biografia raka",
+    "bookId": 18770603,
+    "title": "Cesarz wszech chorób. Biografia raka",
     "Author": "Siddhartha Mukherjee",
     "Author l-f": "Mukherjee, Siddhartha",
     "Additional Authors": "Jan Dzierzgowski, Agnieszka Pokojska",
@@ -8878,8 +8878,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1127800,
-    "Title": "Harry Potter i Czara Ognia (Harry Potter, #4)",
+    "bookId": 1127800,
+    "title": "Harry Potter i Czara Ognia (Harry Potter, #4)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -8911,8 +8911,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1811146,
-    "Title": "Harry Potter i Kamień Filozoficzny (Harry Potter, #1)",
+    "bookId": 1811146,
+    "title": "Harry Potter i Kamień Filozoficzny (Harry Potter, #1)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -8944,8 +8944,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1367304,
-    "Title": "Harry Potter i Komnata Tajemnic (Harry Potter, #2)",
+    "bookId": 1367304,
+    "title": "Harry Potter i Komnata Tajemnic (Harry Potter, #2)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -8977,8 +8977,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2283458,
-    "Title": "Harry Potter i więzień Azkabanu (Harry Potter, #3)",
+    "bookId": 2283458,
+    "title": "Harry Potter i więzień Azkabanu (Harry Potter, #3)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -9010,8 +9010,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1126624,
-    "Title": "Harry Potter i Zakon Feniksa (Harry Potter, #5)",
+    "bookId": 1126624,
+    "title": "Harry Potter i Zakon Feniksa (Harry Potter, #5)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -9043,8 +9043,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6186134,
-    "Title": "Harry Potter i Książę Półkrwi (Harry Potter, #6)",
+    "bookId": 6186134,
+    "title": "Harry Potter i Książę Półkrwi (Harry Potter, #6)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -9076,8 +9076,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5929499,
-    "Title": "Harry Potter i Insygnia Śmierci (Harry Potter, #7)",
+    "bookId": 5929499,
+    "title": "Harry Potter i Insygnia Śmierci (Harry Potter, #7)",
     "Author": "J.K. Rowling",
     "Author l-f": "Rowling, J.K.",
     "Additional Authors": "Andrzej Polkowski, Mary GrandPré",
@@ -9109,8 +9109,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30982036,
-    "Title": "Harry Potter i Przeklęte Dziecko",
+    "bookId": 30982036,
+    "title": "Harry Potter i Przeklęte Dziecko",
     "Author": "John Tiffany",
     "Author l-f": "Tiffany, John",
     "Additional Authors": "Jack Thorne, J.K. Rowling, Piotr Budkiewicz, Małgorzata Hesko-Kołodzińska",
@@ -9142,8 +9142,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42871337,
-    "Title": "Sapiens: Od zwierząt do bogów",
+    "bookId": 42871337,
+    "title": "Sapiens: Od zwierząt do bogów",
     "Author": "Yuval Noah Harari",
     "Author l-f": "Harari, Yuval Noah",
     "Additional Authors": "Justyn Hunia",
@@ -9175,8 +9175,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38722579,
-    "Title": "Homo deus. Krótka historia jutra",
+    "bookId": 38722579,
+    "title": "Homo deus. Krótka historia jutra",
     "Author": "Yuval Noah Harari",
     "Author l-f": "Harari, Yuval Noah",
     "Additional Authors": "Michał Romanek",
@@ -9208,8 +9208,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41215605,
-    "Title": "21 lekcji na XXI wiek",
+    "bookId": 41215605,
+    "title": "21 lekcji na XXI wiek",
     "Author": "Yuval Noah Harari",
     "Author l-f": "Harari, Yuval Noah",
     "Additional Authors": "Michał Romanek",
@@ -9241,8 +9241,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31915449,
-    "Title": "Pacjenci",
+    "bookId": 31915449,
+    "title": "Pacjenci",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Mieczysław Oziembłowski",
@@ -9274,8 +9274,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31328637,
-    "Title": "Kruchy dom duszy. Wielka odyseja chirurgii mózgu",
+    "bookId": 31328637,
+    "title": "Kruchy dom duszy. Wielka odyseja chirurgii mózgu",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Wawrzyniec Sawicki",
@@ -9307,8 +9307,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28227382,
-    "Title": "Pani Jeziora (Saga o Wiedźminie, #7)",
+    "bookId": 28227382,
+    "title": "Pani Jeziora (Saga o Wiedźminie, #7)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -9340,8 +9340,8 @@
     "BCID": ""
   },
   {
-    "BookId": 68451,
-    "Title": "Ostatnie życzenie (Saga o Wiedźminie, #0.5)",
+    "bookId": 68451,
+    "title": "Ostatnie życzenie (Saga o Wiedźminie, #0.5)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -9373,8 +9373,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18714223,
-    "Title": "Sezon burz (Saga o Wiedźminie, #6)",
+    "bookId": 18714223,
+    "title": "Sezon burz (Saga o Wiedźminie, #6)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -9406,8 +9406,8 @@
     "BCID": ""
   },
   {
-    "BookId": 68458,
-    "Title": "Krew elfów (Saga o Wiedźminie, #1)",
+    "bookId": 68458,
+    "title": "Krew elfów (Saga o Wiedźminie, #1)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -9439,8 +9439,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1876770,
-    "Title": "Chrzest ognia (Saga o Wiedźminie, #3)",
+    "bookId": 1876770,
+    "title": "Chrzest ognia (Saga o Wiedźminie, #3)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -9472,8 +9472,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35170512,
-    "Title": "Gen. Ukryta historia",
+    "bookId": 35170512,
+    "title": "Gen. Ukryta historia",
     "Author": "Siddhartha Mukherjee",
     "Author l-f": "Mukherjee, Siddhartha",
     "Additional Authors": "Jan Dzierzgowski",
@@ -9505,8 +9505,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48913030,
-    "Title": "Chór zapomnianych głosów (Chór, #1)",
+    "bookId": 48913030,
+    "title": "Chór zapomnianych głosów (Chór, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -9538,8 +9538,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42421488,
-    "Title": "Ślepnąc od świateł",
+    "bookId": 42421488,
+    "title": "Ślepnąc od świateł",
     "Author": "Jakub Żulczyk",
     "Author l-f": "Żulczyk, Jakub",
     "Additional Authors": "",
@@ -9571,8 +9571,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34372678,
-    "Title": "Prowadź swój pług przez kości umarłych",
+    "bookId": 34372678,
+    "title": "Prowadź swój pług przez kości umarłych",
     "Author": "Olga Tokarczuk",
     "Author l-f": "Tokarczuk, Olga",
     "Additional Authors": "",
@@ -9604,8 +9604,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6512490,
-    "Title": "Dziewczyna, która igrała z ogniem (Millennium, #2)",
+    "bookId": 6512490,
+    "title": "Dziewczyna, która igrała z ogniem (Millennium, #2)",
     "Author": "Stieg Larsson",
     "Author l-f": "Larsson, Stieg",
     "Additional Authors": "Paulina Rosińska",
@@ -9637,8 +9637,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6512460,
-    "Title": "Mężczyźni, którzy nienawidzą kobiet (Millennium, #1)",
+    "bookId": 6512460,
+    "title": "Mężczyźni, którzy nienawidzą kobiet (Millennium, #1)",
     "Author": "Stieg Larsson",
     "Author l-f": "Larsson, Stieg",
     "Additional Authors": "Beata Walczak-Larsson",
@@ -9670,8 +9670,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7076244,
-    "Title": "Zamek z piasku, który runął (Millennium, #3)",
+    "bookId": 7076244,
+    "title": "Zamek z piasku, który runął (Millennium, #3)",
     "Author": "Stieg Larsson",
     "Author l-f": "Larsson, Stieg",
     "Additional Authors": "Alicja Rosenau",
@@ -9703,8 +9703,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25500267,
-    "Title": "Co nas nie zabije (Millennium, #4)",
+    "bookId": 25500267,
+    "title": "Co nas nie zabije (Millennium, #4)",
     "Author": "David Lagercrantz",
     "Author l-f": "Lagercrantz, David",
     "Additional Authors": "Stieg Larsson, Irena Muszalska, Maciej Muszalski",
@@ -9736,8 +9736,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6109015,
-    "Title": "Zbrodnia i kara",
+    "bookId": 6109015,
+    "title": "Zbrodnia i kara",
     "Author": "Fyodor Dostoevsky",
     "Author l-f": "Dostoevsky, Fyodor",
     "Additional Authors": "J.P. Zajączkowski, Fyodor Dostoevsky",
@@ -9769,8 +9769,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1817067,
-    "Title": "Anioły i demony (Robert Langdon, #1)",
+    "bookId": 1817067,
+    "title": "Anioły i demony (Robert Langdon, #1)",
     "Author": "Dan Brown",
     "Author l-f": "Brown, Dan",
     "Additional Authors": "Bożena Jóźwiak",
@@ -9802,8 +9802,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6534541,
-    "Title": "Drużyna Pierścienia (Władca Pierścieni, #1)",
+    "bookId": 6534541,
+    "title": "Drużyna Pierścienia (Władca Pierścieni, #1)",
     "Author": "J.R.R. Tolkien",
     "Author l-f": "Tolkien, J.R.R.",
     "Additional Authors": "Maria Skibniewska",
@@ -9835,8 +9835,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25611889,
-    "Title": "Zaklinacz deszczu",
+    "bookId": 25611889,
+    "title": "Zaklinacz deszczu",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "",
@@ -9868,8 +9868,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2643169,
-    "Title": "Kod Leonarda da Vinci (Robert Langdon, #2)",
+    "bookId": 2643169,
+    "title": "Kod Leonarda da Vinci (Robert Langdon, #2)",
     "Author": "Dan Brown",
     "Author l-f": "Brown, Dan",
     "Additional Authors": "Krzysztof Mazurek",
@@ -9901,8 +9901,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6657492,
-    "Title": "Powrót Króla (Władca Pierścieni, #3)",
+    "bookId": 6657492,
+    "title": "Powrót Króla (Władca Pierścieni, #3)",
     "Author": "J.R.R. Tolkien",
     "Author l-f": "Tolkien, J.R.R.",
     "Additional Authors": "Maria Skibniewska",
@@ -9934,8 +9934,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6534552,
-    "Title": "Dwie wieże (Władca Pierścieni, #2)",
+    "bookId": 6534552,
+    "title": "Dwie wieże (Władca Pierścieni, #2)",
     "Author": "J.R.R. Tolkien",
     "Author l-f": "Tolkien, J.R.R.",
     "Additional Authors": "Maria Skibniewska",
@@ -9967,8 +9967,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3244048,
-    "Title": "Mały Książę",
+    "bookId": 3244048,
+    "title": "Mały Książę",
     "Author": "Antoine de Saint-Exupéry",
     "Author l-f": "Saint-Exupéry, Antoine de",
     "Additional Authors": "Halina Szwykowska",
@@ -10000,8 +10000,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29223231,
-    "Title": "Shantaram (Shantaram, #1)",
+    "bookId": 29223231,
+    "title": "Shantaram (Shantaram, #1)",
     "Author": "Gregory David Roberts",
     "Author l-f": "Roberts, Gregory David",
     "Additional Authors": "Maciejka Mazan",
@@ -10033,8 +10033,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4389127,
-    "Title": "Imię róży",
+    "bookId": 4389127,
+    "title": "Imię róży",
     "Author": "Umberto Eco",
     "Author l-f": "Eco, Umberto",
     "Additional Authors": "Adam Szymanowski",
@@ -10066,8 +10066,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11834946,
-    "Title": "Król Szczurów",
+    "bookId": 11834946,
+    "title": "Król Szczurów",
     "Author": "James Clavell",
     "Author l-f": "Clavell, James",
     "Additional Authors": "",
@@ -10099,8 +10099,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35501943,
-    "Title": "Fakap, czyli moja przygoda ze start-upem",
+    "bookId": 35501943,
+    "title": "Fakap, czyli moja przygoda ze start-upem",
     "Author": "Dan Lyons",
     "Author l-f": "Lyons, Dan",
     "Additional Authors": "Monika Skowron",
@@ -10132,8 +10132,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24198619,
-    "Title": "House of Cards (Francis Urquhart, #1)",
+    "bookId": 24198619,
+    "title": "House of Cards (Francis Urquhart, #1)",
     "Author": "Michael Dobbs",
     "Author l-f": "Dobbs, Michael",
     "Additional Authors": "Agnieszka Sobolewska",
@@ -10165,8 +10165,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25742940,
-    "Title": "House of Cards. Ograć króla (Francis Urquhart, #2)",
+    "bookId": 25742940,
+    "title": "House of Cards. Ograć króla (Francis Urquhart, #2)",
     "Author": "Michael Dobbs",
     "Author l-f": "Dobbs, Michael",
     "Additional Authors": "Agnieszka Sobolewska",
@@ -10198,8 +10198,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28231694,
-    "Title": "House of Cards. Ostatnie rozdanie (Francis Urquhart, #3)",
+    "bookId": 28231694,
+    "title": "House of Cards. Ostatnie rozdanie (Francis Urquhart, #3)",
     "Author": "Michael Dobbs",
     "Author l-f": "Dobbs, Michael",
     "Additional Authors": "Agnieszka Sobolewska",
@@ -10231,8 +10231,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43294001,
-    "Title": "Ostatnie królestwo (Wojny wikingów, #1)",
+    "bookId": 43294001,
+    "title": "Ostatnie królestwo (Wojny wikingów, #1)",
     "Author": "Bernard Cornwell",
     "Author l-f": "Cornwell, Bernard",
     "Additional Authors": "Amanda Bełdowska",
@@ -10264,8 +10264,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31743184,
-    "Title": "Podział władzy (Mitch Rapp, #5)",
+    "bookId": 31743184,
+    "title": "Podział władzy (Mitch Rapp, #5)",
     "Author": "Vince Flynn",
     "Author l-f": "Flynn, Vince",
     "Additional Authors": "Jan Stanisław Zaus",
@@ -10297,8 +10297,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32742604,
-    "Title": "HTML i CSS. Zaprojektuj i zbuduj witrynę WWW",
+    "bookId": 32742604,
+    "title": "HTML i CSS. Zaprojektuj i zbuduj witrynę WWW",
     "Author": "Jon Duckett",
     "Author l-f": "Duckett, Jon",
     "Additional Authors": "Piotr Rajca",
@@ -10330,8 +10330,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40746977,
-    "Title": "JavaScript i jQuery Interaktywne strony WWW dla kazdego.: Podrecznik Front-End Developera",
+    "bookId": 40746977,
+    "title": "JavaScript i jQuery Interaktywne strony WWW dla kazdego.: Podrecznik Front-End Developera",
     "Author": "Jon Duckett",
     "Author l-f": "Duckett, Jon",
     "Additional Authors": "",
@@ -10363,8 +10363,8 @@
     "BCID": ""
   },
   {
-    "BookId": 9755563,
-    "Title": "Czysty kod. Podręcznik dobrego programisty",
+    "bookId": 9755563,
+    "title": "Czysty kod. Podręcznik dobrego programisty",
     "Author": "Robert C. Martin",
     "Author l-f": "Martin, Robert C.",
     "Additional Authors": "Paweł Gonera",
@@ -10396,8 +10396,8 @@
     "BCID": ""
   },
   {
-    "BookId": 19357402,
-    "Title": "Mistrz czystego kodu. Kodeks postępowania profesjonalnych programistów",
+    "bookId": 19357402,
+    "title": "Mistrz czystego kodu. Kodeks postępowania profesjonalnych programistów",
     "Author": "Robert C. Martin",
     "Author l-f": "Martin, Robert C.",
     "Additional Authors": "Wojciech Moch",
@@ -10429,8 +10429,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33012202,
-    "Title": "Mądrzej, szybciej, lepiej. Sekret efektywności",
+    "bookId": 33012202,
+    "title": "Mądrzej, szybciej, lepiej. Sekret efektywności",
     "Author": "Charles Duhigg",
     "Author l-f": "Duhigg, Charles",
     "Additional Authors": "Bernadeta Minakowska-Koca",
@@ -10462,8 +10462,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40805406,
-    "Title": "Praca głęboka. Jak odnieść sukces w świecie, w którym ciągle coś nas rozprasza",
+    "bookId": 40805406,
+    "title": "Praca głęboka. Jak odnieść sukces w świecie, w którym ciągle coś nas rozprasza",
     "Author": "Cal Newport",
     "Author l-f": "Newport, Cal",
     "Additional Authors": "Władysław Jeżewski",
@@ -10495,8 +10495,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42486404,
-    "Title": "Factfulness. Dlaczego świat jest lepszy, niż myślimy, czyli jak stereotypy zastąpić realną wiedzą",
+    "bookId": 42486404,
+    "title": "Factfulness. Dlaczego świat jest lepszy, niż myślimy, czyli jak stereotypy zastąpić realną wiedzą",
     "Author": "Hans Rosling",
     "Author l-f": "Rosling, Hans",
     "Additional Authors": "Ola Rosling, Anna Rosling Rönnlund, Monika Popławska",
@@ -10528,8 +10528,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10390735,
-    "Title": "Freakonomia. Świat od podszewki",
+    "bookId": 10390735,
+    "title": "Freakonomia. Świat od podszewki",
     "Author": "Steven D. Levitt",
     "Author l-f": "Levitt, Steven D.",
     "Additional Authors": "Stephen J. Dubner, Agnieszla Sobolewska",
@@ -10561,8 +10561,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10398426,
-    "Title": "Superfreakonomia. Globalne ochłodzenie, patriotyczne prostytutki i dlaczego zamachowcy - samobójcy powinni wykupić polisę na życie.",
+    "bookId": 10398426,
+    "title": "Superfreakonomia. Globalne ochłodzenie, patriotyczne prostytutki i dlaczego zamachowcy - samobójcy powinni wykupić polisę na życie.",
     "Author": "Steven D. Levitt",
     "Author l-f": "Levitt, Steven D.",
     "Additional Authors": "",
@@ -10594,8 +10594,8 @@
     "BCID": ""
   },
   {
-    "BookId": 9253814,
-    "Title": "Jak zdobyć przyjaciół i zjednać sobie ludzi",
+    "bookId": 9253814,
+    "title": "Jak zdobyć przyjaciół i zjednać sobie ludzi",
     "Author": "Dale Carnegie",
     "Author l-f": "Carnegie, Dale",
     "Additional Authors": "Paweł Cichawa",
@@ -10627,8 +10627,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16046231,
-    "Title": "Nie mów nikomu",
+    "bookId": 16046231,
+    "title": "Nie mów nikomu",
     "Author": "Harlan Coben",
     "Author l-f": "Coben, Harlan",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -10660,8 +10660,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41135654,
-    "Title": "Lalka",
+    "bookId": 41135654,
+    "title": "Lalka",
     "Author": "Bolesław Prus",
     "Author l-f": "Prus, Bolesław",
     "Additional Authors": "",
@@ -10693,8 +10693,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6459570,
-    "Title": "Wesele",
+    "bookId": 6459570,
+    "title": "Wesele",
     "Author": "Stanisław Wyspiański",
     "Author l-f": "Wyspiański, Stanisław",
     "Additional Authors": "",
@@ -10726,8 +10726,8 @@
     "BCID": ""
   },
   {
-    "BookId": 15840153,
-    "Title": "Janko Muzykant",
+    "bookId": 15840153,
+    "title": "Janko Muzykant",
     "Author": "Henryk Sienkiewicz",
     "Author l-f": "Sienkiewicz, Henryk",
     "Additional Authors": "",
@@ -10759,8 +10759,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18332417,
-    "Title": "Bobas Lubi Wybór",
+    "bookId": 18332417,
+    "title": "Bobas Lubi Wybór",
     "Author": "Gill Rapley",
     "Author l-f": "Rapley, Gill",
     "Additional Authors": "Tracey Murkett, Aleksandra Sekuła, Anna Rogozińska, Anna Zdrojewska-Żywiecka",
@@ -10792,8 +10792,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33818383,
-    "Title": "Być mężem i ojcem",
+    "bookId": 33818383,
+    "title": "Być mężem i ojcem",
     "Author": "Jesper Juul",
     "Author l-f": "Juul, Jesper",
     "Additional Authors": "Ingeborg Szöllösi, Dariusz Syska",
@@ -10825,8 +10825,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22841838,
-    "Title": "Twoje kompetentne dziecko",
+    "bookId": 22841838,
+    "title": "Twoje kompetentne dziecko",
     "Author": "Jesper Juul",
     "Author l-f": "Juul, Jesper",
     "Additional Authors": "",
@@ -10858,8 +10858,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17163378,
-    "Title": "Wywieranie wpływu na ludzi:  Teoria i praktyka",
+    "bookId": 17163378,
+    "title": "Wywieranie wpływu na ludzi:  Teoria i praktyka",
     "Author": "Robert B. Cialdini",
     "Author l-f": "Cialdini, Robert B.",
     "Additional Authors": "",
@@ -10891,8 +10891,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43788996,
-    "Title": "Nauka w kuchni. Przełomowe historie sztuki kulinarnej",
+    "bookId": 43788996,
+    "title": "Nauka w kuchni. Przełomowe historie sztuki kulinarnej",
     "Author": "Michał Kuźmiński",
     "Author l-f": "Kuźmiński, Michał",
     "Additional Authors": "",
@@ -10924,8 +10924,8 @@
     "BCID": ""
   },
   {
-    "BookId": 16163005,
-    "Title": "Mroczna wieża (Mroczna Wieża, #7)",
+    "bookId": 16163005,
+    "title": "Mroczna wieża (Mroczna Wieża, #7)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -10957,8 +10957,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476132,
-    "Title": "Pieśń Susannah (Mroczna Wieża, #6)",
+    "bookId": 6476132,
+    "title": "Pieśń Susannah (Mroczna Wieża, #6)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Krzysztof Sokołowski",
@@ -10990,8 +10990,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476130,
-    "Title": "Wilki z Calla (Mroczna Wieża, #5)",
+    "bookId": 6476130,
+    "title": "Wilki z Calla (Mroczna Wieża, #5)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -11023,8 +11023,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476128,
-    "Title": "Czarnoksiężnik i kryształ (Mroczna Wieża, #4)",
+    "bookId": 6476128,
+    "title": "Czarnoksiężnik i kryształ (Mroczna Wieża, #4)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Krzysztof Sokołowski",
@@ -11056,8 +11056,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476126,
-    "Title": "Ziemie jałowe (Mroczna Wieża, #3)",
+    "bookId": 6476126,
+    "title": "Ziemie jałowe (Mroczna Wieża, #3)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -11089,8 +11089,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476123,
-    "Title": "Powołanie trójki (Mroczna Wieża, #2)",
+    "bookId": 6476123,
+    "title": "Powołanie trójki (Mroczna Wieża, #2)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -11122,8 +11122,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6476120,
-    "Title": "Roland (Mroczna Wieża, #1)",
+    "bookId": 6476120,
+    "title": "Roland (Mroczna Wieża, #1)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Andrzej Szulc",
@@ -11155,8 +11155,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6441023,
-    "Title": "Gildia Magów (Trylogia Czarnego Maga, #1)",
+    "bookId": 6441023,
+    "title": "Gildia Magów (Trylogia Czarnego Maga, #1)",
     "Author": "Trudi Canavan",
     "Author l-f": "Canavan, Trudi",
     "Additional Authors": "Agnieszka Fulińska",
@@ -11188,8 +11188,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6531762,
-    "Title": "Komórka",
+    "bookId": 6531762,
+    "title": "Komórka",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Zbigniew A. Królicki",
@@ -11221,8 +11221,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7674103,
-    "Title": "Bastion",
+    "bookId": 7674103,
+    "title": "Bastion",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Robert P. Lipski",
@@ -11254,8 +11254,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6475808,
-    "Title": "Ręka Mistrza",
+    "bookId": 6475808,
+    "title": "Ręka Mistrza",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Michał Juszkiewicz",
@@ -11287,8 +11287,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18305596,
-    "Title": "Doktor Sen (Lśnienie, #2)",
+    "bookId": 18305596,
+    "title": "Doktor Sen (Lśnienie, #2)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Tomasz Wilusz",
@@ -11320,8 +11320,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7923725,
-    "Title": "Cmętarz zwieżąt",
+    "bookId": 7923725,
+    "title": "Cmętarz zwieżąt",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Paulina Braiter-Ziemkiewicz",
@@ -11353,8 +11353,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7870438,
-    "Title": "Pod kopułą",
+    "bookId": 7870438,
+    "title": "Pod kopułą",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Agnieszka Barbara Ciepłowska, Tomasz Wilusz",
@@ -11386,8 +11386,8 @@
     "BCID": ""
   },
   {
-    "BookId": 20442967,
-    "Title": "Pan Mercedes (Bill Hodges, #1)",
+    "bookId": 20442967,
+    "title": "Pan Mercedes (Bill Hodges, #1)",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Danuta Górska",
@@ -11419,8 +11419,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13149190,
-    "Title": "Zielona Mila",
+    "bookId": 13149190,
+    "title": "Zielona Mila",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "",
@@ -11452,8 +11452,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7514930,
-    "Title": "Carrie",
+    "bookId": 7514930,
+    "title": "Carrie",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Danuta Górska",
@@ -11485,8 +11485,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17178782,
-    "Title": "Miasteczko Salem",
+    "bookId": 17178782,
+    "title": "Miasteczko Salem",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Arkadiusz Nakoniecznik",
@@ -11518,8 +11518,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36124936,
-    "Title": "The Outsider",
+    "bookId": 36124936,
+    "title": "The Outsider",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "",
@@ -11551,8 +11551,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13148391,
-    "Title": "Dallas '63",
+    "bookId": 13148391,
+    "title": "Dallas '63",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Tomasz Wilusz",
@@ -11584,8 +11584,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23473374,
-    "Title": "Lekko Stronniczy - jeszcze więcej",
+    "bookId": 23473374,
+    "title": "Lekko Stronniczy - jeszcze więcej",
     "Author": "Włodek Markowicz",
     "Author l-f": "Markowicz, Włodek",
     "Additional Authors": "Karol Paciorek",
@@ -11617,8 +11617,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29541641,
-    "Title": "Kropki",
+    "bookId": 29541641,
+    "title": "Kropki",
     "Author": "Włodek Markowicz",
     "Author l-f": "Markowicz, Włodek",
     "Additional Authors": "",
@@ -11650,8 +11650,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34805143,
-    "Title": "Złe matki są najlepsze. Poradnik szczęśliwej mamy",
+    "bookId": 34805143,
+    "title": "Złe matki są najlepsze. Poradnik szczęśliwej mamy",
     "Author": "Matylda Kozakiewicz",
     "Author l-f": "Kozakiewicz, Matylda",
     "Additional Authors": "",
@@ -11683,8 +11683,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33823748,
-    "Title": "Sztuka zwycięstwa",
+    "bookId": 33823748,
+    "title": "Sztuka zwycięstwa",
     "Author": "Phil Knight",
     "Author l-f": "Knight, Phil",
     "Additional Authors": "",
@@ -11716,8 +11716,8 @@
     "BCID": ""
   },
   {
-    "BookId": 15720701,
-    "Title": "Helter Skelter. Prawdziwa historia morderstw Mansona",
+    "bookId": 15720701,
+    "title": "Helter Skelter. Prawdziwa historia morderstw Mansona",
     "Author": "Vincent Bugliosi",
     "Author l-f": "Bugliosi, Vincent",
     "Additional Authors": "Curt Gentry, Mirosław P. Jabłoński",
@@ -11749,8 +11749,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22221111,
-    "Title": "You Don't Know JS: ES6 & Beyond",
+    "bookId": 22221111,
+    "title": "You Don't Know JS: ES6 & Beyond",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11782,8 +11782,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22221110,
-    "Title": "You Don't Know JS: Async & Performance",
+    "bookId": 22221110,
+    "title": "You Don't Know JS: Async & Performance",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11815,8 +11815,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22221109,
-    "Title": "You Don't Know JS: Types & Grammar",
+    "bookId": 22221109,
+    "title": "You Don't Know JS: Types & Grammar",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11848,8 +11848,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22221108,
-    "Title": "You Don't Know JS: this & Object Prototypes",
+    "bookId": 22221108,
+    "title": "You Don't Know JS: this & Object Prototypes",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11881,8 +11881,8 @@
     "BCID": ""
   },
   {
-    "BookId": 20901022,
-    "Title": "You Don't Know JS: Scope and Closures (You Don't Know JS, #2)",
+    "bookId": 20901022,
+    "title": "You Don't Know JS: Scope and Closures (You Don't Know JS, #2)",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11914,8 +11914,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25136217,
-    "Title": "You Don't Know JS: Up & Going",
+    "bookId": 25136217,
+    "title": "You Don't Know JS: Up & Going",
     "Author": "Kyle Simpson",
     "Author l-f": "Simpson, Kyle",
     "Additional Authors": "",
@@ -11947,8 +11947,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24807908,
-    "Title": "Stulecie Winnych. Ci, którzy walczyli (Stulecie Winnych, #2)",
+    "bookId": 24807908,
+    "title": "Stulecie Winnych. Ci, którzy walczyli (Stulecie Winnych, #2)",
     "Author": "Ałbena Grabowska",
     "Author l-f": "Grabowska, Ałbena",
     "Additional Authors": "",
@@ -11980,8 +11980,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25077156,
-    "Title": "Stulecie Winnych. Ci którzy wierzyli (Stulecie Winnych, #3)",
+    "bookId": 25077156,
+    "title": "Stulecie Winnych. Ci którzy wierzyli (Stulecie Winnych, #3)",
     "Author": "Ałbena Grabowska",
     "Author l-f": "Grabowska, Ałbena",
     "Additional Authors": "",
@@ -12013,8 +12013,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5346,
-    "Title": "The Last Juror",
+    "bookId": 5346,
+    "title": "The Last Juror",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "",
@@ -12046,8 +12046,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5359,
-    "Title": "The Client",
+    "bookId": 5359,
+    "title": "The Client",
     "Author": "John Grisham",
     "Author l-f": "Grisham, John",
     "Additional Authors": "",
@@ -12079,8 +12079,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5358,
-    "Title": "The Firm",
+    "bookId": 5358,
+    "title": "The Firm",
     "Author": "Robin Waterfield",
     "Author l-f": "Waterfield, Robin",
     "Additional Authors": "John Grisham",
@@ -12112,8 +12112,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50883005,
-    "Title": "Żywność dla dzieci",
+    "bookId": 50883005,
+    "title": "Żywność dla dzieci",
     "Author": "Anna Makowska",
     "Author l-f": "Makowska, Anna",
     "Additional Authors": "",
@@ -12145,8 +12145,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42843821,
-    "Title": "Smart shopping. Kupuj świadomie! Żyj zdrowiej!",
+    "bookId": 42843821,
+    "title": "Smart shopping. Kupuj świadomie! Żyj zdrowiej!",
     "Author": "Anna Makowska",
     "Author l-f": "Makowska, Anna",
     "Additional Authors": "",
@@ -12178,8 +12178,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39218163,
-    "Title": "Jak mówić, żeby maluchy nas słuchały. Poradnik przetrwania dla rodziców dzieci w wieku 2-7 lat",
+    "bookId": 39218163,
+    "title": "Jak mówić, żeby maluchy nas słuchały. Poradnik przetrwania dla rodziców dzieci w wieku 2-7 lat",
     "Author": "Joanna Faber",
     "Author l-f": "Faber, Joanna",
     "Additional Authors": "Julie King, Beata Horosiewicz, Coco Faber, Tracy Faber, Sam Faber Manning",
@@ -12211,8 +12211,8 @@
     "BCID": ""
   },
   {
-    "BookId": 12529197,
-    "Title": "Jak mówić, żeby dzieci nas słuchały, jak słuchać, żeby dzieci do nas mówiły",
+    "bookId": 12529197,
+    "title": "Jak mówić, żeby dzieci nas słuchały, jak słuchać, żeby dzieci do nas mówiły",
     "Author": "Adele Faber",
     "Author l-f": "Faber, Adele",
     "Additional Authors": "Elaine Mazlish, Mariola Więznowska",
@@ -12244,8 +12244,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49987464,
-    "Title": "Pucio umie opowiadać",
+    "bookId": 49987464,
+    "title": "Pucio umie opowiadać",
     "Author": "Marta Galewska-Kustra",
     "Author l-f": "Galewska-Kustra, Marta",
     "Additional Authors": "Joanna Kłos",
@@ -12277,8 +12277,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41837354,
-    "Title": "Pucio na wakacjach",
+    "bookId": 41837354,
+    "title": "Pucio na wakacjach",
     "Author": "Marta Galewska-Kustra",
     "Author l-f": "Galewska-Kustra, Marta",
     "Additional Authors": "Joanna Kłos",
@@ -12310,8 +12310,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35426788,
-    "Title": "Pucio mówi pierwsze słowa",
+    "bookId": 35426788,
+    "title": "Pucio mówi pierwsze słowa",
     "Author": "Marta Galewska-Kustra",
     "Author l-f": "Galewska-Kustra, Marta",
     "Additional Authors": "Joanna Kłos",
@@ -12343,8 +12343,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36543756,
-    "Title": "W sercu emocji dziecka",
+    "bookId": 36543756,
+    "title": "W sercu emocji dziecka",
     "Author": "Isabelle Filliozat",
     "Author l-f": "Filliozat, Isabelle",
     "Additional Authors": "",
@@ -12376,8 +12376,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38329777,
-    "Title": "Nowe AlaAntkowe BLW",
+    "bookId": 38329777,
+    "title": "Nowe AlaAntkowe BLW",
     "Author": "Joanna Anger",
     "Author l-f": "Anger, Joanna",
     "Additional Authors": "Anna Piszczek",
@@ -12409,8 +12409,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25371676,
-    "Title": "Niesamowite przygody dziesięciu skarpetek (czterech prawych i sześciu lewych)",
+    "bookId": 25371676,
+    "title": "Niesamowite przygody dziesięciu skarpetek (czterech prawych i sześciu lewych)",
     "Author": "Justyna Bednarek",
     "Author l-f": "Bednarek, Justyna",
     "Additional Authors": "Daniel de Latour",
@@ -12442,8 +12442,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35672257,
-    "Title": "Ania. Biografia Anny Przybylskiej",
+    "bookId": 35672257,
+    "title": "Ania. Biografia Anny Przybylskiej",
     "Author": "Grzegorz Kubicki",
     "Author l-f": "Kubicki, Grzegorz",
     "Additional Authors": "Maciej Drzewicki",
@@ -12475,8 +12475,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49367594,
-    "Title": "Odporność. Czy Twoje dziecko może nie chorować?",
+    "bookId": 49367594,
+    "title": "Odporność. Czy Twoje dziecko może nie chorować?",
     "Author": "Marcin Korczyk, Pan Tabletka",
     "Author l-f": "Tabletka, Marcin Korczyk, Pan",
     "Additional Authors": "",
@@ -12508,8 +12508,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43374889,
-    "Title": "Idealny rodzic nie istnieje",
+    "bookId": 43374889,
+    "title": "Idealny rodzic nie istnieje",
     "Author": "Kamil Nowak",
     "Author l-f": "Nowak, Kamil",
     "Additional Authors": "",
@@ -12541,8 +12541,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38100384,
-    "Title": "AlaAntkowe BLW",
+    "bookId": 38100384,
+    "title": "AlaAntkowe BLW",
     "Author": "Joanna Anger",
     "Author l-f": "Anger, Joanna",
     "Additional Authors": "Anna Piszczek",
@@ -12574,8 +12574,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43328782,
-    "Title": "Rozwój seksualny dzieci",
+    "bookId": 43328782,
+    "title": "Rozwój seksualny dzieci",
     "Author": "Karolina Piotrowska",
     "Author l-f": "Piotrowska, Karolina",
     "Additional Authors": "",
@@ -12607,8 +12607,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41730732,
-    "Title": "Karmienie piersią",
+    "bookId": 41730732,
+    "title": "Karmienie piersią",
     "Author": "Magda Karpienia",
     "Author l-f": "Karpienia, Magda",
     "Additional Authors": "",
@@ -12640,8 +12640,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50874210,
-    "Title": "Jak zrozumieć małe dziecko",
+    "bookId": 50874210,
+    "title": "Jak zrozumieć małe dziecko",
     "Author": "Joanna Jeżak",
     "Author l-f": "Jeżak, Joanna",
     "Additional Authors": "Ewa Krogulska, Małgorzata Musiał, Agnieszka Nuckowska, Anna Siudut-Stajura, Olga Trybel, Magdalena Trzewik",
@@ -12673,8 +12673,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7198227,
-    "Title": "Monopol na zbawienie",
+    "bookId": 7198227,
+    "title": "Monopol na zbawienie",
     "Author": "Szymon Hołownia",
     "Author l-f": "Hołownia, Szymon",
     "Additional Authors": "",
@@ -12706,8 +12706,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5987852,
-    "Title": "Noteka 2015",
+    "bookId": 5987852,
+    "title": "Noteka 2015",
     "Author": "Konrad T. Lewandowski",
     "Author l-f": "Lewandowski, Konrad T.",
     "Additional Authors": "",
@@ -12739,8 +12739,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31201249,
-    "Title": "Sprawiedliwi zdrajcy. Sąsiedzi z Wołynia",
+    "bookId": 31201249,
+    "title": "Sprawiedliwi zdrajcy. Sąsiedzi z Wołynia",
     "Author": "Witold Szabłowski",
     "Author l-f": "Szabłowski, Witold",
     "Additional Authors": "",
@@ -12772,8 +12772,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35672076,
-    "Title": "Himalaistki. Opowieść o kobietach, które pokonały każdy szczyt",
+    "bookId": 35672076,
+    "title": "Himalaistki. Opowieść o kobietach, które pokonały każdy szczyt",
     "Author": "Mariusz Sepioło",
     "Author l-f": "Sepioło, Mariusz",
     "Additional Authors": "",
@@ -12805,8 +12805,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33842348,
-    "Title": "Polskie Archiwum X",
+    "bookId": 33842348,
+    "title": "Polskie Archiwum X",
     "Author": "Piotr Litka",
     "Author l-f": "Litka, Piotr",
     "Additional Authors": "Bogdan Michalec, Mariusz Nowak",
@@ -12838,8 +12838,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23263939,
-    "Title": "Stulecie Winnych. Ci, którzy przeżyli (Stulecie Winnych, #1)",
+    "bookId": 23263939,
+    "title": "Stulecie Winnych. Ci, którzy przeżyli (Stulecie Winnych, #1)",
     "Author": "Ałbena Grabowska",
     "Author l-f": "Grabowska, Ałbena",
     "Additional Authors": "",
@@ -12871,8 +12871,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24792507,
-    "Title": "Carte Blanche",
+    "bookId": 24792507,
+    "title": "Carte Blanche",
     "Author": "Jacek Lusiński",
     "Author l-f": "Lusiński, Jacek",
     "Additional Authors": "",
@@ -12904,8 +12904,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34925384,
-    "Title": "Wanda. Opowieść o sile życia i śmierci. Historia Wandy Rutkiewicz",
+    "bookId": 34925384,
+    "title": "Wanda. Opowieść o sile życia i śmierci. Historia Wandy Rutkiewicz",
     "Author": "Anna Kamińska",
     "Author l-f": "Kamińska, Anna",
     "Additional Authors": "",
@@ -12937,8 +12937,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7749858,
-    "Title": "Kościół dla średnio zaawansowanych",
+    "bookId": 7749858,
+    "title": "Kościół dla średnio zaawansowanych",
     "Author": "Szymon Hołownia",
     "Author l-f": "Hołownia, Szymon",
     "Additional Authors": "",
@@ -12970,8 +12970,8 @@
     "BCID": ""
   },
   {
-    "BookId": 9634870,
-    "Title": "Bóg. Życie i twórczość",
+    "bookId": 9634870,
+    "title": "Bóg. Życie i twórczość",
     "Author": "Szymon Hołownia",
     "Author l-f": "Hołownia, Szymon",
     "Additional Authors": "",
@@ -13003,8 +13003,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13588846,
-    "Title": "Wiedźmin (Saga o Wiedźminie, #1-7)",
+    "bookId": 13588846,
+    "title": "Wiedźmin (Saga o Wiedźminie, #1-7)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -13036,8 +13036,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44668242,
-    "Title": "Taśmy rodzinne",
+    "bookId": 44668242,
+    "title": "Taśmy rodzinne",
     "Author": "Maciej Marcisz",
     "Author l-f": "Marcisz, Maciej",
     "Additional Authors": "",
@@ -13069,8 +13069,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1206024,
-    "Title": "Lokomotywa",
+    "bookId": 1206024,
+    "title": "Lokomotywa",
     "Author": "Julian Tuwim",
     "Author l-f": "Tuwim, Julian",
     "Additional Authors": "",
@@ -13102,8 +13102,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6751636,
-    "Title": "Brzechwa dzieciom",
+    "bookId": 6751636,
+    "title": "Brzechwa dzieciom",
     "Author": "Jan Brzechwa",
     "Author l-f": "Brzechwa, Jan",
     "Additional Authors": "Jan Marcin Szancer",
@@ -13135,8 +13135,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4565028,
-    "Title": "Sposób na Alcybiadesa",
+    "bookId": 4565028,
+    "title": "Sposób na Alcybiadesa",
     "Author": "Edmund Niziurski",
     "Author l-f": "Niziurski, Edmund",
     "Additional Authors": "",
@@ -13168,8 +13168,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6998781,
-    "Title": "Mendel Gdański",
+    "bookId": 6998781,
+    "title": "Mendel Gdański",
     "Author": "Maria Konopnicka",
     "Author l-f": "Konopnicka, Maria",
     "Additional Authors": "",
@@ -13201,8 +13201,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2373909,
-    "Title": "Kroniki Jakuba Wędrowycza (Kroniki Jakuba Wędrowycza, #1)",
+    "bookId": 2373909,
+    "title": "Kroniki Jakuba Wędrowycza (Kroniki Jakuba Wędrowycza, #1)",
     "Author": "Andrzej Pilipiuk",
     "Author l-f": "Pilipiuk, Andrzej",
     "Additional Authors": "",
@@ -13234,8 +13234,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2484198,
-    "Title": "Lód",
+    "bookId": 2484198,
+    "title": "Lód",
     "Author": "Jacek Dukaj",
     "Author l-f": "Dukaj, Jacek",
     "Additional Authors": "",
@@ -13267,8 +13267,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1127386,
-    "Title": "Achaja. Tom I (Achaja, #1)",
+    "bookId": 1127386,
+    "title": "Achaja. Tom I (Achaja, #1)",
     "Author": "Andrzej Ziemiański",
     "Author l-f": "Ziemiański, Andrzej",
     "Additional Authors": "",
@@ -13300,8 +13300,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1862543,
-    "Title": "Mitologia: wierzenia i podania Greków i Rzymian",
+    "bookId": 1862543,
+    "title": "Mitologia: wierzenia i podania Greków i Rzymian",
     "Author": "Jan Parandowski",
     "Author l-f": "Parandowski, Jan",
     "Additional Authors": "",
@@ -13333,8 +13333,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1692524,
-    "Title": "Akademia Pana Kleksa (Pan Kleks #1)",
+    "bookId": 1692524,
+    "title": "Akademia Pana Kleksa (Pan Kleks #1)",
     "Author": "Jan Brzechwa",
     "Author l-f": "Brzechwa, Jan",
     "Additional Authors": "",
@@ -13366,8 +13366,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1610457,
-    "Title": "Ten obcy (Ten obcy, #1)",
+    "bookId": 1610457,
+    "title": "Ten obcy (Ten obcy, #1)",
     "Author": "Irena Jurgielewiczowa",
     "Author l-f": "Jurgielewiczowa, Irena",
     "Additional Authors": "",
@@ -13399,8 +13399,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1264957,
-    "Title": "Syzyfowe prace",
+    "bookId": 1264957,
+    "title": "Syzyfowe prace",
     "Author": "Stefan Żeromski",
     "Author l-f": "Żeromski, Stefan",
     "Additional Authors": "",
@@ -13432,8 +13432,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1841696,
-    "Title": "Dziady",
+    "bookId": 1841696,
+    "title": "Dziady",
     "Author": "Adam Mickiewicz",
     "Author l-f": "Mickiewicz, Adam",
     "Additional Authors": "",
@@ -13465,8 +13465,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2151148,
-    "Title": "Balladyna",
+    "bookId": 2151148,
+    "title": "Balladyna",
     "Author": "Juliusz Słowacki",
     "Author l-f": "Słowacki, Juliusz",
     "Additional Authors": "",
@@ -13498,8 +13498,8 @@
     "BCID": ""
   },
   {
-    "BookId": 15581,
-    "Title": "Ferdydurke",
+    "bookId": 15581,
+    "title": "Ferdydurke",
     "Author": "Witold Gombrowicz",
     "Author l-f": "Gombrowicz, Witold",
     "Additional Authors": "Danuta Borchardt",
@@ -13531,8 +13531,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6085450,
-    "Title": "Wywiad z wampirem (Kroniki wampirów, #1)",
+    "bookId": 6085450,
+    "title": "Wywiad z wampirem (Kroniki wampirów, #1)",
     "Author": "Anne Rice",
     "Author l-f": "Rice, Anne",
     "Additional Authors": "Tomasz Olszewski",
@@ -13564,8 +13564,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22317655,
-    "Title": "Pochłaniacz (Cztery żywioły Saszy Załuskiej, #1)",
+    "bookId": 22317655,
+    "title": "Pochłaniacz (Cztery żywioły Saszy Załuskiej, #1)",
     "Author": "Katarzyna Bonda",
     "Author l-f": "Bonda, Katarzyna",
     "Additional Authors": "",
@@ -13597,8 +13597,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52749040,
-    "Title": "Rana",
+    "bookId": 52749040,
+    "title": "Rana",
     "Author": "Wojciech Chmielarz",
     "Author l-f": "Chmielarz, Wojciech",
     "Additional Authors": "",
@@ -13630,8 +13630,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39708866,
-    "Title": "Żmijowisko",
+    "bookId": 39708866,
+    "title": "Żmijowisko",
     "Author": "Wojciech Chmielarz",
     "Author l-f": "Chmielarz, Wojciech",
     "Additional Authors": "",
@@ -13663,8 +13663,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4099,
-    "Title": "The Pragmatic Programmer: From Journeyman to Master",
+    "bookId": 4099,
+    "title": "The Pragmatic Programmer: From Journeyman to Master",
     "Author": "Andy Hunt",
     "Author l-f": "Hunt, Andy",
     "Additional Authors": "Dave Thomas",
@@ -13696,8 +13696,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50522825,
-    "Title": "Cyfrodziewczyny. Pionierki polskiej informatyki",
+    "bookId": 50522825,
+    "title": "Cyfrodziewczyny. Pionierki polskiej informatyki",
     "Author": "Karolina Wasielewska",
     "Author l-f": "Wasielewska, Karolina",
     "Additional Authors": "",
@@ -13729,8 +13729,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13537168,
-    "Title": "4-godzinny tydzień pracy",
+    "bookId": 13537168,
+    "title": "4-godzinny tydzień pracy",
     "Author": "Timothy Ferriss",
     "Author l-f": "Ferriss, Timothy",
     "Additional Authors": "Anita Doroba",
@@ -13762,8 +13762,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17161472,
-    "Title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
+    "bookId": 17161472,
+    "title": "Pułapki myślenia. O myśleniu szybkim i wolnym",
     "Author": "Daniel Kahneman",
     "Author l-f": "Kahneman, Daniel",
     "Additional Authors": "Piotr Szymczak",
@@ -13795,8 +13795,8 @@
     "BCID": ""
   },
   {
-    "BookId": 51871482,
-    "Title": "Przepis na człowieka. Czyli krótki wstęp do odpowiedzi na pytanie: dlaczego jesteśmy, jacy jesteśmy",
+    "bookId": 51871482,
+    "title": "Przepis na człowieka. Czyli krótki wstęp do odpowiedzi na pytanie: dlaczego jesteśmy, jacy jesteśmy",
     "Author": "Dawid Myśliwiec",
     "Author l-f": "Myśliwiec, Dawid",
     "Additional Authors": "",
@@ -13828,8 +13828,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36278842,
-    "Title": "Włam się do mózgu",
+    "bookId": 36278842,
+    "title": "Włam się do mózgu",
     "Author": "Radosław Kotarski",
     "Author l-f": "Kotarski, Radosław",
     "Additional Authors": "",
@@ -13861,8 +13861,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25984914,
-    "Title": "Bloger i Social Media",
+    "bookId": 25984914,
+    "title": "Bloger i Social Media",
     "Author": "Tomek Tomczyk",
     "Author l-f": "Tomczyk, Tomek",
     "Additional Authors": "",
@@ -13894,8 +13894,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29916101,
-    "Title": "Social Media: Start",
+    "bookId": 29916101,
+    "title": "Social Media: Start",
     "Author": "Tomek Tomczyk",
     "Author l-f": "Tomczyk, Tomek",
     "Additional Authors": "",
@@ -13927,8 +13927,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18630878,
-    "Title": "Blog. Pisz, kreuj, zarabiaj",
+    "bookId": 18630878,
+    "title": "Blog. Pisz, kreuj, zarabiaj",
     "Author": "Tomek Tomczyk",
     "Author l-f": "Tomczyk, Tomek",
     "Additional Authors": "",
@@ -13960,8 +13960,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34376032,
-    "Title": "Spod zamarzniętych powiek",
+    "bookId": 34376032,
+    "title": "Spod zamarzniętych powiek",
     "Author": "Adam Bielecki",
     "Author l-f": "Bielecki, Adam",
     "Additional Authors": "Dominik Szczepański",
@@ -13993,8 +13993,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25804418,
-    "Title": "Kuba",
+    "bookId": 25804418,
+    "title": "Kuba",
     "Author": "Jakub Błaszczykowski",
     "Author l-f": "Błaszczykowski, Jakub",
     "Additional Authors": "Małgorzata Domagalik",
@@ -14026,8 +14026,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42515796,
-    "Title": "Kuba Wojewódzki. Nieautoryzowana autobiografia",
+    "bookId": 42515796,
+    "title": "Kuba Wojewódzki. Nieautoryzowana autobiografia",
     "Author": "Kuba Wojewódzki",
     "Author l-f": "Wojewódzki, Kuba",
     "Additional Authors": "",
@@ -14059,8 +14059,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25541028,
-    "Title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+    "bookId": 25541028,
+    "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
     "Author": "Ashlee Vance",
     "Author l-f": "Vance, Ashlee",
     "Additional Authors": "Эшли Вэнс",
@@ -14092,8 +14092,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29616650,
-    "Title": "Elżbieta II. O czym nie mówi królowa?",
+    "bookId": 29616650,
+    "title": "Elżbieta II. O czym nie mówi królowa?",
     "Author": "Marek Rybarczyk",
     "Author l-f": "Rybarczyk, Marek",
     "Additional Authors": "",
@@ -14125,8 +14125,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52726817,
-    "Title": "Czarni",
+    "bookId": 52726817,
+    "title": "Czarni",
     "Author": "Paweł Reszka",
     "Author l-f": "Reszka, Paweł",
     "Additional Authors": "",
@@ -14158,8 +14158,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30095423,
-    "Title": "Chciwość. Jak nas oszukują wielkie firmy",
+    "bookId": 30095423,
+    "title": "Chciwość. Jak nas oszukują wielkie firmy",
     "Author": "Paweł Reszka",
     "Author l-f": "Reszka, Paweł",
     "Additional Authors": "",
@@ -14191,8 +14191,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40053823,
-    "Title": "Mali bogowie 2. Jak umierają Polacy",
+    "bookId": 40053823,
+    "title": "Mali bogowie 2. Jak umierają Polacy",
     "Author": "Paweł Reszka",
     "Author l-f": "Reszka, Paweł",
     "Additional Authors": "",
@@ -14224,8 +14224,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34834217,
-    "Title": "Mali bogowie. O znieczulicy polskich lekarzy",
+    "bookId": 34834217,
+    "title": "Mali bogowie. O znieczulicy polskich lekarzy",
     "Author": "Paweł Reszka",
     "Author l-f": "Reszka, Paweł",
     "Additional Authors": "",
@@ -14257,8 +14257,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42013360,
-    "Title": "Agonia. Lekarze i pacjenci w stanie krytycznym",
+    "bookId": 42013360,
+    "title": "Agonia. Lekarze i pacjenci w stanie krytycznym",
     "Author": "Paweł Kapusta",
     "Author l-f": "Kapusta, Paweł",
     "Additional Authors": "",
@@ -14290,8 +14290,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55023642,
-    "Title": "Pandemia. Raport z frontu",
+    "bookId": 55023642,
+    "title": "Pandemia. Raport z frontu",
     "Author": "Paweł Kapusta",
     "Author l-f": "Kapusta, Paweł",
     "Additional Authors": "",
@@ -14323,8 +14323,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39465117,
-    "Title": "Zaufanie, czyli waluta przyszłości. Moja droga od zera do 7 milionów z bloga",
+    "bookId": 39465117,
+    "title": "Zaufanie, czyli waluta przyszłości. Moja droga od zera do 7 milionów z bloga",
     "Author": "Michał Szafrański",
     "Author l-f": "Szafrański, Michał",
     "Additional Authors": "",
@@ -14356,8 +14356,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29151508,
-    "Title": "Finansowy ninja",
+    "bookId": 29151508,
+    "title": "Finansowy ninja",
     "Author": "Michał Szafrański",
     "Author l-f": "Szafrański, Michał",
     "Additional Authors": "",
@@ -14389,8 +14389,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17699395,
-    "Title": "Siła nawyku",
+    "bookId": 17699395,
+    "title": "Siła nawyku",
     "Author": "Charles Duhigg",
     "Author l-f": "Duhigg, Charles",
     "Additional Authors": "Małgorzata Guzowska",
@@ -14422,8 +14422,8 @@
     "BCID": ""
   },
   {
-    "BookId": 20830437,
-    "Title": "CSS Secrets: Better Solutions to Everyday Web Design Problems",
+    "bookId": 20830437,
+    "title": "CSS Secrets: Better Solutions to Everyday Web Design Problems",
     "Author": "Lea Verou",
     "Author l-f": "Verou, Lea",
     "Additional Authors": "",
@@ -14455,8 +14455,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6649292,
-    "Title": "CSS: The Missing Manual",
+    "bookId": 6649292,
+    "title": "CSS: The Missing Manual",
     "Author": "David Sawyer McFarland",
     "Author l-f": "McFarland, David Sawyer",
     "Additional Authors": "",
@@ -14488,8 +14488,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1760441,
-    "Title": "Head First JavaScript",
+    "bookId": 1760441,
+    "title": "Head First JavaScript",
     "Author": "Michael Morrison",
     "Author l-f": "Morrison, Michael",
     "Additional Authors": "",
@@ -14521,8 +14521,8 @@
     "BCID": ""
   },
   {
-    "BookId": 58128,
-    "Title": "Head First Design Patterns",
+    "bookId": 58128,
+    "title": "Head First Design Patterns",
     "Author": "Eric Freeman",
     "Author l-f": "Freeman, Eric",
     "Additional Authors": "Kathy Sierra, Bert Bates, Elisabeth Robson",
@@ -14554,8 +14554,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33921439,
-    "Title": "Object-Oriented JavaScript",
+    "bookId": 33921439,
+    "title": "Object-Oriented JavaScript",
     "Author": "Ved Antani",
     "Author l-f": "Antani, Ved",
     "Additional Authors": "Stoyan Stefanov",
@@ -14587,8 +14587,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53018848,
-    "Title": "Pomocnik kata",
+    "bookId": 53018848,
+    "title": "Pomocnik kata",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14620,8 +14620,8 @@
     "BCID": ""
   },
   {
-    "BookId": 26526967,
-    "Title": "Arena szczurów",
+    "bookId": 26526967,
+    "title": "Arena szczurów",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14653,8 +14653,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44782911,
-    "Title": "Dziewczyna o czterech palcach",
+    "bookId": 44782911,
+    "title": "Dziewczyna o czterech palcach",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14686,8 +14686,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25506720,
-    "Title": "Umarli mają głos. Prawdziwe historie.",
+    "bookId": 25506720,
+    "title": "Umarli mają głos. Prawdziwe historie.",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "Jerzy Kawecki",
@@ -14719,8 +14719,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23015956,
-    "Title": "Władca liczb",
+    "bookId": 23015956,
+    "title": "Władca liczb",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14752,8 +14752,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18298715,
-    "Title": "W otchłani mroku",
+    "bookId": 18298715,
+    "title": "W otchłani mroku",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14785,8 +14785,8 @@
     "BCID": ""
   },
   {
-    "BookId": 11081449,
-    "Title": "Liczby Charona",
+    "bookId": 11081449,
+    "title": "Liczby Charona",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14818,8 +14818,8 @@
     "BCID": ""
   },
   {
-    "BookId": 8170474,
-    "Title": "Erynie",
+    "bookId": 8170474,
+    "title": "Erynie",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14851,8 +14851,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53154599,
-    "Title": "Mock. Golem (Eberhard Mock, #11)",
+    "bookId": 53154599,
+    "title": "Mock. Golem (Eberhard Mock, #11)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14884,8 +14884,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55299718,
-    "Title": "Moloch (Eberhard Mock, #12)",
+    "bookId": 55299718,
+    "title": "Moloch (Eberhard Mock, #12)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14917,8 +14917,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31839592,
-    "Title": "Mock (Eberhard Mock, #8)",
+    "bookId": 31839592,
+    "title": "Mock (Eberhard Mock, #8)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14950,8 +14950,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35501953,
-    "Title": "Mock. Ludzkie zoo (Eberhard Mock, #9)",
+    "bookId": 35501953,
+    "title": "Mock. Ludzkie zoo (Eberhard Mock, #9)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -14983,8 +14983,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41215018,
-    "Title": "Mock. Pojedynek (Eberhard Mock, #10)",
+    "bookId": 41215018,
+    "title": "Mock. Pojedynek (Eberhard Mock, #10)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15016,8 +15016,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13615723,
-    "Title": "Rzeki Hadesu",
+    "bookId": 13615723,
+    "title": "Rzeki Hadesu",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15049,8 +15049,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6387304,
-    "Title": "Głowa Minotaura (Eberhard Mock, #6)",
+    "bookId": 6387304,
+    "title": "Głowa Minotaura (Eberhard Mock, #6)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15082,8 +15082,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3454363,
-    "Title": "Dżuma w Breslau (Eberhard Mock, #5)",
+    "bookId": 3454363,
+    "title": "Dżuma w Breslau (Eberhard Mock, #5)",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15115,8 +15115,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2108179,
-    "Title": "Festung Breslau",
+    "bookId": 2108179,
+    "title": "Festung Breslau",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "Paulina Schulz",
@@ -15148,8 +15148,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3454392,
-    "Title": "Widma w mieście Breslau",
+    "bookId": 3454392,
+    "title": "Widma w mieście Breslau",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15181,8 +15181,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2102387,
-    "Title": "Koniec świata w Breslau",
+    "bookId": 2102387,
+    "title": "Koniec świata w Breslau",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15214,8 +15214,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2102386,
-    "Title": "Śmierć w Breslau",
+    "bookId": 2102386,
+    "title": "Śmierć w Breslau",
     "Author": "Marek Krajewski",
     "Author l-f": "Krajewski, Marek",
     "Additional Authors": "",
@@ -15247,8 +15247,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35785615,
-    "Title": "Początek (Robert Langdon, #5)",
+    "bookId": 35785615,
+    "title": "Początek (Robert Langdon, #5)",
     "Author": "Dan Brown",
     "Author l-f": "Brown, Dan",
     "Additional Authors": "Paweł Cichawa",
@@ -15280,8 +15280,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33408933,
-    "Title": "Córka Stalina",
+    "bookId": 33408933,
+    "title": "Córka Stalina",
     "Author": "Rosemary Sullivan",
     "Author l-f": "Sullivan, Rosemary",
     "Additional Authors": "",
@@ -15313,8 +15313,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50083526,
-    "Title": "Czarnobyl. Historia nuklearnej katastrofy",
+    "bookId": 50083526,
+    "title": "Czarnobyl. Historia nuklearnej katastrofy",
     "Author": "Serhii Plokhy",
     "Author l-f": "Plokhy, Serhii",
     "Additional Authors": "Marek Fedyszak",
@@ -15346,8 +15346,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43474355,
-    "Title": "Żydzi 2 (Opowieści niepoprawne politycznie, #4)",
+    "bookId": 43474355,
+    "title": "Żydzi 2 (Opowieści niepoprawne politycznie, #4)",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15379,8 +15379,8 @@
     "BCID": ""
   },
   {
-    "BookId": 49230710,
-    "Title": "Wołyń zdradzony, czyli jak dowództwo AK porzuciło Polaków na pastwę UPA",
+    "bookId": 49230710,
+    "title": "Wołyń zdradzony, czyli jak dowództwo AK porzuciło Polaków na pastwę UPA",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15412,8 +15412,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36115401,
-    "Title": "Niemcy (Opowieści niepoprawne politycznie, #3)",
+    "bookId": 36115401,
+    "title": "Niemcy (Opowieści niepoprawne politycznie, #3)",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15445,8 +15445,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38895787,
-    "Title": "Skazy na pancerzach. Czarne karty epopei Żołnierzy Wyklętych",
+    "bookId": 38895787,
+    "title": "Skazy na pancerzach. Czarne karty epopei Żołnierzy Wyklętych",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15478,8 +15478,8 @@
     "BCID": ""
   },
   {
-    "BookId": 32669707,
-    "Title": "Sowieci (Opowieści niepoprawne politycznie, #2)",
+    "bookId": 32669707,
+    "title": "Sowieci (Opowieści niepoprawne politycznie, #2)",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15511,8 +15511,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29919844,
-    "Title": "Żydzi (Opowieści niepoprawne politycznie, #1)",
+    "bookId": 29919844,
+    "title": "Żydzi (Opowieści niepoprawne politycznie, #1)",
     "Author": "Piotr Zychowicz",
     "Author l-f": "Zychowicz, Piotr",
     "Additional Authors": "",
@@ -15544,8 +15544,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23559866,
-    "Title": "Miasto 44",
+    "bookId": 23559866,
+    "title": "Miasto 44",
     "Author": "Marcin Mastalerz",
     "Author l-f": "Mastalerz, Marcin",
     "Additional Authors": "",
@@ -15577,8 +15577,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40202782,
-    "Title": "Dziewczyny z Wołynia",
+    "bookId": 40202782,
+    "title": "Dziewczyny z Wołynia",
     "Author": "Anna Herbich",
     "Author l-f": "Herbich, Anna",
     "Additional Authors": "",
@@ -15610,8 +15610,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25302361,
-    "Title": "Dziewczyny z Syberii",
+    "bookId": 25302361,
+    "title": "Dziewczyny z Syberii",
     "Author": "Anna Herbich",
     "Author l-f": "Herbich, Anna",
     "Additional Authors": "",
@@ -15643,8 +15643,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22396790,
-    "Title": "Dziewczyny z Powstania",
+    "bookId": 22396790,
+    "title": "Dziewczyny z Powstania",
     "Author": "Anna Herbich",
     "Author l-f": "Herbich, Anna",
     "Additional Authors": "",
@@ -15676,8 +15676,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6535446,
-    "Title": "Tysiąc wspaniałych słońc",
+    "bookId": 6535446,
+    "title": "Tysiąc wspaniałych słońc",
     "Author": "Khaled Hosseini",
     "Author l-f": "Hosseini, Khaled",
     "Additional Authors": "Anna Jęczmyk",
@@ -15709,8 +15709,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42933,
-    "Title": "Tai-Pan (Asian Saga, #2)",
+    "bookId": 42933,
+    "title": "Tai-Pan (Asian Saga, #2)",
     "Author": "James Clavell",
     "Author l-f": "Clavell, James",
     "Additional Authors": "",
@@ -15742,8 +15742,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52382796,
-    "Title": "Shōgun",
+    "bookId": 52382796,
+    "title": "Shōgun",
     "Author": "James Clavell",
     "Author l-f": "Clavell, James",
     "Additional Authors": "",
@@ -15775,8 +15775,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2010685,
-    "Title": "Bieguni",
+    "bookId": 2010685,
+    "title": "Bieguni",
     "Author": "Olga Tokarczuk",
     "Author l-f": "Tokarczuk, Olga",
     "Additional Authors": "",
@@ -15808,8 +15808,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7667542,
-    "Title": "Opowieść podręcznej",
+    "bookId": 7667542,
+    "title": "Opowieść podręcznej",
     "Author": "Margaret Atwood",
     "Author l-f": "Atwood, Margaret",
     "Additional Authors": "Zofia Uhrynowska-Hanasz",
@@ -15841,8 +15841,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33639434,
-    "Title": "Lion. Droga do domu",
+    "bookId": 33639434,
+    "title": "Lion. Droga do domu",
     "Author": "Saroo Brierley",
     "Author l-f": "Brierley, Saroo",
     "Additional Authors": "Małgorzata Kafel",
@@ -15874,8 +15874,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33868472,
-    "Title": "Milczenie",
+    "bookId": 33868472,
+    "title": "Milczenie",
     "Author": "Shūsaku Endō",
     "Author l-f": "Endō, Shūsaku",
     "Additional Authors": "Izabela Denysenko",
@@ -15907,8 +15907,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23515648,
-    "Title": "Na granicy zmysłów",
+    "bookId": 23515648,
+    "title": "Na granicy zmysłów",
     "Author": "Przemek Kossakowski",
     "Author l-f": "Kossakowski, Przemek",
     "Additional Authors": "",
@@ -15940,8 +15940,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25498179,
-    "Title": "Temat na pierwszą stronę",
+    "bookId": 25498179,
+    "title": "Temat na pierwszą stronę",
     "Author": "Umberto Eco",
     "Author l-f": "Eco, Umberto",
     "Additional Authors": "Krzysztof Żaboklicki",
@@ -15973,8 +15973,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25928423,
-    "Title": "THORN",
+    "bookId": 25928423,
+    "title": "THORN",
     "Author": "Jason Hunt",
     "Author l-f": "Hunt, Jason",
     "Additional Authors": "",
@@ -16006,8 +16006,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6411961,
-    "Title": "The Lost Symbol (Robert Langdon, #3)",
+    "bookId": 6411961,
+    "title": "The Lost Symbol (Robert Langdon, #3)",
     "Author": "Dan Brown",
     "Author l-f": "Brown, Dan",
     "Additional Authors": "",
@@ -16039,8 +16039,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5470,
-    "Title": 1984,
+    "bookId": 5470,
+    "title": 1984,
     "Author": "George Orwell",
     "Author l-f": "Orwell, George",
     "Additional Authors": "Erich Fromm, Regina Silveira, Amazing Améziane, Marcelo Pen, Golo Mann, Harald Sachse, Irving Howe, Raymond Williams, Thomas Pynchon, Homi K. Bhabha, Martha C. Nussbaum, Bernard Crick, George Packer",
@@ -16072,8 +16072,8 @@
     "BCID": ""
   },
   {
-    "BookId": 2696239,
-    "Title": "Ludzie bezdomni",
+    "bookId": 2696239,
+    "title": "Ludzie bezdomni",
     "Author": "Stefan Żeromski",
     "Author l-f": "Żeromski, Stefan",
     "Additional Authors": "",
@@ -16105,8 +16105,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1841669,
-    "Title": "Zemsta",
+    "bookId": 1841669,
+    "title": "Zemsta",
     "Author": "Aleksander Fredro",
     "Author l-f": "Fredro, Aleksander",
     "Additional Authors": "",
@@ -16138,8 +16138,8 @@
     "BCID": ""
   },
   {
-    "BookId": 881508,
-    "Title": "Pan Tadeusz",
+    "bookId": 881508,
+    "title": "Pan Tadeusz",
     "Author": "Adam Mickiewicz",
     "Author l-f": "Mickiewicz, Adam",
     "Additional Authors": "Kenneth R. MacKenzie",
@@ -16171,8 +16171,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41865,
-    "Title": "Twilight (The Twilight Saga, #1)",
+    "bookId": 41865,
+    "title": "Twilight (The Twilight Saga, #1)",
     "Author": "Stephenie Meyer",
     "Author l-f": "Meyer, Stephenie",
     "Additional Authors": "",
@@ -16204,8 +16204,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3221683,
-    "Title": "Latarnik",
+    "bookId": 3221683,
+    "title": "Latarnik",
     "Author": "Henryk Sienkiewicz",
     "Author l-f": "Sienkiewicz, Henryk",
     "Additional Authors": "",
@@ -16237,8 +16237,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3221687,
-    "Title": "Kamienie na szaniec",
+    "bookId": 3221687,
+    "title": "Kamienie na szaniec",
     "Author": "Aleksander Kamiński",
     "Author l-f": "Kamiński, Aleksander",
     "Additional Authors": "",
@@ -16270,8 +16270,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21395678,
-    "Title": "Lalka - tom 3",
+    "bookId": 21395678,
+    "title": "Lalka - tom 3",
     "Author": "Bolesław Prus",
     "Author l-f": "Prus, Bolesław",
     "Additional Authors": "",
@@ -16303,8 +16303,8 @@
     "BCID": ""
   },
   {
-    "BookId": 17832942,
-    "Title": "Lalka - tom 2",
+    "bookId": 17832942,
+    "title": "Lalka - tom 2",
     "Author": "Bolesław Prus",
     "Author l-f": "Prus, Bolesław",
     "Additional Authors": "",
@@ -16336,8 +16336,8 @@
     "BCID": ""
   },
   {
-    "BookId": 21395671,
-    "Title": "Lalka - tom 1",
+    "bookId": 21395671,
+    "title": "Lalka - tom 1",
     "Author": "Bolesław Prus",
     "Author l-f": "Prus, Bolesław",
     "Additional Authors": "",
@@ -16369,8 +16369,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4417509,
-    "Title": "Sonety krymskie",
+    "bookId": 4417509,
+    "title": "Sonety krymskie",
     "Author": "Adam Mickiewicz",
     "Author l-f": "Mickiewicz, Adam",
     "Additional Authors": "",
@@ -16402,8 +16402,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4497715,
-    "Title": "Śluby panieńskie",
+    "bookId": 4497715,
+    "title": "Śluby panieńskie",
     "Author": "Aleksander Fredro",
     "Author l-f": "Fredro, Aleksander",
     "Additional Authors": "",
@@ -16435,8 +16435,8 @@
     "BCID": ""
   },
   {
-    "BookId": 4501440,
-    "Title": "Odprawa posłów greckich",
+    "bookId": 4501440,
+    "title": "Odprawa posłów greckich",
     "Author": "Jan Kochanowski",
     "Author l-f": "Kochanowski, Jan",
     "Additional Authors": "",
@@ -16468,8 +16468,8 @@
     "BCID": ""
   },
   {
-    "BookId": 13137962,
-    "Title": "Nielegalni (Nielegalni, #1)",
+    "bookId": 13137962,
+    "title": "Nielegalni (Nielegalni, #1)",
     "Author": "Vincent V. Severski",
     "Author l-f": "Severski, Vincent V.",
     "Additional Authors": "",
@@ -16501,8 +16501,8 @@
     "BCID": ""
   },
   {
-    "BookId": 5907,
-    "Title": "The Hobbit, or There and Back Again",
+    "bookId": 5907,
+    "title": "The Hobbit, or There and Back Again",
     "Author": "J.R.R. Tolkien",
     "Author l-f": "Tolkien, J.R.R.",
     "Additional Authors": "Douglas A. Anderson",
@@ -16534,8 +16534,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1812654,
-    "Title": "Boży bojownicy (Trylogia husycka, #2)",
+    "bookId": 1812654,
+    "title": "Boży bojownicy (Trylogia husycka, #2)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "Barbara Samborska, Евгений Вайсброт",
@@ -16567,8 +16567,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1812595,
-    "Title": "Narrenturm (Trylogia husycka, #1)",
+    "bookId": 1812595,
+    "title": "Narrenturm (Trylogia husycka, #1)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -16600,8 +16600,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1812661,
-    "Title": "Lux perpetua (Trylogia husycka, #3)",
+    "bookId": 1812661,
+    "title": "Lux perpetua (Trylogia husycka, #3)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -16633,8 +16633,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28823225,
-    "Title": "Zakonnice odchodzą po cichu",
+    "bookId": 28823225,
+    "title": "Zakonnice odchodzą po cichu",
     "Author": "Marta Abramowicz",
     "Author l-f": "Abramowicz, Marta",
     "Additional Authors": "",
@@ -16666,8 +16666,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18245945,
-    "Title": "Archipelag Gułag 1918-1956. Tom 1-3",
+    "bookId": 18245945,
+    "title": "Archipelag Gułag 1918-1956. Tom 1-3",
     "Author": "Aleksandr Solzhenitsyn",
     "Author l-f": "Solzhenitsyn, Aleksandr",
     "Additional Authors": "",
@@ -16699,8 +16699,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31817750,
-    "Title": "Król",
+    "bookId": 31817750,
+    "title": "Król",
     "Author": "Szczepan Twardoch",
     "Author l-f": "Twardoch, Szczepan",
     "Additional Authors": "",
@@ -16732,8 +16732,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39150261,
-    "Title": "Cień wiatru (Cmentarz Zapomnianych Książek, #1)",
+    "bookId": 39150261,
+    "title": "Cień wiatru (Cmentarz Zapomnianych Książek, #1)",
     "Author": "Carlos Ruiz Zafón",
     "Author l-f": "Zafón, Carlos Ruiz",
     "Additional Authors": "Beata Fabjańska-Potapczuk, Carlos Marrodán Casas",
@@ -16765,8 +16765,8 @@
     "BCID": ""
   },
   {
-    "BookId": 40130191,
-    "Title": "A ja żem jej powiedziała...",
+    "bookId": 40130191,
+    "title": "A ja żem jej powiedziała...",
     "Author": "Katarzyna Nosowska",
     "Author l-f": "Nosowska, Katarzyna",
     "Additional Authors": "",
@@ -16798,8 +16798,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41073028,
-    "Title": "Chrobot. Życie najzwyklejszych ludzi świata",
+    "bookId": 41073028,
+    "title": "Chrobot. Życie najzwyklejszych ludzi świata",
     "Author": "Tomasz Michniewicz",
     "Author l-f": "Michniewicz, Tomasz",
     "Additional Authors": "",
@@ -16831,8 +16831,8 @@
     "BCID": ""
   },
   {
-    "BookId": 95558,
-    "Title": "Solaris",
+    "bookId": 95558,
+    "title": "Solaris",
     "Author": "Stanisław Lem",
     "Author l-f": "Lem, Stanisław",
     "Additional Authors": "Steve Cox, Joanna Kilmartin",
@@ -16864,8 +16864,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52269471,
-    "Title": "Mindf*ck: Cambridge Analytica and the Plot to Break America",
+    "bookId": 52269471,
+    "title": "Mindf*ck: Cambridge Analytica and the Plot to Break America",
     "Author": "Christopher Wylie",
     "Author l-f": "Wylie, Christopher",
     "Additional Authors": "",
@@ -16897,8 +16897,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48552824,
-    "Title": "Pobudzeni. Skąd się wzięły hormony i jak kontrolują w zasadzie wszystko",
+    "bookId": 48552824,
+    "title": "Pobudzeni. Skąd się wzięły hormony i jak kontrolują w zasadzie wszystko",
     "Author": "Randi Hutter Epstein",
     "Author l-f": "Epstein, Randi Hutter",
     "Additional Authors": "Jacek Konieczny",
@@ -16930,8 +16930,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50240321,
-    "Title": "Król darknetu. Polowanie na genialnego cyberprzestępcę",
+    "bookId": 50240321,
+    "title": "Król darknetu. Polowanie na genialnego cyberprzestępcę",
     "Author": "Nick Bilton",
     "Author l-f": "Bilton, Nick",
     "Additional Authors": "Rafał Lisowski",
@@ -16963,8 +16963,8 @@
     "BCID": ""
   },
   {
-    "BookId": 53128362,
-    "Title": "Prawa epidemii. Skąd się epidemie biorą i czemu wygasają?",
+    "bookId": 53128362,
+    "title": "Prawa epidemii. Skąd się epidemie biorą i czemu wygasają?",
     "Author": "Adam Kucharski",
     "Author l-f": "Kucharski, Adam",
     "Additional Authors": "Jowita Maksymowicz-Hamann",
@@ -16996,8 +16996,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42817250,
-    "Title": "O pisaniu. Na chłodno",
+    "bookId": 42817250,
+    "title": "O pisaniu. Na chłodno",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17029,8 +17029,8 @@
     "BCID": ""
   },
   {
-    "BookId": 30114877,
-    "Title": "W cieniu prawa",
+    "bookId": 30114877,
+    "title": "W cieniu prawa",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17062,8 +17062,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55671421,
-    "Title": "Halny (Komisarz Forst, #6)",
+    "bookId": 55671421,
+    "title": "Halny (Komisarz Forst, #6)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17095,8 +17095,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42186173,
-    "Title": "Władza absolutna (W kręgach władzy, #3)",
+    "bookId": 42186173,
+    "title": "Władza absolutna (W kręgach władzy, #3)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17128,8 +17128,8 @@
     "BCID": ""
   },
   {
-    "BookId": 55186855,
-    "Title": "Precedens (Chyłka i Zordon, #12)",
+    "bookId": 55186855,
+    "title": "Precedens (Chyłka i Zordon, #12)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17161,8 +17161,8 @@
     "BCID": ""
   },
   {
-    "BookId": 43536281,
-    "Title": "Nieodgadniona (Damian Werner, #2)",
+    "bookId": 43536281,
+    "title": "Nieodgadniona (Damian Werner, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17194,8 +17194,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36339656,
-    "Title": "Większość bezwzględna (W kręgach władzy, #2)",
+    "bookId": 36339656,
+    "title": "Większość bezwzględna (W kręgach władzy, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17227,8 +17227,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50368841,
-    "Title": "Głosy z zaświatów (Seweryn Zaorski, #2)",
+    "bookId": 50368841,
+    "title": "Głosy z zaświatów (Seweryn Zaorski, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17260,8 +17260,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35542049,
-    "Title": "Czarna Madonna",
+    "bookId": 35542049,
+    "title": "Czarna Madonna",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17293,8 +17293,8 @@
     "BCID": ""
   },
   {
-    "BookId": 50821951,
-    "Title": "Iluzjonista (Gerard Edling, #2)",
+    "bookId": 50821951,
+    "title": "Iluzjonista (Gerard Edling, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17326,8 +17326,8 @@
     "BCID": ""
   },
   {
-    "BookId": 39801954,
-    "Title": "Zerwa (Komisarz Forst, #5)",
+    "bookId": 39801954,
+    "title": "Zerwa (Komisarz Forst, #5)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17359,8 +17359,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34741355,
-    "Title": "Deniwelacja (Komisarz Forst, #4)",
+    "bookId": 34741355,
+    "title": "Deniwelacja (Komisarz Forst, #4)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17392,8 +17392,8 @@
     "BCID": ""
   },
   {
-    "BookId": 33012577,
-    "Title": "Wotum nieufności (W kręgach władzy, #1)",
+    "bookId": 33012577,
+    "title": "Wotum nieufności (W kręgach władzy, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17425,8 +17425,8 @@
     "BCID": ""
   },
   {
-    "BookId": 44049757,
-    "Title": "Umorzenie (Chyłka i Zordon, #9)",
+    "bookId": 44049757,
+    "title": "Umorzenie (Chyłka i Zordon, #9)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17458,8 +17458,8 @@
     "BCID": ""
   },
   {
-    "BookId": 45133430,
-    "Title": "Listy zza grobu (Seweryn Zaorski, #1)",
+    "bookId": 45133430,
+    "title": "Listy zza grobu (Seweryn Zaorski, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17491,8 +17491,8 @@
     "BCID": ""
   },
   {
-    "BookId": 41279221,
-    "Title": "Kontratyp (Chyłka i Zordon, #8)",
+    "bookId": 41279221,
+    "title": "Kontratyp (Chyłka i Zordon, #8)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17524,8 +17524,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28960674,
-    "Title": "Trawers (Komisarz Forst, #3)",
+    "bookId": 28960674,
+    "title": "Trawers (Komisarz Forst, #3)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17557,8 +17557,8 @@
     "BCID": ""
   },
   {
-    "BookId": 38469411,
-    "Title": "Testament (Chyłka i Zordon, #7)",
+    "bookId": 38469411,
+    "title": "Testament (Chyłka i Zordon, #7)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17590,8 +17590,8 @@
     "BCID": ""
   },
   {
-    "BookId": 26242288,
-    "Title": "Przewieszenie (Komisarz Forst, #2)",
+    "bookId": 26242288,
+    "title": "Przewieszenie (Komisarz Forst, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17623,8 +17623,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35652319,
-    "Title": "Oskarżenie (Chyłka i Zordon, #6)",
+    "bookId": 35652319,
+    "title": "Oskarżenie (Chyłka i Zordon, #6)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17656,8 +17656,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25647979,
-    "Title": "Ekspozycja (Komisarz Forst, #1)",
+    "bookId": 25647979,
+    "title": "Ekspozycja (Komisarz Forst, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17689,8 +17689,8 @@
     "BCID": ""
   },
   {
-    "BookId": 37819172,
-    "Title": "Nieodnaleziona (Damian Werner, #1)",
+    "bookId": 37819172,
+    "title": "Nieodnaleziona (Damian Werner, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17722,8 +17722,8 @@
     "BCID": ""
   },
   {
-    "BookId": 34097694,
-    "Title": "Inwigilacja (Chyłka i Zordon, #5)",
+    "bookId": 34097694,
+    "title": "Inwigilacja (Chyłka i Zordon, #5)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17755,8 +17755,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31194209,
-    "Title": "Immunitet (Chyłka i Zordon, #4)",
+    "bookId": 31194209,
+    "title": "Immunitet (Chyłka i Zordon, #4)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17788,8 +17788,8 @@
     "BCID": ""
   },
   {
-    "BookId": 31378224,
-    "Title": "Behawiorysta (Gerard Edling, #1)",
+    "bookId": 31378224,
+    "title": "Behawiorysta (Gerard Edling, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17821,8 +17821,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28225503,
-    "Title": "Rewizja (Chyłka i Zordon, #3)",
+    "bookId": 28225503,
+    "title": "Rewizja (Chyłka i Zordon, #3)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17854,8 +17854,8 @@
     "BCID": ""
   },
   {
-    "BookId": 25781338,
-    "Title": "Zaginięcie (Chyłka i Zordon, #2)",
+    "bookId": 25781338,
+    "title": "Zaginięcie (Chyłka i Zordon, #2)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17887,8 +17887,8 @@
     "BCID": ""
   },
   {
-    "BookId": 24448535,
-    "Title": "Kasacja (Chyłka i Zordon, #1)",
+    "bookId": 24448535,
+    "title": "Kasacja (Chyłka i Zordon, #1)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17920,8 +17920,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52290961,
-    "Title": "Ekstradycja (Chyłka i Zordon, #11)",
+    "bookId": 52290961,
+    "title": "Ekstradycja (Chyłka i Zordon, #11)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17953,8 +17953,8 @@
     "BCID": ""
   },
   {
-    "BookId": 52288183,
-    "Title": "Wyrok (Chyłka i Zordon, #10)",
+    "bookId": 52288183,
+    "title": "Wyrok (Chyłka i Zordon, #10)",
     "Author": "Remigiusz Mróz",
     "Author l-f": "Mróz, Remigiusz",
     "Additional Authors": "",
@@ -17986,8 +17986,8 @@
     "BCID": ""
   },
   {
-    "BookId": 48660357,
-    "Title": "Światy równoległe. Czego uczą nas płaskoziemcy, homeopaci i różdżkarze",
+    "bookId": 48660357,
+    "title": "Światy równoległe. Czego uczą nas płaskoziemcy, homeopaci i różdżkarze",
     "Author": "Łukasz Lamża",
     "Author l-f": "Lamża, Łukasz",
     "Additional Authors": "",
@@ -18019,8 +18019,8 @@
     "BCID": ""
   },
   {
-    "BookId": 42414413,
-    "Title": "Nie ma",
+    "bookId": 42414413,
+    "title": "Nie ma",
     "Author": "Mariusz Szczygieł",
     "Author l-f": "Szczygieł, Mariusz",
     "Additional Authors": "",
@@ -18052,8 +18052,8 @@
     "BCID": ""
   },
   {
-    "BookId": 3013682,
-    "Title": "Diuna (Kroniki Diuny, #1)",
+    "bookId": 3013682,
+    "title": "Diuna (Kroniki Diuny, #1)",
     "Author": "Frank Herbert",
     "Author l-f": "Herbert, Frank",
     "Additional Authors": "Marek Marszał, Wojciech Siudmak",
@@ -18085,8 +18085,8 @@
     "BCID": ""
   },
   {
-    "BookId": 45026417,
-    "Title": "Narodziny pigułki",
+    "bookId": 45026417,
+    "title": "Narodziny pigułki",
     "Author": "Jonathan Eig",
     "Author l-f": "Eig, Jonathan",
     "Additional Authors": "Jan Dzierzgowski",
@@ -18118,8 +18118,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1876829,
-    "Title": "Coś się kończy, coś się zaczyna",
+    "bookId": 1876829,
+    "title": "Coś się kończy, coś się zaczyna",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "José María Faraldo",
@@ -18151,8 +18151,8 @@
     "BCID": ""
   },
   {
-    "BookId": 68455,
-    "Title": "Wieża Jaskółki (Saga o Wiedźminie, #4)",
+    "bookId": 68455,
+    "title": "Wieża Jaskółki (Saga o Wiedźminie, #4)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -18184,8 +18184,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1128437,
-    "Title": "Miecz przeznaczenia (Saga o Wiedźminie, #0.7)",
+    "bookId": 1128437,
+    "title": "Miecz przeznaczenia (Saga o Wiedźminie, #0.7)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -18217,8 +18217,8 @@
     "BCID": ""
   },
   {
-    "BookId": 68453,
-    "Title": "Czas pogardy (Saga o Wiedźminie, #2)",
+    "bookId": 68453,
+    "title": "Czas pogardy (Saga o Wiedźminie, #2)",
     "Author": "Andrzej Sapkowski",
     "Author l-f": "Sapkowski, Andrzej",
     "Additional Authors": "",
@@ -18250,8 +18250,8 @@
     "BCID": ""
   },
   {
-    "BookId": 1837781,
-    "Title": "Krótka historia czasu",
+    "bookId": 1837781,
+    "title": "Krótka historia czasu",
     "Author": "Stephen Hawking",
     "Author l-f": "Hawking, Stephen",
     "Additional Authors": "Piotr Amsterdamski",
@@ -18283,8 +18283,8 @@
     "BCID": ""
   },
   {
-    "BookId": 23199866,
-    "Title": "Księgi Jakubowe",
+    "bookId": 23199866,
+    "title": "Księgi Jakubowe",
     "Author": "Olga Tokarczuk",
     "Author l-f": "Tokarczuk, Olga",
     "Additional Authors": "",
@@ -18316,8 +18316,8 @@
     "BCID": ""
   },
   {
-    "BookId": 10136168,
-    "Title": "Walka o ogień: jak gotowanie stworzyło człowieka",
+    "bookId": 10136168,
+    "title": "Walka o ogień: jak gotowanie stworzyło człowieka",
     "Author": "Richard W. Wrangham",
     "Author l-f": "Wrangham, Richard W.",
     "Additional Authors": "Anna E. Eichler",
@@ -18349,8 +18349,8 @@
     "BCID": ""
   },
   {
-    "BookId": 18750155,
-    "Title": "Męska plaga. Seks, pożądanie i kłopoty z prostatą",
+    "bookId": 18750155,
+    "title": "Męska plaga. Seks, pożądanie i kłopoty z prostatą",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Mateusz Borowski",
@@ -18382,8 +18382,8 @@
     "BCID": ""
   },
   {
-    "BookId": 35556453,
-    "Title": "Dawna medycyna. Jej tajemnica i potęga. Egipt, Babilonia, Indie, Chiny, Meksyk, Peru",
+    "bookId": 35556453,
+    "title": "Dawna medycyna. Jej tajemnica i potęga. Egipt, Babilonia, Indie, Chiny, Meksyk, Peru",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Albin Bandurski, Janina Szczaniecka",
@@ -18415,8 +18415,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7770074,
-    "Title": "Godzina detektywów",
+    "bookId": 7770074,
+    "title": "Godzina detektywów",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Jerzy Dumański, Kazimierz Jaegermann, Krystyna Jaegermann, Jan Markiewicz",
@@ -18448,8 +18448,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7770140,
-    "Title": "Triumf chirurgów",
+    "bookId": 7770140,
+    "title": "Triumf chirurgów",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Albin Bandurski, Janina Sczaniecka",
@@ -18481,8 +18481,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6316377,
-    "Title": "Stulecie chirurgów",
+    "bookId": 6316377,
+    "title": "Stulecie chirurgów",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Karol Bunsch",
@@ -18514,8 +18514,8 @@
     "BCID": ""
   },
   {
-    "BookId": 6376446,
-    "Title": "Stulecie detektywów. Drogi i przygody kryminalistyki",
+    "bookId": 6376446,
+    "title": "Stulecie detektywów. Drogi i przygody kryminalistyki",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Karol Bunsch, Wanda Kragen",
@@ -18547,8 +18547,8 @@
     "BCID": ""
   },
   {
-    "BookId": 28047578,
-    "Title": "Ginekolodzy",
+    "bookId": 28047578,
+    "title": "Ginekolodzy",
     "Author": "Jürgen Thorwald",
     "Author l-f": "Thorwald, Jürgen",
     "Additional Authors": "Anna Wziątek",
@@ -18580,8 +18580,8 @@
     "BCID": ""
   },
   {
-    "BookId": 22403427,
-    "Title": "The Adventures of Sherlock Holmes",
+    "bookId": 22403427,
+    "title": "The Adventures of Sherlock Holmes",
     "Author": "Arthur Conan Doyle",
     "Author l-f": "Doyle, Arthur Conan",
     "Additional Authors": "",
@@ -18613,8 +18613,8 @@
     "BCID": ""
   },
   {
-    "BookId": 7126,
-    "Title": "The Count of Monte Cristo",
+    "bookId": 7126,
+    "title": "The Count of Monte Cristo",
     "Author": "Alexandre Dumas",
     "Author l-f": "Dumas, Alexandre",
     "Additional Authors": "Robin Buss",
@@ -18646,8 +18646,8 @@
     "BCID": ""
   },
   {
-    "BookId": 29920252,
-    "Title": "Małe życie",
+    "bookId": 29920252,
+    "title": "Małe życie",
     "Author": "Hanya Yanagihara",
     "Author l-f": "Yanagihara, Hanya",
     "Additional Authors": "Jolanta Kozak",
@@ -18679,8 +18679,8 @@
     "BCID": ""
   },
   {
-    "BookId": 36318500,
-    "Title": "Jak zawsze",
+    "bookId": 36318500,
+    "title": "Jak zawsze",
     "Author": "Zygmunt Miloszewski",
     "Author l-f": "Miloszewski, Zygmunt",
     "Additional Authors": "",
@@ -18712,8 +18712,8 @@
     "BCID": ""
   },
   {
-    "BookId": 830502,
-    "Title": "It",
+    "bookId": 830502,
+    "title": "It",
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "",
