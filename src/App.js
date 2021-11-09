@@ -1,9 +1,7 @@
 import './App.css';
 import React from "react";
 import {useEffect, useState} from "react";
-import axios from "axios";
-
-const BASE_URL = 'http://localhost:4000/books'
+import BooksApi from "./api";
 
 const App = () => {
 
@@ -14,34 +12,25 @@ const App = () => {
   const [randomBook, setRandomBook] = useState(null)
 
   useEffect( () => {
-    const getBooks = async () => {
-    const response = await axios.get(BASE_URL)
-    setBooks(response.data)}
-      getBooks();
+    BooksApi.getAllBooks().then(books => setBooks(books));
   },[]);
 
   useEffect( () => {
-    const getBooksToRead = async () => {
-      const response = await axios.get(BASE_URL)
-     const toRead = response.data.filter(book => book.exclusiveShelf === 'to-read')
-      setBooksToRead(toRead)}
-    getBooksToRead();
+    BooksApi.getAllBooks().then(books => {
+      const toRead = books.filter(book => book.exclusiveShelf === 'to-read')
+      setBooksToRead(toRead)})
   },[]);
 
   useEffect( () => {
-    const getBooksRead = async () => {
-      const response = await axios.get(BASE_URL)
-      const read = response.data.filter(book => book.exclusiveShelf === 'read')
-      setBooksRead(read)}
-    getBooksRead();
+    BooksApi.getAllBooks().then(books => {
+      const read = books.filter(book => book.exclusiveShelf === 'read')
+      setBooksRead(read)})
   },[]);
 
   useEffect( () => {
-    const getCurrentBooks = async () => {
-      const response = await axios.get(BASE_URL)
-      const current = response.data.filter(book => book.exclusiveShelf === 'currently-reading')
-      setCurrentBooks(current)}
-    getCurrentBooks();
+    BooksApi.getAllBooks().then(books => {
+      const currently = books.filter(book => book.exclusiveShelf === 'currently-reading')
+      setCurrentBooks(currently)})
   },[]);
 
   const getRandomBook = () => {
@@ -50,11 +39,14 @@ const App = () => {
         setRandomBook(randomBook.title)
     }
 
-
   return (
     <div>
       <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
       <p>Kolejna książka do przeczytania: {randomBook}</p>
+      <details><summary>Wszystkie książki</summary>
+        {books.map(book => (
+            <p key={book.bookId}>{book.title}</p>))}
+      </details>
       <details><summary>Do przeczytania</summary>
       {booksToRead.map(book => (
       <p key={book.bookId}>{book.title}</p>))}
