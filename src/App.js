@@ -1,4 +1,5 @@
 import './App.css';
+import React from "react";
 import {useEffect, useState} from "react";
 import axios from "axios";
 
@@ -11,7 +12,6 @@ const App = () => {
   const [booksRead, setBooksRead] = useState([])
   const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
-  const [bookCover, setBookCover] = useState(null)
 
   useEffect( () => {
     const getBooks = async () => {
@@ -23,7 +23,7 @@ const App = () => {
   useEffect( () => {
     const getBooksToRead = async () => {
       const response = await axios.get(BASE_URL)
-     const toRead = response.data.filter(book => book.ExclusiveShelf === 'to-read')
+     const toRead = response.data.filter(book => book.exclusiveShelf === 'to-read')
       setBooksToRead(toRead)}
     getBooksToRead();
   },[]);
@@ -31,7 +31,7 @@ const App = () => {
   useEffect( () => {
     const getBooksRead = async () => {
       const response = await axios.get(BASE_URL)
-      const read = response.data.filter(book => book.ExclusiveShelf === 'read')
+      const read = response.data.filter(book => book.exclusiveShelf === 'read')
       setBooksRead(read)}
     getBooksRead();
   },[]);
@@ -39,7 +39,7 @@ const App = () => {
   useEffect( () => {
     const getCurrentBooks = async () => {
       const response = await axios.get(BASE_URL)
-      const current = response.data.filter(book => book.ExclusiveShelf === 'currently-reading')
+      const current = response.data.filter(book => book.exclusiveShelf === 'currently-reading')
       setCurrentBooks(current)}
     getCurrentBooks();
   },[]);
@@ -55,18 +55,20 @@ const App = () => {
     <div>
       <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
       <p>Kolejna książka do przeczytania: {randomBook}</p>
-      <h1>Do przeczytania</h1>
-        {booksToRead.map(book => (
-            <p key={book.bookId}>{book.title}</p>
-            ))}
-      <h1>Przeczytane</h1>
+      <details><summary>Do przeczytania</summary>
+      {booksToRead.map(book => (
+      <p key={book.bookId}>{book.title}</p>))}
+    </details>
+      <details><summary>Przeczytane</summary>
       {booksRead.map(book => (
           <p key={book.bookId}>{book.title}</p>
       ))}
-      <h1>Obecnie czytane</h1>
+      </details>
+      <details><summary>Obecnie czytane</summary>
       {currentBooks.map(book => (
           <p key={book.bookId}>{book.title}</p>
       ))}
+      </details>
     </div>
   );
 }
