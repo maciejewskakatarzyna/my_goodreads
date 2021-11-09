@@ -11,6 +11,7 @@ const App = () => {
   const [booksRead, setBooksRead] = useState([])
   const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
+  const [bookCover, setBookCover] = useState(null)
 
   useEffect( () => {
     const getBooks = async () => {
