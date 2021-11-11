@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = 'http://localhost:4000/books/'
-const BooksApi = {
+const BooksAPI = {
     getAllBooks: async function() {
         const response = await axios.get(BASE_URL)
         const books = response.data
@@ -22,11 +22,11 @@ const BooksApi = {
         return replacedBook;
     },
     removeBook: async function(bookToRemove) {
-        if (!bookToRemove.id) {
-            throw new Error("Book has to have an id to be updated");
+        if (!bookToRemove) {
+            throw new Error("Book has to have an id to be removed");
         }
-        await axios.delete(`${BASE_URL}/${bookToRemove.id}`)
+        await axios.delete(`${BASE_URL}/${bookToRemove}`)
     }
 }
 
-export default BooksApi;
+export default BooksAPI;
