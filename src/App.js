@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 import BooksAPI from "./api";
 
 const App = () => {
@@ -39,16 +39,33 @@ const App = () => {
         setRandomBook(randomBook.title)
     }
 
-  const newBook = {
-    "id": 99999,
-    "title": "Kolejna dodana książka",
-    "author": "Jakiś Autor",
-  }
+
+  const titleInput = useRef(null);
+  const authorInput = useRef(null);
+  const coverInput = useRef(null);
 
   const handleAddBook = (book) => {
     BooksAPI.addBook(book).then(
         (bookToAdd) => setBooks([...books, bookToAdd])
     )
+  }
+
+
+  let newBook = {}
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    newBook = {
+      title: titleInput.current.value,
+      author: authorInput.current.value,
+      cover: coverInput.current.value,
+    };
+    handleAddBook(newBook)
+
+    titleInput.current.value = "";
+    authorInput.current.value = "";
+    coverInput.current.value = "";
+
   }
 
   const handleRemoveBook = (id) => {
@@ -60,15 +77,24 @@ const App = () => {
             })
   }
 
-
   return (
     <div>
       <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
-      <button onClick={() => handleAddBook(newBook)}>DODAJ KSIĄŻKĘ</button>
+
+      <form onSubmit={handleSubmit}>
+        <label>Tytuł<input type="text" ref={titleInput}/></label>
+        <label>Autor<input type="text" ref={authorInput}/></label>
+        <label>Okładka<input type="text" ref={coverInput}/></label>
+        <button>DODAJ KSIĄŻKĘ</button>
+      </form>
+
       <p>Kolejna książka do przeczytania: {randomBook}</p>
       <details><summary>Wszystkie książki</summary>
         {books.map(book => (
-            <p key={book.id}>{book.title}<button onClick={() => handleRemoveBook(book.id)}>Usuń</button></p>
+            <>
+            <p key={book.id}>{book.title}</p>
+          <button onClick={() => handleRemoveBook(book.id)}>Usuń</button>
+            </>
         ))}
       </details>
       <details><summary>Do przeczytania</summary>
