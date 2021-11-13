@@ -562,39 +562,6 @@
       "BCID": ""
     },
     {
-      "id": 57449357,
-      "title": "Świat bez kobiet. Płeć w polskim życiu publicznym",
-      "author": "Agnieszka Graff",
-      "authorLF": "Graff, Agnieszka",
-      "additionalAuthors": "",
-      "ISBN": "=\"8366671992",
-      "ISBN13": "=\"9788366671997",
-      "myRating": 0,
-      "averageRating": 4.2,
-      "publisher": "Marginesy",
-      "binding": "Paperback",
-      "numberOfPages": 420,
-      "yearPublished": 2021,
-      "originalPublicationYear": 2002,
-      "dateRead": "",
-      "dateAdded": "2021/07/21",
-      "bookshelves": "currently-reading",
-      "bookshelvesWithPositions": "currently-reading (#2)",
-      "exclusiveShelf": "currently-reading",
-      "cover": "",
-      "spoiler": "",
-      "privateNotes": "",
-      "readCount": 1,
-      "recommendedFor": "",
-      "recommendedBy": "",
-      "ownedCopies": 0,
-      "originalPurchaseDate": "",
-      "originalPurchaseLocation": "",
-      "condition": "",
-      "conditionDescription": "",
-      "BCID": ""
-    },
-    {
       "id": 18338962,
       "title": "Obłęd '44. Czyli jak Polacy zrobili prezent Stalinowi, wywołując Powstanie Warszawskie",
       "author": "Piotr Zychowicz",
@@ -18580,72 +18547,6 @@
       "BCID": ""
     },
     {
-      "id": 22403427,
-      "title": "The Adventures of Sherlock Holmes",
-      "author": "Arthur Conan Doyle",
-      "authorLF": "Doyle, Arthur Conan",
-      "additionalAuthors": "",
-      "ISBN": "=\"",
-      "ISBN13": "=\"",
-      "myRating": 0,
-      "averageRating": 4.29,
-      "publisher": "The Easton Press",
-      "binding": "Leather Bound",
-      "numberOfPages": 764,
-      "yearPublished": "",
-      "originalPublicationYear": 1892,
-      "dateRead": "",
-      "dateAdded": "2021/01/20",
-      "bookshelves": "to-read",
-      "bookshelvesWithPositions": "to-read (#1)",
-      "exclusiveShelf": "to-read",
-      "cover": "",
-      "spoiler": "",
-      "privateNotes": "",
-      "readCount": 0,
-      "recommendedFor": "",
-      "recommendedBy": "",
-      "ownedCopies": 0,
-      "originalPurchaseDate": "",
-      "originalPurchaseLocation": "",
-      "condition": "",
-      "conditionDescription": "",
-      "BCID": ""
-    },
-    {
-      "id": 7126,
-      "title": "The Count of Monte Cristo",
-      "author": "Alexandre Dumas",
-      "authorLF": "Dumas, Alexandre",
-      "additionalAuthors": "Robin Buss",
-      "ISBN": "=\"0140449264",
-      "ISBN13": "=\"9780140449266",
-      "myRating": 0,
-      "averageRating": 4.26,
-      "publisher": "Penguin Classics",
-      "binding": "Paperback",
-      "numberOfPages": 1276,
-      "yearPublished": 2003,
-      "originalPublicationYear": 1844,
-      "dateRead": "",
-      "dateAdded": "2021/01/20",
-      "bookshelves": "",
-      "bookshelvesWithPositions": "",
-      "exclusiveShelf": "read",
-      "cover": "",
-      "spoiler": "",
-      "privateNotes": "",
-      "readCount": 1,
-      "recommendedFor": "",
-      "recommendedBy": "",
-      "ownedCopies": 0,
-      "originalPurchaseDate": "",
-      "originalPurchaseLocation": "",
-      "condition": "",
-      "conditionDescription": "",
-      "BCID": ""
-    },
-    {
       "id": 29920252,
       "title": "Małe życie",
       "author": "Hanya Yanagihara",
@@ -18745,10 +18646,327 @@
       "BCID": ""
     },
     {
-      "title": "aaa",
-      "author": "bbb",
-      "cover": "ccc",
+      "title": "przeczytane",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
       "id": 58483666
+    },
+    {
+      "title": "aktualnie",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483667
+    },
+    {
+      "title": "dodddd",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483668
+    },
+    {
+      "title": "przecz",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483669
+    },
+    {
+      "title": "aaaaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483670
+    },
+    {
+      "title": "bbbbbb",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483671
+    },
+    {
+      "title": "ccccccc",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483672
+    },
+    {
+      "title": "aaaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483673
+    },
+    {
+      "title": "aaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483674
+    },
+    {
+      "title": "aaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483675
+    },
+    {
+      "title": "aaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": false,
+      "id": 58483676
+    },
+    {
+      "title": "aaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": false,
+      "id": 58483677
+    },
+    {
+      "title": "ssss",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": false,
+      "id": 58483678
+    },
+    {
+      "title": "aaaa",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": false,
+      "id": 58483679
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": false,
+      "id": 58483680
+    },
+    {
+      "title": "ddd",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": true,
+      "id": 58483681
+    },
+    {
+      "title": "aaaa",
+      "author": "",
+      "cover": "",
+      "id": 58483682
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "id": 58483683
+    },
+    {
+      "title": "ddd",
+      "author": "",
+      "cover": "",
+      "id": 58483684
+    },
+    {
+      "title": "aaa",
+      "author": "",
+      "cover": "",
+      "id": 58483685
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "id": 58483686
+    },
+    {
+      "title": "ddd",
+      "author": "",
+      "cover": "",
+      "id": 58483687
+    },
+    {
+      "title": "aaa",
+      "author": "",
+      "cover": "",
+      "id": 58483688
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "id": 58483689
+    },
+    {
+      "title": "dd",
+      "author": "",
+      "cover": "",
+      "id": 58483690
+    },
+    {
+      "title": "aaa",
+      "author": "",
+      "cover": "",
+      "id": 58483691
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "id": 58483692
+    },
+    {
+      "title": "sss",
+      "author": "",
+      "cover": "",
+      "id": 58483693
+    },
+    {
+      "title": "hhh",
+      "author": "",
+      "cover": "",
+      "id": 58483694
+    },
+    {
+      "title": "hh",
+      "author": "",
+      "cover": "",
+      "id": 58483695
+    },
+    {
+      "title": "hh",
+      "author": "",
+      "cover": "",
+      "id": 58483696
+    },
+    {
+      "title": "kk",
+      "author": "",
+      "cover": "",
+      "id": 58483697
+    },
+    {
+      "title": "ll",
+      "author": "",
+      "cover": "",
+      "id": 58483698
+    },
+    {
+      "title": ";;;",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483699
+    },
+    {
+      "title": "ll",
+      "author": "",
+      "cover": "",
+      "id": 58483700
+    },
+    {
+      "title": ";;",
+      "author": "",
+      "cover": "",
+      "id": 58483701
+    },
+    {
+      "title": "''",
+      "author": "",
+      "cover": "",
+      "id": 58483702
+    },
+    {
+      "title": "11",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "read",
+      "id": 58483703
+    },
+    {
+      "title": "22",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "to-read",
+      "id": 58483704
+    },
+    {
+      "title": "333",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483705
+    },
+    {
+      "title": "111111",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "read",
+      "id": 58483706
+    },
+    {
+      "title": "22222",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "to-read",
+      "id": 58483707
+    },
+    {
+      "title": "33333",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483708
+    },
+    {
+      "title": "444444",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483709
+    },
+    {
+      "title": "444444",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483710
+    },
+    {
+      "title": "888888",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483711
+    },
+    {
+      "title": "000000",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483712
+    },
+    {
+      "title": "555555",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483713
+    },
+    {
+      "title": "555555",
+      "author": "",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483714
     }
   ]
 }
