@@ -18651,6 +18651,34 @@
       "cover": "",
       "exclusiveShelf": "to-read",
       "id": 58483667
+    },
+    {
+      "title": "nowa",
+      "author": "autor",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483668
+    },
+    {
+      "title": "nowa",
+      "author": "autor",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58483669
+    },
+    {
+      "title": "poprzednia",
+      "author": "aaa",
+      "cover": "",
+      "exclusiveShelf": "read",
+      "id": 58483671
+    },
+    {
+      "title": "aaa",
+      "author": "aaa",
+      "cover": "",
+      "exclusiveShelf": "to-read",
+      "id": 58483673
     }
   ]
 }
