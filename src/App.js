@@ -2,6 +2,8 @@ import './App.css';
 import React from "react";
 import {useEffect, useState, useRef} from "react";
 import BooksAPI from "./api";
+import Header from "./components/Header";
+import RandomBook from "./components/RandomBook";
 
 const App = () => {
 
@@ -9,7 +11,6 @@ const App = () => {
   const [booksToRead, setBooksToRead] = useState([])
   const [booksRead, setBooksRead] = useState([])
   const [currentBooks, setCurrentBooks] = useState([])
-  const [randomBook, setRandomBook] = useState(null)
 
   useEffect( () => {
     BooksAPI.getAllBooks().then(books => setBooks(books));
@@ -33,11 +34,6 @@ const App = () => {
       setCurrentBooks(currently)})
   },[]);
 
-  const getRandomBook = () => {
-      const randomBook =
-         booksToRead[Math.floor(Math.random() * booksToRead.length)];
-        setRandomBook(randomBook.title)
-    }
 
   const titleInput = useRef(null);
   const authorInput = useRef(null);
@@ -135,9 +131,8 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
-      <p>Kolejna książka do przeczytania: {randomBook}</p>
-
+      <Header />
+      <RandomBook booksToRead={booksToRead}/>
       <form onSubmit={handleSubmit}>
         <label>Tytuł<input type="text" ref={titleInput}/></label>
         <label>Autor<input type="text" ref={authorInput}/></label>
@@ -160,7 +155,7 @@ const App = () => {
       {booksToRead.map(book => (
           <>
             <p key={book.id}>{book.title}</p>
-            <button onClick={() => handleRemoveBook(book.id, 'toRead')}>Usuń</button>
+            <button onClick={() => handleRemoveBook(book.id, 'to-read')}>Usuń</button>
           </>
       ))}
     </details>
