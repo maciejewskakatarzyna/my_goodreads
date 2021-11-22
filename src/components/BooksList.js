@@ -1,11 +1,13 @@
 import React from "react";
 import Book from "./Book";
+import '../index.css';
 
-const BookList = ({books, setBooks}) => {
+
+const BooksList = ({books, setBooks}) => {
 
 
     return (
-        <ul>
+        <ul className="bookList">
             <p>Wszystkie książki</p>
             {books.map(book => (
                 <Book book={book} books={books} setBooks={setBooks}/>
@@ -14,4 +16,4 @@ const BookList = ({books, setBooks}) => {
     )
 }
 
-export default BookList
+export default BooksList

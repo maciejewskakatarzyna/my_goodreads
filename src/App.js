@@ -1,11 +1,11 @@
-import './App.css';
+import './index.css';
 import React from "react";
 import {useEffect, useState, useRef} from "react";
 import BooksAPI from "./api";
 import Header from "./components/Header";
 import RandomBook from "./components/RandomBook";
 import AddBookForm from "./components/AddBookForm";
-import BookList from "./components/BookList";
+import BooksList from "./components/BooksList";
 
 const App = () => {
 
@@ -38,16 +38,14 @@ const App = () => {
 
 
 
-
-
   return (
-    <div>
+    <div className="wrapper">
       <Header />
       <RandomBook booksToRead={booksToRead}/>
       <AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}
                    setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}
                    setCurrentBooks={setCurrentBooks}/>
-      <BookList books={books} setBooks={setBooks}/>
+      <BooksList books={books} setBooks={setBooks}/>
 
     {/*  <details><summary>Wszystkie książki</summary>*/}
     {/*    {books.map(book => (*/}

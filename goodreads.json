@@ -20,7 +20,7 @@
       "bookshelves": "to-read",
       "bookshelvesWithPositions": "to-read (#125)",
       "exclusiveShelf": "to-read",
-      "cover": "",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620206225l/39330937._SY475_.jpg",
       "spoiler": "",
       "privateNotes": "",
       "readCount": 0,
@@ -18646,25 +18646,11 @@
       "BCID": ""
     },
     {
-      "title": "llll",
-      "author": "",
-      "cover": "",
-      "exclusiveShelf": "to-read",
-      "id": 58483667
-    },
-    {
       "title": "nowa",
       "author": "autor",
       "cover": "",
       "exclusiveShelf": "currently-reading",
       "id": 58483668
-    },
-    {
-      "title": "nowa",
-      "author": "autor",
-      "cover": "",
-      "exclusiveShelf": "currently-reading",
-      "id": 58483669
     },
     {
       "title": "qqqqqq",

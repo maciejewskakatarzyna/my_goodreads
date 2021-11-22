@@ -1,5 +1,6 @@
 import React from "react";
 import BooksAPI from "../api";
+import '../index.css';
 
 const Book = ({book, books, setBooks}) => {
 
@@ -32,12 +33,22 @@ const Book = ({book, books, setBooks}) => {
                 })
     }
 
+    const hasCover = () => {
+        if(book.cover !== "") {
+            return true
+        }
+    }
 
     return (
-        <>
+        <div className="book">
+            {hasCover() ?
+                <img src={book.cover} className="bookCover"></img>
+            : (
+                <div className="noCover"></div>)}
+
             <p key={book.id}>{book.title}</p>
             <button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>
-        </>
+        </div>
     )
 }
 
