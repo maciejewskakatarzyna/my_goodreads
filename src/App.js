@@ -5,6 +5,7 @@ import BooksAPI from "./api";
 import Header from "./components/Header";
 import RandomBook from "./components/RandomBook";
 import AddBookForm from "./components/AddBookForm";
+import BookList from "./components/BookList";
 
 const App = () => {
 
@@ -37,34 +38,7 @@ const App = () => {
 
 
 
-  //refactor to switch, change variables names
-  const handleRemoveBook = (id, shelf) => {
-    let base
-    let method
-    if(shelf === 'all') {
-      base = books
-      method = setBooks
-    }
-    else if(shelf === 'to-read') {
-      base = booksToRead
-      method = setBooksToRead
-    }
-    else if(shelf === 'current') {
-      base = currentBooks
-      method = setCurrentBooks
-    }
-    else if(shelf === 'read') {
-      base = booksRead
-      method = setBooksRead
-    }
 
-      BooksAPI.removeBook(id)
-        .then(
-            () => {
-              const removed = base.filter(book => book.id !== id)
-              method(removed)
-            })
-  }
 
   return (
     <div>
@@ -73,37 +47,38 @@ const App = () => {
       <AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}
                    setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}
                    setCurrentBooks={setCurrentBooks}/>
+      <BookList books={books} setBooks={setBooks}/>
 
-      <details><summary>Wszystkie książki</summary>
-        {books.map(book => (
-            <>
-            <p key={book.id}>{book.title}</p>
-          <button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>
-            </>
-        ))}
-      </details>
-      <details><summary>Do przeczytania</summary>
-      {booksToRead.map(book => (
-          <>
-            <p key={book.id}>{book.title}</p>
-            <button onClick={() => handleRemoveBook(book.id, 'to-read')}>Usuń</button>
-          </>
-      ))}
-    </details>
-      <details><summary>Przeczytane</summary>
-      {booksRead.map(book => (
-          <>
-            <p key={book.id}>{book.title}</p>
-            <button onClick={() => handleRemoveBook(book.id, 'read')}>Usuń</button>
-          </>      ))}
-      </details>
-      <details><summary>Obecnie czytane</summary>
-      {currentBooks.map(book => (
-          <>
-            <p key={book.id}>{book.title}</p>
-            <button onClick={() => handleRemoveBook(book.id, 'current')}>Usuń</button>
-          </>      ))}
-      </details>
+    {/*  <details><summary>Wszystkie książki</summary>*/}
+    {/*    {books.map(book => (*/}
+    {/*        <>*/}
+    {/*        <p key={book.id}>{book.title}</p>*/}
+    {/*      <button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>*/}
+    {/*        </>*/}
+    {/*    ))}*/}
+    {/*  </details>*/}
+    {/*  <details><summary>Do przeczytania</summary>*/}
+    {/*  {booksToRead.map(book => (*/}
+    {/*      <>*/}
+    {/*        <p key={book.id}>{book.title}</p>*/}
+    {/*        <button onClick={() => handleRemoveBook(book.id, 'to-read')}>Usuń</button>*/}
+    {/*      </>*/}
+    {/*  ))}*/}
+    {/*</details>*/}
+    {/*  <details><summary>Przeczytane</summary>*/}
+    {/*  {booksRead.map(book => (*/}
+    {/*      <>*/}
+    {/*        <p key={book.id}>{book.title}</p>*/}
+    {/*        <button onClick={() => handleRemoveBook(book.id, 'read')}>Usuń</button>*/}
+    {/*      </>      ))}*/}
+    {/*  </details>*/}
+    {/*  <details><summary>Obecnie czytane</summary>*/}
+    {/*  {currentBooks.map(book => (*/}
+    {/*      <>*/}
+    {/*        <p key={book.id}>{book.title}</p>*/}
+    {/*        <button onClick={() => handleRemoveBook(book.id, 'current')}>Usuń</button>*/}
+    {/*      </>      ))}*/}
+    {/*  </details>*/}
     </div>
   );
 }
