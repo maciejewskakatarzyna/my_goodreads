@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import '../index.css';
 import plus from "../assets/plus.png"
 import shuffle from "../assets/shuffle.png"
 
-const Header = ({booksToRead, setRandomBook, setIsRandomBook}) => {
+const Header = ({books, booksToRead, currentBooks, booksRead, setRandomBook, setIsRandomBook, setBase, setBaseName}) => {
 
-        const getRandomBook = () => {
+
+    const handleBaseChange = (clickedBase, name) => {
+        setBase(clickedBase)
+        setBaseName(name)
+    }
+
+
+    const getRandomBook = () => {
             const randomBook =
                 booksToRead[Math.floor(Math.random() * booksToRead.length)];
             setRandomBook(randomBook.title)
@@ -20,16 +27,16 @@ const Header = ({booksToRead, setRandomBook, setIsRandomBook}) => {
         <div className="header">
             <nav>
                 <ul className="navigation">
-                    <li>Wszystkie książki</li>
-                    <li>Przeczytane</li>
-                    <li>Do przeczytania</li>
-                    <li>Aktualnie czytane</li>
+                    <li><a href="#" onClick={() => handleBaseChange(books, "Wszystkie książki")}>Wszystkie książki</a></li>
+                    <li><a href="#" onClick={() => handleBaseChange(booksRead, "Przeczytane")}>Przeczytane</a></li>
+                    <li><a href="#" onClick={() => handleBaseChange(booksToRead, "Do przeczytania")}>Do przeczytania</a></li>
+                    <li><a href="#" onClick={() => handleBaseChange(currentBooks, "Aktualnie czytane")}>Aktualnie czytane</a></li>
                 </ul>
             </nav>
             <form>
                 <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
             </form>
-            <button className="icon" ><img src={plus}/></button>
+            <button className="icon"> <img src={plus}/></button>
             <button className="icon" onClick={getRandomBook}><img src={shuffle}/></button>
             <div className="loginMenu">
                 <p>Witaj użytkowniku</p>

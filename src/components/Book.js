@@ -5,13 +5,13 @@ import '../index.css';
 const Book = ({book, books, setBooks}) => {
 
     //refactor to switch, change variables names
-    const handleRemoveBook = (id, shelf) => {
-        let base
-        let method
-        if(shelf === 'all') {
-            base = books
-            method = setBooks
-        }
+    // const handleRemoveBook = (id, shelf) => {
+    //     let base
+    //     let method
+    //     if(shelf === 'all') {
+    //         base = books
+    //         method = setBooks
+    //     }
         // else if(shelf === 'to-read') {
         //     base = booksToRead
         //     method = setBooksToRead
@@ -25,13 +25,13 @@ const Book = ({book, books, setBooks}) => {
         //     method = setBooksRead
         // }
 
-        BooksAPI.removeBook(id)
-            .then(
-                () => {
-                    const removed = base.filter(book => book.id !== id)
-                    method(removed)
-                })
-    }
+    //     BooksAPI.removeBook(id)
+    //         .then(
+    //             () => {
+    //                 const removed = base.filter(book => book.id !== id)
+    //                 method(removed)
+    //             })
+    // }
 
     const hasCover = () => {
         if(book.cover !== "") {

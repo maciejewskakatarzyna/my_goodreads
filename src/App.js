@@ -15,9 +15,13 @@ const App = () => {
   const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
   const [isRandomBook, setIsRandomBook] = useState(false)
+  const [base, setBase] = useState([])
+  const [baseName, setBaseName] = useState(null)
+
 
   useEffect( () => {
-    BooksAPI.getAllBooks().then(books => setBooks(books));
+    BooksAPI.getAllBooks().then(books => {setBooks(books)
+    setBase(books)});
   },[]);
 
   useEffect( () => {
@@ -41,14 +45,17 @@ const App = () => {
 
   return (
       <>
-      <Header setRandomBook={setRandomBook} booksToRead={booksToRead} setIsRandomBook={setIsRandomBook}/>
+      <Header setRandomBook={setRandomBook} setIsRandomBook={setIsRandomBook} books={books} booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} setBase={setBase} setBaseName={setBaseName}/>
       <div className="wrapper">
-
         {isRandomBook ? (<RandomBook randomBook={randomBook}/>) : null}
-      {/*<AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}*/}
+        <BooksList base={base} baseName={baseName}/>
+
+
+
+
+        {/*<AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}*/}
       {/*             setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}*/}
       {/*             setCurrentBooks={setCurrentBooks}/>*/}
-        <BooksList books={books} setBooks={setBooks}/>
 
     {/*  <details><summary>Wszystkie książki</summary>*/}
     {/*    {books.map(book => (*/}
