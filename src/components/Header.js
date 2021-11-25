@@ -10,6 +10,10 @@ const Header = ({booksToRead, setRandomBook, setIsRandomBook}) => {
                 booksToRead[Math.floor(Math.random() * booksToRead.length)];
             setRandomBook(randomBook.title)
             setIsRandomBook(true);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
     }
 
     return (
