@@ -70,6 +70,12 @@ ul {
   height: 200px;
   background-color: lightgrey;
   box-shadow: #ccc 5px 5px 5px;
+  color: darkgrey;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .searchInput {
