@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import '../index.css';
 import plus from "../assets/plus.png"
 import shuffle from "../assets/shuffle.png"
+import BookContext from "../contexts/BookContext";
 
-const Header = ({books, booksToRead, currentBooks, booksRead, setRandomBook, setIsRandomBook, setBase, setBaseName}) => {
+const Header = ({setBase, setBaseName}) => {
 
 
     const handleBaseChange = (clickedBase, name) => {
@@ -12,36 +13,37 @@ const Header = ({books, booksToRead, currentBooks, booksRead, setRandomBook, set
     }
 
 
-    const getRandomBook = () => {
-            const randomBook =
-                booksToRead[Math.floor(Math.random() * booksToRead.length)];
-            setRandomBook(randomBook.title)
-            setIsRandomBook(true);
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-    }
-
     return (
         <div className="header">
-            <nav>
-                <ul className="navigation">
-                    <li><a href="#" onClick={() => handleBaseChange(books, "Wszystkie książki")}>Wszystkie książki</a></li>
-                    <li><a href="#" onClick={() => handleBaseChange(booksRead, "Przeczytane")}>Przeczytane</a></li>
-                    <li><a href="#" onClick={() => handleBaseChange(booksToRead, "Do przeczytania")}>Do przeczytania</a></li>
-                    <li><a href="#" onClick={() => handleBaseChange(currentBooks, "Aktualnie czytane")}>Aktualnie czytane</a></li>
-                </ul>
-            </nav>
-            <form>
-                <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
-            </form>
-            <button className="icon"> <img src={plus}/></button>
-            <button className="icon" onClick={getRandomBook}><img src={shuffle}/></button>
-            <div className="loginMenu">
-                <p>Witaj użytkowniku</p>
-                <a className="logout" href="#">Wyloguj</a>
-            </div>
+            <BookContext.Consumer>
+                {
+                    ({books, booksToRead, booksRead, currentBooks, getRandomBook}) =>
+                        <>
+                        <nav>
+                            <ul className="navigation">
+
+                                <li><a href="#" onClick={() => handleBaseChange(books, "Wszystkie książki")}>Wszystkie
+                                    książki</a></li>
+                                <li><a href="#"
+                                       onClick={() => handleBaseChange(booksRead, "Przeczytane")}>Przeczytane</a></li>
+                                <li><a href="#" onClick={() => handleBaseChange(booksToRead, "Do przeczytania")}>Do
+                                    przeczytania</a></li>
+                                <li><a href="#" onClick={() => handleBaseChange(currentBooks, "Aktualnie czytane")}>Aktualnie
+                                    czytane</a></li>
+                            </ul>
+                        </nav>
+                    <form>
+                    <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
+                    </form>
+                    <button className="icon"> <img src={plus}/></button>
+                    <button className="icon" onClick={getRandomBook}><img src={shuffle}/></button>
+                    <div className="loginMenu">
+                    <p>Witaj użytkowniku</p>
+                    <a className="logout" href="#">Wyloguj</a>
+                    </div>
+                        </>
+                }
+            </BookContext.Consumer>
         </div>
     )
 }

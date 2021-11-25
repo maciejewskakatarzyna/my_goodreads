@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import RandomBook from "./components/RandomBook";
 import AddBookForm from "./components/AddBookForm";
 import BooksList from "./components/BooksList";
+import BookContext from "./contexts/BookContext";
 
 const App = () => {
 
@@ -42,53 +43,33 @@ const App = () => {
       setCurrentBooks(currently)})
   },[]);
 
+  const getRandomBook = () => {
+    const randomBook =
+        booksToRead[Math.floor(Math.random() * booksToRead.length)];
+    setRandomBook(randomBook.title)
+    setIsRandomBook(true);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 
   return (
-      <>
-      <Header setRandomBook={setRandomBook} setIsRandomBook={setIsRandomBook} books={books} booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} setBase={setBase} setBaseName={setBaseName}/>
+      <BookContext.Provider value={{books: books, booksRead: booksRead, booksToRead: booksToRead, currentBooks: currentBooks, getRandomBook: getRandomBook}}>
+      <Header setBase={setBase} setBaseName={setBaseName} />
       <div className="wrapper">
         {isRandomBook ? (<RandomBook randomBook={randomBook}/>) : null}
         <BooksList base={base} baseName={baseName}/>
-
-
 
 
         {/*<AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}*/}
       {/*             setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}*/}
       {/*             setCurrentBooks={setCurrentBooks}/>*/}
 
-    {/*  <details><summary>Wszystkie książki</summary>*/}
-    {/*    {books.map(book => (*/}
-    {/*        <>*/}
-    {/*        <p key={book.id}>{book.title}</p>*/}
-    {/*      <button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>*/}
-    {/*        </>*/}
-    {/*    ))}*/}
-    {/*  </details>*/}
-    {/*  <details><summary>Do przeczytania</summary>*/}
-    {/*  {booksToRead.map(book => (*/}
-    {/*      <>*/}
-    {/*        <p key={book.id}>{book.title}</p>*/}
-    {/*        <button onClick={() => handleRemoveBook(book.id, 'to-read')}>Usuń</button>*/}
-    {/*      </>*/}
-    {/*  ))}*/}
-    {/*</details>*/}
-    {/*  <details><summary>Przeczytane</summary>*/}
-    {/*  {booksRead.map(book => (*/}
-    {/*      <>*/}
-    {/*        <p key={book.id}>{book.title}</p>*/}
-    {/*        <button onClick={() => handleRemoveBook(book.id, 'read')}>Usuń</button>*/}
-    {/*      </>      ))}*/}
-    {/*  </details>*/}
-    {/*  <details><summary>Obecnie czytane</summary>*/}
-    {/*  {currentBooks.map(book => (*/}
-    {/*      <>*/}
-    {/*        <p key={book.id}>{book.title}</p>*/}
-    {/*        <button onClick={() => handleRemoveBook(book.id, 'current')}>Usuń</button>*/}
-    {/*      </>      ))}*/}
-    {/*  </details>*/}
+
     </div>
-        </>
+        </BookContext.Provider>
   );
 }
 
