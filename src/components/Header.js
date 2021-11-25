@@ -14,9 +14,12 @@ const Header = () => {
                     <li>Aktualnie czytane</li>
                 </ul>
             </nav>
+            <form>
+                <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
+            </form>
             <div className="loginMenu">
                 <p>Witaj użytkowniku</p>
-                <a href="#">Wyloguj</a>
+                <a className="logout" href="#">Wyloguj</a>
             </div>
         </div>
     )

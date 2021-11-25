@@ -7,12 +7,14 @@ const BooksList = ({books, setBooks}) => {
 
 
     return (
+        <>
+        <h3>Wszystkie książki</h3>
         <ul className="bookList">
-            <p>Wszystkie książki</p>
             {books.map(book => (
                 <Book book={book} books={books} setBooks={setBooks}/>
             ))}
         </ul>
+        </>
     )
 }
 

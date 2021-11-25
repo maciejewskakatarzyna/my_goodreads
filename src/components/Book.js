@@ -46,8 +46,8 @@ const Book = ({book, books, setBooks}) => {
             : (
                 <div className="noCover"></div>)}
 
-            <p key={book.id}>{book.title}</p>
-            <button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>
+            {/*<p key={book.id}>{book.title}</p>*/}
+            {/*<button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>*/}
         </div>
     )
 }

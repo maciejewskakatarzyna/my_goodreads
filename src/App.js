@@ -39,12 +39,14 @@ const App = () => {
 
 
   return (
-    <div className="wrapper">
+      <>
       <Header />
-      <RandomBook booksToRead={booksToRead}/>
-      <AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}
-                   setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}
-                   setCurrentBooks={setCurrentBooks}/>
+      <div className="wrapper">
+
+      {/*<RandomBook booksToRead={booksToRead}/>*/}
+      {/*<AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}*/}
+      {/*             setBooks={setBooks} setBooksRead={setBooksRead} setBooksToRead={setBooksToRead}*/}
+      {/*             setCurrentBooks={setCurrentBooks}/>*/}
       <BooksList books={books} setBooks={setBooks}/>
 
     {/*  <details><summary>Wszystkie książki</summary>*/}
@@ -78,6 +80,7 @@ const App = () => {
     {/*      </>      ))}*/}
     {/*  </details>*/}
     </div>
+        </>
   );
 }
 
