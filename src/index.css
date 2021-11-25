@@ -98,3 +98,12 @@ h3 {
   text-decoration: none;
   color: #382110;
 }
+
+.icon {
+  border: none;
+}
+
+.icon img{
+  width: 20px;
+  height: 20px;
+}

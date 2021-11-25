@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import '../index.css';
+import plus from "../assets/plus.png"
+import shuffle from "../assets/shuffle.png"
 
-const Header = () => {
+const Header = ({booksToRead, setRandomBook, isRandomBook}) => {
 
+        const getRandomBook = () => {
+            const randomBook =
+                booksToRead[Math.floor(Math.random() * booksToRead.length)];
+            setRandomBook(randomBook.title)
+            isRandomBook = true;
+            console.log('random')
+    }
 
     return (
         <div className="header">
@@ -17,6 +26,8 @@ const Header = () => {
             <form>
                 <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
             </form>
+            <button className="icon" onClick={getRandomBook}><img src={plus}/></button>
+            <button className="icon" ><img src={shuffle}/></button>
             <div className="loginMenu">
                 <p>Witaj użytkowniku</p>
                 <a className="logout" href="#">Wyloguj</a>

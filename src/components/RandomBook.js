@@ -1,21 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import '../index.css';
 
 
-const RandomBook = ({booksToRead}) => {
+const RandomBook = ({randomBook}) => {
 
-    const [randomBook, setRandomBook] = useState(null)
-
-    const getRandomBook = () => {
-        const randomBook =
-            booksToRead[Math.floor(Math.random() * booksToRead.length)];
-        setRandomBook(randomBook.title)
-    }
     return (
-        <>
-            <button onClick={getRandomBook}>LOSUJ KSIĄŻKĘ DO PRZECZYTANIA</button>
-            <p>Kolejna książka do przeczytania: {randomBook}</p>
-        </>
+        <p>Kolejna książka do przeczytania: {randomBook}</p>
     )
 }
 

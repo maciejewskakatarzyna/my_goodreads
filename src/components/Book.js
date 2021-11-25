@@ -45,8 +45,8 @@ const Book = ({book, books, setBooks}) => {
                 <img src={book.cover} className="bookCover"></img>
             : (
                 <div className="noCover">
-                    <p key={book.id}>{book.title}</p>
-                    <p key={book.id}>{book.author}</p>
+                    <p>{book.title}</p>
+                    <p>{book.author}</p>
                 </div>)}
 
             {/*<button onClick={() => handleRemoveBook(book.id, 'all')}>Usuń</button>*/}
