@@ -14,6 +14,7 @@ const App = () => {
   const [booksRead, setBooksRead] = useState([])
   const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
+  const [isRandomBook, setIsRandomBook] = useState(false)
 
   useEffect( () => {
     BooksAPI.getAllBooks().then(books => setBooks(books));
@@ -37,11 +38,10 @@ const App = () => {
       setCurrentBooks(currently)})
   },[]);
 
-let isRandomBook = false
 
   return (
       <>
-      <Header setRandomBook={setRandomBook} booksToRead={booksToRead} isRandomBook={isRandomBook}/>
+      <Header setRandomBook={setRandomBook} booksToRead={booksToRead} setIsRandomBook={setIsRandomBook}/>
       <div className="wrapper">
 
         {isRandomBook ? (<RandomBook randomBook={randomBook}/>) : null}

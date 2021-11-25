@@ -5,7 +5,7 @@ import '../index.css';
 const RandomBook = ({randomBook}) => {
 
     return (
-        <p>Kolejna książka do przeczytania: {randomBook}</p>
+        <p className="randomBookWrapper">Kolejna książka do przeczytania:<span className="randomBook">{randomBook}</span></p>
     )
 }
 
