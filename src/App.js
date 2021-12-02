@@ -1,6 +1,6 @@
 import './index.css';
 import React from "react";
-import {useEffect, useState, useRef} from "react";
+import {useEffect, useState} from "react";
 import BooksAPI from "./api";
 import Header from "./components/Header";
 import RandomBook from "./components/RandomBook";
@@ -16,32 +16,15 @@ const App = () => {
   const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
   const [isRandomBook, setIsRandomBook] = useState(false)
-  const [base, setBase] = useState([])
-  const [baseName, setBaseName] = useState(null)
+  const [base, setBase] = useState({items: books, name: 'Wszystkie książki'})
 
 
   useEffect( () => {
-    BooksAPI.getAllBooks().then(books => {setBooks(books)
-    setBase(books)});
+    BooksAPI.getAllBooks().then(all => {
+      setBooks(all)
+          })
   },[]);
 
-  useEffect( () => {
-    BooksAPI.getAllBooks().then(books => {
-      const toRead = books.filter(book => book.exclusiveShelf === 'to-read')
-      setBooksToRead(toRead)})
-  },[]);
-
-  useEffect( () => {
-    BooksAPI.getAllBooks().then(books => {
-      const read = books.filter(book => book.exclusiveShelf === 'read')
-      setBooksRead(read)})
-  },[]);
-
-  useEffect( () => {
-    BooksAPI.getAllBooks().then(books => {
-      const currently = books.filter(book => book.exclusiveShelf === 'currently-reading')
-      setCurrentBooks(currently)})
-  },[]);
 
   const getRandomBook = () => {
     const randomBook =
@@ -55,12 +38,14 @@ const App = () => {
   }
 
 
+
   return (
-      <BookContext.Provider value={{books: books, booksRead: booksRead, booksToRead: booksToRead, currentBooks: currentBooks, getRandomBook: getRandomBook}}>
-      <Header setBase={setBase} setBaseName={setBaseName} />
+      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, getRandomBook: getRandomBook}}>
+      <Header setBase={setBase} />
       <div className="wrapper">
-        {isRandomBook ? (<RandomBook randomBook={randomBook}/>) : null}
-        <BooksList base={base} baseName={baseName}/>
+        {isRandomBook ? <RandomBook randomBook={randomBook}/> : null}
+        <BooksList />
+
 
 
         {/*<AddBookForm booksToRead={booksToRead} booksRead={booksRead} currentBooks={currentBooks} books={books}*/}
