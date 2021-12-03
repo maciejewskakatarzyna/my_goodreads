@@ -53,7 +53,7 @@ const getBase = () => {
 
     return (
         <>
-        <h3>{context.base.name || "Wszystkie książki"}</h3>
+        <h3>{context.base.name}</h3>
             {getBase()}
         </>
     )

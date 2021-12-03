@@ -1,9 +1,12 @@
-import React, {useRef} from "react";
+import React, {useContext, useRef} from "react";
 import BooksAPI from "../api";
 import '../index.css';
+import BookContext from "../contexts/BookContext";
 
 
-const AddBookForm = ({booksToRead, setBooksToRead, currentBooks, setCurrentBooks, booksRead, setBooksRead, books, setBooks}) => {
+const AddBookForm = () => {
+
+    const context = useContext(BookContext)
 
     const titleInput = useRef(null);
     const authorInput = useRef(null);
@@ -28,26 +31,8 @@ const AddBookForm = ({booksToRead, setBooksToRead, currentBooks, setCurrentBooks
     }
 
     const handleAddBook = (book) => {
-        getRadioValue()
-        let base
-        let method
-        if(radioShelf === 'to-read') {
-            base = booksToRead
-            method = setBooksToRead
-        }
-        else if(radioShelf === 'currently-reading') {
-            base = currentBooks
-            method = setCurrentBooks
-        }
-        else if(radioShelf === 'read') {
-            base = booksRead
-            method = setBooksRead
-        }
         BooksAPI.addBook(book).then(
-            (bookToAdd) => method([...base, bookToAdd])
-        )
-        BooksAPI.addBook(book).then(
-            (bookToAdd) => setBooks([...books, bookToAdd])
+            (bookToAdd) => context.setBooks([...context.books, bookToAdd])
         )
     }
 
@@ -61,7 +46,6 @@ const AddBookForm = ({booksToRead, setBooksToRead, currentBooks, setCurrentBooks
             exclusiveShelf: radioShelf,
         };
         handleAddBook(newBook, newBook.exclusiveShelf)
-        console.log(newBook.exclusiveShelf)
 
         titleInput.current.value = "";
         authorInput.current.value = "";
@@ -69,9 +53,8 @@ const AddBookForm = ({booksToRead, setBooksToRead, currentBooks, setCurrentBooks
     }
 
 
-
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="addForm" onSubmit={handleSubmit}>
             <label>Tytuł<input type="text" ref={titleInput}/></label>
             <label>Autor<input type="text" ref={authorInput}/></label>
             <label>Okładka<input type="text" ref={coverInput}/></label><br/>
