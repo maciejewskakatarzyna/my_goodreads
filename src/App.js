@@ -53,8 +53,6 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
 
 
 
-
-
   return (
       <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook}}>
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible}/>
@@ -65,7 +63,7 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
             <AddBookForm onClose={() => handleClose('addFormModal')}/>
             </ModalDialog>
             : null}
-        <BooksList />
+        <BooksList handleUpdateBook={updateBook}/>
     </div>
         </BookContext.Provider>
   );

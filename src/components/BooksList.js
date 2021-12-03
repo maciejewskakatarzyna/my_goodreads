@@ -5,7 +5,7 @@ import BooksAPI from "../api";
 import BookContext from "../contexts/BookContext";
 
 
-const BooksList = () => {
+const BooksList = ({handleUpdateBook}) => {
 
     const context = useContext(BookContext)
 
@@ -18,25 +18,29 @@ const BooksList = () => {
                     })
     }
 
+    const changeShelf = (book, shelf) => {
+        handleUpdateBook(book.id, {...book, exclusiveShelf: shelf})
+    }
+
 const getBase = () => {
     let list
 
     if (context.base.name === "Do przeczytania") {
         list = <ul className="bookList">
             {context.books.filter(item => item.exclusiveShelf === 'to-read').map(book => (
-                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)}/>)
+                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onCurrent={() => changeShelf(book, 'currently-reading')} onRead={() => changeShelf(book, 'read')}/>)
             )}
         </ul>
     } else if (context.base.name === "Przeczytane") {
         list = <ul className="bookList">
             {context.books.filter(item => item.exclusiveShelf === 'read').map(book => (
-                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)}/>)
+                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onCurrent={() => changeShelf(book, 'currently-reading')} onToRead={() => changeShelf(book, 'to-read')}/>)
             )}
         </ul>}
     else if (context.base.name === "Aktualnie czytane") {
             list = <ul className="bookList">
                 {context.books.filter(item => item.exclusiveShelf === 'currently-reading').map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)}/>)
+                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onRead={() => changeShelf(book, 'read')} onToRead={() => changeShelf(book, 'to-read')}/>)
                 )}
             </ul>
     }

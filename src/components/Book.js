@@ -1,7 +1,7 @@
 import React from "react";
 import '../index.css';
 
-const Book = ({book, onDelete}) => {
+const Book = ({book, onDelete, onToRead, onRead, onCurrent}) => {
 
     const hasCover = () => {
         if(book.cover !== "") {
@@ -18,6 +18,9 @@ const Book = ({book, onDelete}) => {
                     <p>{book.title}</p>
                     <p>{book.author}</p>
                     <button onClick={onDelete}>X</button>
+                    <button onClick={onToRead}>do</button>
+                    <button onClick={onRead}>prz</button>
+                    <button onClick={onCurrent}>akt</button>
                 </div>)}
         </div>
     )

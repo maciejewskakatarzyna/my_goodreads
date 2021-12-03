@@ -52,7 +52,7 @@
       "dateAdded": "2021/06/29",
       "bookshelves": "to-read",
       "bookshelvesWithPositions": "to-read (#149)",
-      "exclusiveShelf": "to-read",
+      "exclusiveShelf": "currently-reading",
       "cover": "",
       "spoiler": "",
       "privateNotes": "",
@@ -12196,7 +12196,7 @@
       "dateAdded": "2021/01/20",
       "bookshelves": "to-read",
       "bookshelvesWithPositions": "to-read (#25)",
-      "exclusiveShelf": "currently-reading",
+      "exclusiveShelf": "read",
       "cover": "",
       "spoiler": "",
       "privateNotes": "",
@@ -15455,14 +15455,14 @@
       "title": "aaaa",
       "author": "sssss",
       "cover": "",
-      "exclusiveShelf": "currently-reading",
+      "exclusiveShelf": "read",
       "id": 58154653
     },
     {
       "title": "qeqweqweqweqw",
       "author": "qweqweqw",
       "cover": "",
-      "exclusiveShelf": "currently-reading",
+      "exclusiveShelf": "to-read",
       "id": 58154654
     },
     {
