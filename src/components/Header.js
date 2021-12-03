@@ -26,7 +26,7 @@ const Header = ({setIsFormVisible}) => {
     const getRandomBook = () => {
         const toReadBase = context.books.filter(book => book.exclusiveShelf === 'to-read')
         const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
-        context.setRandomBook(random.title)
+        context.setRandomBook(random)
         context.setIsRandomBook(true);
         window.scrollTo({
             top: 0,

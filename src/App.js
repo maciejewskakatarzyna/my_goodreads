@@ -35,13 +35,31 @@ else if(modal === 'addFormModal') {
 }
 }
 
+const updateBook = (indexToUpdate, bookToUpdate) => {
+    BooksAPI.replaceBook(bookToUpdate)
+        .then(
+            (updatedBook) =>
+            {const booksUpdated = books.map((book, index) =>
+                    index === indexToUpdate ? updatedBook : book
+                )
+                setBooks(booksUpdated)
+              return { booksUpdated };
+            })
+  }
+
+  const startReading = (randomBook) => {
+    updateBook(randomBook.id, {...randomBook, exclusiveShelf: "currently-reading"})
+  }
+
+
+
 
 
   return (
       <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook}}>
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible}/>
       <div className="wrapper">
-        {isRandomBook ? <RandomBook randomBook={randomBook} onClose={() => handleClose('randomBookModal')}/> : null}
+        {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')}/> : null}
         {isFormVisible ?
             <ModalDialog >
             <AddBookForm onClose={() => handleClose('addFormModal')}/>
