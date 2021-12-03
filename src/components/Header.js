@@ -4,7 +4,7 @@ import plus from "../assets/plus.png"
 import shuffle from "../assets/shuffle.png"
 import BookContext from "../contexts/BookContext";
 
-const Header = ({setIsFormVisible, setIsAddedToCurrent}) => {
+const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
     const context = useContext(BookContext)
 
@@ -35,6 +35,11 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent}) => {
         });
     }
 
+    const handleShowForm = () => {
+        setIsBookAdded(false)
+        setIsFormVisible(true)
+    }
+
 
     return (
         <div className="header">
@@ -55,7 +60,7 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent}) => {
                     <form>
                     <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
                     </form>
-                    <button className="icon" onClick={() => setIsFormVisible(true)}> <img alt="plus" src={plus}/></button>
+                    <button className="icon" onClick={handleShowForm}> <img alt="plus" src={plus}/></button>
                     <button className="icon" onClick={getRandomBook}><img alt="shuffle" src={shuffle}/></button>
                     <div className="loginMenu">
                     <p>Witaj użytkowniku</p>

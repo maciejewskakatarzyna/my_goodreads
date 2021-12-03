@@ -4,7 +4,7 @@ import '../index.css';
 import BookContext from "../contexts/BookContext";
 
 
-const AddBookForm = ({onClose}) => {
+const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
 
     const context = useContext(BookContext)
 
@@ -46,6 +46,7 @@ const AddBookForm = ({onClose}) => {
             exclusiveShelf: radioShelf,
         };
         handleAddBook(newBook, newBook.exclusiveShelf)
+        setIsBookAdded(true)
 
         titleInput.current.value = "";
         authorInput.current.value = "";
@@ -54,16 +55,25 @@ const AddBookForm = ({onClose}) => {
 
 
     return (
-        <form className="addForm" onSubmit={handleSubmit}>
+        <>
+        {!isBookAdded ?
+            <form className="addForm" onSubmit={handleSubmit}>
+                <button className="closeBtn" onClick={onClose}>x</button>
+                <label>Tytuł<input type="text" ref={titleInput}/></label>
+                <label>Autor<input type="text" ref={authorInput}/></label>
+                <label>Okładka<input type="text" ref={coverInput}/></label><br/>
+                <label>Przeczytane<input type="radio" name="shelf" value="read" ref={radioInput1}/></label><br/>
+                <label>Do przeczytania<input type="radio" name="shelf" value="to-read" ref={radioInput2}/></label><br/>
+                <label>Aktualnie czytane<input type="radio" name="shelf" value="currently-reading" ref={radioInput3}/></label><br/>
+                <button>DODAJ KSIĄŻKĘ</button>
+            </form>
+        :
+            <div className="addedConfirmation">
             <button className="closeBtn" onClick={onClose}>x</button>
-            <label>Tytuł<input type="text" ref={titleInput}/></label>
-            <label>Autor<input type="text" ref={authorInput}/></label>
-            <label>Okładka<input type="text" ref={coverInput}/></label><br/>
-            <label>Przeczytane<input type="radio" name="shelf" value="read" ref={radioInput1}/></label><br/>
-            <label>Do przeczytania<input type="radio" name="shelf" value="to-read" ref={radioInput2}/></label><br/>
-            <label>Aktualnie czytane<input type="radio" name="shelf" value="currently-reading" ref={radioInput3}/></label><br/>
-            <button>DODAJ KSIĄŻKĘ</button>
-        </form>
+            <p>Książka dodana!</p>
+            </div>
+                }
+            </>
     )
 }
 

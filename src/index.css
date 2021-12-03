@@ -112,7 +112,7 @@ a {
   height: 20px;
 }
 
-.randomBookWrapper, .addForm {
+.randomBookWrapper, .addForm, .addedConfirmation {
   margin: 20px auto;
   font-size: 18px;
   display: flex;
@@ -136,6 +136,9 @@ a {
   align-items: center;
 }
 
+.addedConfirmation {
+  padding: 40px 60px;
+}
 
 .randomBook {
   font-weight: bold;
