@@ -4,7 +4,7 @@ import '../index.css';
 import BookContext from "../contexts/BookContext";
 
 
-const AddBookForm = () => {
+const AddBookForm = ({onClose}) => {
 
     const context = useContext(BookContext)
 
@@ -55,6 +55,7 @@ const AddBookForm = () => {
 
     return (
         <form className="addForm" onSubmit={handleSubmit}>
+            <button className="closeBtn" onClick={onClose}>x</button>
             <label>Tytuł<input type="text" ref={titleInput}/></label>
             <label>Autor<input type="text" ref={authorInput}/></label>
             <label>Okładka<input type="text" ref={coverInput}/></label><br/>

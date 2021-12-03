@@ -2,10 +2,13 @@ import React from "react";
 import '../index.css';
 
 
-const RandomBook = ({randomBook}) => {
+const RandomBook = ({randomBook, onClose}) => {
 
     return (
-        <p className="randomBookWrapper">Kolejna książka do przeczytania:<span className="randomBook">{randomBook}</span></p>
+        <div className="randomBookWrapper">
+            <button className="closeBtn" onClick={onClose}>x</button>
+            <p >Kolejna książka do przeczytania:<span className="randomBook">{randomBook}</span></p>
+        </div>
     )
 }
 

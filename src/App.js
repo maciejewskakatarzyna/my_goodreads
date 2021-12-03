@@ -25,11 +25,14 @@ const App = () => {
       setBooks(all)})
   },[books]);
 
-// useEffect(() => {
-//   setBooksToRead(books.filter(book => book.exclusiveShelf === 'to-read'))
-// }, [])
-
-
+const handleClose = (modal) => {
+if(modal === 'randomBookModal') {
+  setIsRandomBook(false)
+}
+else if(modal === 'addFormModal') {
+  setIsFormVisible(false)
+}
+}
 
 
 
@@ -37,8 +40,8 @@ const App = () => {
       <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook}}>
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible}/>
       <div className="wrapper">
-        {isRandomBook ? <RandomBook randomBook={randomBook}/> : null}
-        {isFormVisible ? <AddBookForm /> : null}
+        {isRandomBook ? <RandomBook randomBook={randomBook} onClose={() => handleClose('randomBookModal')}/> : null}
+        {isFormVisible ? <AddBookForm onClose={() => handleClose('addFormModal')}/> : null}
         <BooksList />
     </div>
         </BookContext.Provider>
