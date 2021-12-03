@@ -136,9 +136,10 @@ a {
   align-items: center;
 }
 
+
 .randomBook {
   font-weight: bold;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
 
 .closeBtn {

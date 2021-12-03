@@ -18,9 +18,9 @@ const Book = ({book, onDelete, onToRead, onRead, onCurrent}) => {
                     <p>{book.title}</p>
                     <p>{book.author}</p>
                     <button onClick={onDelete}>X</button>
-                    <button onClick={onToRead}>do</button>
-                    <button onClick={onRead}>prz</button>
-                    <button onClick={onCurrent}>akt</button>
+                    {/*<button onClick={onToRead}>do</button>*/}
+                    {/*<button onClick={onRead}>prz</button>*/}
+                    {/*<button onClick={onCurrent}>akt</button>*/}
                 </div>)}
         </div>
     )

@@ -4,7 +4,7 @@ import plus from "../assets/plus.png"
 import shuffle from "../assets/shuffle.png"
 import BookContext from "../contexts/BookContext";
 
-const Header = ({setIsFormVisible}) => {
+const Header = ({setIsFormVisible, setIsAddedToCurrent}) => {
 
     const context = useContext(BookContext)
 
@@ -24,6 +24,7 @@ const Header = ({setIsFormVisible}) => {
     }
 
     const getRandomBook = () => {
+        setIsAddedToCurrent(false)
         const toReadBase = context.books.filter(book => book.exclusiveShelf === 'to-read')
         const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
         context.setRandomBook(random)

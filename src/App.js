@@ -19,6 +19,7 @@ const App = () => {
   const [isRandomBook, setIsRandomBook] = useState(false)
   const [base, setBase] = useState({items: books, name: 'Wszystkie książki'})
   const [isFormVisible, setIsFormVisible] = useState(false)
+  const [isAddedToCurrent, setIsAddedToCurrent] = useState(false)
 
 
   useEffect( () => {
@@ -49,15 +50,16 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
 
   const startReading = (randomBook) => {
     updateBook(randomBook.id, {...randomBook, exclusiveShelf: "currently-reading"})
+    setIsAddedToCurrent(true)
   }
 
 
 
   return (
       <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook}}>
-      <Header setBase={setBase} setIsFormVisible={setIsFormVisible}/>
+      <Header setBase={setBase} setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent}/>
       <div className="wrapper">
-        {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')}/> : null}
+        {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}
         {isFormVisible ?
             <ModalDialog >
             <AddBookForm onClose={() => handleClose('addFormModal')}/>
