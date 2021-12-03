@@ -15443,6 +15443,41 @@
       "condition": "",
       "conditionDescription": "",
       "BCID": ""
+    },
+    {
+      "title": "dfsf",
+      "author": "sdfsdf",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58154652
+    },
+    {
+      "title": "aaaa",
+      "author": "sssss",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58154653
+    },
+    {
+      "title": "qeqweqweqweqw",
+      "author": "qweqweqw",
+      "cover": "",
+      "exclusiveShelf": "currently-reading",
+      "id": 58154654
+    },
+    {
+      "title": "sss",
+      "author": "ddd",
+      "cover": "aaa",
+      "exclusiveShelf": "read",
+      "id": 58154656
+    },
+    {
+      "title": "sss",
+      "author": "wwww",
+      "cover": "",
+      "exclusiveShelf": "read",
+      "id": 58154657
     }
   ]
 }

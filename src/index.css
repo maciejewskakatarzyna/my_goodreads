@@ -126,6 +126,16 @@ a {
   position: relative;
 }
 
+.addForm {
+  padding: 60px;
+}
+
+.randomBookWrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .randomBook {
   font-weight: bold;
   margin-top: 10px;

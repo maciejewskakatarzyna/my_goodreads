@@ -7,6 +7,7 @@ import RandomBook from "./components/RandomBook";
 import BooksList from "./components/BooksList";
 import BookContext from "./contexts/BookContext";
 import AddBookForm from "./components/AddBookForm";
+import ModalDialog from "./components/ModalDialog";
 
 const App = () => {
 
@@ -41,7 +42,11 @@ else if(modal === 'addFormModal') {
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible}/>
       <div className="wrapper">
         {isRandomBook ? <RandomBook randomBook={randomBook} onClose={() => handleClose('randomBookModal')}/> : null}
-        {isFormVisible ? <AddBookForm onClose={() => handleClose('addFormModal')}/> : null}
+        {isFormVisible ?
+            <ModalDialog >
+            <AddBookForm onClose={() => handleClose('addFormModal')}/>
+            </ModalDialog>
+            : null}
         <BooksList />
     </div>
         </BookContext.Provider>
