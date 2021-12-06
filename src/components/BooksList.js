@@ -5,7 +5,7 @@ import BooksAPI from "../api";
 import BookContext from "../contexts/BookContext";
 
 
-const BooksList = ({handleUpdateBook}) => {
+const BooksList = ({handleUpdateBook, handleClose}) => {
 
     const context = useContext(BookContext)
 

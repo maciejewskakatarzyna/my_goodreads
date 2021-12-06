@@ -23,6 +23,7 @@ const App = () => {
   const [isBookAdded, setIsBookAdded] = useState(false)
 
 
+
   useEffect( () => {
     BooksAPI.getAllBooks().then(all => {
       setBooks(all)})
@@ -69,7 +70,8 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
             <AddBookForm onClose={() => handleClose('addFormModal')} setIsBookAdded={setIsBookAdded} isBookAdded={isBookAdded} onCloseConfirm={() => handleClose("addConfirmModal")}/>
             </ModalDialog>
             : null}
-        <BooksList handleUpdateBook={updateBook}/>
+        <BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>
+
     </div>
         </BookContext.Provider>
   );

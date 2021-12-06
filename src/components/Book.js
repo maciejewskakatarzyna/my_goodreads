@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import '../index.css';
+import BookContext from "../contexts/BookContext";
+import ModalDialog from "./ModalDialog";
+import BookCard from "./BookCard";
 
-const Book = ({book, onDelete, onToRead, onRead, onCurrent}) => {
+const Book = ({book, onDelete}) => {
+
+    const [isBookCard, setIsBookCard] = useState(false)
+    const [bookCard, setBookCard] = useState(null)
+
+    const context = useContext(BookContext)
 
     const hasCover = () => {
         if(book.cover !== "") {
@@ -9,8 +17,20 @@ const Book = ({book, onDelete, onToRead, onRead, onCurrent}) => {
         }
     }
 
+    const handleShowCard = (index) => {
+        const bookCardItem = context.books.filter(book => book.id === index)
+      setBookCard(bookCardItem[0])
+      setIsBookCard(true)
+    }
+
+    const handleClose = () =>{
+        setIsBookCard(false)
+    }
+
+
     return (
-        <div className="book">
+        <>
+        <div className="book" onClick={() => handleShowCard(book.id)}>
             {hasCover() ?
                 <img alt="book cover" src={book.cover} className="bookCover" />
             : (
@@ -23,6 +43,12 @@ const Book = ({book, onDelete, onToRead, onRead, onCurrent}) => {
                     {/*<button onClick={onCurrent}>akt</button>*/}
                 </div>)}
         </div>
+            {isBookCard ?
+                <ModalDialog>
+                    <BookCard onClose={handleClose} book={bookCard} hasCover={hasCover}/>
+                </ModalDialog>
+                : null}
+            </>
     )
 }
 export default Book
