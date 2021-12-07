@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
-import Book from "./Book";
-import '../index.css';
-import BooksAPI from "../api";
-import BookContext from "../contexts/BookContext";
+import Book from "../Book/Book";
+import '../../index.css';
+import BooksAPI from "../../api";
+import BookContext from "../../contexts/BookContext";
 
 
 const BooksList = ({handleUpdateBook, handleClose}) => {

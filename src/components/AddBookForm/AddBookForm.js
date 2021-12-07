@@ -1,7 +1,7 @@
 import React, {useContext, useRef} from "react";
-import BooksAPI from "../api";
-import '../index.css';
-import BookContext from "../contexts/BookContext";
+import BooksAPI from "../../api";
+import '../../index.css';
+import BookContext from "../../contexts/BookContext";
 
 
 const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {

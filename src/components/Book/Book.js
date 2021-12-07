@@ -1,8 +1,8 @@
 import React, {useContext, useState} from "react";
-import '../index.css';
-import BookContext from "../contexts/BookContext";
-import ModalDialog from "./ModalDialog";
-import BookCard from "./BookCard";
+import '../../index.css';
+import BookContext from "../../contexts/BookContext";
+import ModalDialog from "../ModalDialog/ModalDialog";
+import BookCard from "../BookCard/BookCard";
 
 const Book = ({book, onDelete}) => {
 

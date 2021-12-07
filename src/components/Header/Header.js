@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
-import '../index.css';
-import plus from "../assets/plus.png"
-import shuffle from "../assets/shuffle.png"
-import BookContext from "../contexts/BookContext";
+import '../../index.css';
+import plus from "../../assets/plus.png"
+import shuffle from "../../assets/shuffle.png"
+import BookContext from "../../contexts/BookContext";
 
 const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 

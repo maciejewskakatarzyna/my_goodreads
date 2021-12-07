@@ -2,12 +2,12 @@ import './index.css';
 import React from "react";
 import {useEffect, useState} from "react";
 import BooksAPI from "./api";
-import Header from "./components/Header";
-import RandomBook from "./components/RandomBook";
-import BooksList from "./components/BooksList";
+import Header from "./components/Header/Header";
+import RandomBook from "./components/RandomBook/RandomBook";
+import BooksList from "./components/BookList/BooksList";
 import BookContext from "./contexts/BookContext";
-import AddBookForm from "./components/AddBookForm";
-import ModalDialog from "./components/ModalDialog";
+import AddBookForm from "./components/AddBookForm/AddBookForm";
+import ModalDialog from "./components/ModalDialog/ModalDialog";
 
 const App = () => {
 
