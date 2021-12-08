@@ -45,6 +45,19 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
     }
 
 
+    function getFilteredBooksForText(text) {
+        return context.books.filter(book => book.title.toString().toLowerCase().includes(text.toLowerCase()) || book.author.toString().toLowerCase().includes(text.toLowerCase()))
+    }
+
+    function filterBooks(e) {
+        const text = e.currentTarget.value;
+        const filtered = getFilteredBooksForText(text);
+        context.setFilteredBooks(filtered);
+        console.log(context.filteredBooks)
+    }
+
+
+
     return (
         <StyledHeader >
             <>
@@ -62,7 +75,7 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
                             </StyledNavigation>
                         </nav>
                     <form>
-                        <StyledSearchInput className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
+                        <StyledSearchInput className="searchInput" type="text" placeholder="Wyszukaj książkę" onInput={filterBooks}/>
                     </form>
                     <button className="icon" onClick={handleShowForm}> <img alt="plus" src={plus}/></button>
                     <button className="icon" onClick={getRandomBook}><img alt="shuffle" src={shuffle}/></button>

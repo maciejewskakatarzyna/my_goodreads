@@ -21,6 +21,8 @@ const App = () => {
   const [isFormVisible, setIsFormVisible] = useState(false)
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false)
   const [isBookAdded, setIsBookAdded] = useState(false)
+  const [filteredBooks, setFilteredBooks] = useState([])
+
 
 
 
@@ -61,7 +63,7 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
 
 
   return (
-      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook}}>
+      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook, filteredBooks: filteredBooks, setFilteredBooks: setFilteredBooks}}>
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} setIsBookAdded={setIsBookAdded}/>
       <div className="wrapper">
         {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}
