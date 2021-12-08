@@ -3,6 +3,10 @@ import '../../index.css';
 import plus from "../../assets/plus.png"
 import shuffle from "../../assets/shuffle.png"
 import BookContext from "../../contexts/BookContext";
+import {StyledHeader} from "./Header.styles";
+import {StyledNavigation} from "./Navigation.styles";
+import {StyledLoginMenu} from "./LoginMenu.styles";
+import {StyledSearchInput} from "./SearchInput.styles";
 
 const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
@@ -42,10 +46,10 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
 
     return (
-        <div className="header">
+        <StyledHeader >
             <>
                         <nav>
-                            <ul className="navigation">
+                            <StyledNavigation >
 
                                 <li><a href="#" onClick={() => handleBaseChange({name: "Wszystkie książki"})}>Wszystkie
                                     książki</a></li>
@@ -55,19 +59,19 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
                                     przeczytania</a></li>
                                 <li><a href="#" onClick={() => handleBaseChange({name: "Aktualnie czytane"})}>Aktualnie
                                     czytane</a></li>
-                            </ul>
+                            </StyledNavigation>
                         </nav>
                     <form>
-                    <input className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
+                        <StyledSearchInput className="searchInput" type="text" placeholder="Wyszukaj książkę"/>
                     </form>
                     <button className="icon" onClick={handleShowForm}> <img alt="plus" src={plus}/></button>
                     <button className="icon" onClick={getRandomBook}><img alt="shuffle" src={shuffle}/></button>
-                    <div className="loginMenu">
-                    <p>Witaj użytkowniku</p>
-                    <a className="logout" href="#">Wyloguj</a>
-                    </div>
+                    <StyledLoginMenu >
+                        <p>Witaj użytkowniku</p>
+                        <a href="#">Wyloguj</a>
+                    </StyledLoginMenu>
                         </>
-        </div>
+        </StyledHeader>
     )
 }
 

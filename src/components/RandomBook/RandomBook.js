@@ -1,11 +1,12 @@
 import React from "react";
 import '../../index.css';
+import {StyledRandomBook} from "./RandomBook.styles";
 
 
 const RandomBook = ({randomBook, onClose, startReading, isAddedToCurrent}) => {
 
     return (
-        <div className="randomBookWrapper">
+        <StyledRandomBook >
             <button className="closeBtn" onClick={onClose}>x</button>
             {!isAddedToCurrent ?
                 <>
@@ -15,7 +16,7 @@ const RandomBook = ({randomBook, onClose, startReading, isAddedToCurrent}) => {
                 :
                 <p><span className="randomBook">{randomBook.title}</span>dodana do aktualnie czytanych książek!</p>
             }
-        </div>
+        </StyledRandomBook>
     )
 }
 

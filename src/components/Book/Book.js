@@ -3,6 +3,7 @@ import '../../index.css';
 import BookContext from "../../contexts/BookContext";
 import ModalDialog from "../ModalDialog/ModalDialog";
 import BookCard from "../BookCard/BookCard";
+import {StyledBook} from "./Book.styles";
 
 const Book = ({book, onDelete}) => {
 
@@ -30,7 +31,7 @@ const Book = ({book, onDelete}) => {
 
     return (
         <>
-        <div className="book" onClick={() => handleShowCard(book.id)}>
+        <StyledBook onClick={() => handleShowCard(book.id)}>
             {hasCover() ?
                 <img alt="book cover" src={book.cover} className="bookCover" />
             : (
@@ -42,7 +43,7 @@ const Book = ({book, onDelete}) => {
                     {/*<button onClick={onRead}>prz</button>*/}
                     {/*<button onClick={onCurrent}>akt</button>*/}
                 </div>)}
-        </div>
+        </StyledBook>
             {isBookCard ?
                 <ModalDialog>
                     <BookCard onClose={handleClose} book={bookCard} hasCover={hasCover}/>

@@ -1,8 +1,10 @@
 import React from "react";
+import {StyledBookCard} from "./BookCard.styles";
+import {StyledBookDetails} from "./BookDetails.styles";
 
 const BookCard = ({book, onClose, hasCover}) => {
     return (
-        <div className="bookCard">
+        <StyledBookCard>
             <button className="closeBtn" onClick={onClose}>x</button>
             <>
                 <div className="coverWrapper">
@@ -12,13 +14,13 @@ const BookCard = ({book, onClose, hasCover}) => {
                             <div className="noCoverCard"></div>
                         )}
                 </div>
-                <div className="bookDetails">
+                <StyledBookDetails >
                     <p>{book.title}</p>
                     <p>{book.author}</p>
                     <p>{book.yearPublished}</p>
-                </div>
+                </StyledBookDetails>
                 </>
-        </div>
+        </StyledBookCard>
     )
 }
 

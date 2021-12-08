@@ -2,6 +2,7 @@ import React, {useContext, useRef} from "react";
 import BooksAPI from "../../api";
 import '../../index.css';
 import BookContext from "../../contexts/BookContext";
+import {StyledAddBookForm} from "./AddBookForm.styles";
 
 
 const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
@@ -57,7 +58,7 @@ const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
     return (
         <>
         {!isBookAdded ?
-            <form className="addForm" onSubmit={handleSubmit}>
+            <StyledAddBookForm onSubmit={handleSubmit}>
                 <button className="closeBtn" onClick={onClose}>x</button>
                 <label>Tytuł<input type="text" ref={titleInput}/></label>
                 <label>Autor<input type="text" ref={authorInput}/></label>
@@ -66,7 +67,7 @@ const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
                 <label>Do przeczytania<input type="radio" name="shelf" value="to-read" ref={radioInput2}/></label><br/>
                 <label>Aktualnie czytane<input type="radio" name="shelf" value="currently-reading" ref={radioInput3}/></label><br/>
                 <button>DODAJ KSIĄŻKĘ</button>
-            </form>
+            </StyledAddBookForm>
         :
             <div className="addedConfirmation">
             <button className="closeBtn" onClick={onClose}>x</button>
