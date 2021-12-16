@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {uesState, useContext} from "react";
 import Book from "../Book/Book";
 import '../../index.css';
 import BooksAPI from "../../api";
@@ -7,6 +7,7 @@ import {StyledBookList} from "./BookList.styles";
 
 
 const BooksList = () => {
+    const [isList, setIsList] = React.useState(false);
 
     const context = useContext(BookContext)
 
@@ -19,6 +20,9 @@ const BooksList = () => {
                     })
     }
 
+    const toggleListView = () => {
+        setIsList(!isList);
+    }
 
 const getBase = () => {
     let list
@@ -32,9 +36,9 @@ const getBase = () => {
     }
     else {
         if (context.base.name === "Do przeczytania") {
-            list = <StyledBookList >
+            list = <StyledBookList view={isList}>
                 {context.books.filter(item => item.exclusiveShelf === 'to-read').map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
+                    <Book isList={isList} key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>
         } else if (context.base.name === "Przeczytane") {
@@ -66,6 +70,8 @@ const getBase = () => {
     return (
         <>
         <h3>{context.base.name}</h3>
+            <button onClick={toggleListView}>Zmień widok</button>
+
             {getBase()}
         </>
     )

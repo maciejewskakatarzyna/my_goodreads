@@ -5,7 +5,7 @@ import ModalDialog from "../ModalDialog/ModalDialog";
 import BookCard from "../BookCard/BookCard";
 import {StyledBook} from "./Book.styles";
 
-const Book = ({book, onDelete}) => {
+const Book = ({book, onDelete, isList}) => {
 
     const [isBookCard, setIsBookCard] = useState(false)
     const [bookCard, setBookCard] = useState(null)
@@ -32,16 +32,22 @@ const Book = ({book, onDelete}) => {
 
     return (
         <>
-        <StyledBook onClick={() => handleShowCard(book.id)}>
+        <StyledBook onClick={() => handleShowCard(book.id)} view={isList}>
             {hasCover() ?
-                <img alt="book cover" src={book.cover} className="bookCover" />
-            : (
-                <div className="noCover">
-                    <p>{book.title}</p>
-                    <p>{book.author}</p>
+                <div className="bookWrapper">
+                    <img alt="book cover" src={book.cover} className="bookCover" />
                     <button onClick={onDelete}>X</button>
-
-                </div>)}
+                </div>
+            : (
+                <div className="bookWrapper">
+                    <div className="noCover">
+                        <p>{book.title}</p>
+                        <p>{book.author}</p>
+                    </div>
+                    <button onClick={onDelete}>X</button>
+                </div>
+                )
+            }
         </StyledBook>
             {isBookCard ?
                 <ModalDialog>
