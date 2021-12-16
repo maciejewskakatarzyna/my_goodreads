@@ -53,7 +53,6 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
         const text = e.currentTarget.value;
         const filtered = getFilteredBooksForText(text);
         context.setFilteredBooks(filtered);
-        console.log(context.filteredBooks)
     }
 
 

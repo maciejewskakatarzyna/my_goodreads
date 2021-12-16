@@ -12,9 +12,9 @@ import ModalDialog from "./components/ModalDialog/ModalDialog";
 const App = () => {
 
   const [books, setBooks] = useState([])
-  const [booksToRead, setBooksToRead] = useState([])
-  const [booksRead, setBooksRead] = useState([])
-  const [currentBooks, setCurrentBooks] = useState([])
+  // const [booksToRead, setBooksToRead] = useState([])
+  // const [booksRead, setBooksRead] = useState([])
+  // const [currentBooks, setCurrentBooks] = useState([])
   const [randomBook, setRandomBook] = useState(null)
   const [isRandomBook, setIsRandomBook] = useState(false)
   const [base, setBase] = useState({items: books, name: 'Wszystkie książki'})
@@ -22,8 +22,6 @@ const App = () => {
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false)
   const [isBookAdded, setIsBookAdded] = useState(false)
   const [filteredBooks, setFilteredBooks] = useState([])
-
-
 
 
   useEffect( () => {
@@ -63,7 +61,7 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
 
 
   return (
-      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, booksRead: booksRead, setBooksRead: setBooksRead, booksToRead: booksToRead, setBooksToRead: setBooksToRead, currentBooks: currentBooks, setCurrentBooks: setCurrentBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook, filteredBooks: filteredBooks, setFilteredBooks: setFilteredBooks}}>
+      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook, filteredBooks: filteredBooks, setFilteredBooks: setFilteredBooks, updateBook: updateBook}}>
       <Header setBase={setBase} setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} setIsBookAdded={setIsBookAdded}/>
       <div className="wrapper">
         {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}

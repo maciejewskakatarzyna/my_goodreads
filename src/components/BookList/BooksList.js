@@ -6,7 +6,7 @@ import BookContext from "../../contexts/BookContext";
 import {StyledBookList} from "./BookList.styles";
 
 
-const BooksList = ({handleUpdateBook}) => {
+const BooksList = () => {
 
     const context = useContext(BookContext)
 
@@ -19,9 +19,6 @@ const BooksList = ({handleUpdateBook}) => {
                     })
     }
 
-    const changeShelf = (book, shelf) => {
-        handleUpdateBook(book.id, {...book, exclusiveShelf: shelf})
-    }
 
 const getBase = () => {
     let list
@@ -29,7 +26,7 @@ const getBase = () => {
     if(context.filteredBooks.length > 0) {
         list = <StyledBookList >
             {context.filteredBooks.map(book => (
-                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onCurrent={() => changeShelf(book, 'currently-reading')} onRead={() => changeShelf(book, 'read')} onToRead={() => changeShelf(book, 'to-read')}/>)
+                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
             )}
         </StyledBookList>
     }
@@ -37,19 +34,19 @@ const getBase = () => {
         if (context.base.name === "Do przeczytania") {
             list = <StyledBookList >
                 {context.books.filter(item => item.exclusiveShelf === 'to-read').map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onCurrent={() => changeShelf(book, 'currently-reading')} onRead={() => changeShelf(book, 'read')}/>)
+                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>
         } else if (context.base.name === "Przeczytane") {
             list = <StyledBookList >
                 {context.books.filter(item => item.exclusiveShelf === 'read').map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onCurrent={() => changeShelf(book, 'currently-reading')} onToRead={() => changeShelf(book, 'to-read')}/>)
+                    <Book key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>}
         else if (context.base.name === "Aktualnie czytane") {
             list = <StyledBookList >
                 {context.books.filter(item => item.exclusiveShelf === 'currently-reading').map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} onRead={() => changeShelf(book, 'read')} onToRead={() => changeShelf(book, 'to-read')}/>)
+                    <Book key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>
         }

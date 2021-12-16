@@ -12,4 +12,8 @@ export const StyledBookDetails = styled.div`
     margin-bottom: 10px;
   }
   
+  & button {
+    margin-left: 20px;
+  }
+  
 `

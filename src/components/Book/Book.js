@@ -10,6 +10,7 @@ const Book = ({book, onDelete}) => {
     const [isBookCard, setIsBookCard] = useState(false)
     const [bookCard, setBookCard] = useState(null)
 
+
     const context = useContext(BookContext)
 
     const hasCover = () => {
@@ -20,8 +21,8 @@ const Book = ({book, onDelete}) => {
 
     const handleShowCard = (index) => {
         const bookCardItem = context.books.filter(book => book.id === index)
-      setBookCard(bookCardItem[0])
-      setIsBookCard(true)
+          setBookCard(bookCardItem[0])
+          setIsBookCard(true)
     }
 
     const handleClose = () =>{
@@ -39,14 +40,12 @@ const Book = ({book, onDelete}) => {
                     <p>{book.title}</p>
                     <p>{book.author}</p>
                     <button onClick={onDelete}>X</button>
-                    {/*<button onClick={onToRead}>do</button>*/}
-                    {/*<button onClick={onRead}>prz</button>*/}
-                    {/*<button onClick={onCurrent}>akt</button>*/}
+
                 </div>)}
         </StyledBook>
             {isBookCard ?
                 <ModalDialog>
-                    <BookCard onClose={handleClose} book={bookCard} hasCover={hasCover}/>
+                    <BookCard onDelete={onDelete} onClose={handleClose} book={bookCard} hasCover={hasCover}/>
                 </ModalDialog>
                 : null}
             </>
