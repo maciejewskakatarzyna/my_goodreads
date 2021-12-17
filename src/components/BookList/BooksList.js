@@ -22,8 +22,12 @@ const BooksList = () => {
                     })
     }
 
-    const toggleListView = () => {
-        setIsList(!isList);
+    const changeToListView = () => {
+        setIsList(true);
+    }
+
+    const changeToGridView = () => {
+        setIsList(false);
     }
 
 const getBase = () => {
@@ -73,7 +77,10 @@ const getBase = () => {
         <>
             <Wrapper>
                 <h3>{context.base.name}</h3>
-                <button onClick={toggleListView}>{isList ? <img src={grid} alt="grid"/> : <img src={list} alt="list"/>}</button>
+                <div className="listViewButtons">
+                    <button onClick={changeToGridView} disabled={!isList}>{<img src={grid} alt="grid"/>}</button>
+                    <button onClick={changeToListView} disabled={isList}>{<img src={list} alt="list"/>}</button>
+                </div>
             </Wrapper>
 
             {getBase()}

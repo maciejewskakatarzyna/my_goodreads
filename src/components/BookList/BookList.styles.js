@@ -12,14 +12,23 @@ export const StyledBookList = styled.ul`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  
+  & .listViewButtons {
+  
+    & button {
+        border: none;
+        background: none;
+      
+      &:disabled img {
+        filter: opacity(0.5);
+      }
 
-  & button {
-    border: none;
-    background: none;
-    
       & img {
         width: 20px;
         height: 20px;
       }
-}
+    }
+  }
+
+ 
 `
