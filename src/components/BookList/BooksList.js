@@ -1,9 +1,11 @@
-import React, {uesState, useContext} from "react";
+import React, {useContext} from "react";
 import Book from "../Book/Book";
 import '../../index.css';
+import grid from "../../assets/grid.png"
+import list from "../../assets/list.png"
 import BooksAPI from "../../api";
 import BookContext from "../../contexts/BookContext";
-import {StyledBookList} from "./BookList.styles";
+import {StyledBookList, Wrapper} from "./BookList.styles";
 
 
 const BooksList = () => {
@@ -28,9 +30,9 @@ const getBase = () => {
     let list
 
     if(context.filteredBooks.length > 0) {
-        list = <StyledBookList >
+        list = <StyledBookList view={isList}>
             {context.filteredBooks.map(book => (
-                <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
+                <Book isList={isList} key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)} />)
             )}
         </StyledBookList>
     }
@@ -42,22 +44,22 @@ const getBase = () => {
                 )}
             </StyledBookList>
         } else if (context.base.name === "Przeczytane") {
-            list = <StyledBookList >
+            list = <StyledBookList view={isList}>
                 {context.books.filter(item => item.exclusiveShelf === 'read').map(book => (
-                    <Book key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
+                    <Book isList={isList} key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>}
         else if (context.base.name === "Aktualnie czytane") {
-            list = <StyledBookList >
+            list = <StyledBookList view={isList}>
                 {context.books.filter(item => item.exclusiveShelf === 'currently-reading').map(book => (
-                    <Book key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
+                    <Book isList={isList} key={book.id} book={book}  onDelete={() => handleRemoveBook(book.id)} />)
                 )}
             </StyledBookList>
         }
         else if (context.base.name === "Wszystkie książki") {
-            list = <StyledBookList >
+            list = <StyledBookList view={isList}>
                 {context.books.map(book => (
-                    <Book key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)}/>)
+                    <Book isList={isList} key={book.id} book={book} onDelete={() => handleRemoveBook(book.id)}/>)
                 )}
             </StyledBookList>
         }
@@ -69,8 +71,10 @@ const getBase = () => {
 
     return (
         <>
-        <h3>{context.base.name}</h3>
-            <button onClick={toggleListView}>Zmień widok</button>
+            <Wrapper>
+                <h3>{context.base.name}</h3>
+                <button onClick={toggleListView}>{isList ? <img src={grid} alt="grid"/> : <img src={list} alt="list"/>}</button>
+            </Wrapper>
 
             {getBase()}
         </>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledBook = styled.div`
+export const StyledGridBook = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,30 +8,29 @@ export const StyledBook = styled.div`
   
   & .bookWrapper {
     position: relative;
-    width: ${props => props.view ? '100%' : '150px'};
-    height: ${props => props.view ? '50px' : '200px'};
+    width: 150px;
+    height: 200px;
     
     & button {
       position: absolute;
       right: 5px;
       bottom: 5px;
     }
-    
 
     & img {
-      width: ${props => props.view ? '100%' : '150px'};
-      height: ${props => props.view ? '50px' : '200px'};
+      width: 150px;
+      height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
     }
 
     & .noCover {
-      width: ${props => props.view ? '100%' : '150px'};
-      height: ${props => props.view ? '50px' : '200px'};
+      width: 150px;
+      height: 200px;
       background-color: lightgrey;
       box-shadow: #ccc 5px 5px 5px;
       color: darkgrey;
-      text-align: ${props => props.view ? '' : 'center'};
+      text-align: center;
       padding: 5px;
       display: flex;
       flex-direction: column;
@@ -39,7 +38,33 @@ export const StyledBook = styled.div`
       border-radius: 3px;
     }
   }
+`
+export const StyledListBook = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 40px;
+  width: 960px;
+  padding: 0px 10px;
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+  }
   
- 
+  & button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  
+  & .bookWrapper {
+    padding: 0px 10px;
+  }
 
 `
