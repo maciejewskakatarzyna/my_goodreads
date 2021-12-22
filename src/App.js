@@ -8,6 +8,9 @@ import BooksList from "./components/BookList/BooksList";
 import BookContext from "./contexts/BookContext";
 import AddBookForm from "./components/AddBookForm/AddBookForm";
 import ModalDialog from "./components/ModalDialog/ModalDialog";
+import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+
+
 
 const App = () => {
 
@@ -27,7 +30,7 @@ const App = () => {
   useEffect( () => {
     BooksAPI.getAllBooks().then(all => {
       setBooks(all)})
-  },[books]);
+  },[]);
 
 const handleClose = (modal) => {
 if(modal === 'randomBookModal') {
@@ -61,20 +64,31 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
 
 
   return (
-      <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook, filteredBooks: filteredBooks, setFilteredBooks: setFilteredBooks, updateBook: updateBook}}>
-      <Header setBase={setBase} setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} setIsBookAdded={setIsBookAdded}/>
-      <div className="wrapper">
-        {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}
-        {isFormVisible ?
-            <ModalDialog >
-            <AddBookForm onClose={() => handleClose('addFormModal')} setIsBookAdded={setIsBookAdded} isBookAdded={isBookAdded} onCloseConfirm={() => handleClose("addConfirmModal")}/>
-            </ModalDialog>
-            : null}
-        <BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>
+      <Router>
+          <div>
+          <BookContext.Provider value={{base: base, setBase: setBase, books: books, setBooks: setBooks, setIsRandomBook: setIsRandomBook, setRandomBook: setRandomBook, filteredBooks: filteredBooks, setFilteredBooks: setFilteredBooks, updateBook: updateBook}}>
+              <Header setBase={setBase} setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} setIsBookAdded={setIsBookAdded}/>
+              <div className="wrapper">
+                    {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}
+                    <Routes>
+                          <Route path="/add-book" element={<AddBookForm onClose={() => handleClose('addFormModal')} setIsBookAdded={setIsBookAdded} isBookAdded={isBookAdded} onCloseConfirm={() => handleClose("addConfirmModal")}/>}>
+                          </Route>
+                        <Route path="/" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
+                        </Route>
+                        <Route path="/read" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
+                        </Route>
+                        <Route path="/to-read" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
+                        </Route>
+                        <Route path="/currently-reading" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
+                        </Route>
 
-    </div>
-        </BookContext.Provider>
+                    </Routes>
+                </div>
+            </BookContext.Provider>
+          </div>
+      </Router>
   );
 }
 
 export default App;
+

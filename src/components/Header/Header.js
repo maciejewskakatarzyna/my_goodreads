@@ -7,6 +7,7 @@ import {StyledHeader} from "./Header.styles";
 import {StyledNavigation} from "./Navigation.styles";
 import {StyledLoginMenu} from "./LoginMenu.styles";
 import {StyledSearchInput} from "./SearchInput.styles";
+import {Link} from "react-router-dom";
 
 const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
@@ -55,28 +56,26 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
         context.setFilteredBooks(filtered);
     }
 
-
-
     return (
         <StyledHeader >
             <>
                         <nav>
                             <StyledNavigation >
 
-                                <li><a href="#" onClick={() => handleBaseChange({name: "Wszystkie książki"})}>Wszystkie
-                                    książki</a></li>
-                                <li><a href="#"
-                                       onClick={() => handleBaseChange({name: "Przeczytane"})}>Przeczytane</a></li>
-                                <li><a href="#" onClick={() => handleBaseChange({name: "Do przeczytania"})}>Do
-                                    przeczytania</a></li>
-                                <li><a href="#" onClick={() => handleBaseChange({name: "Aktualnie czytane"})}>Aktualnie
-                                    czytane</a></li>
+                                <li><Link to="/" onClick={() => handleBaseChange({name: "Wszystkie książki"})}>Wszystkie
+                                    książki</Link></li>
+                                <li><Link to="/read"
+                                       onClick={() => handleBaseChange({name: "Przeczytane"})}>Przeczytane</Link></li>
+                                <li><Link to="/to-read" onClick={() => handleBaseChange({name: "Do przeczytania"})}>Do
+                                    przeczytania</Link></li>
+                                <li><Link to="currently-reading" onClick={() => handleBaseChange({name: "Aktualnie czytane"})}>Aktualnie
+                                    czytane</Link></li>
                             </StyledNavigation>
                         </nav>
                     <form>
                         <StyledSearchInput className="searchInput" type="text" placeholder="Wyszukaj książkę" onInput={filterBooks}/>
                     </form>
-                    <button className="icon" onClick={handleShowForm}> <img alt="plus" src={plus}/></button>
+                    <Link to='/add-book' className="icon" onClick={handleShowForm}><img alt="plus" src={plus}/></Link>
                     <button className="icon" onClick={getRandomBook}><img alt="shuffle" src={shuffle}/></button>
                     <StyledLoginMenu >
                         <p>Witaj użytkowniku</p>

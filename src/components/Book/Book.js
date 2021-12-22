@@ -9,6 +9,7 @@ const Book = ({book, onDelete, isList}) => {
 
     const [isBookCard, setIsBookCard] = useState(false)
     const [bookCard, setBookCard] = useState(null)
+    const [currentBookIndex, setCurrentBookIndex] = useState(0)
 
 
     const context = useContext(BookContext)
@@ -22,11 +23,27 @@ const Book = ({book, onDelete, isList}) => {
     const handleShowCard = (index) => {
         const bookCardItem = context.books.filter(book => book.id === index)
           setBookCard(bookCardItem[0])
+        const bookIndex = context.books.findIndex(book => book.id === index)
+            if(bookIndex >= 0) {
+                setCurrentBookIndex(bookIndex)
+            }
           setIsBookCard(true)
     }
 
     const handleClose = () =>{
         setIsBookCard(false)
+    }
+
+    function handleNextBook() {
+        const nextBookIndex = (currentBookIndex + 1) % context.books.length;
+        setCurrentBookIndex(nextBookIndex)
+        setBookCard(context.books[currentBookIndex])
+    }
+
+    function handlePrevBook() {
+        const prevBookIndex = (currentBookIndex + context.books.length - 1) % context.books.length;
+        setCurrentBookIndex(prevBookIndex)
+        setBookCard(context.books[currentBookIndex])
     }
 
 
@@ -62,7 +79,7 @@ const Book = ({book, onDelete, isList}) => {
 
             {isBookCard ?
                 <ModalDialog>
-                    <BookCard onDelete={onDelete} onClose={handleClose} book={bookCard} hasCover={hasCover}/>
+                    <BookCard onDelete={onDelete} onClose={handleClose} book={bookCard} hasCover={hasCover} handlePrevBook={handlePrevBook} handleNextBook={handleNextBook}/>
                 </ModalDialog>
                 : null}
             </>
