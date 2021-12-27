@@ -5,17 +5,11 @@ export const StyledGridBook = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   
   & .bookWrapper {
-    position: relative;
     width: 150px;
     height: 200px;
-    
-    & button {
-      position: absolute;
-      right: 5px;
-      bottom: 5px;
-    }
 
     & img {
       width: 150px;
@@ -57,14 +51,14 @@ export const StyledListBook = styled.div`
     background-color: lightgrey;
   }
   
-  & button {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-  }
-  
   & .bookWrapper {
     padding: 0px 10px;
   }
+`
 
+export const StyledButton = styled.button`
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: ${props => props.isVisible};
 `

@@ -3,14 +3,14 @@ import '../../index.css';
 import BookContext from "../../contexts/BookContext";
 import ModalDialog from "../ModalDialog/ModalDialog";
 import BookCard from "../BookCard/BookCard";
-import {StyledGridBook, StyledListBook} from "./Book.styles";
+import {StyledButton, StyledGridBook, StyledListBook} from "./Book.styles";
 
 const Book = ({book, onDelete, isList}) => {
 
     const [isBookCard, setIsBookCard] = useState(false)
     const [bookCard, setBookCard] = useState(null)
     const [currentBookIndex, setCurrentBookIndex] = useState(0)
-
+    const [isVisible, setIsVisible] = useState("none");
 
     const {books} = useContext(BookContext)
 
@@ -46,32 +46,54 @@ const Book = ({book, onDelete, isList}) => {
         setBookCard(books[currentBookIndex])
     }
 
+    const showButton = e => {
+        e.preventDefault();
+        setIsVisible("block");
+    };
+
+    const hideButton = e => {
+        e.preventDefault();
+        setIsVisible("none");
+    };
+
 
     return (
         <>
             {isList ?
-                <StyledListBook>
-                    <div className="bookWrapper">
+                <StyledListBook
+                    onMouseEnter={e => showButton(e)}
+                    onMouseLeave={e => hideButton(e)}>
+                    <div className="bookWrapper"
+                         onClick={() => handleShowCard(book.id)}>
                         <p>{book.title}</p>
                         <p>{book.author}</p>
                     </div>
-                    <button onClick={onDelete}>X</button>
-
+                    <StyledButton isVisible={isVisible} onClick={onDelete}>X</StyledButton>
                 </StyledListBook>
-            :  <StyledGridBook onClick={() => handleShowCard(book.id)}>
+            :  <StyledGridBook
+                    onMouseEnter={e => showButton(e)}
+                    onMouseLeave={e => hideButton(e)}>
                     {hasCover() ?
-                        <div className="bookWrapper">
+                        <>
+                        <div className="bookWrapper"
+                             onClick={() => handleShowCard(book.id)}
+                        >
                             <img alt="book cover" src={book.cover} className="bookCover" />
-                            <button onClick={onDelete}>X</button>
                         </div>
+                        <StyledButton isVisible={isVisible} onClick={onDelete}>X</StyledButton>
+                        </>
                         : (
-                            <div className="bookWrapper">
+                            <>
+                            <div className="bookWrapper"
+                                 onClick={() => handleShowCard(book.id)}
+                            >
                                 <div className="noCover">
                                     <p>{book.title}</p>
                                     <p>{book.author}</p>
                                 </div>
-                                <button onClick={onDelete}>X</button>
                             </div>
+                            <StyledButton isVisible={isVisible} onClick={onDelete}>X</StyledButton>
+                            </>
                         )
                     }
                 </StyledGridBook>
