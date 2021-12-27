@@ -12,7 +12,7 @@ const Book = ({book, onDelete, isList}) => {
     const [currentBookIndex, setCurrentBookIndex] = useState(0)
 
 
-    const context = useContext(BookContext)
+    const {books} = useContext(BookContext)
 
     const hasCover = () => {
         if(book.cover !== "") {
@@ -21,9 +21,9 @@ const Book = ({book, onDelete, isList}) => {
     }
 
     const handleShowCard = (index) => {
-        const bookCardItem = context.books.filter(book => book.id === index)
+        const bookCardItem = books.filter(book => book.id === index)
           setBookCard(bookCardItem[0])
-        const bookIndex = context.books.findIndex(book => book.id === index)
+        const bookIndex = books.findIndex(book => book.id === index)
             if(bookIndex >= 0) {
                 setCurrentBookIndex(bookIndex)
             }
@@ -35,15 +35,15 @@ const Book = ({book, onDelete, isList}) => {
     }
 
     function handleNextBook() {
-        const nextBookIndex = (currentBookIndex + 1) % context.books.length;
+        const nextBookIndex = (currentBookIndex + 1) % books.length;
         setCurrentBookIndex(nextBookIndex)
-        setBookCard(context.books[currentBookIndex])
+        setBookCard(books[currentBookIndex])
     }
 
     function handlePrevBook() {
-        const prevBookIndex = (currentBookIndex + context.books.length - 1) % context.books.length;
+        const prevBookIndex = (currentBookIndex + books.length - 1) % books.length;
         setCurrentBookIndex(prevBookIndex)
-        setBookCard(context.books[currentBookIndex])
+        setBookCard(books[currentBookIndex])
     }
 
 

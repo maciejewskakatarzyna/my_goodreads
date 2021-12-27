@@ -7,7 +7,7 @@ import {StyledAddBookForm} from "./AddBookForm.styles";
 
 const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
 
-    const context = useContext(BookContext)
+    const {setBooks, books} = useContext(BookContext)
 
     const titleInput = useRef(null);
     const authorInput = useRef(null);
@@ -33,7 +33,7 @@ const AddBookForm = ({onClose, setIsBookAdded, isBookAdded}) => {
 
     const handleAddBook = (book) => {
         BooksAPI.addBook(book).then(
-            (bookToAdd) => context.setBooks([...context.books, bookToAdd])
+            (bookToAdd) => setBooks([...books, bookToAdd])
         )
     }
 

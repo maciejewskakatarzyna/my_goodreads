@@ -11,29 +11,30 @@ import {Link} from "react-router-dom";
 
 const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
-    const context = useContext(BookContext)
+
+    const {setBase, booksRead, booksToRead, currentBooks, books, setRandomBook, setIsRandomBook, setFilteredBooks} = useContext(BookContext)
 
     const handleBaseChange = (clickedBase) => {
         if(clickedBase.name === "Przeczytane") {
-            context.setBase({items: context.booksRead, name: clickedBase.name})
+            setBase({items: booksRead, name: clickedBase.name})
         }
         else if(clickedBase.name === "Do przeczytania") {
-            context.setBase({items: context.booksToRead, name: clickedBase.name})
+            setBase({items: booksToRead, name: clickedBase.name})
         }
         else if(clickedBase.name === "Aktualnie czytane") {
-            context.setBase({items: context.currentBooks, name: clickedBase.name})
+            setBase({items: currentBooks, name: clickedBase.name})
         }
         else if(clickedBase.name === "Wszystkie książki") {
-            context.setBase({items: context.books, name: clickedBase.name})
+            setBase({items: books, name: clickedBase.name})
         }
     }
 
     const getRandomBook = () => {
         setIsAddedToCurrent(false)
-        const toReadBase = context.books.filter(book => book.exclusiveShelf === 'to-read')
+        const toReadBase = books.filter(book => book.exclusiveShelf === 'to-read')
         const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
-        context.setRandomBook(random)
-        context.setIsRandomBook(true);
+        setRandomBook(random)
+        setIsRandomBook(true);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -47,13 +48,13 @@ const Header = ({setIsFormVisible, setIsAddedToCurrent, setIsBookAdded}) => {
 
 
     function getFilteredBooksForText(text) {
-        return context.books.filter(book => book.title.toString().toLowerCase().includes(text.toLowerCase()) || book.author.toString().toLowerCase().includes(text.toLowerCase()))
+        return books.filter(book => book.title.toString().toLowerCase().includes(text.toLowerCase()) || book.author.toString().toLowerCase().includes(text.toLowerCase()))
     }
 
     function filterBooks(e) {
         const text = e.currentTarget.value;
         const filtered = getFilteredBooksForText(text);
-        context.setFilteredBooks(filtered);
+        setFilteredBooks(filtered);
     }
 
     return (

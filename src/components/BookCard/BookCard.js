@@ -4,7 +4,7 @@ import {StyledBookDetails} from "./BookDetails.styles";
 import BookContext from "../../contexts/BookContext";
 
 const BookCard = ({book, onDelete, onClose, hasCover, handleNextBook, handlePrevBook}) => {
-    const context = useContext(BookContext)
+    const {updateBook} = useContext(BookContext)
 
     const [selectedOption, setSelectedOption] = useState(0);
 
@@ -25,7 +25,7 @@ const BookCard = ({book, onDelete, onClose, hasCover, handleNextBook, handlePrev
     ]
 
     const changeShelf = (book, shelf) => {
-        context.updateBook(book.id, {...book, exclusiveShelf: shelf})
+        updateBook(book.id, {...book, exclusiveShelf: shelf})
     }
 
     const handleChange = (e) => {

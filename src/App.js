@@ -15,9 +15,9 @@ import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 const App = () => {
 
   const [books, setBooks] = useState([])
-  // const [booksToRead, setBooksToRead] = useState([])
-  // const [booksRead, setBooksRead] = useState([])
-  // const [currentBooks, setCurrentBooks] = useState([])
+    // const [booksToRead, setBooksToRead] = useState(books.filter(item => item.exclusiveShelf === 'to-read'))
+    // const [booksRead, setBooksRead] = useState(books.filter(item => item.exclusiveShelf === 'read'))
+    // const [currentBooks, setCurrentBooks] = useState(books.filter(item => item.exclusiveShelf === 'currently-reading'))
   const [randomBook, setRandomBook] = useState(null)
   const [isRandomBook, setIsRandomBook] = useState(false)
   const [base, setBase] = useState({items: books, name: 'Wszystkie książki'})
@@ -71,8 +71,8 @@ const updateBook = (indexToUpdate, bookToUpdate) => {
               <div className="wrapper">
                     {isRandomBook ? <RandomBook randomBook={randomBook} startReading={() => startReading(randomBook)} onClose={() => handleClose('randomBookModal')} isAddedToCurrent={isAddedToCurrent}/> : null}
                     <Routes>
-                          <Route path="/add-book" element={<AddBookForm onClose={() => handleClose('addFormModal')} setIsBookAdded={setIsBookAdded} isBookAdded={isBookAdded} onCloseConfirm={() => handleClose("addConfirmModal")}/>}>
-                          </Route>
+                        <Route path="/add-book" element={<AddBookForm onClose={() => handleClose('addFormModal')} setIsBookAdded={setIsBookAdded} isBookAdded={isBookAdded} onCloseConfirm={() => handleClose("addConfirmModal")}/>}>
+                        </Route>
                         <Route path="/" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
                         </Route>
                         <Route path="/read" element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose}/>}>
