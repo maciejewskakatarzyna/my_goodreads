@@ -14,20 +14,24 @@ const BooksList = () => {
 
   const [isList, setIsList] = React.useState(false);
 
-  const { exclusiveShelf } = useParams();
+  const { shelf } = useParams();
 
-  const getBooksByShelf = useCallback(async exclusiveShelf => {
-    const response = await axios.get(`http://localhost:4000/exclusiveShelfs/${exclusiveShelf}`);
-    const books = response.data.books;
-    return books;
+  const getBooksByShelf = useCallback(async shelf => {
+    try {
+      const result = await axios.get(`http://localhost:4000/books`);
+      console.log(result.data);
+      return result.data;
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
   useEffect(() => {
     (async () => {
-      const booksByShelf = await getBooksByShelf(exclusiveShelf);
+      const booksByShelf = await getBooksByShelf(shelf);
       setBooks(booksByShelf);
     })();
-  }, [getBooksByShelf, exclusiveShelf]);
+  }, [getBooksByShelf, shelf]);
 
   const handleRemoveBook = index => {
     BooksAPI.removeBook(index).then(() => {

@@ -15100,8 +15100,17 @@
     }
   ],
   "exclusiveShelfs": [
-    "read",
-    "to-read",
-    "currently-reading"
+    {
+      "id": 1,
+      "shelf": "read"
+    },
+    {
+      "id": 2,
+      "shelf": "to-read"
+    },
+    {
+      "id": 3,
+      "shelf": "currently-reading"
+    }
   ]
 }

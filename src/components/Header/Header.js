@@ -8,10 +8,12 @@ import { StyledHeader } from './Header.styles';
 import { StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
   const [shelfs, setShelfs] = useState([]);
+
+  const { shelf } = useParams();
 
   const {
     setBase,
@@ -68,14 +70,18 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
   }
 
   const getShelfs = useCallback(async () => {
-    const result = await axios.get('http://localhost:4000/exclusiveShelfs');
-    console.log(result.data.exclusiveShelfs);
-    return result.data.exclusiveShelfs;
+    try {
+      const result = await axios.get('http://localhost:4000/exclusiveShelfs');
+      console.log(result.data);
+      return result.data;
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
   useEffect(() => {
     (async () => {
-      const shelfs = await getShelfs();
+      const shelfs = await getShelfs(shelf);
       setShelfs(shelfs);
     })();
   }, [getShelfs]);
@@ -87,7 +93,7 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
           <StyledNavigation>
             {shelfs.map(({ shelf }) => (
               <Link key={shelf} to={`/${shelf}`}>
-                {shelf}{' '}
+                {shelf}
               </Link>
             ))}
           </StyledNavigation>
