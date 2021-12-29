@@ -15098,5 +15098,10 @@
       "cover": "",
       "id": 58154667
     }
+  ],
+  "exclusiveShelfs": [
+    "read",
+    "to-read",
+    "currently-reading"
   ]
 }

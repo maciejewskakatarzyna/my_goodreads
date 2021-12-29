@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledBookCard = styled.div`
   display: grid;
@@ -8,12 +8,12 @@ export const StyledBookCard = styled.div`
   padding: 20px 40px;
   margin: 20px auto;
   font-size: 18px;
-  border: #DCD6CC 1px solid;
+  border: #dcd6cc 1px solid;
   border-radius: 5px;
-  background-color: #F4F1EA;
-  box-shadow:  0 1px 2px rgba(0,0,0,0.15);
+  background-color: #f4f1ea;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   position: relative;
-  
+
   & img {
     width: 250px;
     height: 350px;
@@ -25,7 +25,7 @@ export const StyledBookCard = styled.div`
     background-color: lightgrey;
     box-shadow: #ccc 5px 5px 5px;
   }
-  
+
   & .prevBtn {
     position: absolute;
     left: 10px;
@@ -37,4 +37,4 @@ export const StyledBookCard = styled.div`
     right: 10px;
     top: 50%;
   }
-`
+`;

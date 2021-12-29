@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledBookDetails = styled.div`
   padding: 10px;
@@ -6,14 +6,13 @@ export const StyledBookDetails = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   & p {
     text-align: center;
     margin-bottom: 10px;
   }
-  
+
   & button {
     margin-left: 20px;
   }
-  
-`
+`;

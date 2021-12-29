@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: #F4F1EA;
-  box-shadow:  0 1px 2px rgba(0,0,0,0.15);
+  background-color: #f4f1ea;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   width: 100%;
   height: 50px;
   position: fixed;
@@ -18,4 +18,4 @@ export const StyledHeader = styled.div`
     text-decoration: none;
     color: #382110;
   }
-`
+`;

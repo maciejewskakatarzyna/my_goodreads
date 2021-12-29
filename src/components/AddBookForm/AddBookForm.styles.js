@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledAddBookForm = styled.form`
   margin: 20px auto;
@@ -6,10 +6,10 @@ export const StyledAddBookForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: #DCD6CC 1px solid;
+  border: #dcd6cc 1px solid;
   padding: 60px;
   border-radius: 5px;
-  background-color: #F4F1EA;
-  box-shadow:  0 1px 2px rgba(0,0,0,0.15);
+  background-color: #f4f1ea;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   position: relative;
-`
+`;

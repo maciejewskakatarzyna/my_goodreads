@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledGridBook = styled.div`
   display: flex;
@@ -6,7 +6,7 @@ export const StyledGridBook = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  
+
   & .bookWrapper {
     width: 150px;
     height: 200px;
@@ -32,7 +32,7 @@ export const StyledGridBook = styled.div`
       border-radius: 3px;
     }
   }
-`
+`;
 export const StyledListBook = styled.div`
   display: flex;
   flex-direction: column;
@@ -50,15 +50,15 @@ export const StyledListBook = styled.div`
     height: 1px;
     background-color: lightgrey;
   }
-  
+
   & .bookWrapper {
     padding: 0px 10px;
   }
-`
+`;
 
 export const StyledButton = styled.button`
   position: absolute;
   right: 5px;
   bottom: 5px;
   display: ${props => props.isVisible};
-`
+`;
