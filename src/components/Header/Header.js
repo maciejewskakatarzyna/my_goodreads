@@ -11,10 +11,6 @@ import { StyledSearchInput } from './SearchInput.styles';
 import { Link, useParams } from 'react-router-dom';
 
 const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
-  const [shelfs, setShelfs] = useState([]);
-
-  const { shelf } = useParams();
-
   const {
     setBase,
     booksRead,
@@ -24,19 +20,9 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
     setRandomBook,
     setIsRandomBook,
     setFilteredBooks,
+    shelfs,
+    setShelfs,
   } = useContext(BookContext);
-
-  const handleBaseChange = clickedBase => {
-    if (clickedBase.name === 'Przeczytane') {
-      setBase({ items: booksRead, name: clickedBase.name });
-    } else if (clickedBase.name === 'Do przeczytania') {
-      setBase({ items: booksToRead, name: clickedBase.name });
-    } else if (clickedBase.name === 'Aktualnie czytane') {
-      setBase({ items: currentBooks, name: clickedBase.name });
-    } else if (clickedBase.name === 'Wszystkie książki') {
-      setBase({ items: books, name: clickedBase.name });
-    }
-  };
 
   const getRandomBook = () => {
     setIsAddedToCurrent(false);
@@ -69,30 +55,13 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
     setFilteredBooks(filtered);
   }
 
-  const getShelfs = useCallback(async () => {
-    try {
-      const result = await axios.get('http://localhost:4000/exclusiveShelfs');
-      console.log(result.data);
-      return result.data;
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
-
-  useEffect(() => {
-    (async () => {
-      const shelfs = await getShelfs(shelf);
-      setShelfs(shelfs);
-    })();
-  }, [getShelfs]);
-
   return (
     <StyledHeader>
       <>
         <nav>
           <StyledNavigation>
-            {shelfs.map(({ shelf }) => (
-              <Link key={shelf} to={`/${shelf}`}>
+            {shelfs.map(shelf => (
+              <Link key={shelf} to={`/shelf/${shelf}`}>
                 {shelf}
               </Link>
             ))}

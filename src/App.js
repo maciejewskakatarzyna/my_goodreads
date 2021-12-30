@@ -8,13 +8,11 @@ import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
 import AddBookForm from './components/AddBookForm/AddBookForm';
 import ModalDialog from './components/ModalDialog/ModalDialog';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
+import axios from 'axios';
 
 const App = () => {
   const [books, setBooks] = useState([]);
-  // const [booksToRead, setBooksToRead] = useState(books.filter(item => item.exclusiveShelf === 'to-read'))
-  // const [booksRead, setBooksRead] = useState(books.filter(item => item.exclusiveShelf === 'read'))
-  // const [currentBooks, setCurrentBooks] = useState(books.filter(item => item.exclusiveShelf === 'currently-reading'))
   const [randomBook, setRandomBook] = useState(null);
   const [isRandomBook, setIsRandomBook] = useState(false);
   const [base, setBase] = useState({ items: books, name: 'Wszystkie książki' });
@@ -22,12 +20,7 @@ const App = () => {
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
   const [isBookAdded, setIsBookAdded] = useState(false);
   const [filteredBooks, setFilteredBooks] = useState([]);
-
-  //
-  // useEffect( () => {
-  //   BooksAPI.getAllBooks().then(all => {
-  //     setBooks(all)})
-  // },[]);
+  const [shelfs, setShelfs] = useState([]);
 
   const handleClose = modal => {
     if (modal === 'randomBookModal') {
@@ -37,21 +30,6 @@ const App = () => {
     } else if (modal === 'addConfirmModal') {
       setIsFormVisible(false);
     }
-  };
-
-  const updateBook = (indexToUpdate, bookToUpdate) => {
-    BooksAPI.replaceBook(bookToUpdate).then(updatedBook => {
-      const booksUpdated = books.map((book, index) =>
-        index === indexToUpdate ? updatedBook : book
-      );
-      setBooks(booksUpdated);
-      return { booksUpdated };
-    });
-  };
-
-  const startReading = randomBook => {
-    updateBook(randomBook.id, { ...randomBook, exclusiveShelf: 'currently-reading' });
-    setIsAddedToCurrent(true);
   };
 
   return (
@@ -67,7 +45,8 @@ const App = () => {
             setRandomBook: setRandomBook,
             filteredBooks: filteredBooks,
             setFilteredBooks: setFilteredBooks,
-            updateBook: updateBook,
+            shelfs: shelfs,
+            setShelfs: setShelfs,
           }}
         >
           <Header
@@ -80,12 +59,12 @@ const App = () => {
             {isRandomBook ? (
               <RandomBook
                 randomBook={randomBook}
-                startReading={() => startReading(randomBook)}
                 onClose={() => handleClose('randomBookModal')}
                 isAddedToCurrent={isAddedToCurrent}
               />
             ) : null}
             <Routes>
+              <Route exact path='/' element={<Navigate to='/shelf' />} />
               <Route
                 path='/add-book'
                 element={
@@ -96,11 +75,8 @@ const App = () => {
                     onCloseConfirm={() => handleClose('addConfirmModal')}
                   />
                 }
-              ></Route>
-              <Route
-                path='/:shelf'
-                element={<BooksList handleUpdateBook={updateBook} handleClose={handleClose} />}
-              ></Route>
+              />
+              <Route path='/shelf/:shelf' element={<BooksList handleClose={handleClose} />} />
             </Routes>
           </div>
         </BookContext.Provider>

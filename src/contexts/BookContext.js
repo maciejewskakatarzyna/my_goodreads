@@ -19,6 +19,8 @@ const BookContext = React.createContext({
   setFilteredBooks: null,
   filteredBooks: null,
   updateBook: null,
+  shelfs: null,
+  setShelfs: null,
 });
 
 export default BookContext;
