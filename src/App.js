@@ -64,7 +64,7 @@ const App = () => {
               />
             ) : null}
             <Routes>
-              <Route exact path='/' element={<Navigate to='/shelf' />} />
+              <Route path='/' element={<Navigate to='/shelf' />} />
               <Route
                 path='/add-book'
                 element={
@@ -76,6 +76,7 @@ const App = () => {
                   />
                 }
               />
+              <Route path='/shelf/' element={<BooksList handleClose={handleClose} />} />
               <Route path='/shelf/:shelf' element={<BooksList handleClose={handleClose} />} />
             </Routes>
           </div>

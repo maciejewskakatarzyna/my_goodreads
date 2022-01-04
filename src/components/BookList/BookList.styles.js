@@ -11,7 +11,8 @@ export const StyledBookList = styled.ul`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 
   & .listViewButtons {
     & button {
@@ -28,4 +29,9 @@ export const Wrapper = styled.div`
       }
     }
   }
+`;
+
+export const ListHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

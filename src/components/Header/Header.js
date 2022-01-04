@@ -5,7 +5,7 @@ import plus from '../../assets/plus.png';
 import shuffle from '../../assets/shuffle.png';
 import BookContext from '../../contexts/BookContext';
 import { StyledHeader } from './Header.styles';
-import { StyledNavigation } from './Navigation.styles';
+import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link, useParams } from 'react-router-dom';
@@ -55,15 +55,25 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
     setFilteredBooks(filtered);
   }
 
+  const shelfNames = {
+    'to-read': 'Chcę przeczytać',
+    read: 'Przeczytane',
+    'currently-reading': 'Teraz czytam',
+  };
+
+  const getShelfName = shelf => {
+    return shelfNames[shelf];
+  };
+
   return (
     <StyledHeader>
       <>
         <nav>
           <StyledNavigation>
             {shelfs.map(shelf => (
-              <Link key={shelf} to={`/shelf/${shelf}`}>
-                {shelf}
-              </Link>
+              <StyledLink key={shelf} to={`/shelf/${shelf}`}>
+                {getShelfName(shelf)}
+              </StyledLink>
             ))}
           </StyledNavigation>
         </nav>
