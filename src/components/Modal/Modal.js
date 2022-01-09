@@ -3,7 +3,11 @@ import { StyledModalWrapper } from './Modal.styles';
 
 const Modal = ({ handleClose, isOpen, children }) => {
   return (
-    <StyledModalWrapper isOpen={isOpen} onRequestClose={handleClose}>
+    <StyledModalWrapper
+      appElement={document.getElementById('root')}
+      isOpen={isOpen}
+      onRequestClose={handleClose}
+    >
       {children}
       <button className='closeBtn' onClick={handleClose}>
         x

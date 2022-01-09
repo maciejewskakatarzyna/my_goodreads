@@ -51,7 +51,7 @@ const BooksList = () => {
     <>
       <Wrapper>
         <ListHeader>
-          <h3>{getShelfName(shelf)}</h3>
+          <h3>{getShelfName(shelf) || getShelfName(shelfs[0])}</h3>
           <div className='listViewButtons'>
             <button onClick={changeToGridView} disabled={!isList}>
               {<img src={grid} alt='grid' />}
