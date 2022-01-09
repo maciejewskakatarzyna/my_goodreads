@@ -4,11 +4,12 @@ import BookContext from '../../contexts/BookContext';
 import BookCard from '../BookCard/BookCard';
 import { StyledButton, StyledGridBook, StyledListBook } from './Book.styles';
 import Modal from '../Modal/Modal';
+import useModal from '../Modal/useModal';
 
 const Book = ({ book, onDelete, isList }) => {
   const ref = useRef();
 
-  const [isBookCard, setIsBookCard] = useState(false);
+  const { isOpen, handleOpenModal, handleCloseModal } = useModal();
   const [bookCard, setBookCard] = useState(null);
   const [currentBookIndex, setCurrentBookIndex] = useState(0);
   const [isVisible, setIsVisible] = useState('none');
@@ -28,11 +29,11 @@ const Book = ({ book, onDelete, isList }) => {
     if (bookIndex >= 0) {
       setCurrentBookIndex(bookIndex);
     }
-    setIsBookCard(true);
+    handleOpenModal();
   };
 
   const handleClose = () => {
-    setIsBookCard(false);
+    handleCloseModal();
   };
 
   function handleNextBook() {
@@ -96,7 +97,7 @@ const Book = ({ book, onDelete, isList }) => {
         </StyledGridBook>
       )}
 
-      <Modal isOpen={isBookCard} handleClose={handleClose}>
+      <Modal isOpen={isOpen} handleClose={handleClose}>
         <BookCard
           onDelete={onDelete}
           book={bookCard}
