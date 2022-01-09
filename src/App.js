@@ -1,15 +1,12 @@
 import './index.css';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import BooksAPI from './api';
 import Header from './components/Header/Header';
 import RandomBook from './components/RandomBook/RandomBook';
 import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
 import AddBookForm from './components/AddBookForm/AddBookForm';
-import ModalDialog from './components/ModalDialog/ModalDialog';
-import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
-import axios from 'axios';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 const App = () => {
   const [books, setBooks] = useState([]);

@@ -1,9 +1,9 @@
-import React, { useContext, useState, useRef, useEffect } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import ModalDialog from '../ModalDialog/ModalDialog';
 import BookCard from '../BookCard/BookCard';
 import { StyledButton, StyledGridBook, StyledListBook } from './Book.styles';
+import Modal from '../Modal/Modal';
 
 const Book = ({ book, onDelete, isList }) => {
   const ref = useRef();
@@ -57,23 +57,6 @@ const Book = ({ book, onDelete, isList }) => {
     setIsVisible('none');
   };
 
-  // useEffect(() => {
-  //     const checkIfClickedOutside = e => {
-  //
-  //         if (isBookCard && ref.current && !ref.current.contains(e.target)) {
-  //             setIsBookCard(false)
-  //             console.log(e.target)
-  //             console.log(ref.current)
-  //         }
-  //     }
-  //
-  //     document.addEventListener("mousedown", checkIfClickedOutside)
-  //
-  //     return () => {
-  //         document.removeEventListener("mousedown", checkIfClickedOutside)
-  //     }
-  // }, [isBookCard])
-
   return (
     <div ref={ref}>
       {isList ? (
@@ -113,18 +96,15 @@ const Book = ({ book, onDelete, isList }) => {
         </StyledGridBook>
       )}
 
-      {isBookCard && (
-        <ModalDialog>
-          <BookCard
-            onDelete={onDelete}
-            onClose={handleClose}
-            book={bookCard}
-            hasCover={hasCover}
-            handlePrevBook={handlePrevBook}
-            handleNextBook={handleNextBook}
-          />
-        </ModalDialog>
-      )}
+      <Modal isOpen={isBookCard} handleClose={handleClose}>
+        <BookCard
+          onDelete={onDelete}
+          book={bookCard}
+          hasCover={hasCover}
+          handlePrevBook={handlePrevBook}
+          handleNextBook={handleNextBook}
+        />
+      </Modal>
     </div>
   );
 };

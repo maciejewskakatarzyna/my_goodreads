@@ -61,6 +61,7 @@ const BooksList = () => {
             </button>
           </div>
         </ListHeader>
+
         <StyledBookList view={isList}>
           {books.map(book => (
             <Book isList={isList} key={book.id} book={book} />

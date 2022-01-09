@@ -26,7 +26,7 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
 
   const getRandomBook = () => {
     setIsAddedToCurrent(false);
-    const toReadBase = books.filter(book => book.exclusiveShelf === 'to-read');
+    const toReadBase = books.filter(book => book.shelf === 'to-read');
     const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
     setRandomBook(random);
     setIsRandomBook(true);

@@ -3,7 +3,7 @@ import { StyledBookCard } from './BookCard.styles';
 import { StyledBookDetails } from './BookDetails.styles';
 import BookContext from '../../contexts/BookContext';
 
-const BookCard = ({ book, onDelete, onClose, hasCover, handleNextBook, handlePrevBook }) => {
+const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) => {
   const { updateBook } = useContext(BookContext);
 
   const [selectedOption, setSelectedOption] = useState(0);
@@ -37,9 +37,7 @@ const BookCard = ({ book, onDelete, onClose, hasCover, handleNextBook, handlePre
       <button className='prevBtn' onClick={() => handlePrevBook()}>
         prev
       </button>
-      <button className='closeBtn' onClick={onClose}>
-        x
-      </button>
+
       <>
         <div className='coverWrapper'>
           {hasCover() ? (

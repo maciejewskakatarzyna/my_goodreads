@@ -1,18 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledBookCard = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 60vw;
-  height: 60vh;
+  width: 100%;
   padding: 20px 40px;
   margin: 20px auto;
   font-size: 18px;
-  border: #dcd6cc 1px solid;
-  border-radius: 5px;
-  background-color: #f4f1ea;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   & img {
     width: 250px;
