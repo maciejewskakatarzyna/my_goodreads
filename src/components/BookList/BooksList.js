@@ -6,28 +6,22 @@ import grid from '../../assets/grid.png';
 import list from '../../assets/list.png';
 import BookContext from '../../contexts/BookContext';
 import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
-import axios from 'axios';
+import { useBooks } from '../../hooks/useBooks';
 
 const BooksList = () => {
-  const { books, setBooks, filteredBooks, shelfs, setShelfs } = useContext(BookContext);
+  const { books, setBooks, filteredBooks, shelfs } = useContext(BookContext);
 
   const [isList, setIsList] = React.useState(false);
 
-  const { shelf } = useParams();
+  const { id } = useParams();
+  const { getBooksByShelf } = useBooks();
 
   useEffect(() => {
-    axios
-      .get(`/shelfs`)
-      .then(({ data }) => setShelfs(data.shelfs))
-      .catch(err => console.log(err));
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get(`/books/${shelf || shelfs[0]}`)
-      .then(({ data }) => setBooks(data.books))
-      .catch(err => console.log(err));
-  }, [shelf, shelfs]);
+    (async () => {
+      const books = await getBooksByShelf(id);
+      setBooks(books);
+    })();
+  }, [getBooksByShelf, id]);
 
   const changeToListView = () => {
     setIsList(true);
@@ -51,7 +45,7 @@ const BooksList = () => {
     <>
       <Wrapper>
         <ListHeader>
-          <h3>{getShelfName(shelf) || getShelfName(shelfs[0])}</h3>
+          <h3>{getShelfName(id) || getShelfName(shelfs[0])}</h3>
           <div className='listViewButtons'>
             <button onClick={changeToGridView} disabled={!isList}>
               {<img src={grid} alt='grid' />}

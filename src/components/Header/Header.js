@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState, useCallback } from 'react';
-import axios from 'axios';
+import React, { useContext, useEffect } from 'react';
 import '../../index.css';
 import plus from '../../assets/plus.png';
 import shuffle from '../../assets/shuffle.png';
@@ -8,21 +7,11 @@ import { StyledHeader } from './Header.styles';
 import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
-  const {
-    setBase,
-    booksRead,
-    booksToRead,
-    currentBooks,
-    books,
-    setRandomBook,
-    setIsRandomBook,
-    setFilteredBooks,
-    shelfs,
-    setShelfs,
-  } = useContext(BookContext);
+  const { books, setRandomBook, setIsRandomBook, setFilteredBooks, shelfs } =
+    useContext(BookContext);
 
   const getRandomBook = () => {
     setIsAddedToCurrent(false);
@@ -70,9 +59,9 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
       <>
         <nav>
           <StyledNavigation>
-            {shelfs.map(shelf => (
-              <StyledLink key={shelf} to={`/shelf/${shelf}`}>
-                {getShelfName(shelf)}
+            {shelfs.map(({ id }) => (
+              <StyledLink key={id} to={`/shelfs/${id}`}>
+                {getShelfName(id)}
               </StyledLink>
             ))}
           </StyledNavigation>

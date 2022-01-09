@@ -6,18 +6,28 @@ import RandomBook from './components/RandomBook/RandomBook';
 import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
 import AddBookForm from './components/AddBookForm/AddBookForm';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  useParams,
+  useNavigate,
+} from 'react-router-dom';
+import { useBooks } from './hooks/useBooks';
 
 const App = () => {
   const [books, setBooks] = useState([]);
   const [randomBook, setRandomBook] = useState(null);
   const [isRandomBook, setIsRandomBook] = useState(false);
-  const [base, setBase] = useState({ items: books, name: 'Wszystkie książki' });
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
   const [isBookAdded, setIsBookAdded] = useState(false);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [shelfs, setShelfs] = useState([]);
+
+  const { getShelfs } = useBooks();
+  const { id } = useParams();
 
   const handleClose = modal => {
     if (modal === 'randomBookModal') {
@@ -29,13 +39,18 @@ const App = () => {
     }
   };
 
+  useEffect(() => {
+    (async () => {
+      const shelfs = await getShelfs();
+      setShelfs(shelfs);
+    })();
+  }, [getShelfs]);
+
   return (
     <Router>
       <div>
         <BookContext.Provider
           value={{
-            base: base,
-            setBase: setBase,
             books: books,
             setBooks: setBooks,
             setIsRandomBook: setIsRandomBook,
@@ -47,7 +62,6 @@ const App = () => {
           }}
         >
           <Header
-            setBase={setBase}
             setIsFormVisible={setIsFormVisible}
             setIsAddedToCurrent={setIsAddedToCurrent}
             setIsBookAdded={setIsBookAdded}
@@ -61,7 +75,7 @@ const App = () => {
               />
             ) : null}
             <Routes>
-              <Route path='/' element={<Navigate to='/shelf' />} />
+              <Route path='/' element={<Navigate to='/shelfs' />} />
               <Route
                 path='/add-book'
                 element={
@@ -73,8 +87,9 @@ const App = () => {
                   />
                 }
               />
-              <Route path='/shelf/' element={<BooksList handleClose={handleClose} />} />
-              <Route path='/shelf/:shelf' element={<BooksList handleClose={handleClose} />} />
+              <Route path='/shelfs/' element={<Navigate to='/shelfs/to-read' />} />
+              <Route path='/shelfs/' element={<BooksList handleClose={handleClose} />} />
+              <Route path='/shelfs/:id' element={<BooksList handleClose={handleClose} />} />
             </Routes>
           </div>
         </BookContext.Provider>

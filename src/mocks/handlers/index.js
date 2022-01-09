@@ -1,15 +1,19 @@
 import { rest } from 'msw';
-import { books } from '../data/books';
-import { shelfs } from '../data/shelfs';
+import { db } from '../db';
 
 export const handlers = [
   rest.get('/shelfs', (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json({ shelfs }));
+    return res(ctx.status(200), ctx.json({ shelfs: db.shelf.getAll() }));
   }),
-
-  rest.get('/books/:shelf', (req, res, ctx) => {
-    if (req.params.shelf) {
-      const matchingBooks = books.filter(book => book.shelf === req.params.shelf);
+  rest.get('/shelfs/:id', (req, res, ctx) => {
+    if (req.params.id) {
+      const matchingBooks = db.book.findMany({
+        where: {
+          shelf: {
+            equals: req.params.id,
+          },
+        },
+      });
       return res(
         ctx.status(200),
         ctx.json({
@@ -21,7 +25,39 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        books,
+        books: db.book.getAll(),
+      })
+    );
+  }),
+  rest.get('/books/:id', (req, res, ctx) => {
+    if (req.params.id) {
+      const matchingBook = db.book.findFirst({
+        where: {
+          id: {
+            equals: req.params.id,
+          },
+        },
+      });
+      if (!matchingBook) {
+        return res(
+          ctx.status(404),
+          ctx.json({
+            error: 'No matching book',
+          })
+        );
+      }
+      return res(
+        ctx.status(200),
+        ctx.json({
+          books: matchingBook,
+        })
+      );
+    }
+
+    return res(
+      ctx.status(200),
+      ctx.json({
+        books: db.book.getAll(),
       })
     );
   }),

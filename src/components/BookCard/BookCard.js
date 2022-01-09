@@ -59,7 +59,6 @@ const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) 
               ))}
             </select>
           </div>
-          <p>{book.exclusiveShelf}</p>
           <button onClick={onDelete}>Usuń książkę</button>
         </StyledBookDetails>
         <button className='nextBtn' onClick={() => handleNextBook()}>
