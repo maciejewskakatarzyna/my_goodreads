@@ -14,7 +14,7 @@ const BooksList = () => {
   const [isList, setIsList] = React.useState(false);
 
   const { id } = useParams();
-  const { getBooksByShelf } = useBooks();
+  const { getBooksByShelf, deleteBookById } = useBooks();
 
   useEffect(() => {
     (async () => {
@@ -41,6 +41,12 @@ const BooksList = () => {
     return shelfNames[shelf];
   };
 
+  const handleRemove = id => {
+    deleteBookById(id);
+    const filteredBooks = books.filter(book => book.id !== id);
+    setBooks(filteredBooks);
+  };
+
   return (
     <>
       <Wrapper>
@@ -58,7 +64,7 @@ const BooksList = () => {
 
         <StyledBookList view={isList}>
           {books.map(book => (
-            <Book isList={isList} key={book.id} book={book} />
+            <Book isList={isList} key={book.id} book={book} onDelete={handleRemove} />
           ))}
         </StyledBookList>
       </Wrapper>

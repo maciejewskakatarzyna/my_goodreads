@@ -50,6 +50,11 @@ const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) 
           <p>{book.title}</p>
           <p>{book.author}</p>
           <p>{book.yearPublished}</p>
+          <p>{book.publisher}</p>
+          <p>{book.shelf}</p>
+          <p>{book.genre}</p>
+          <p>{book.myRating}</p>
+          <p>{book.averageRating}</p>
           <div>
             <select value={selectedOption} onChange={e => handleChange(e)}>
               {options.map(o => (
@@ -59,7 +64,7 @@ const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) 
               ))}
             </select>
           </div>
-          <button onClick={onDelete}>Usuń książkę</button>
+          <button onClick={() => onDelete(book.id)}>Usuń książkę</button>
         </StyledBookDetails>
         <button className='nextBtn' onClick={() => handleNextBook()}>
           next

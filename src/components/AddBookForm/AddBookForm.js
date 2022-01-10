@@ -3,16 +3,20 @@ import BooksAPI from '../../api';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { StyledAddBookForm } from './AddBookForm.styles';
+import { useBooks } from '../../hooks/useBooks';
 
 const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
   const { setBooks, books } = useContext(BookContext);
 
+  const { addNewBook } = useBooks();
+
   const titleInput = useRef(null);
   const authorInput = useRef(null);
-  const coverInput = useRef(null);
+  const publisherInput = useRef(null);
   const radioInput1 = useRef(null);
   const radioInput2 = useRef(null);
   const radioInput3 = useRef(null);
+  const genreInput = useRef(null);
 
   let newBook = {};
   let radioShelf;
@@ -28,7 +32,7 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
   };
 
   const handleAddBook = book => {
-    BooksAPI.addBook(book).then(bookToAdd => setBooks([...books, bookToAdd]));
+    addNewBook(book).then(bookToAdd => setBooks([...books, bookToAdd]));
   };
 
   const handleSubmit = event => {
@@ -37,15 +41,17 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
     newBook = {
       title: titleInput.current.value,
       author: authorInput.current.value,
-      cover: coverInput.current.value,
-      exclusiveShelf: radioShelf,
+      publisher: publisherInput.current.value,
+      shelf: radioShelf,
+      genre: genreInput.current.value,
     };
-    handleAddBook(newBook, newBook.exclusiveShelf);
+    handleAddBook(newBook);
     setIsBookAdded(true);
 
     titleInput.current.value = '';
     authorInput.current.value = '';
-    coverInput.current.value = '';
+    publisherInput.current.value = '';
+    genreInput.current.value = '';
   };
 
   return (
@@ -64,8 +70,18 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
             <input type='text' ref={authorInput} />
           </label>
           <label>
-            Okładka
-            <input type='text' ref={coverInput} />
+            Wydawnictwo
+            <input type='text' ref={publisherInput} />
+          </label>
+          <br />
+          <label>
+            Gatunek
+            <input type='text' ref={genreInput} />
+          </label>
+          <br />
+          <label>
+            Chcę przeczytać
+            <input type='radio' name='shelf' value='to-read' ref={radioInput2} />
           </label>
           <br />
           <label>
@@ -74,12 +90,7 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
           </label>
           <br />
           <label>
-            Do przeczytania
-            <input type='radio' name='shelf' value='to-read' ref={radioInput2} />
-          </label>
-          <br />
-          <label>
-            Aktualnie czytane
+            Teraz czytam
             <input type='radio' name='shelf' value='currently-reading' ref={radioInput3} />
           </label>
           <br />

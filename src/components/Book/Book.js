@@ -70,7 +70,7 @@ const Book = ({ book, onDelete, isList }) => {
             <p>{book.title}</p>
             <p>{book.author}</p>
           </div>
-          <StyledButton isVisible={isVisible} onClick={onDelete}>
+          <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
             X
           </StyledButton>
         </StyledListBook>
@@ -81,7 +81,7 @@ const Book = ({ book, onDelete, isList }) => {
               <div className='bookWrapper' onClick={() => handleOpenBookCard(book.id)}>
                 <img alt='book cover' src={book.cover} className='bookCover' />
               </div>
-              <StyledButton isVisible={isVisible} onClick={onDelete}>
+              <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
                 X
               </StyledButton>
             </>
@@ -93,7 +93,7 @@ const Book = ({ book, onDelete, isList }) => {
                   <p>{book.author}</p>
                 </div>
               </div>
-              <StyledButton isVisible={isVisible} onClick={onDelete}>
+              <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
                 X
               </StyledButton>
             </>

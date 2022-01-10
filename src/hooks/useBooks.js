@@ -29,9 +29,29 @@ export const useBooks = () => {
     }
   }, []);
 
+  const deleteBookById = useCallback(async id => {
+    try {
+      await axios.delete(`/books/${id}`);
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
+  const addNewBook = useCallback(async bookToAdd => {
+    try {
+      const result = await axios.post(`/books`, bookToAdd);
+      const addedBook = result.data;
+      return addedBook;
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
   return {
     getShelfs,
     getBooksByShelf,
     getBookById,
+    deleteBookById,
+    addNewBook,
   };
 };
