@@ -47,11 +47,22 @@ export const useBooks = () => {
     }
   }, []);
 
+  const editBookById = useCallback(async (id, bookToEdit) => {
+    try {
+      const result = await axios.put(`/books/${id}`, bookToEdit);
+      const editedBook = result.data;
+      return editedBook;
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
   return {
     getShelfs,
     getBooksByShelf,
     getBookById,
     deleteBookById,
     addNewBook,
+    editBookById,
   };
 };

@@ -21,6 +21,8 @@ const BookContext = React.createContext({
   updateBook: null,
   shelfs: null,
   setShelfs: null,
+  currentBook: null,
+  setCurrentBook: null,
 });
 
 export default BookContext;

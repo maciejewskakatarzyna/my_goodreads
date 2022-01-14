@@ -3,10 +3,12 @@ import { StyledBookCard } from './BookCard.styles';
 import { StyledBookDetails } from './BookDetails.styles';
 import BookContext from '../../contexts/BookContext';
 
-const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) => {
-  const { updateBook } = useContext(BookContext);
+const BookCard = ({ book }) => {
+  const { currentBook } = useContext(BookContext);
 
-  const [selectedOption, setSelectedOption] = useState(0);
+  // const { updateBook } = useContext(BookContext);
+
+  // const [selectedOption, setSelectedOption] = useState(0);
 
   const options = [
     {
@@ -23,52 +25,41 @@ const BookCard = ({ book, onDelete, hasCover, handleNextBook, handlePrevBook }) 
     },
   ];
 
-  const changeShelf = (book, shelf) => {
-    updateBook(book.id, { ...book, exclusiveShelf: shelf });
-  };
+  // const changeShelf = (book, shelf) => {
+  //   updateBook(book.id, { ...book, exclusiveShelf: shelf });
+  // };
 
-  const handleChange = e => {
-    setSelectedOption(e.target.value);
-    changeShelf(book, selectedOption);
-  };
+  // const handleChange = e => {
+  //   setSelectedOption(e.target.value);
+  //   changeShelf(book, selectedOption);
+  // };
 
   return (
     <StyledBookCard>
-      <button className='prevBtn' onClick={() => handlePrevBook()}>
-        prev
-      </button>
-
       <>
         <div className='coverWrapper'>
-          {hasCover() ? (
-            <img alt='book cover' src={book.cover} />
-          ) : (
-            <div className='noCoverCard'></div>
-          )}
+          <div className='noCoverCard'></div>
         </div>
         <StyledBookDetails>
-          <p>{book.title}</p>
-          <p>{book.author}</p>
-          <p>{book.yearPublished}</p>
-          <p>{book.publisher}</p>
-          <p>{book.shelf}</p>
-          <p>{book.genre}</p>
-          <p>{book.myRating}</p>
-          <p>{book.averageRating}</p>
-          <div>
-            <select value={selectedOption} onChange={e => handleChange(e)}>
-              {options.map(o => (
-                <option key={o.value} value={o.value}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
-          </div>
-          <button onClick={() => onDelete(book.id)}>Usuń książkę</button>
+          <p>{currentBook.title}</p>
+          <p>{currentBook.author}</p>
+          <p>{currentBook.yearPublished}</p>
+          <p>{currentBook.publisher}</p>
+          <p>{currentBook.shelf}</p>
+          <p>{currentBook.genre}</p>
+          <p>{currentBook.myRating}</p>
+          <p>{currentBook.averageRating}</p>
+          {/*<div>*/}
+          {/*  <select value={selectedOption} onChange={e => handleChange(e)}>*/}
+          {/*    {options.map(o => (*/}
+          {/*      <option key={o.value} value={o.value}>*/}
+          {/*        {o.label}*/}
+          {/*      </option>*/}
+          {/*    ))}*/}
+          {/*  </select>*/}
+          {/*</div>*/}
+          {/*<button onClick={() => onDelete(book.id)}>Usuń książkę</button>*/}
         </StyledBookDetails>
-        <button className='nextBtn' onClick={() => handleNextBook()}>
-          next
-        </button>
       </>
     </StyledBookCard>
   );

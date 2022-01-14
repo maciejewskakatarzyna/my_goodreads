@@ -108,4 +108,22 @@ export const handlers = [
       })
     );
   }),
+
+  rest.put('/books/:id', (req, res, ctx) => {
+    const updatedBook = db.book.update({
+      where: {
+        id: {
+          equals: req.id,
+        },
+      },
+      data: req.body,
+    });
+
+    return res(
+      ctx.status(200),
+      ctx.json({
+        updatedBook,
+      })
+    );
+  }),
 ];

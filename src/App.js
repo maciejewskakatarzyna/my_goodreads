@@ -15,6 +15,7 @@ import {
   useNavigate,
 } from 'react-router-dom';
 import { useBooks } from './hooks/useBooks';
+import BookCard from './components/BookCard/BookCard';
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -25,9 +26,9 @@ const App = () => {
   const [isBookAdded, setIsBookAdded] = useState(false);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [shelfs, setShelfs] = useState([]);
+  const [currentBook, setCurrentBook] = useState(0);
 
   const { getShelfs } = useBooks();
-  const { id } = useParams();
 
   const handleClose = modal => {
     if (modal === 'randomBookModal') {
@@ -59,6 +60,8 @@ const App = () => {
             setFilteredBooks: setFilteredBooks,
             shelfs: shelfs,
             setShelfs: setShelfs,
+            currentBook: currentBook,
+            setCurrentBook: setCurrentBook,
           }}
         >
           <Header
@@ -90,6 +93,11 @@ const App = () => {
               <Route path='/shelfs/' element={<Navigate to='/shelfs/to-read' />} />
               <Route path='/shelfs/' element={<BooksList handleClose={handleClose} />} />
               <Route path='/shelfs/:id' element={<BooksList handleClose={handleClose} />} />
+              <Route path='/books/:id' element={<BookCard />} />
+              {/*<Route*/}
+              {/*  path='/books/:id'*/}
+              {/*  element={<BookCard onDelete={onDelete} book={currentBook} hasCover={hasCover} />}*/}
+              {/*/>*/}
             </Routes>
           </div>
         </BookContext.Provider>
