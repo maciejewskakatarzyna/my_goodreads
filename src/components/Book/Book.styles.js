@@ -18,6 +18,24 @@ export const StyledGridBook = styled.div`
       height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
+      filter: brightness(70%);
+      position: relative;
+    }
+
+    & p:first-of-type {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      color: white;
+      font-size: 18px;
+    }
+
+    & p:last-of-type {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      font-size: 12px;
     }
 
     & .noCover {

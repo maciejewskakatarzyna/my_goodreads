@@ -75,6 +75,8 @@ const Book = ({ book, onDelete, isList }) => {
                 onClick={() => handleOpenBookCard(book.id)}
               >
                 <img alt='book cover' src={book.cover} className='bookCover' />
+                <p>{book.title}</p>
+                <p>{book.author}</p>
               </Link>
               <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
                 X
