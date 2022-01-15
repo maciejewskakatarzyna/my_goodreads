@@ -6,14 +6,7 @@ import RandomBook from './components/RandomBook/RandomBook';
 import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
 import AddBookForm from './components/AddBookForm/AddBookForm';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-  useParams,
-  useNavigate,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { useBooks } from './hooks/useBooks';
 import BookCard from './components/BookCard/BookCard';
 
@@ -22,8 +15,8 @@ const App = () => {
   const [randomBook, setRandomBook] = useState(null);
   const [isRandomBook, setIsRandomBook] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
-  const [isBookAdded, setIsBookAdded] = useState(false);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [shelfs, setShelfs] = useState([]);
   const [currentBook, setCurrentBook] = useState(0);
@@ -35,8 +28,6 @@ const App = () => {
       setIsRandomBook(false);
     } else if (modal === 'addFormModal') {
       setIsFormVisible(false);
-    } else if (modal === 'addConfirmModal') {
-      setIsFormVisible(false);
     }
   };
 
@@ -46,6 +37,8 @@ const App = () => {
       setShelfs(shelfs);
     })();
   }, [getShelfs]);
+
+  const startReading = () => {};
 
   return (
     <Router>
@@ -64,17 +57,14 @@ const App = () => {
             setCurrentBook: setCurrentBook,
           }}
         >
-          <Header
-            setIsFormVisible={setIsFormVisible}
-            setIsAddedToCurrent={setIsAddedToCurrent}
-            setIsBookAdded={setIsBookAdded}
-          />
+          <Header setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} />
           <div className='wrapper'>
             {isRandomBook ? (
               <RandomBook
                 randomBook={randomBook}
                 onClose={() => handleClose('randomBookModal')}
                 isAddedToCurrent={isAddedToCurrent}
+                startReading={startReading}
               />
             ) : null}
             <Routes>
@@ -84,9 +74,10 @@ const App = () => {
                 element={
                   <AddBookForm
                     onClose={() => handleClose('addFormModal')}
-                    setIsBookAdded={setIsBookAdded}
-                    isBookAdded={isBookAdded}
-                    onCloseConfirm={() => handleClose('addConfirmModal')}
+                    isConfirmVisible={isConfirmVisible}
+                    setIsConfirmVisible={setIsConfirmVisible}
+                    setIsFormVisible={setIsFormVisible}
+                    isFormVisible={isFormVisible}
                   />
                 }
               />
@@ -94,10 +85,6 @@ const App = () => {
               <Route path='/shelfs/' element={<BooksList handleClose={handleClose} />} />
               <Route path='/shelfs/:id' element={<BooksList handleClose={handleClose} />} />
               <Route path='/books/:id' element={<BookCard />} />
-              {/*<Route*/}
-              {/*  path='/books/:id'*/}
-              {/*  element={<BookCard onDelete={onDelete} book={currentBook} hasCover={hasCover} />}*/}
-              {/*/>*/}
             </Routes>
           </div>
         </BookContext.Provider>

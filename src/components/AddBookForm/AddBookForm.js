@@ -3,11 +3,19 @@ import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { StyledAddBookForm } from './AddBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
+import { useNavigate } from 'react-router';
 
-const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
+const AddBookForm = ({
+  onClose,
+  isConfirmVisible,
+  setIsConfirmVisible,
+  setIsFormVisible,
+  isFormVisible,
+}) => {
   const { setBooks, books } = useContext(BookContext);
 
   const { addNewBook } = useBooks();
+  const navigate = useNavigate();
 
   const titleInput = useRef(null);
   const authorInput = useRef(null);
@@ -45,19 +53,25 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
       genre: genreInput.current.value,
     };
     handleAddBook(newBook);
-    setIsBookAdded(true);
+    setIsFormVisible(false);
+    setIsConfirmVisible(true);
+  };
 
-    titleInput.current.value = '';
-    authorInput.current.value = '';
-    publisherInput.current.value = '';
-    genreInput.current.value = '';
+  const handleCloseBtn = () => {
+    onClose();
+    navigate(-1);
+  };
+
+  const handleConfirmCloseBtn = () => {
+    setIsConfirmVisible(false);
+    navigate(-1);
   };
 
   return (
     <>
-      {!isBookAdded ? (
+      {isFormVisible && (
         <StyledAddBookForm onSubmit={handleSubmit}>
-          <button className='closeBtn' onClick={onClose}>
+          <button className='closeBtn' onClick={handleCloseBtn}>
             x
           </button>
           <label>
@@ -93,11 +107,13 @@ const AddBookForm = ({ onClose, setIsBookAdded, isBookAdded }) => {
             <input type='radio' name='shelf' value='currently-reading' ref={radioInput3} />
           </label>
           <br />
-          <button>DODAJ KSIĄŻKĘ</button>
+          <button type='submit'>DODAJ KSIĄŻKĘ</button>
         </StyledAddBookForm>
-      ) : (
+      )}
+
+      {isConfirmVisible && (
         <div className='addedConfirmation'>
-          <button className='closeBtn' onClick={onClose}>
+          <button className='closeBtn' onClick={handleConfirmCloseBtn}>
             x
           </button>
           <p>Książka dodana!</p>

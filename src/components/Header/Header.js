@@ -9,7 +9,7 @@ import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link } from 'react-router-dom';
 
-const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
+const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
   const { books, setRandomBook, setIsRandomBook, setFilteredBooks, shelfs } =
     useContext(BookContext);
 
@@ -26,7 +26,6 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent, setIsBookAdded }) => {
   };
 
   const handleShowForm = () => {
-    setIsBookAdded(false);
     setIsFormVisible(true);
   };
 

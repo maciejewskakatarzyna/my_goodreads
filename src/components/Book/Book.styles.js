@@ -11,6 +11,7 @@ export const StyledGridBook = styled.div`
   & .bookWrapper {
     width: 150px;
     height: 200px;
+    text-decoration: none;
 
     & img {
       width: 150px;
@@ -54,6 +55,7 @@ export const StyledListBook = styled.div`
 
   & .bookWrapper {
     padding: 0px 10px;
+    text-decoration: none;
   }
 `;
 

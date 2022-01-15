@@ -113,7 +113,7 @@ export const handlers = [
     const updatedBook = db.book.update({
       where: {
         id: {
-          equals: req.id,
+          equals: req.body.id,
         },
       },
       data: req.body,
@@ -122,7 +122,7 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        updatedBook,
+        books: updatedBook,
       })
     );
   }),

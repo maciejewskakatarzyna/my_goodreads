@@ -6,7 +6,7 @@ import { useBooks } from '../../hooks/useBooks';
 import { useParams } from 'react-router';
 
 const EditBookForm = ({ book, handleClose }) => {
-  const { setBooks, books } = useContext(BookContext);
+  const { setBooks, books, setCurrentBook } = useContext(BookContext);
 
   const { editBookById } = useBooks();
 
@@ -31,10 +31,18 @@ const EditBookForm = ({ book, handleClose }) => {
     }
   };
 
+  const res = {};
+
+  function update(target, src) {
+    Object.keys(target).forEach(k => (res[k] = src.hasOwnProperty(k) ? src[k] : target[k]));
+    return res;
+  }
+
   const handleEditBook = (id, bookToEdit) => {
-    editBookById(id, bookToEdit).then(
-      setBooks(books.map(book => (book.id === id ? bookToEdit : book)))
-    );
+    editBookById(id, bookToEdit)
+      .then(setBooks(books.map(book => (book.id === id ? bookToEdit : book))))
+      .then(update(book, bookToEdit))
+      .then(setCurrentBook(res));
   };
 
   const handleSubmit = event => {
