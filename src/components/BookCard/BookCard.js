@@ -62,7 +62,8 @@ const BookCard = ({ book }) => {
     <StyledBookCard>
       <>
         <div className='coverWrapper'>
-          <div className='noCoverCard'></div>
+          {/*<div className='noCoverCard'></div>*/}
+          <img src={currentBook.cover} alt='book cover' />
         </div>
         <StyledBookDetails>
           <p>{currentBook.title}</p>

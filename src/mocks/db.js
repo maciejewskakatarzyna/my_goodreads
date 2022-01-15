@@ -11,12 +11,14 @@ const genres = [
   'Programowanie',
   'Rozwój osobisty/Poradniki',
 ];
+
 const getRandomValue = (array, index) => array[index];
 const getRandomAverage = () => faker.datatype.number({ min: 2, max: 5, precision: 0.1 });
 const getCapitalLetter = word => {
   const capitalWord = word.charAt(0).toUpperCase() + word.slice(1);
   return capitalWord;
 };
+const getRandomCoverId = () => faker.datatype.number({ min: 1, max: 1084 });
 
 export const db = factory({
   book: {
@@ -30,7 +32,7 @@ export const db = factory({
     // progress: () => `${faker.datatype.number({ min: 0, max: 100 })}%`,
     yearPublished: () => `${faker.datatype.number({ min: 1950, max: 2022 })}`,
     shelf: () => getRandomValue(shelfs, faker.datatype.number({ min: 0, max: 2 })),
-    cover: () => '',
+    cover: () => `https://picsum.photos/id/${getRandomCoverId()}/250/350`,
     genre: () => getRandomValue(genres, faker.datatype.number({ min: 0, max: 4 })),
   },
   shelf: {
