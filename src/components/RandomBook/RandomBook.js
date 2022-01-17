@@ -2,10 +2,19 @@ import React from 'react';
 import '../../index.css';
 import { StyledRandomBook } from './RandomBook.styles';
 
-const RandomBook = ({ randomBook, onClose, startReading, isAddedToCurrent }) => {
+const RandomBook = ({ randomBook, onClose, startReading, isAddedToCurrent, setIsRandomBook }) => {
+  const bookToStart = {
+    id: randomBook.id,
+    shelf: 'currently-reading',
+  };
+
+  const handleClose = () => {
+    setIsRandomBook(false);
+  };
+
   return (
     <StyledRandomBook>
-      <button className='closeBtn' onClick={onClose}>
+      <button className='closeBtn' onClick={handleClose}>
         x
       </button>
       {!isAddedToCurrent ? (
@@ -13,7 +22,7 @@ const RandomBook = ({ randomBook, onClose, startReading, isAddedToCurrent }) => 
           <p>
             Kolejna książka do przeczytania:<span className='randomBook'>{randomBook.title}</span>
           </p>
-          <button onClick={startReading}>Zacznij czytać!</button>
+          <button onClick={() => startReading(randomBook.id, bookToStart)}>Zacznij czytać!</button>
         </>
       ) : (
         <p>

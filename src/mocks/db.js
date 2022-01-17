@@ -20,6 +20,17 @@ const getCapitalLetter = word => {
 };
 const getRandomCoverId = () => faker.datatype.number({ min: 1, max: 1084 });
 
+const checkImgStatus = () => {
+  const url = `https://picsum.photos/id/${getRandomCoverId()}/250/350`;
+  fetch(url)
+    .then(res => {
+      if (res.status === 404) {
+        return '';
+      } else return url;
+    })
+    .catch(e => console.log(e));
+};
+
 export const db = factory({
   book: {
     id: primaryKey(faker.datatype.uuid),

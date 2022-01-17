@@ -21,14 +21,10 @@ const App = () => {
   const [shelfs, setShelfs] = useState([]);
   const [currentBook, setCurrentBook] = useState(0);
 
-  const { getShelfs } = useBooks();
+  const { getShelfs, editBookById } = useBooks();
 
   const handleClose = modal => {
-    if (modal === 'randomBookModal') {
-      setIsRandomBook(false);
-    } else if (modal === 'addFormModal') {
-      setIsFormVisible(false);
-    }
+    setIsFormVisible(false);
   };
 
   useEffect(() => {
@@ -38,7 +34,19 @@ const App = () => {
     })();
   }, [getShelfs]);
 
-  const startReading = () => {};
+  const res = {};
+
+  function update(target, src) {
+    Object.keys(target).forEach(k => (res[k] = src.hasOwnProperty(k) ? src[k] : target[k]));
+    return res;
+  }
+
+  const startReading = (id, bookToStart) => {
+    editBookById(id, bookToStart);
+    update(randomBook, bookToStart);
+    setBooks(books);
+    setIsAddedToCurrent(true);
+  };
 
   return (
     <Router>
@@ -62,9 +70,9 @@ const App = () => {
             {isRandomBook ? (
               <RandomBook
                 randomBook={randomBook}
-                onClose={() => handleClose('randomBookModal')}
                 isAddedToCurrent={isAddedToCurrent}
                 startReading={startReading}
+                setIsRandomBook={setIsRandomBook}
               />
             ) : null}
             <Routes>

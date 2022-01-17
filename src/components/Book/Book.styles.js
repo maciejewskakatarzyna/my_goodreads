@@ -18,7 +18,7 @@ export const StyledGridBook = styled.div`
       height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
-      filter: brightness(70%);
+      filter: brightness(80%);
       position: relative;
     }
 

@@ -39,10 +39,10 @@ const EditBookForm = ({ book, handleClose }) => {
   }
 
   const handleEditBook = (id, bookToEdit) => {
-    editBookById(id, bookToEdit)
-      .then(setBooks(books.map(book => (book.id === id ? bookToEdit : book))))
-      .then(update(book, bookToEdit))
-      .then(setCurrentBook(res));
+    editBookById(id, bookToEdit);
+    update(book, bookToEdit);
+    setBooks(books);
+    setCurrentBook(res);
   };
 
   const handleSubmit = event => {

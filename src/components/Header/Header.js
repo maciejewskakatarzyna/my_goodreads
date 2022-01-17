@@ -17,12 +17,14 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
     setIsAddedToCurrent(false);
     const toReadBase = books.filter(book => book.shelf === 'to-read');
     const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
-    setRandomBook(random);
-    setIsRandomBook(true);
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    if (toReadBase.length > 0) {
+      setRandomBook(random);
+      setIsRandomBook(true);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else console.log('nie ma książek do przeczytania');
   };
 
   const handleShowForm = () => {
