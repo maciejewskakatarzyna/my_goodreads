@@ -61,7 +61,7 @@ const Book = ({ book, onDelete, isList }) => {
             <p>{book.title}</p>
             <p>{book.author}</p>
           </Link>
-          <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
+          <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
             X
           </StyledButton>
         </StyledListBook>
@@ -78,7 +78,7 @@ const Book = ({ book, onDelete, isList }) => {
                 <p>{book.title}</p>
                 <p>{book.author}</p>
               </Link>
-              <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
+              <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
                 X
               </StyledButton>
             </>
@@ -95,7 +95,7 @@ const Book = ({ book, onDelete, isList }) => {
                 </div>
               </Link>
 
-              <StyledButton isVisible={isVisible} onClick={() => onDelete(book.id)}>
+              <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
                 X
               </StyledButton>
               <StyledButton

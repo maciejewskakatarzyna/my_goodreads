@@ -7,14 +7,18 @@ import list from '../../assets/list.png';
 import BookContext from '../../contexts/BookContext';
 import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
 import { useBooks } from '../../hooks/useBooks';
+import useModal from '../Modal/useModal';
+import Modal from '../Modal/Modal';
 
 const BooksList = () => {
-  const { books, setBooks, filteredBooks, shelfs } = useContext(BookContext);
+  const { books, setBooks, shelfs, currentBook, setCurrentBook } = useContext(BookContext);
 
   const [isList, setIsList] = React.useState(false);
+  const [isConfirmed, setIsConfirmed] = React.useState(false);
 
   const { id } = useParams();
   const { getBooksByShelf, deleteBookById } = useBooks();
+  const { handleOpenModal, handleCloseModal, isOpen } = useModal();
 
   useEffect(() => {
     (async () => {
@@ -41,10 +45,16 @@ const BooksList = () => {
     return shelfNames[shelf];
   };
 
-  const handleRemove = id => {
+  const deleteBook = id => {
     deleteBookById(id);
     const filteredBooks = books.filter(book => book.id !== id);
     setBooks(filteredBooks);
+    handleCloseModal();
+  };
+
+  const handleRemove = book => {
+    setCurrentBook(book);
+    handleOpenModal();
   };
 
   return (
@@ -64,9 +74,19 @@ const BooksList = () => {
 
         <StyledBookList view={isList}>
           {books.map(book => (
-            <Book isList={isList} key={book.id} book={book} onDelete={handleRemove} />
+            <>
+              <Book isList={isList} key={book.id} book={book} onDelete={handleRemove} />
+            </>
           ))}
         </StyledBookList>
+
+        <Modal isOpen={isOpen} handleClose={handleCloseModal}>
+          <div>
+            <p>TESTOWY</p>
+            <button onClick={() => deleteBook(currentBook.id)}>TAK</button>
+            <button onClick={handleCloseModal}>NIE</button>
+          </div>
+        </Modal>
       </Wrapper>
     </>
   );

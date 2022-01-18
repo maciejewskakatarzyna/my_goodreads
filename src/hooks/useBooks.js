@@ -29,6 +29,15 @@ export const useBooks = () => {
     }
   }, []);
 
+  const getAllBooks = useCallback(async () => {
+    try {
+      const result = await axios.get(`/shelfs`);
+      return result.data.books;
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
   const deleteBookById = useCallback(async id => {
     try {
       await axios.delete(`/books/${id}`);
@@ -64,5 +73,6 @@ export const useBooks = () => {
     deleteBookById,
     addNewBook,
     editBookById,
+    getAllBooks,
   };
 };
