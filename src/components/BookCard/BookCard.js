@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router';
 import useModal from '../Modal/useModal';
 import EditBookForm from '../EditBookForm/EditBookForm';
 import Modal from '../Modal/Modal';
+import DeleteModal from '../Modal/DeleteModal';
 
 const BookCard = ({ book }) => {
   const { currentBook, books, setBooks } = useContext(BookContext);
@@ -108,11 +109,11 @@ const BookCard = ({ book }) => {
       </Modal>
 
       <Modal isOpen={isDeleteModalOpen} handleClose={handleCloseDeleteModal}>
-        <div>
-          <p>TESTOWY</p>
-          <button onClick={() => deleteBook(currentBook.id)}>TAK</button>
-          <button onClick={handleCloseDeleteModal}>NIE</button>
-        </div>
+        <DeleteModal
+          book={currentBook.title}
+          handleDeleteBook={() => deleteBook(currentBook.id)}
+          handleCloseDeleteModal={handleCloseDeleteModal}
+        />
       </Modal>
     </StyledBookCard>
   );

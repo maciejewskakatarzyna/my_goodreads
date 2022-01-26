@@ -6,8 +6,8 @@ export const StyledModalWrapper = styled(ReactModal)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40vw;
-  height: 60vh;
+  //width: 40vw;
+  //height: 60vh;
   border: #dcd6cc 1px solid;
   border-radius: 5px;
   background-color: #f4f1ea;
