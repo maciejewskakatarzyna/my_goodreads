@@ -13,7 +13,10 @@ const BookCard = ({ book }) => {
   const { deleteBookById } = useBooks();
   const navigate = useNavigate();
 
-  const { isOpen, handleOpenModal, handleCloseModal } = useModal();
+  const { handleOpenModal, handleCloseModal } = useModal();
+
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
   // const { updateBook } = useContext(BookContext);
 
@@ -43,19 +46,31 @@ const BookCard = ({ book }) => {
   //   changeShelf(book, selectedOption);
   // };
 
-  const handleRemove = id => {
-    deleteBookById(id);
-    const filteredBooks = books.filter(book => book.id !== id);
-    setBooks(filteredBooks);
-    navigate(-1);
+  const handleRemove = () => {
+    setIsDeleteModalOpen(true);
   };
 
   const handleOpenEditForm = async => {
+    setIsEditModalOpen(true);
     handleOpenModal();
   };
 
-  const handleClose = () => {
+  const handleCloseEditModal = () => {
+    setIsEditModalOpen(false);
     handleCloseModal();
+  };
+
+  const handleCloseDeleteModal = () => {
+    setIsDeleteModalOpen(false);
+    handleCloseModal();
+  };
+
+  const deleteBook = id => {
+    deleteBookById(id);
+    const filteredBooks = books.filter(book => book.id !== id);
+    setBooks(filteredBooks);
+    handleCloseModal();
+    navigate(-1);
   };
 
   return (
@@ -88,8 +103,16 @@ const BookCard = ({ book }) => {
         </StyledBookDetails>
       </>
 
-      <Modal isOpen={isOpen} handleClose={handleClose}>
-        <EditBookForm book={currentBook} handleClose={handleClose} />
+      <Modal isOpen={isEditModalOpen} handleClose={handleCloseEditModal}>
+        <EditBookForm book={currentBook} handleClose={handleCloseEditModal} />
+      </Modal>
+
+      <Modal isOpen={isDeleteModalOpen} handleClose={handleCloseDeleteModal}>
+        <div>
+          <p>TESTOWY</p>
+          <button onClick={() => deleteBook(currentBook.id)}>TAK</button>
+          <button onClick={handleCloseDeleteModal}>NIE</button>
+        </div>
       </Modal>
     </StyledBookCard>
   );
