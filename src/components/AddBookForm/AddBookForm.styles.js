@@ -9,7 +9,7 @@ export const StyledAddBookForm = styled.form`
   border: #dcd6cc 1px solid;
   padding: 60px;
   border-radius: 5px;
-  background-color: #f4f1ea;
+  background-color: #f9f7f4;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   position: relative;
 `;

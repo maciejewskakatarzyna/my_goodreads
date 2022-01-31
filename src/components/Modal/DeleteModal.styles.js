@@ -25,6 +25,14 @@ export const ButtonsWrapper = styled.div`
 `;
 
 export const DeleteButton = styled.button`
+  border-radius: 5px;
   font-size: 20px;
   padding: 5px 10px;
+  border: none;
+  background-color: #817f75;
+  color: #f9f7f4;
+
+  &:hover {
+    background-color: #2c2726;
+  }
 `;

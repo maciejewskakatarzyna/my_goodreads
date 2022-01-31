@@ -13,16 +13,11 @@ const Book = ({ book, onDelete, isList }) => {
 
   const { isOpen, handleOpenModal, handleCloseModal } = useModal();
   const [isVisible, setIsVisible] = useState('none');
+  const [isError, setIsError] = useState(false);
 
   const { getBookById } = useBooks();
 
   const { currentBook, setCurrentBook } = useContext(BookContext);
-
-  const hasCover = () => {
-    if (book.cover !== '') {
-      return true;
-    }
-  };
 
   const handleOpenBookCard = async id => {
     const book = await getBookById(id);
@@ -67,46 +62,23 @@ const Book = ({ book, onDelete, isList }) => {
         </StyledListBook>
       ) : (
         <StyledGridBook onMouseEnter={e => showButton(e)} onMouseLeave={e => hideButton(e)}>
-          {hasCover() ? (
-            <>
-              <Link
-                className='bookWrapper'
-                to={`/books/${book.id}`}
-                onClick={() => handleOpenBookCard(book.id)}
-              >
-                <img alt='book cover' src={book.cover} className='bookCover' />
-                <p>{book.title}</p>
-                <p>{book.author}</p>
-              </Link>
-              <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
-                X
-              </StyledButton>
-            </>
-          ) : (
-            <>
-              <Link
-                className='bookWrapper'
-                to={`/books/${book.id}`}
-                onClick={() => handleOpenBookCard(book.id)}
-              >
-                <div className='noCover'>
-                  <p>{book.title}</p>
-                  <p>{book.author}</p>
-                </div>
-              </Link>
-
-              <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
-                X
-              </StyledButton>
-              <StyledButton
-                style={{ left: '5px' }}
-                isVisible={isVisible}
-                onClick={() => handleOpenEditForm(book.id)}
-              >
-                Edytuj
-              </StyledButton>
-            </>
-          )}
+          <>
+            <Link
+              className='bookWrapper'
+              to={`/books/${book.id}`}
+              onClick={() => handleOpenBookCard(book.id)}
+            >
+              <img
+                src={book.cover}
+                onError={() => setIsError(true)}
+                alt='book cover'
+                className={isError ? 'noCover' : 'bookCover'}
+              />
+            </Link>
+            <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
+              X
+            </StyledButton>
+          </>
         </StyledGridBook>
       )}
       <Modal isOpen={isOpen} handleClose={handleClose}>

@@ -20,16 +20,4 @@ export const StyledBookCard = styled.div`
     background-color: lightgrey;
     box-shadow: #ccc 5px 5px 5px;
   }
-
-  & .prevBtn {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-  }
-
-  & .nextBtn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-  }
 `;

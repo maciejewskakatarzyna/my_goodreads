@@ -9,6 +9,7 @@ import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
 import { useBooks } from '../../hooks/useBooks';
 import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
+import DeleteModal from '../Modal/DeleteModal';
 
 const BooksList = () => {
   const { books, setBooks, shelfs, currentBook, setCurrentBook } = useContext(BookContext);
@@ -81,11 +82,11 @@ const BooksList = () => {
         </StyledBookList>
 
         <Modal isOpen={isOpen} handleClose={handleCloseModal}>
-          <div>
-            <p>TESTOWY</p>
-            <button onClick={() => deleteBook(currentBook.id)}>TAK</button>
-            <button onClick={handleCloseModal}>NIE</button>
-          </div>
+          <DeleteModal
+            book={currentBook.title}
+            handleDeleteBook={() => deleteBook(currentBook.id)}
+            handleCloseDeleteModal={handleCloseModal}
+          />
         </Modal>
       </Wrapper>
     </>

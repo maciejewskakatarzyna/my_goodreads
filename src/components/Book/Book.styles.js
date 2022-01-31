@@ -12,14 +12,35 @@ export const StyledGridBook = styled.div`
     width: 150px;
     height: 200px;
     text-decoration: none;
+    color: #2c2726;
 
     & img {
       width: 150px;
       height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
-      filter: brightness(80%);
+      filter: brightness(60%);
       position: relative;
+      color: #2c2726;
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+
+    .noCover {
+      width: 150px;
+      height: 200px;
+      box-shadow: #ccc 5px 5px 5px;
+      border-radius: 3px;
+      filter: brightness(60%);
+      position: relative;
+      color: #2c2726;
+      background-color: lightgrey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: solid 2px red;
     }
 
     & p:first-of-type {
@@ -36,20 +57,6 @@ export const StyledGridBook = styled.div`
       left: 10px;
       color: white;
       font-size: 12px;
-    }
-
-    & .noCover {
-      width: 150px;
-      height: 200px;
-      background-color: lightgrey;
-      box-shadow: #ccc 5px 5px 5px;
-      color: darkgrey;
-      text-align: center;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 3px;
     }
   }
 `;
@@ -74,6 +81,11 @@ export const StyledListBook = styled.div`
   & .bookWrapper {
     padding: 0px 10px;
     text-decoration: none;
+    color: #2c2726;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 `;
 

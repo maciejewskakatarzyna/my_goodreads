@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #F9F7F4;
+  /*background-color: #F9F7F4;*/
+  background-color: #f9f7f4;
   font-family: 'Lato', sans-serif;
 }
 
@@ -20,7 +21,8 @@ body {
 
 
 h3 {
-  color: #00635d;
+  /*color: #00635d;*/
+  color: #2c2726;
 }
 
 
@@ -29,7 +31,7 @@ h3 {
 }
 
 .icon:hover {
-  border-bottom: solid 1px #382110;
+  border-bottom: solid 1px #2c2726;
 }
 
 .icon img{
