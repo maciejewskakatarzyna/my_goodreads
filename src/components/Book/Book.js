@@ -44,6 +44,14 @@ const Book = ({ book, onDelete, isList }) => {
     setIsVisible('none');
   };
 
+  const imgErrorStyles = {
+    display: 'none',
+  };
+
+  const imgNoErrorStyles = {
+    display: 'block',
+  };
+
   return (
     <div ref={ref}>
       {isList ? (
@@ -72,8 +80,12 @@ const Book = ({ book, onDelete, isList }) => {
                 src={book.cover}
                 onError={() => setIsError(true)}
                 alt='book cover'
-                className={isError ? 'noCover' : 'bookCover'}
+                style={isError ? imgErrorStyles : imgNoErrorStyles}
               />
+              <div className={isError ? 'noCover' : 'none'}>
+                <p>{book.title}</p>
+                <p>{book.author}</p>
+              </div>
             </Link>
             <StyledButton isVisible={isVisible} onClick={() => onDelete(book)}>
               X

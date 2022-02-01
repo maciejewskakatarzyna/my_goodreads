@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const StyledGridBook = styled.div`
   display: flex;
@@ -12,20 +11,18 @@ export const StyledGridBook = styled.div`
     width: 150px;
     height: 200px;
     text-decoration: none;
-    color: #2c2726;
+    filter: brightness(65%);
+
+    &:hover {
+      filter: brightness(90%);
+    }
 
     & img {
       width: 150px;
       height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
-      filter: brightness(60%);
       position: relative;
-      color: #2c2726;
-
-      &:hover {
-        filter: brightness(80%);
-      }
     }
 
     .noCover {
@@ -33,21 +30,18 @@ export const StyledGridBook = styled.div`
       height: 200px;
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
-      filter: brightness(60%);
       position: relative;
-      color: #2c2726;
       background-color: lightgrey;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: solid 2px red;
     }
 
     & p:first-of-type {
       position: absolute;
       bottom: 30px;
       left: 10px;
-      color: white;
+      color: #f9f7f4;
       font-size: 18px;
     }
 
@@ -55,7 +49,7 @@ export const StyledGridBook = styled.div`
       position: absolute;
       bottom: 10px;
       left: 10px;
-      color: white;
+      color: #f9f7f4;
       font-size: 12px;
     }
   }
