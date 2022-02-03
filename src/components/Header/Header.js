@@ -8,10 +8,22 @@ import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link } from 'react-router-dom';
+import Modal from '../Modal/Modal';
+import EditBookForm from '../EditBookForm/EditBookForm';
+import RandomBook from '../RandomBook/RandomBook';
+import useModal from '../Modal/useModal';
 
-const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
+const Header = ({
+  randomBook,
+  startReading,
+  setIsFormVisible,
+  isAddedToCurrent,
+  setIsAddedToCurrent,
+}) => {
   const { books, setRandomBook, setIsRandomBook, setFilteredBooks, shelfs } =
     useContext(BookContext);
+
+  const { isOpen, handleOpenModal, handleCloseModal } = useModal();
 
   const getRandomBook = () => {
     setIsAddedToCurrent(false);
@@ -31,19 +43,19 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
     setIsFormVisible(true);
   };
 
-  function getFilteredBooksForText(text) {
-    return books.filter(
-      book =>
-        book.title.toString().toLowerCase().includes(text.toLowerCase()) ||
-        book.author.toString().toLowerCase().includes(text.toLowerCase())
-    );
-  }
+  // function getFilteredBooksForText(text) {
+  //   return books.filter(
+  //     book =>
+  //       book.title.toString().toLowerCase().includes(text.toLowerCase()) ||
+  //       book.author.toString().toLowerCase().includes(text.toLowerCase())
+  //   );
+  // }
 
-  function filterBooks(e) {
-    const text = e.currentTarget.value;
-    const filtered = getFilteredBooksForText(text);
-    setFilteredBooks(filtered);
-  }
+  // function filterBooks(e) {
+  //   const text = e.currentTarget.value;
+  //   const filtered = getFilteredBooksForText(text);
+  //   setFilteredBooks(filtered);
+  // }
 
   const shelfNames = {
     'to-read': 'Chcę przeczytać',
@@ -53,6 +65,15 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
 
   const getShelfName = shelf => {
     return shelfNames[shelf];
+  };
+
+  const handleClose = () => {
+    handleCloseModal();
+  };
+
+  const handleOpen = () => {
+    handleOpenModal();
+    getRandomBook();
   };
 
   return (
@@ -72,13 +93,13 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
             className='searchInput'
             type='text'
             placeholder='Wyszukaj książkę'
-            onInput={filterBooks}
+            // onInput={filterBooks}
           />
         </form>
         <Link to='/add-book' className='icon' onClick={handleShowForm}>
           <img alt='plus' src={plus} />
         </Link>
-        <button className='icon' onClick={getRandomBook}>
+        <button className='icon' onClick={handleOpen}>
           <img alt='shuffle' src={shuffle} />
         </button>
         <StyledLoginMenu>
@@ -86,6 +107,15 @@ const Header = ({ setIsFormVisible, setIsAddedToCurrent }) => {
           <a href='#'>Wyloguj</a>
         </StyledLoginMenu>
       </>
+
+      <Modal isOpen={isOpen} handleClose={handleClose}>
+        <RandomBook
+          randomBook={randomBook}
+          startReading={startReading}
+          handleClose={handleClose}
+          isAddedToCurrent={isAddedToCurrent}
+        />
+      </Modal>
     </StyledHeader>
   );
 };

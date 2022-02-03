@@ -65,16 +65,15 @@ const App = () => {
             setCurrentBook: setCurrentBook,
           }}
         >
-          <Header setIsFormVisible={setIsFormVisible} setIsAddedToCurrent={setIsAddedToCurrent} />
+          <Header
+            setIsFormVisible={setIsFormVisible}
+            setIsAddedToCurrent={setIsAddedToCurrent}
+            randomBook={randomBook}
+            isAddedToCurrent={isAddedToCurrent}
+            startReading={startReading}
+            setIsRandomBook={setIsRandomBook}
+          />
           <div className='wrapper'>
-            {isRandomBook ? (
-              <RandomBook
-                randomBook={randomBook}
-                isAddedToCurrent={isAddedToCurrent}
-                startReading={startReading}
-                setIsRandomBook={setIsRandomBook}
-              />
-            ) : null}
             <Routes>
               <Route path='/' element={<Navigate to='/shelfs' />} />
               <Route
