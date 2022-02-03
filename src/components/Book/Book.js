@@ -82,7 +82,7 @@ const Book = ({ book, onDelete, isList }) => {
                 alt='book cover'
                 style={isError ? imgErrorStyles : imgNoErrorStyles}
               />
-              <div className={isError ? 'noCover' : 'none'}>
+              <div className={isError ? 'noCover' : 'hasCover'}>
                 <p>{book.title}</p>
                 <p>{book.author}</p>
               </div>

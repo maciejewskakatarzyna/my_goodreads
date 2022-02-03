@@ -11,15 +11,18 @@ export const StyledGridBook = styled.div`
     width: 150px;
     height: 200px;
     text-decoration: none;
-    filter: brightness(65%);
-
-    &:hover {
-      filter: brightness(90%);
-    }
 
     & img {
       width: 150px;
       height: 200px;
+      filter: brightness(65%);
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .hasCover {
       box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
       position: relative;
@@ -35,6 +38,11 @@ export const StyledGridBook = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      filter: brightness(65%);
+
+      &:hover {
+        filter: brightness(90%);
+      }
     }
 
     & p:first-of-type {
