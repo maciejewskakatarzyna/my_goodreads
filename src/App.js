@@ -48,6 +48,13 @@ const App = () => {
     setIsAddedToCurrent(true);
   };
 
+  const handleScrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Router>
       <div>
@@ -79,7 +86,7 @@ const App = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.
               </p>
-              <button>
+              <button onClick={handleScrollDown}>
                 <i className='arrowDown' />
               </button>
             </div>

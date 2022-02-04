@@ -9,7 +9,6 @@ import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
-import EditBookForm from '../EditBookForm/EditBookForm';
 import RandomBook from '../RandomBook/RandomBook';
 import useModal from '../Modal/useModal';
 
@@ -76,13 +75,21 @@ const Header = ({
     getRandomBook();
   };
 
+  const handleScrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <StyledHeader>
       <>
+        <div className='logo'>My Goodreads</div>
         <nav>
           <StyledNavigation>
             {shelfs.map(({ id }) => (
-              <StyledLink key={id} to={`/shelfs/${id}`}>
+              <StyledLink key={id} to={`/shelfs/${id}`} onClick={handleScrollDown}>
                 {getShelfName(id)}
               </StyledLink>
             ))}

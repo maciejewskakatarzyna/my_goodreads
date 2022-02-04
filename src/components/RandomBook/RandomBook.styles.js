@@ -6,7 +6,7 @@ export const StyledRandomBook = styled.div`
   flex-direction: column;
   align-items: center;
 
-  padding: 20px 30px;
+  padding: 60px 90px;
 
   position: relative;
 
