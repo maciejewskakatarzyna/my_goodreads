@@ -14,6 +14,7 @@ export const StyledHeader = styled.div`
   line-height: 50px;
   padding: 0 30px;
   color: #2c2726;
+  z-index: 2;
 
   & a {
     text-decoration: none;

@@ -73,6 +73,18 @@ const App = () => {
             startReading={startReading}
             setIsRandomBook={setIsRandomBook}
           />
+          <div className='heroImage'>
+            <div className='heroText'>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>
+                <i className='arrowDown' />
+              </button>
+            </div>
+          </div>
+
           <div className='wrapper'>
             <Routes>
               <Route path='/' element={<Navigate to='/shelfs' />} />

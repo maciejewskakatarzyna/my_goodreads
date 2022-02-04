@@ -10,21 +10,20 @@ body {
   /*background-color: #F9F7F4;*/
   background-color: #f9f7f4;
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   width: 970px;
-  margin: 70px auto;
+  margin: 30px auto;
 }
-
 
 h3 {
   /*color: #00635d;*/
   color: #2c2726;
 }
-
 
 .icon {
   border: none;
@@ -66,7 +65,50 @@ h3 {
   right: 10px;
 }
 
+.heroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/hero.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
 
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText p {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.heroText button {
+  background: none;
+  border: none;
+}
+
+.arrowDown {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 
 
 
