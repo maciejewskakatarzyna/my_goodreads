@@ -82,10 +82,19 @@ const Header = ({
     });
   };
 
+  const handleScrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <StyledHeader>
       <>
-        <div className='logo'>My Goodreads</div>
+        <StyledLink to={`/`} className='logo' onClick={handleScrollUp}>
+          My Goodreads
+        </StyledLink>
         <nav>
           <StyledNavigation>
             {shelfs.map(({ id }) => (
