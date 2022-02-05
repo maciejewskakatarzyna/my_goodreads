@@ -9,6 +9,7 @@ import AddBookForm from './components/AddBookForm/AddBookForm';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { useBooks } from './hooks/useBooks';
 import BookCard from './components/BookCard/BookCard';
+import HeroImage from './components/HeroImage/HeroImage';
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -80,17 +81,7 @@ const App = () => {
             startReading={startReading}
             setIsRandomBook={setIsRandomBook}
           />
-          <div className='heroImage'>
-            <div className='heroText'>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-              </p>
-              <button onClick={handleScrollDown}>
-                <i className='arrowDown' />
-              </button>
-            </div>
-          </div>
+          <HeroImage />
 
           <div className='wrapper'>
             <Routes>
