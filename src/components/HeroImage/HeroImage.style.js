@@ -12,7 +12,7 @@ export const StyledHeroImage = styled.div`
   position: relative;
 `;
 
-export const CitationWrapper = styled.div`
+export const QuoteWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,7 +24,7 @@ export const CitationWrapper = styled.div`
   align-items: center;
 `;
 
-export const CitationText = styled.p`
+export const QuoteText = styled.p`
   margin-bottom: 30px;
   text-align: center;
   font-size: 24px;
@@ -32,7 +32,7 @@ export const CitationText = styled.p`
   font-style: italic;
 `;
 
-export const CitationAuthor = styled.p`
+export const QuoteAuthor = styled.p`
   margin-bottom: 50px;
   text-align: right;
   font-size: 24px;
