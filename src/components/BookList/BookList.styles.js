@@ -34,4 +34,8 @@ export const Wrapper = styled.div`
 export const ListHeader = styled.div`
   display: flex;
   justify-content: space-between;
+
+  & .icon {
+    margin-right: 70%;
+  }
 `;

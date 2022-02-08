@@ -73,14 +73,7 @@ const App = () => {
             setCurrentBook: setCurrentBook,
           }}
         >
-          <Header
-            setIsFormVisible={setIsFormVisible}
-            setIsAddedToCurrent={setIsAddedToCurrent}
-            randomBook={randomBook}
-            isAddedToCurrent={isAddedToCurrent}
-            startReading={startReading}
-            setIsRandomBook={setIsRandomBook}
-          />
+          <Header setIsFormVisible={setIsFormVisible} />
           <HeroImage />
 
           <div className='wrapper'>
@@ -99,8 +92,30 @@ const App = () => {
                 }
               />
               <Route path='/shelfs/' element={<Navigate to='/shelfs/to-read' />} />
-              <Route path='/shelfs/' element={<BooksList handleClose={handleClose} />} />
-              <Route path='/shelfs/:id' element={<BooksList handleClose={handleClose} />} />
+              <Route
+                path='/shelfs/'
+                element={
+                  <BooksList
+                    setIsAddedToCurrent={setIsAddedToCurrent}
+                    randomBook={randomBook}
+                    isAddedToCurrent={isAddedToCurrent}
+                    startReading={startReading}
+                    setIsRandomBook={setIsRandomBook}
+                  />
+                }
+              />
+              <Route
+                path='/shelfs/:id'
+                element={
+                  <BooksList
+                    setIsAddedToCurrent={setIsAddedToCurrent}
+                    randomBook={randomBook}
+                    isAddedToCurrent={isAddedToCurrent}
+                    startReading={startReading}
+                    setIsRandomBook={setIsRandomBook}
+                  />
+                }
+              />
               <Route path='/books/:id' element={<BookCard />} />
             </Routes>
           </div>

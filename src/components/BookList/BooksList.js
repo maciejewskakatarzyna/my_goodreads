@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Book from '../Book/Book';
 import '../../index.css';
@@ -7,19 +7,22 @@ import list from '../../assets/list.png';
 import BookContext from '../../contexts/BookContext';
 import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
 import { useBooks } from '../../hooks/useBooks';
-import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
+import shuffle from '../../assets/shuffle.png';
+import RandomBook from '../RandomBook/RandomBook';
 
-const BooksList = () => {
-  const { books, setBooks, shelfs, currentBook, setCurrentBook } = useContext(BookContext);
+const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCurrent }) => {
+  const { books, setBooks, setRandomBook, setIsRandomBook, shelfs, currentBook, setCurrentBook } =
+    useContext(BookContext);
 
-  const [isList, setIsList] = React.useState(false);
-  const [isConfirmed, setIsConfirmed] = React.useState(false);
+  const [isList, setIsList] = useState(false);
+
+  const [isRandomModalOpen, setIsRandomModalOpen] = useState(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
   const { id } = useParams();
   const { getBooksByShelf, deleteBookById } = useBooks();
-  const { handleOpenModal, handleCloseModal, isOpen } = useModal();
 
   useEffect(() => {
     (async () => {
@@ -50,12 +53,35 @@ const BooksList = () => {
     deleteBookById(id);
     const filteredBooks = books.filter(book => book.id !== id);
     setBooks(filteredBooks);
-    handleCloseModal();
+    handleCloseDeleteModal();
   };
 
   const handleRemove = book => {
     setCurrentBook(book);
-    handleOpenModal();
+    setIsDeleteModalOpen(true);
+  };
+
+  const handleOpenRandomModal = () => {
+    getRandomBook();
+    setIsRandomModalOpen(true);
+  };
+
+  const handleCloseRandomModal = () => {
+    setIsRandomModalOpen(false);
+  };
+
+  const handleCloseDeleteModal = () => {
+    setIsDeleteModalOpen(false);
+  };
+
+  const getRandomBook = () => {
+    setIsAddedToCurrent(false);
+    const toReadBase = books.filter(book => book.shelf === 'to-read');
+    const random = toReadBase[Math.floor(Math.random() * toReadBase.length)];
+    if (toReadBase.length > 0) {
+      setRandomBook(random);
+      setIsRandomBook(true);
+    } else console.log('nie ma książek do przeczytania');
   };
 
   return (
@@ -63,6 +89,11 @@ const BooksList = () => {
       <Wrapper>
         <ListHeader>
           <h3>{getShelfName(id) || getShelfName(shelfs[0])}</h3>
+          {getShelfName(id) === 'Chcę przeczytać' ? (
+            <button className='icon' onClick={handleOpenRandomModal}>
+              <img alt='shuffle' src={shuffle} />
+            </button>
+          ) : null}
           <div className='listViewButtons'>
             <button onClick={changeToGridView} disabled={!isList}>
               {<img src={grid} alt='grid' />}
@@ -81,11 +112,20 @@ const BooksList = () => {
           ))}
         </StyledBookList>
 
-        <Modal isOpen={isOpen} handleClose={handleCloseModal}>
+        <Modal isOpen={isDeleteModalOpen} handleClose={handleCloseDeleteModal}>
           <DeleteModal
             book={currentBook.title}
             handleDeleteBook={() => deleteBook(currentBook.id)}
-            handleCloseDeleteModal={handleCloseModal}
+            handleCloseDeleteModal={handleCloseDeleteModal}
+          />
+        </Modal>
+
+        <Modal isOpen={isRandomModalOpen} handleClose={handleCloseRandomModal}>
+          <RandomBook
+            randomBook={randomBook}
+            startReading={startReading}
+            handleClose={handleCloseRandomModal}
+            isAddedToCurrent={isAddedToCurrent}
           />
         </Modal>
       </Wrapper>
