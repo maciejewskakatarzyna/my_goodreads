@@ -126,13 +126,15 @@ const AuthenticatedApp = () => {
   );
 };
 
-const UnauthenticatedApp = ({ handleSignIn }) => {
-  const login = useRef(null);
-  const password = useRef(null);
-
+const UnauthenticatedApp = ({ handleSignIn, loginError }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   return (
     <form
-      onSubmit={handleSignIn}
+      onSubmit={handleSubmit(handleSignIn)}
       style={{
         height: '100vh',
         display: 'flex',
@@ -143,15 +145,16 @@ const UnauthenticatedApp = ({ handleSignIn }) => {
     >
       <label>
         Login
-        <input type='text' ref={login} />
+        <input type='text' {...register('login', { required: true })} />
       </label>
-
+      {errors.login && <span>Login is required</span>}
       <label>
         Hasło
-        <input ref={password} />
+        <input type='password' {...register('password', { required: true })} />
       </label>
-
+      {errors.password && <span>Password is required</span>}
       <button type='submit'>Zaloguj</button>
+      {loginError && <span>{loginError}</span>}
     </form>
   );
 };
@@ -178,19 +181,13 @@ const App = () => {
     }
   }, []);
 
-  const handleSignIn = async ({ login, password, event }) => {
-    event.preventDefault();
-
-    login = login.current.value;
-    password = password.current.value;
-
+  const handleSignIn = async ({ login, password }) => {
     try {
       const response = await axios.post('/login', {
         login,
         password,
       });
       setUser(response.data);
-      console.log('try');
       localStorage.setItem('token', response.data.token);
     } catch (e) {
       setError('Please provide valid user data');
@@ -199,9 +196,7 @@ const App = () => {
 
   return (
     <Router>
-      {/*{user ? <AuthenticatedApp /> : <UnauthenticatedApp handleSignIn={handleSignIn} />}*/}
-
-      <AuthenticatedApp />
+      {user ? <AuthenticatedApp /> : <UnauthenticatedApp handleSignIn={handleSignIn} />}
     </Router>
   );
 };

@@ -54,8 +54,6 @@ const Header = ({ setIsFormVisible }) => {
     });
   };
 
-  const auth = useAuth();
-
   return (
     <StyledHeader>
       <>
@@ -85,7 +83,7 @@ const Header = ({ setIsFormVisible }) => {
 
         <StyledLoginMenu>
           <p>Witaj użytkowniku</p>
-          <a href='#' onClick={auth.signOut}>
+          <a href='#' onClick={() => localStorage.removeItem('token')}>
             Wyloguj
           </a>
         </StyledLoginMenu>

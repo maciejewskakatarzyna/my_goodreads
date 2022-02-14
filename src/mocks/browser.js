@@ -15,6 +15,8 @@ const seed = () => {
     id: 'currently-reading',
   });
 
+  db.user.create();
+
   for (let i = 0; i < 30; i++) {
     db.book.create();
   }

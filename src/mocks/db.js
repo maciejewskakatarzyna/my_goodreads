@@ -41,7 +41,7 @@ export const db = factory({
   user: {
     id: primaryKey(() => '1'),
     name: () => 'Anna Kowalska',
-    login: () => 'abc',
-    password: () => 'Test1234',
+    login: () => 'kowalska@mygoodreads.com',
+    password: () => 'Test123',
   },
 });
