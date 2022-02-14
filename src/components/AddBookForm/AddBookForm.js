@@ -4,6 +4,7 @@ import BookContext from '../../contexts/BookContext';
 import { StyledAddBookForm } from './AddBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
+import PropTypes from 'prop-types';
 
 const AddBookForm = ({
   onClose,
@@ -121,6 +122,23 @@ const AddBookForm = ({
       )}
     </>
   );
+};
+
+//complete with radio input proptypes and check if additional possible
+
+AddBookForm.propTypes = {
+  titleInput: PropTypes.string,
+  authorInput: PropTypes.string,
+  publisherInput: PropTypes.string,
+  genreInput: PropTypes.string,
+  radioShelf: PropTypes.string,
+  newBook: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+    publisher: PropTypes.string,
+    shelf: PropTypes.string,
+    genre: PropTypes.string,
+  }),
 };
 
 export default AddBookForm;

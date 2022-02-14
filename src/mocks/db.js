@@ -38,4 +38,10 @@ export const db = factory({
   shelf: {
     id: primaryKey(String),
   },
+  user: {
+    id: primaryKey(() => '1'),
+    name: () => 'Anna Kowalska',
+    login: () => 'abc',
+    password: () => 'Test1234',
+  },
 });

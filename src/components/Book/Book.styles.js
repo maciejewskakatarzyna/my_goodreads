@@ -11,6 +11,7 @@ export const StyledGridBook = styled.div`
     width: 150px;
     height: 200px;
     text-decoration: none;
+    box-shadow: #ccc 5px 5px 5px;
 
     & img {
       width: 150px;
@@ -23,7 +24,6 @@ export const StyledGridBook = styled.div`
     }
 
     .hasCover {
-      box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
       position: relative;
     }
@@ -31,7 +31,6 @@ export const StyledGridBook = styled.div`
     .noCover {
       width: 150px;
       height: 200px;
-      box-shadow: #ccc 5px 5px 5px;
       border-radius: 3px;
       position: relative;
       background-color: lightgrey;

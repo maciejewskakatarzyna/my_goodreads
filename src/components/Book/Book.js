@@ -7,6 +7,7 @@ import useModal from '../Modal/useModal';
 import { useBooks } from '../../hooks/useBooks';
 import EditBookForm from '../EditBookForm/EditBookForm';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Book = ({ book, onDelete, isList }) => {
   const ref = useRef();
@@ -99,4 +100,5 @@ const Book = ({ book, onDelete, isList }) => {
     </div>
   );
 };
+
 export default Book;
