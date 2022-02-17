@@ -7,7 +7,7 @@ import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../hooks/useAuth';
+import PropTypes from 'prop-types';
 
 const Header = ({ setIsFormVisible }) => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
@@ -90,6 +90,10 @@ const Header = ({ setIsFormVisible }) => {
       </>
     </StyledHeader>
   );
+};
+
+Header.propTypes = {
+  setIsFormVisible: PropTypes.func,
 };
 
 export default Header;

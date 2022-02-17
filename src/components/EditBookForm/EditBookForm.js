@@ -3,7 +3,7 @@ import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { StyledEditBookForm } from './EditBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
-import { useParams } from 'react-router';
+import PropTypes from 'prop-types';
 
 const EditBookForm = ({ book, handleClose }) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
@@ -100,6 +100,16 @@ const EditBookForm = ({ book, handleClose }) => {
       </StyledEditBookForm>
     </>
   );
+};
+
+EditBookForm.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string,
+    author: PropTypes.string,
+    publisher: PropTypes.string,
+  }),
+  handleClose: PropTypes.func,
 };
 
 export default EditBookForm;

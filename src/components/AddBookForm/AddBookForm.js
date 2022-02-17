@@ -124,21 +124,12 @@ const AddBookForm = ({
   );
 };
 
-//complete with radio input proptypes and check if additional possible
-
 AddBookForm.propTypes = {
-  titleInput: PropTypes.string,
-  authorInput: PropTypes.string,
-  publisherInput: PropTypes.string,
-  genreInput: PropTypes.string,
-  radioShelf: PropTypes.string,
-  newBook: PropTypes.shape({
-    title: PropTypes.string,
-    author: PropTypes.string,
-    publisher: PropTypes.string,
-    shelf: PropTypes.string,
-    genre: PropTypes.string,
-  }),
+  onClose: PropTypes.func,
+  isConfirmVisible: PropTypes.bool,
+  setIsConfirmVisible: PropTypes.func,
+  setIsFormVisible: PropTypes.func,
+  isFormVisible: PropTypes.bool,
 };
 
 export default AddBookForm;

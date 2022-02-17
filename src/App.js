@@ -12,7 +12,6 @@ import BookCard from './components/BookCard/BookCard';
 import HeroImage from './components/HeroImage/HeroImage';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import { useAuth } from './hooks/useAuth';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);

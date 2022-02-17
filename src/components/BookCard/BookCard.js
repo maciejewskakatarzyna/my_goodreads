@@ -9,7 +9,7 @@ import EditBookForm from '../EditBookForm/EditBookForm';
 import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
 
-const BookCard = ({ book }) => {
+const BookCard = () => {
   const { currentBook, books, setBooks } = useContext(BookContext);
   const { deleteBookById } = useBooks();
   const navigate = useNavigate();
