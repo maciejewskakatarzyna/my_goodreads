@@ -8,6 +8,7 @@ import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { useAuth } from '../../hooks/useAuth';
 
 const Header = ({ setIsFormVisible }) => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
@@ -54,6 +55,8 @@ const Header = ({ setIsFormVisible }) => {
     });
   };
 
+  const auth = useAuth();
+
   return (
     <StyledHeader>
       <>
@@ -83,7 +86,7 @@ const Header = ({ setIsFormVisible }) => {
 
         <StyledLoginMenu>
           <p>Witaj użytkowniku</p>
-          <a href='#' onClick={() => localStorage.removeItem('token')}>
+          <a href='#' onClick={auth.signOut}>
             Wyloguj
           </a>
         </StyledLoginMenu>

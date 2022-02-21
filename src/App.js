@@ -1,8 +1,7 @@
 import './index.css';
 import React from 'react';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
-import RandomBook from './components/RandomBook/RandomBook';
 import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
 import AddBookForm from './components/AddBookForm/AddBookForm';
@@ -11,7 +10,8 @@ import { useBooks } from './hooks/useBooks';
 import BookCard from './components/BookCard/BookCard';
 import HeroImage from './components/HeroImage/HeroImage';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
+import { useAuth } from './hooks/useAuth';
+import FormField from './components/Form/FormField';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -125,15 +125,17 @@ const AuthenticatedApp = () => {
   );
 };
 
-const UnauthenticatedApp = ({ handleSignIn, loginError }) => {
+const UnauthenticatedApp = () => {
+  const auth = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   return (
     <form
-      onSubmit={handleSubmit(handleSignIn)}
+      onSubmit={handleSubmit(auth.signIn)}
       style={{
         height: '100vh',
         display: 'flex',
@@ -142,62 +144,25 @@ const UnauthenticatedApp = ({ handleSignIn, loginError }) => {
         flexDirection: 'column',
       }}
     >
-      <label>
-        Login
-        <input type='text' {...register('login', { required: true })} />
-      </label>
+      <FormField label='login' name='login' id='login' {...register('login', { required: true })} />
       {errors.login && <span>Login is required</span>}
-      <label>
-        Hasło
-        <input type='password' {...register('password', { required: true })} />
-      </label>
+      <FormField
+        label='password'
+        name='password'
+        id='password'
+        type='password'
+        {...register('password', { required: true })}
+      />
       {errors.password && <span>Password is required</span>}
-      <button type='submit'>Zaloguj</button>
-      {loginError && <span>{loginError}</span>}
+      <button type='submit'>Sign in</button>
     </form>
   );
 };
 
 const App = () => {
-  const [user, setUser] = useState(null);
-  const [error, setError] = useState(null);
+  const auth = useAuth();
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      (async () => {
-        try {
-          const response = await axios.get('/me', {
-            headers: {
-              authorization: `Bearer ${token}`,
-            },
-          });
-          setUser(response.data);
-        } catch (e) {
-          console.log(e);
-        }
-      })();
-    }
-  }, []);
-
-  const handleSignIn = async ({ login, password }) => {
-    try {
-      const response = await axios.post('/login', {
-        login,
-        password,
-      });
-      setUser(response.data);
-      localStorage.setItem('token', response.data.token);
-    } catch (e) {
-      setError('Please provide valid user data');
-    }
-  };
-
-  return (
-    <Router>
-      {user ? <AuthenticatedApp /> : <UnauthenticatedApp handleSignIn={handleSignIn} />}
-    </Router>
-  );
+  return <Router>{auth.user ? <AuthenticatedApp /> : <UnauthenticatedApp />}</Router>;
 };
 
 export default App;
