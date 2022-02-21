@@ -12,6 +12,7 @@ import HeroImage from './components/HeroImage/HeroImage';
 import { useForm } from 'react-hook-form';
 import { useAuth } from './hooks/useAuth';
 import FormField from './components/Form/FormField';
+import { Wrapper, Form } from './components/Form/FormFied.styles';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -134,28 +135,35 @@ const UnauthenticatedApp = () => {
   } = useForm();
 
   return (
-    <form
-      onSubmit={handleSubmit(auth.signIn)}
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-      }}
-    >
-      <FormField label='login' name='login' id='login' {...register('login', { required: true })} />
-      {errors.login && <span>Login is required</span>}
-      <FormField
-        label='password'
-        name='password'
-        id='password'
-        type='password'
-        {...register('password', { required: true })}
-      />
-      {errors.password && <span>Password is required</span>}
-      <button type='submit'>Sign in</button>
-    </form>
+    <Wrapper>
+      <Form
+        onSubmit={handleSubmit(auth.signIn)}
+        style={{
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <FormField
+          label='login'
+          name='login'
+          id='login'
+          {...register('login', { required: true })}
+        />
+        {errors.login && <span>Login is required</span>}
+        <FormField
+          label='password'
+          name='password'
+          id='password'
+          type='password'
+          {...register('password', { required: true })}
+        />
+        {errors.password && <span>Password is required</span>}
+        <button type='submit'>Sign in</button>
+      </Form>
+    </Wrapper>
   );
 };
 

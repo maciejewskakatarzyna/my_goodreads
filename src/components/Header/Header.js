@@ -85,7 +85,7 @@ const Header = ({ setIsFormVisible }) => {
         </Link>
 
         <StyledLoginMenu>
-          <p>Witaj użytkowniku</p>
+          <p>Witaj {auth.user.name}</p>
           <a href='#' onClick={auth.signOut}>
             Wyloguj
           </a>

@@ -1,33 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  & label {
-    margin: 10px 0;
-  }
-`;
+import { FormItem, FormItemBar, Label, Input } from './FormFied.styles';
 
 const FormField = React.forwardRef(
   ({ onChange, value, label, name, id, type = 'text', ...props }, ref) => {
     return (
-      <Wrapper>
-        <label htmlFor={id}>{label}</label>
-        <input
+      <FormItem>
+        <Input
           name={name}
           id={id}
           type={type}
           value={value}
+          placeholder=' '
           onChange={onChange}
           data-testid={label}
           {...props}
           ref={ref}
         />
-      </Wrapper>
+        <Label htmlFor={id}>{label}</Label>
+
+        <FormItemBar />
+      </FormItem>
     );
   }
 );
