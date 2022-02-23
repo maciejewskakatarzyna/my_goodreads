@@ -12,7 +12,7 @@ import HeroImage from './components/HeroImage/HeroImage';
 import { useForm } from 'react-hook-form';
 import { useAuth } from './hooks/useAuth';
 import FormField from './components/Form/FormField';
-import { Wrapper, Form } from './components/Form/FormFied.styles';
+import { Wrapper, Form } from './components/Form/FormField.styles';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -135,35 +135,59 @@ const UnauthenticatedApp = () => {
   } = useForm();
 
   return (
-    <Wrapper>
-      <Form
-        onSubmit={handleSubmit(auth.signIn)}
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <h1
         style={{
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
+          margin: '100px 0 30px 0',
         }}
       >
-        <FormField
-          label='login'
-          name='login'
-          id='login'
-          {...register('login', { required: true })}
-        />
-        {errors.login && <span>Login is required</span>}
-        <FormField
-          label='password'
-          name='password'
-          id='password'
-          type='password'
-          {...register('password', { required: true })}
-        />
-        {errors.password && <span>Password is required</span>}
-        <button type='submit'>Sign in</button>
-      </Form>
-    </Wrapper>
+        MyGoodreads
+      </h1>
+      <h2
+        style={{
+          marginBottom: '100px',
+        }}
+      >
+        Zaloguj się do aplikacji
+      </h2>
+      <Wrapper>
+        <Form
+          onSubmit={handleSubmit(auth.signIn)}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}
+        >
+          <FormField
+            label='login'
+            name='login'
+            id='login'
+            placeholder='login'
+            {...register('login', { required: true })}
+          />
+          {errors.login && <span>Login is required</span>}
+          <FormField
+            label='password'
+            name='password'
+            id='password'
+            type='password'
+            placeholder='password'
+            {...register('password', { required: true })}
+          />
+          {errors.password && <span>Password is required</span>}
+          <button type='submit'>Sign in</button>
+        </Form>
+      </Wrapper>
+    </div>
   );
 };
 

@@ -4,6 +4,8 @@ import BookContext from '../../contexts/BookContext';
 import { StyledEditBookForm } from './EditBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
+import { Form } from '../Form/FormField.styles';
+import FormField from '../Form/FormField';
 
 const EditBookForm = ({ book, handleClose }) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
@@ -21,15 +23,15 @@ const EditBookForm = ({ book, handleClose }) => {
   let bookToEdit = {};
   let radioShelf;
 
-  const getRadioValue = () => {
-    if (radioInput1.current.checked) {
-      radioShelf = radioInput1.current.value;
-    } else if (radioInput2.current.checked) {
-      radioShelf = radioInput2.current.value;
-    } else if (radioInput3.current.checked) {
-      radioShelf = radioInput3.current.value;
-    }
-  };
+  // const getRadioValue = () => {
+  //   if (radioInput1.current.checked) {
+  //     radioShelf = radioInput1.current.value;
+  //   } else if (radioInput2.current.checked) {
+  //     radioShelf = radioInput2.current.value;
+  //   } else if (radioInput3.current.checked) {
+  //     radioShelf = radioInput3.current.value;
+  //   }
+  // };
 
   const res = {};
 
@@ -47,7 +49,7 @@ const EditBookForm = ({ book, handleClose }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    getRadioValue();
+    // getRadioValue();
     bookToEdit = {
       id: book.id,
       title: titleInput.current.value ? titleInput.current.value : book.title,
@@ -62,42 +64,13 @@ const EditBookForm = ({ book, handleClose }) => {
 
   return (
     <>
-      <StyledEditBookForm onSubmit={handleSubmit}>
-        <label>
-          Tytuł
-          <input type='text' ref={titleInput} />
-        </label>
-        <label>
-          Autor
-          <input type='text' ref={authorInput} />
-        </label>
-        <label>
-          Wydawnictwo
-          <input type='text' ref={publisherInput} />
-        </label>
-        <br />
-        <label>
-          Gatunek
-          <input type='text' ref={genreInput} />
-        </label>
-        <br />
-        <label>
-          Chcę przeczytać
-          <input type='radio' name='shelf' value='to-read' ref={radioInput2} />
-        </label>
-        <br />
-        <label>
-          Przeczytane
-          <input type='radio' name='shelf' value='read' ref={radioInput1} />
-        </label>
-        <br />
-        <label>
-          Teraz czytam
-          <input type='radio' name='shelf' value='currently-reading' ref={radioInput3} />
-        </label>
-        <br />
+      <Form onSubmit={handleSubmit}>
+        <FormField label='Tytuł' name='title' id='title' ref={titleInput} />
+        <FormField label='Autor' name='author' id='author' ref={authorInput} />
+        <FormField label='Wydawnictwo' name='publisher' id='publisher' ref={publisherInput} />
+
         <button>ZAPISZ ZMIANY</button>
-      </StyledEditBookForm>
+      </Form>
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormItem, FormItemBar, Label, Input } from './FormFied.styles';
+import { FormItem, FormItemBar, Label, Input } from './FormField.styles';
 
 const FormField = React.forwardRef(
-  ({ onChange, value, label, name, id, type = 'text', ...props }, ref) => {
+  ({ onChange, value, label, name, id, placeholder, type = 'text', ...props }, ref) => {
     return (
       <FormItem>
         <Input
@@ -11,7 +11,7 @@ const FormField = React.forwardRef(
           id={id}
           type={type}
           value={value}
-          placeholder=' '
+          placeholder={placeholder}
           onChange={onChange}
           data-testid={label}
           {...props}

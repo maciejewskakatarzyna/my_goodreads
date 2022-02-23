@@ -1,4 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const moveLabelToTop = keyframes`
+  0% {
+    display: none;
+    opacity: 0;
+    top: 3px;
+    left: 0;
+    font-size: 16px;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: -22px;
+    left: 0;
+    font-size: 13px;
+  }`;
 
 export const Wrapper = styled.div`
   width: 50%;
@@ -30,11 +46,11 @@ export const FormItemBar = styled.div`
 `;
 
 export const Label = styled.label`
-  color: #7d7d7d;
-  position: absolute;
   top: 3px;
   left: 0;
-  transition: 0.2s ease-out all;
+  opacity: 0;
+  color: #7d7d7d;
+  position: absolute;
   font-size: 16px;
 `;
 
@@ -51,13 +67,11 @@ export const Input = styled.input`
   }
 
   &:focus + ${Label} {
-    top: -22px;
-    font-size: 13px;
+    animation: ${moveLabelToTop} 0.3s forwards;
   }
 
   &:not(:placeholder-shown) + ${Label} {
-    top: -22px;
-    font-size: 13px;
+    animation: ${moveLabelToTop} 0.3s forwards;
   }
 
   &:focus ~ ${FormItemBar} {
