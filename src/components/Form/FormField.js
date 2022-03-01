@@ -19,7 +19,7 @@ const FormField = React.forwardRef(
         />
         <Label htmlFor={id}>{label}</Label>
 
-        <FormItemBar />
+        {type !== 'radio' && <FormItemBar />}
       </FormItem>
     );
   }
@@ -29,6 +29,7 @@ FormField.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   type: PropTypes.string,
 };
 

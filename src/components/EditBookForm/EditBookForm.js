@@ -1,38 +1,23 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledEditBookForm } from './EditBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
-import { Form } from '../Form/FormField.styles';
+import { Form, Wrapper } from '../Form/FormField.styles';
 import FormField from '../Form/FormField';
+import { useForm } from 'react-hook-form';
 
 const EditBookForm = ({ book, handleClose }) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
 
   const { editBookById } = useBooks();
-
-  const titleInput = useRef(null);
-  const authorInput = useRef(null);
-  const publisherInput = useRef(null);
-  const radioInput1 = useRef(null);
-  const radioInput2 = useRef(null);
-  const radioInput3 = useRef(null);
-  const genreInput = useRef(null);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   let bookToEdit = {};
-  let radioShelf;
-
-  // const getRadioValue = () => {
-  //   if (radioInput1.current.checked) {
-  //     radioShelf = radioInput1.current.value;
-  //   } else if (radioInput2.current.checked) {
-  //     radioShelf = radioInput2.current.value;
-  //   } else if (radioInput3.current.checked) {
-  //     radioShelf = radioInput3.current.value;
-  //   }
-  // };
-
   const res = {};
 
   function update(target, src) {
@@ -47,31 +32,68 @@ const EditBookForm = ({ book, handleClose }) => {
     setCurrentBook(res);
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    // getRadioValue();
-    bookToEdit = {
-      id: book.id,
-      title: titleInput.current.value ? titleInput.current.value : book.title,
-      author: authorInput.current.value ? authorInput.current.value : book.author,
-      publisher: publisherInput.current.value ? publisherInput.current.value : book.publisher,
-      // shelf: radioShelf,
-      // genre: genreInput.current.value,
-    };
+  const onSubmit = data => {
+    bookToEdit = data;
     handleEditBook(book.id, bookToEdit);
+    console.log(data);
     handleClose();
   };
 
   return (
-    <>
-      <Form onSubmit={handleSubmit}>
-        <FormField label='Tytuł' name='title' id='title' ref={titleInput} />
-        <FormField label='Autor' name='author' id='author' ref={authorInput} />
-        <FormField label='Wydawnictwo' name='publisher' id='publisher' ref={publisherInput} />
-
-        <button>ZAPISZ ZMIANY</button>
+    <Wrapper>
+      <button onClick={handleClose}>x</button>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <FormField
+          label='title'
+          name='title'
+          id='title'
+          placeholder='title'
+          {...register('title')}
+        />
+        <FormField
+          label='author'
+          name='author'
+          id='author'
+          placeholder='author'
+          {...register('author')}
+        />
+        <FormField
+          label='publisher'
+          name='publisher'
+          id='publisher'
+          placeholder='publisher'
+          {...register('publisher')}
+        />
+        <label>
+          Shelf{' '}
+          <select {...register('shelf')}>
+            <option value='to-read'>to read</option>
+            <option value='read'>read</option>
+            <option value='currently-reading'>currently reading</option>
+          </select>
+        </label>
+        <label>
+          Genre{' '}
+          <FormField
+            type='radio'
+            label='beletrystyka'
+            name='genre'
+            id='beletrystyka'
+            value='beletrystyka'
+            {...register('genre')}
+          />
+          <FormField
+            type='radio'
+            label='historia'
+            name='genre'
+            id='historia'
+            value='historia'
+            {...register('genre')}
+          />
+        </label>
+        <button type='submit'>Sign in</button>
       </Form>
-    </>
+    </Wrapper>
   );
 };
 

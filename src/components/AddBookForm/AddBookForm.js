@@ -1,10 +1,12 @@
 import React, { useContext, useRef } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledAddBookForm } from './AddBookForm.styles';
 import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
 import PropTypes from 'prop-types';
+import { Form, Wrapper } from '../Form/FormField.styles';
+import { useForm } from 'react-hook-form';
+import FormField from '../Form/FormField';
 
 const AddBookForm = ({
   onClose,
@@ -15,44 +17,23 @@ const AddBookForm = ({
 }) => {
   const { setBooks, books } = useContext(BookContext);
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   const { addNewBook } = useBooks();
   const navigate = useNavigate();
 
-  const titleInput = useRef(null);
-  const authorInput = useRef(null);
-  const publisherInput = useRef(null);
-  const radioInput1 = useRef(null);
-  const radioInput2 = useRef(null);
-  const radioInput3 = useRef(null);
-  const genreInput = useRef(null);
-
   let newBook = {};
-  let radioShelf;
-
-  const getRadioValue = () => {
-    if (radioInput1.current.checked) {
-      radioShelf = radioInput1.current.value;
-    } else if (radioInput2.current.checked) {
-      radioShelf = radioInput2.current.value;
-    } else if (radioInput3.current.checked) {
-      radioShelf = radioInput3.current.value;
-    }
-  };
 
   const handleAddBook = book => {
     addNewBook(book).then(bookToAdd => setBooks([...books, bookToAdd]));
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    getRadioValue();
-    newBook = {
-      title: titleInput.current.value,
-      author: authorInput.current.value,
-      publisher: publisherInput.current.value,
-      shelf: radioShelf,
-      genre: genreInput.current.value,
-    };
+  const onSubmit = data => {
+    newBook = data;
     handleAddBook(newBook);
     setIsFormVisible(false);
     setIsConfirmVisible(true);
@@ -71,45 +52,60 @@ const AddBookForm = ({
   return (
     <>
       {isFormVisible && (
-        <StyledAddBookForm onSubmit={handleSubmit}>
-          <button className='closeBtn' onClick={handleCloseBtn}>
-            x
-          </button>
-          <label>
-            Tytuł
-            <input type='text' ref={titleInput} />
-          </label>
-          <label>
-            Autor
-            <input type='text' ref={authorInput} />
-          </label>
-          <label>
-            Wydawnictwo
-            <input type='text' ref={publisherInput} />
-          </label>
-          <br />
-          <label>
-            Gatunek
-            <input type='text' ref={genreInput} />
-          </label>
-          <br />
-          <label>
-            Chcę przeczytać
-            <input type='radio' name='shelf' value='to-read' ref={radioInput2} />
-          </label>
-          <br />
-          <label>
-            Przeczytane
-            <input type='radio' name='shelf' value='read' ref={radioInput1} />
-          </label>
-          <br />
-          <label>
-            Teraz czytam
-            <input type='radio' name='shelf' value='currently-reading' ref={radioInput3} />
-          </label>
-          <br />
-          <button type='submit'>DODAJ KSIĄŻKĘ</button>
-        </StyledAddBookForm>
+        <Wrapper>
+          <button onClick={handleCloseBtn}>x</button>
+          <Form onSubmit={handleSubmit(onSubmit)}>
+            <FormField
+              label='title'
+              name='title'
+              id='title'
+              placeholder='title'
+              {...register('title')}
+            />
+            <FormField
+              label='author'
+              name='author'
+              id='author'
+              placeholder='author'
+              {...register('author')}
+            />
+            <FormField
+              label='publisher'
+              name='publisher'
+              id='publisher'
+              placeholder='publisher'
+              {...register('publisher')}
+            />
+            <label>
+              Shelf{' '}
+              <select {...register('shelf')}>
+                <option value='to-read'>to read</option>
+                <option value='read'>read</option>
+                <option value='currently-reading'>currently reading</option>
+              </select>
+            </label>
+            <label>
+              Genre{' '}
+              <FormField
+                type='radio'
+                label='beletrystyka'
+                name='genre'
+                id='beletrystyka'
+                value='beletrystyka'
+                {...register('genre')}
+              />
+              <FormField
+                type='radio'
+                label='historia'
+                name='genre'
+                id='historia'
+                value='historia'
+                {...register('genre')}
+              />
+            </label>
+            <button type='submit'>Sign in</button>
+          </Form>
+        </Wrapper>
       )}
 
       {isConfirmVisible && (

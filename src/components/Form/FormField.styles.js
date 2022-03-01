@@ -64,6 +64,10 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
+
+    ::placeholder {
+      opacity: 0;
+    }
   }
 
   &:focus + ${Label} {
