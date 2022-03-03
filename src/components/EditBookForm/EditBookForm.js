@@ -41,7 +41,7 @@ const EditBookForm = ({ book, handleClose }) => {
 
   return (
     <Wrapper>
-      <button onClick={handleClose}>x</button>
+      <h2>Edytuj książkę</h2>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FormField
           label='title'
@@ -91,7 +91,7 @@ const EditBookForm = ({ book, handleClose }) => {
             {...register('genre')}
           />
         </label>
-        <button type='submit'>Sign in</button>
+        <button type='submit'>Zapisz zmiany</button>
       </Form>
     </Wrapper>
   );

@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
