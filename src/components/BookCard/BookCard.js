@@ -88,8 +88,6 @@ const BookCard = () => {
           <p>{currentBook.publisher}</p>
           <p>{currentBook.shelf}</p>
           <p>{currentBook.genre}</p>
-          <p>{currentBook.myRating}</p>
-          <p>{currentBook.averageRating}</p>
           {/*<div>*/}
           {/*  <select value={selectedOption} onChange={e => handleChange(e)}>*/}
           {/*    {options.map(o => (*/}

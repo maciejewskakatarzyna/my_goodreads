@@ -13,7 +13,7 @@ export const StyledModalWrapper = styled(ReactModal)`
   background-color: #f9f7f4;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 1;

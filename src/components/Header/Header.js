@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import '../../index.css';
 import plus from '../../assets/plus.png';
 import BookContext from '../../contexts/BookContext';
@@ -6,15 +6,24 @@ import { StyledHeader } from './Header.styles';
 import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import { StyledSearchInput } from './SearchInput.styles';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useAuth } from '../../hooks/useAuth';
+import useModal from '../Modal/useModal';
+import Modal from '../Modal/Modal';
+import AddBookForm from '../AddBookForm/AddBookForm';
 
-const Header = ({ setIsFormVisible }) => {
+const Header = () => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
 
+  const { handleOpenModal, handleCloseModal } = useModal();
+
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
+
   const handleShowForm = () => {
-    setIsFormVisible(true);
+    setIsConfirmModalOpen(false);
+    setIsAddModalOpen(true);
+    handleOpenModal();
   };
 
   // function getFilteredBooksForText(text) {
@@ -55,6 +64,21 @@ const Header = ({ setIsFormVisible }) => {
     });
   };
 
+  const handleCloseConfirmModal = () => {
+    setIsConfirmModalOpen(false);
+    handleCloseModal();
+  };
+
+  const handleCloseAddModal = () => {
+    setIsAddModalOpen(false);
+    handleCloseModal();
+  };
+
+  const handleShowConfirm = () => {
+    setIsConfirmModalOpen(true);
+    handleOpenModal();
+  };
+
   const auth = useAuth();
 
   return (
@@ -80,9 +104,9 @@ const Header = ({ setIsFormVisible }) => {
             // onInput={filterBooks}
           />
         </form>
-        <Link to='/add-book' className='icon' onClick={handleShowForm}>
+        <button className='icon' onClick={handleShowForm}>
           <img alt='plus' src={plus} />
-        </Link>
+        </button>
 
         <StyledLoginMenu>
           <p>Witaj {auth.user.name}</p>
@@ -91,6 +115,12 @@ const Header = ({ setIsFormVisible }) => {
           </a>
         </StyledLoginMenu>
       </>
+      <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal}>
+        <AddBookForm handleClose={handleCloseAddModal} handleShowConfirm={handleShowConfirm} />
+      </Modal>
+      <Modal isOpen={isConfirmModalOpen} handleClose={handleCloseConfirmModal}>
+        <h2>Książka dodana!</h2>
+      </Modal>
     </StyledHeader>
   );
 };

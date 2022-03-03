@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header/Header';
 import BooksList from './components/BookList/BooksList';
 import BookContext from './contexts/BookContext';
-import AddBookForm from './components/AddBookForm/AddBookForm';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { useBooks } from './hooks/useBooks';
 import BookCard from './components/BookCard/BookCard';
@@ -18,18 +17,12 @@ const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
   const [randomBook, setRandomBook] = useState(null);
   const [isRandomBook, setIsRandomBook] = useState(false);
-  const [isFormVisible, setIsFormVisible] = useState(false);
-  const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [shelfs, setShelfs] = useState([]);
   const [currentBook, setCurrentBook] = useState(0);
 
   const { getShelfs, editBookById } = useBooks();
-
-  const handleClose = modal => {
-    setIsFormVisible(false);
-  };
 
   useEffect(() => {
     (async () => {
@@ -75,24 +68,12 @@ const AuthenticatedApp = () => {
           setCurrentBook: setCurrentBook,
         }}
       >
-        <Header setIsFormVisible={setIsFormVisible} />
+        <Header />
         <HeroImage />
 
         <div className='wrapper'>
           <Routes>
             <Route path='/' element={<Navigate to='/shelfs' />} />
-            <Route
-              path='/add-book'
-              element={
-                <AddBookForm
-                  onClose={() => handleClose('addFormModal')}
-                  isConfirmVisible={isConfirmVisible}
-                  setIsConfirmVisible={setIsConfirmVisible}
-                  setIsFormVisible={setIsFormVisible}
-                  isFormVisible={isFormVisible}
-                />
-              }
-            />
             <Route path='/shelfs/' element={<Navigate to='/shelfs/to-read' />} />
             <Route
               path='/shelfs/'
