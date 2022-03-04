@@ -115,10 +115,15 @@ const Header = () => {
           </a>
         </StyledLoginMenu>
       </>
-      <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal}>
+      <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal} width='500px' height='400px'>
         <AddBookForm handleClose={handleCloseAddModal} handleShowConfirm={handleShowConfirm} />
       </Modal>
-      <Modal isOpen={isConfirmModalOpen} handleClose={handleCloseConfirmModal}>
+      <Modal
+        isOpen={isConfirmModalOpen}
+        handleClose={handleCloseConfirmModal}
+        width='300px'
+        height='150px'
+      >
         <h2>Książka dodana!</h2>
       </Modal>
     </StyledHeader>

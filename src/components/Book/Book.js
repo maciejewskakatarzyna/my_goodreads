@@ -97,7 +97,12 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
           </>
         </StyledGridBook>
       )}
-      <Modal isOpen={isDeleteModalOpen} handleClose={handleCloseDeleteModal}>
+      <Modal
+        isOpen={isDeleteModalOpen}
+        handleClose={handleCloseDeleteModal}
+        width='300px'
+        height='200px'
+      >
         <DeleteModal
           book={title}
           handleDeleteBook={() => deleteBook(id)}

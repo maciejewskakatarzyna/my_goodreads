@@ -6,8 +6,9 @@ export const StyledModalWrapper = styled(ReactModal)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 500px;
-  min-height: 400px;
+  min-width: ${props => props.width};
+  min-height: ${props => props.height};
+  padding: 30px 50px;
   border: #dcd6cc 1px solid;
   border-radius: 5px;
   background-color: #f9f7f4;

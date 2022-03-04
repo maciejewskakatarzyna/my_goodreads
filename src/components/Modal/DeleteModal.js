@@ -1,10 +1,10 @@
 import React from 'react';
-import { ModalWrapper, ButtonsWrapper, DeleteButton, DeleteQuestion } from './DeleteModal.styles';
+import { ButtonsWrapper, DeleteButton, DeleteQuestion } from './DeleteModal.styles';
 import PropTypes from 'prop-types';
 
 const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
   return (
-    <ModalWrapper>
+    <>
       <DeleteQuestion>
         Czy na pewno chcesz usunąć <span>{book}</span>?
       </DeleteQuestion>
@@ -12,7 +12,7 @@ const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
         <DeleteButton onClick={handleDeleteBook}>TAK</DeleteButton>
         <DeleteButton onClick={handleCloseDeleteModal}>NIE</DeleteButton>
       </ButtonsWrapper>
-    </ModalWrapper>
+    </>
   );
 };
 

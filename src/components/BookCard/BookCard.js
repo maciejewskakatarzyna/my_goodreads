@@ -102,11 +102,21 @@ const BookCard = () => {
         </StyledBookDetails>
       </>
 
-      <Modal isOpen={isEditModalOpen} handleClose={handleCloseEditModal}>
+      <Modal
+        isOpen={isEditModalOpen}
+        handleClose={handleCloseEditModal}
+        width='500px'
+        height='400px'
+      >
         <EditBookForm book={currentBook} handleClose={handleCloseEditModal} />
       </Modal>
 
-      <Modal isOpen={isDeleteModalOpen} handleClose={handleCloseDeleteModal}>
+      <Modal
+        isOpen={isDeleteModalOpen}
+        handleClose={handleCloseDeleteModal}
+        width='300px'
+        height='200px'
+      >
         <DeleteModal
           book={currentBook.title}
           handleDeleteBook={() => deleteBook(currentBook.id)}
