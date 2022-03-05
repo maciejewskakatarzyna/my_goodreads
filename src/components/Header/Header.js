@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import '../../index.css';
-import plus from '../../assets/plus.png';
 import BookContext from '../../contexts/BookContext';
 import { StyledHeader } from './Header.styles';
 import { StyledLink, StyledNavigation } from './Navigation.styles';
@@ -11,6 +10,7 @@ import { useAuth } from '../../hooks/useAuth';
 import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
 import AddBookForm from '../AddBookForm/AddBookForm';
+import AddBookButton from '../Buttons/AddBookButton';
 
 const Header = () => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
@@ -104,9 +104,8 @@ const Header = () => {
             // onInput={filterBooks}
           />
         </form>
-        <button className='icon' onClick={handleShowForm}>
-          <img alt='plus' src={plus} />
-        </button>
+
+        <AddBookButton title='Add new book' onClick={handleShowForm}></AddBookButton>
 
         <StyledLoginMenu>
           <p>Witaj {auth.user.name}</p>

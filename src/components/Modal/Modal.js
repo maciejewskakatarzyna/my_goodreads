@@ -13,11 +13,8 @@ const Modal = ({ handleClose, isOpen, children, width, height }) => {
       height={height}
     >
       {children}
-      {/*<button className='closeBtn' onClick={handleClose}>*/}
-      {/*  x*/}
-      {/*</button>*/}
 
-      <CloseButton onClick={handleClose}></CloseButton>
+      <CloseButton title='Close' onClick={handleClose}></CloseButton>
     </StyledModalWrapper>
   );
 };
