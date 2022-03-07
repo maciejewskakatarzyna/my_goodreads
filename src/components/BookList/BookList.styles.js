@@ -13,29 +13,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  & .listViewButtons {
-    & button {
-      border: none;
-      background: none;
-
-      &:disabled img {
-        filter: opacity(0.5);
-      }
-
-      & img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
 `;
 
 export const ListHeader = styled.div`
   display: flex;
   justify-content: space-between;
 
-  & .icon {
-    margin-right: 70%;
+  h3 {
+    line-height: 28px;
   }
 `;

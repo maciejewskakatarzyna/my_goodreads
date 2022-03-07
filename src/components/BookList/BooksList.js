@@ -6,10 +6,11 @@ import BookContext from '../../contexts/BookContext';
 import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
 import { useBooks } from '../../hooks/useBooks';
 import Modal from '../Modal/Modal';
-import shuffle from '../../assets/shuffle.png';
 import RandomBook from '../RandomBook/RandomBook';
 import PropTypes from 'prop-types';
 import GridListToggleButton from '../Buttons/GridListToggleButton';
+import RandomBookButton from '../Buttons/RandomBookButton';
+import { ReactComponent as RandomBookSvg } from '../../assets/random.svg';
 
 const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCurrent }) => {
   const { books, setBooks, setRandomBook, setIsRandomBook, shelfs } = useContext(BookContext);
@@ -67,9 +68,9 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
         <ListHeader>
           <h3>{getShelfName(id) || getShelfName(shelfs[0])}</h3>
           {getShelfName(id) === 'Chcę przeczytać' ? (
-            <button className='icon' onClick={handleOpenRandomModal}>
-              <img alt='shuffle' src={shuffle} />
-            </button>
+            <RandomBookButton onClick={handleOpenRandomModal}>
+              <RandomBookSvg />
+            </RandomBookButton>
           ) : null}
           <GridListToggleButton onClick={toggleGridList} isList={isList}></GridListToggleButton>
         </ListHeader>

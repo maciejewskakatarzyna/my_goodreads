@@ -108,7 +108,7 @@ const Header = () => {
         <AddBookButton title='Add new book' onClick={handleShowForm}></AddBookButton>
 
         <StyledLoginMenu>
-          <p>Witaj {auth.user.name}</p>
+          <p>Hello {auth.user.name}</p>
           <a href='#' onClick={auth.signOut}>
             Wyloguj
           </a>
