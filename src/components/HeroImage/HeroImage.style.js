@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import hero from '../../assets/hero.jpeg';
+import hero from '../../assets/images/hero.jpeg';
 
 export const StyledHeroImage = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${hero});
@@ -17,7 +17,7 @@ export const QuoteWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@ export const QuoteWrapper = styled.div`
 export const QuoteText = styled.p`
   margin-bottom: 30px;
   text-align: center;
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.font.size.xl};
   font-weight: lighter;
   font-style: italic;
 `;
@@ -35,7 +35,7 @@ export const QuoteText = styled.p`
 export const QuoteAuthor = styled.p`
   margin-bottom: 50px;
   text-align: right;
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.font.size.xl};
   font-weight: lighter;
   font-style: italic;
   align-self: flex-end;

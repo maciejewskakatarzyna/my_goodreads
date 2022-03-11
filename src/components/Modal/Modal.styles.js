@@ -9,9 +9,9 @@ export const StyledModalWrapper = styled(ReactModal)`
   min-width: ${props => props.width};
   min-height: ${props => props.height};
   padding: 30px 50px;
-  border: #dcd6cc 1px solid;
+  border: ${({ theme }) => theme.color.beige} 1px solid;
   border-radius: 5px;
-  background-color: #f9f7f4;
+  background-color: ${({ theme }) => theme.color.beige};
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;

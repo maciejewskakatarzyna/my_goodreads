@@ -45,13 +45,6 @@ const AuthenticatedApp = () => {
     setIsAddedToCurrent(true);
   };
 
-  // const handleScrollDown = () => {
-  //   window.scrollBy({
-  //     top: window.innerHeight,
-  //     behavior: 'smooth',
-  //   });
-  // };
-
   return (
     <div>
       <BookContext.Provider

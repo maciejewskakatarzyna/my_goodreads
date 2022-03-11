@@ -11,7 +11,7 @@ export const StyledGridBook = styled.div`
     width: 150px;
     height: 200px;
     text-decoration: none;
-    box-shadow: #ccc 5px 5px 5px;
+    box-shadow: ${({ theme }) => theme.color.lightGrey} 5px 5px 5px;
 
     & img {
       width: 150px;
@@ -33,7 +33,7 @@ export const StyledGridBook = styled.div`
       height: 200px;
       border-radius: 3px;
       position: relative;
-      background-color: lightgrey;
+      background-color: ${({ theme }) => theme.color.lightGrey};
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -48,16 +48,16 @@ export const StyledGridBook = styled.div`
       position: absolute;
       bottom: 30px;
       left: 10px;
-      color: #f9f7f4;
-      font-size: 18px;
+      color: ${({ theme }) => theme.color.beige};
+      font-size: ${({ theme }) => theme.font.size.l};
     }
 
     & p:last-of-type {
       position: absolute;
       bottom: 10px;
       left: 10px;
-      color: #f9f7f4;
-      font-size: 12px;
+      color: ${({ theme }) => theme.color.beige};
+      font-size: ${({ theme }) => theme.font.size.s};
     }
   }
 `;
@@ -76,13 +76,13 @@ export const StyledListBook = styled.div`
     bottom: -5px;
     width: 100%;
     height: 1px;
-    background-color: lightgrey;
+    background-color: ${({ theme }) => theme.color.lightGrey};
   }
 
   & .bookWrapper {
     padding: 0px 10px;
     text-decoration: none;
-    color: #2c2726;
+    color: ${({ theme }) => theme.color.darkBrown};
 
     &:hover {
       font-weight: bold;

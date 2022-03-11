@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 * {
@@ -7,7 +8,6 @@
 }
 
 body {
-  /*background-color: #F9F7F4;*/
   background-color: #f9f7f4;
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -20,23 +20,6 @@ body {
   margin: 30px auto;
 }
 
-h3 {
-  /*color: #00635d;*/
-  color: #2c2726;
-}
-
-.icon {
-  border: none;
-}
-
-.icon:hover {
-  border-bottom: solid 1px #2c2726;
-}
-
-.icon img{
-  width: 20px;
-  height: 20px;
-}
 
 .addedConfirmation {
   margin: 20px auto;
@@ -59,11 +42,7 @@ h3 {
 
 
 
-.logo {
-  font-weight: bold;
-  font-size: 24px;
-  font-style: italic;
-}
+
 
 
 

@@ -6,14 +6,14 @@ const moveLabelToTop = keyframes`
     opacity: 0;
     top: 3px;
     left: 0;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.font.size.m};
   }
   100% {
     display: block;
     opacity: 1;
     top: -22px;
     left: 0;
-    font-size: 13px;
+    font-size: ${({ theme }) => theme.font.size.s};
   }`;
 
 export const Wrapper = styled.div`
@@ -41,7 +41,7 @@ export const FormItem = styled.div`
 export const FormItemBar = styled.div`
   width: 100%;
   height: 2px;
-  background: #dcd6cc;
+  background: ${({ theme }) => theme.color.formBar};
   transition: 0.1s all;
 `;
 
@@ -49,14 +49,14 @@ export const Label = styled.label`
   top: 3px;
   left: 0;
   opacity: 0;
-  color: #7d7d7d;
+  color: ${({ theme }) => theme.color.grey};
   position: absolute;
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.font.size.m};
 `;
 
 export const Input = styled.input`
-  color: #7d7d7d;
-  font-size: 16px;
+  color: ${({ theme }) => theme.color.grey};
+  font-size: ${({ theme }) => theme.font.size.m};
   border: none;
   line-height: 22px;
   width: 100%;
@@ -79,6 +79,6 @@ export const Input = styled.input`
   }
 
   &:focus ~ ${FormItemBar} {
-    background: #2c2726;
+    background: ${({ theme }) => theme.color.darkBrown};
   }
 `;

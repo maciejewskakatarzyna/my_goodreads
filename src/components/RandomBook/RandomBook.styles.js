@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledRandomBook = styled.div`
-  font-size: 18px;
+  font-size: ${({ theme }) => theme.font.size.l};
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 60px 90px;
-
   position: relative;
 
   & p {

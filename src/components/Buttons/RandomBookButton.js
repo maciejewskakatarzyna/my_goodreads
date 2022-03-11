@@ -8,8 +8,8 @@ const RandomBookButton = styled.button`
   width: 28px;
   height: 28px;
   svg {
-    fill: #f9f7f4;
-    background-color: #2c2726;
+    fill: ${({ theme }) => theme.color.beige};
+    background-color: ${({ theme }) => theme.color.darkBrown};
   }
 `;
 

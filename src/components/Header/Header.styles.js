@@ -3,26 +3,30 @@ import styled from 'styled-components';
 export const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  //background-color: #f4f1ea;
-  background-color: #f9f7f4;
+  background-color: ${({ theme }) => theme.color.beige};
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   width: 100%;
   height: 50px;
   position: fixed;
-  top: 0px;
-  font-size: 16px;
+  top: 0;
   line-height: 50px;
   padding: 0 30px;
-  color: #2c2726;
+  font-size: ${({ theme }) => theme.font.size.l};
+  color: ${({ theme }) => theme.color.darkBrown};
   z-index: 2;
 
   & a {
     text-decoration: none;
-    //color: #382110;
-    color: #2c2726;
+    color: ${({ theme }) => theme.color.darkBrown};
 
     &:hover {
       font-weight: bold;
     }
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: ${({ theme }) => theme.font.size.xl};
+    font-style: italic;
   }
 `;

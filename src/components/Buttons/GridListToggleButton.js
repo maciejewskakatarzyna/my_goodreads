@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const GridListBtn = styled.button`
-  --color: #f9f7f4;
-  --background: #2c2726;
-  --icon-color: #f9f7f4;
+  --color: ${({ theme }) => theme.color.darkBrown};
+  --background: ${({ theme }) => theme.color.beige};
+  --icon-color: ${({ theme }) => theme.color.darkBrown};
   padding: 6px 12px 6px 8px;
   margin: 0;
   display: flex;
@@ -73,7 +73,7 @@ const Text = styled.div`
   position: relative;
   line-height: 24px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.font.size.m};
   min-width: 28px;
   color: var(--color);
   span {

@@ -10,7 +10,7 @@ import RandomBook from '../RandomBook/RandomBook';
 import PropTypes from 'prop-types';
 import GridListToggleButton from '../Buttons/GridListToggleButton';
 import RandomBookButton from '../Buttons/RandomBookButton';
-import { ReactComponent as RandomBookSvg } from '../../assets/random.svg';
+import { ReactComponent as RandomBookSvg } from '../../assets/images/random.svg';
 
 const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCurrent }) => {
   const { books, setBooks, setRandomBook, setIsRandomBook, shelfs } = useContext(BookContext);
