@@ -66,6 +66,17 @@ export const useBooks = () => {
     }
   }, []);
 
+  const findBooks = async searchPhrase => {
+    try {
+      const { data } = await axios.post(`/books/search`, {
+        searchPhrase,
+      });
+      return data;
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return {
     getShelfs,
     getBooksByShelf,
@@ -74,5 +85,6 @@ export const useBooks = () => {
     addNewBook,
     editBookById,
     getAllBooks,
+    findBooks,
   };
 };

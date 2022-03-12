@@ -99,4 +99,19 @@ export const books = [
       })
     );
   }),
+  rest.post('/books/search', (req, res, ctx) => {
+    const matchingBooks = db.book.findMany({
+      where: {
+        title: {
+          contains: req.body.searchPhrase,
+        },
+      },
+    });
+    return res(
+      ctx.status(200),
+      ctx.json({
+        books: matchingBooks,
+      })
+    );
+  }),
 ];

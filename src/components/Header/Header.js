@@ -4,13 +4,13 @@ import BookContext from '../../contexts/BookContext';
 import { StyledHeader } from './Header.styles';
 import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
-import { StyledSearchInput } from './SearchInput.styles';
 import PropTypes from 'prop-types';
 import { useAuth } from '../../hooks/useAuth';
 import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
 import AddBookForm from '../AddBookForm/AddBookForm';
 import AddBookButton from '../Buttons/AddBookButton';
+import SearchBar from '../SearchBar/SearchBar';
 
 const Header = () => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
@@ -96,14 +96,7 @@ const Header = () => {
             ))}
           </StyledNavigation>
         </nav>
-        <form>
-          <StyledSearchInput
-            className='searchInput'
-            type='text'
-            placeholder='Wyszukaj książkę'
-            // onInput={filterBooks}
-          />
-        </form>
+        <SearchBar />
 
         <AddBookButton title='Add new book' onClick={handleShowForm}></AddBookButton>
 
