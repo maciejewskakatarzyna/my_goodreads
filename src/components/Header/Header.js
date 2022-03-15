@@ -11,6 +11,7 @@ import Modal from '../Modal/Modal';
 import AddBookForm from '../AddBookForm/AddBookForm';
 import AddBookButton from '../Buttons/AddBookButton';
 import SearchBar from '../SearchBar/SearchBar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { books, setFilteredBooks, shelfs } = useContext(BookContext);
@@ -84,9 +85,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <>
-        <StyledLink to={`/`} className='logo' onClick={handleScrollUp}>
+        <Link to={`/`} className='logo' onClick={handleScrollUp}>
           My Goodreads
-        </StyledLink>
+        </Link>
         <nav>
           <StyledNavigation>
             {shelfs.map(({ id }) => (

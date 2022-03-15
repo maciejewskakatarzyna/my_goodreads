@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Book from '../Book/Book';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledBookList, Wrapper, ListHeader } from './BookList.styles';
+import { StyledBookList, Wrapper, ListHeader, ShelfName } from './BookList.styles';
 import { useBooks } from '../../hooks/useBooks';
 import Modal from '../Modal/Modal';
 import RandomBook from '../RandomBook/RandomBook';
@@ -66,9 +66,9 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
     <>
       <Wrapper>
         <ListHeader>
-          <h3>{getShelfName(id) || getShelfName(shelfs[0])}</h3>
+          <ShelfName>{getShelfName(id) || getShelfName(shelfs[0])}</ShelfName>
           {getShelfName(id) === 'Chcę przeczytać' ? (
-            <RandomBookButton onClick={handleOpenRandomModal}>
+            <RandomBookButton onClick={handleOpenRandomModal} title='Choose random book to read'>
               <RandomBookSvg />
             </RandomBookButton>
           ) : null}

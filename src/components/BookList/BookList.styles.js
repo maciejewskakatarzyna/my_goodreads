@@ -18,8 +18,9 @@ export const Wrapper = styled.div`
 export const ListHeader = styled.div`
   display: flex;
   justify-content: space-between;
+`;
 
-  h3 {
-    line-height: 28px;
-  }
+export const ShelfName = styled.p`
+  font-size: ${({ theme }) => theme.font.size.l};
+  font-weight: bold;
 `;

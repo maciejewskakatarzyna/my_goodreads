@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const StyledNavigation = styled.ul`
   display: flex;
   list-style: none;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   margin-right: 30px;
+  &.active {
+    font-weight: bold;
+  }
 `;
