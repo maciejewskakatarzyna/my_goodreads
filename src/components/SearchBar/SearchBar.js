@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useCombobox } from 'downshift';
 import debounce from 'lodash.debounce';
 import { SearchInput, SearchResults, SearchResultsItem, SearchWrapper } from './SearchBar.styles';
 import { useBooks } from '../../hooks/useBooks';
+import BookContext from '../../contexts/BookContext';
+import { Link } from 'react-router-dom';
 
 const SearchBar = () => {
   const [matchingBooks, setMatchingBooks] = useState([]);
   const { findBooks } = useBooks();
+
+  const { setCurrentBook } = useContext(BookContext);
+  const { getBookById } = useBooks();
 
   const getMatchingBooks = debounce(async ({ inputValue }) => {
     const { books } = await findBooks(inputValue);
@@ -20,6 +25,11 @@ const SearchBar = () => {
       itemToString: item => (item ? item.title : ''),
     });
 
+  const handleOpenBookCard = async id => {
+    const book = await getBookById(id);
+    setCurrentBook(book);
+  };
+
   return (
     <SearchWrapper {...getComboboxProps()}>
       <SearchInput {...getInputProps()} name='Search' id='Search' placeholder='Search' />
@@ -30,13 +40,22 @@ const SearchBar = () => {
       >
         {isOpen &&
           matchingBooks.map((item, index) => (
-            <SearchResultsItem
-              isHighlighted={highlightedIndex === index}
-              {...getItemProps({ item: 'Mordo', index })}
-              key={item.id}
+            <Link
+              to={`/books/${item.id}`}
+              onClick={() => handleOpenBookCard(item.id)}
+              onKeyPress={() => handleOpenBookCard(item.id)}
             >
-              {item.title}
-            </SearchResultsItem>
+              <SearchResultsItem
+                isHighlighted={highlightedIndex === index}
+                {...getItemProps({
+                  item,
+                  index,
+                })}
+                key={item.id}
+              >
+                {item.title}
+              </SearchResultsItem>{' '}
+            </Link>
           ))}
       </SearchResults>
     </SearchWrapper>

@@ -28,8 +28,6 @@ export const db = factory({
     myRating: getRandomAverage,
     averageRating: getRandomAverage,
     publisher: () => faker.fake('{{company.companyName}}'),
-    // numberOfPages: () => `${faker.datatype.number({ min: 100, max: 1000 })}`,
-    // progress: () => `${faker.datatype.number({ min: 0, max: 100 })}%`,
     yearPublished: () => `${faker.datatype.number({ min: 1950, max: 2022 })}`,
     shelf: () => getRandomValue(shelfs, faker.datatype.number({ min: 0, max: 2 })),
     cover: () => `https://picsum.photos/id/${getRandomCoverId()}/250/350`,
