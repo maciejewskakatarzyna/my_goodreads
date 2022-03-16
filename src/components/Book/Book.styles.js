@@ -67,8 +67,7 @@ export const StyledListBook = styled.div`
   justify-content: space-between;
   position: relative;
   height: 40px;
-  width: 960px;
-  padding: 0px 10px;
+  width: 740px;
 
   &:not(:last-child)::after {
     content: '';
@@ -80,9 +79,18 @@ export const StyledListBook = styled.div`
   }
 
   & .bookWrapper {
-    padding: 0px 10px;
+    padding: 0px 20px 10px 20px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.darkBrown};
+    border-bottom: 2px solid ${({ theme }) => theme.color.formBar};
+
+    & p:first-of-type {
+      font-size: ${({ theme }) => theme.font.size.l};
+    }
+
+    & p:last-of-type {
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
 
     &:hover {
       font-weight: bold;
@@ -92,7 +100,16 @@ export const StyledListBook = styled.div`
 
 export const StyledButton = styled.button`
   position: absolute;
+  width: 20px;
+  height: 20px;
   right: 5px;
   bottom: 5px;
   display: ${props => props.isVisible};
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  svg {
+    fill: ${({ isDark, theme }) => (isDark ? theme.color.darkBrown : theme.color.beige)};
+    background-color: transparent;
+  }
 `;

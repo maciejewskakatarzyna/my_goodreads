@@ -14,7 +14,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const { books, setFilteredBooks, shelfs } = useContext(BookContext);
+  const { shelfs } = useContext(BookContext);
 
   const { handleOpenModal, handleCloseModal } = useModal();
 
@@ -27,20 +27,6 @@ const Header = () => {
     handleOpenModal();
   };
 
-  // function getFilteredBooksForText(text) {
-  //   return books.filter(
-  //     book =>
-  //       book.title.toString().toLowerCase().includes(text.toLowerCase()) ||
-  //       book.author.toString().toLowerCase().includes(text.toLowerCase())
-  //   );
-  // }
-
-  // function filterBooks(e) {
-  //   const text = e.currentTarget.value;
-  //   const filtered = getFilteredBooksForText(text);
-  //   setFilteredBooks(filtered);
-  // }
-
   const shelfNames = {
     'to-read': 'Chcę przeczytać',
     read: 'Przeczytane',
@@ -49,13 +35,6 @@ const Header = () => {
 
   const getShelfName = shelf => {
     return shelfNames[shelf];
-  };
-
-  const handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    });
   };
 
   const handleScrollUp = () => {
@@ -91,7 +70,7 @@ const Header = () => {
         <nav>
           <StyledNavigation>
             {shelfs.map(({ id }) => (
-              <StyledLink key={id} to={`/shelfs/${id}`} onClick={handleScrollDown}>
+              <StyledLink key={id} to={`/shelfs/${id}`}>
                 {getShelfName(id)}
               </StyledLink>
             ))}

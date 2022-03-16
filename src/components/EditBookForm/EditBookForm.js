@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { Form, Wrapper } from '../Form/FormField.styles';
 import FormField from '../Form/FormField';
 import { useForm } from 'react-hook-form';
+import BasicButton from '../Buttons/BasicButton';
 
 const EditBookForm = ({ book, handleClose }) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
@@ -91,7 +92,7 @@ const EditBookForm = ({ book, handleClose }) => {
             {...register('genre')}
           />
         </label>
-        <button type='submit'>Zapisz zmiany</button>
+        <BasicButton type='submit'>Zapisz zmiany</BasicButton>
       </Form>
     </Wrapper>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
-import { ButtonsWrapper, DeleteButton, DeleteQuestion } from './DeleteModal.styles';
+import { ButtonsWrapper, DeleteQuestion } from './DeleteModal.styles';
 import PropTypes from 'prop-types';
+import BasicButton from '../Buttons/BasicButton';
 
 const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
   return (
@@ -9,8 +10,8 @@ const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
         Czy na pewno chcesz usunąć <span>{book}</span>?
       </DeleteQuestion>
       <ButtonsWrapper>
-        <DeleteButton onClick={handleDeleteBook}>TAK</DeleteButton>
-        <DeleteButton onClick={handleCloseDeleteModal}>NIE</DeleteButton>
+        <BasicButton onClick={handleDeleteBook}>TAK</BasicButton>
+        <BasicButton onClick={handleCloseDeleteModal}>NIE</BasicButton>
       </ButtonsWrapper>
     </>
   );

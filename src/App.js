@@ -12,6 +12,7 @@ import { useForm } from 'react-hook-form';
 import { useAuth } from './hooks/useAuth';
 import FormField from './components/Form/FormField';
 import { Wrapper, Form } from './components/Form/FormField.styles';
+import BasicButton from './components/Buttons/BasicButton';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -158,7 +159,7 @@ const UnauthenticatedApp = () => {
             {...register('password', { required: true })}
           />
           {errors.password && <span>Password is required</span>}
-          <button type='submit'>Sign in</button>
+          <BasicButton type='submit'>Sign in</BasicButton>
         </Form>
       </Wrapper>
     </div>

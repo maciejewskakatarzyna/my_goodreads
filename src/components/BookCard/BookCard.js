@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { StyledBookCard } from './BookCard.styles';
-import { StyledBookDetails } from './BookDetails.styles';
+import { ButtonsWrapper, StyledBookDetails } from './BookDetails.styles';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
@@ -8,6 +8,7 @@ import useModal from '../Modal/useModal';
 import EditBookForm from '../EditBookForm/EditBookForm';
 import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
+import BasicButton from '../Buttons/BasicButton';
 
 const BookCard = () => {
   const { currentBook, books, setBooks } = useContext(BookContext);
@@ -97,8 +98,12 @@ const BookCard = () => {
           {/*    ))}*/}
           {/*  </select>*/}
           {/*</div>*/}
-          <button onClick={() => handleOpenEditForm(currentBook.id)}>Edytuj książkę</button>
-          <button onClick={() => handleRemove(currentBook.id)}>Usuń książkę</button>
+          <ButtonsWrapper>
+            <BasicButton onClick={() => handleOpenEditForm(currentBook.id)}>
+              Edytuj książkę
+            </BasicButton>
+            <BasicButton onClick={() => handleRemove(currentBook.id)}>Usuń książkę</BasicButton>
+          </ButtonsWrapper>
         </StyledBookDetails>
       </>
 

@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import DeleteModal from '../Modal/DeleteModal';
 import Modal from '../Modal/Modal';
+import { ReactComponent as DeleteBookSvg } from '../../assets/images/delete.svg';
 
 const Book = ({ book: { id, title, author, cover }, isList }) => {
   const ref = useRef();
@@ -68,8 +69,8 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
             <p>{title}</p>
             <p>{author}</p>
           </Link>
-          <StyledButton isVisible={isVisible} onClick={() => handleRemove(id)}>
-            X
+          <StyledButton isVisible={isVisible} isDark={isList} onClick={() => handleRemove(id)}>
+            <DeleteBookSvg />
           </StyledButton>
         </StyledListBook>
       ) : (
@@ -92,7 +93,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
               </div>
             </Link>
             <StyledButton isVisible={isVisible} onClick={() => handleRemove(id)}>
-              X
+              <DeleteBookSvg />
             </StyledButton>
           </>
         </StyledGridBook>

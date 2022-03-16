@@ -13,16 +13,3 @@ export const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
-export const DeleteButton = styled.button`
-  border-radius: 5px;
-  font-size: ${({ theme }) => theme.font.size.l};
-  padding: 5px 10px;
-  border: none;
-  background-color: ${({ theme }) => theme.color.lightBrown};
-  color: ${({ theme }) => theme.color.beige};
-
-  &:hover {
-    background-color: ${({ theme }) => theme.color.darkBrown};
-  }
-`;

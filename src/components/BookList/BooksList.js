@@ -58,7 +58,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
     } else console.log('nie ma książek do przeczytania');
   };
 
-  const toggleGridList = e => {
+  const toggleGridList = () => {
     setIsList(!isList);
   };
 
