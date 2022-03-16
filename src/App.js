@@ -130,7 +130,7 @@ const UnauthenticatedApp = () => {
           marginBottom: '100px',
         }}
       >
-        Zaloguj się do aplikacji
+        Sign in to application
       </h2>
       <Wrapper>
         <Form

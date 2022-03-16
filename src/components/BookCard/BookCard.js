@@ -99,10 +99,8 @@ const BookCard = () => {
           {/*  </select>*/}
           {/*</div>*/}
           <ButtonsWrapper>
-            <BasicButton onClick={() => handleOpenEditForm(currentBook.id)}>
-              Edytuj książkę
-            </BasicButton>
-            <BasicButton onClick={() => handleRemove(currentBook.id)}>Usuń książkę</BasicButton>
+            <BasicButton onClick={() => handleOpenEditForm(currentBook.id)}>Edit</BasicButton>
+            <BasicButton onClick={() => handleRemove(currentBook.id)}>Delete</BasicButton>
           </ButtonsWrapper>
         </StyledBookDetails>
       </>

@@ -30,9 +30,9 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
   }, [getBooksByShelf, id]);
 
   const shelfNames = {
-    'to-read': 'Chcę przeczytać',
-    read: 'Przeczytane',
-    'currently-reading': 'Teraz czytam',
+    'to-read': 'To read',
+    read: 'Read',
+    'currently-reading': 'Currently reading',
   };
 
   const getShelfName = shelf => {
@@ -55,7 +55,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
     if (toReadBase.length > 0) {
       setRandomBook(random);
       setIsRandomBook(true);
-    } else console.log('nie ma książek do przeczytania');
+    } else console.log('no books to read');
   };
 
   const toggleGridList = () => {
@@ -67,7 +67,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
       <Wrapper>
         <ListHeader>
           <ShelfName>{getShelfName(id) || getShelfName(shelfs[0])}</ShelfName>
-          {getShelfName(id) === 'Chcę przeczytać' ? (
+          {getShelfName(id) === 'To read' ? (
             <RandomBookButton onClick={handleOpenRandomModal} title='Choose random book to read'>
               <RandomBookSvg />
             </RandomBookButton>

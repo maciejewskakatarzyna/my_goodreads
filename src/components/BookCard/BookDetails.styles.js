@@ -14,8 +14,11 @@ export const StyledBookDetails = styled.div`
 `;
 
 export const ButtonsWrapper = styled.div`
-  margin-top: 30px;
-  width: 300px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
+
+  button {
+    margin: 0 10px;
+  }
 `;

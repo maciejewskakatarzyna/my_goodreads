@@ -7,11 +7,11 @@ const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
   return (
     <>
       <DeleteQuestion>
-        Czy na pewno chcesz usunąć <span>{book}</span>?
+        Are you sure to delete <span>{book}</span>?
       </DeleteQuestion>
       <ButtonsWrapper>
-        <BasicButton onClick={handleDeleteBook}>TAK</BasicButton>
-        <BasicButton onClick={handleCloseDeleteModal}>NIE</BasicButton>
+        <BasicButton onClick={handleDeleteBook}>Yes</BasicButton>
+        <BasicButton onClick={handleCloseDeleteModal}>No</BasicButton>
       </ButtonsWrapper>
     </>
   );

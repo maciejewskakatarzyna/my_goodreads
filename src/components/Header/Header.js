@@ -28,9 +28,9 @@ const Header = () => {
   };
 
   const shelfNames = {
-    'to-read': 'Chcę przeczytać',
-    read: 'Przeczytane',
-    'currently-reading': 'Teraz czytam',
+    'to-read': 'To read',
+    read: 'Read',
+    'currently-reading': 'Currently reading',
   };
 
   const getShelfName = shelf => {
@@ -83,7 +83,7 @@ const Header = () => {
         <StyledLoginMenu>
           <p>Hello {auth.user.name}</p>
           <a href='#' onClick={auth.signOut}>
-            Wyloguj
+            Sign out
           </a>
         </StyledLoginMenu>
       </>
@@ -96,7 +96,7 @@ const Header = () => {
         width='300px'
         height='150px'
       >
-        <h2>Książka dodana!</h2>
+        <h2>Book added successfully!</h2>
       </Modal>
     </StyledHeader>
   );

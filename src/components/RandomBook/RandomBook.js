@@ -14,13 +14,13 @@ const RandomBook = ({ randomBook: { id, title }, startReading, isAddedToCurrent 
       {!isAddedToCurrent ? (
         <>
           <p>
-            Kolejna książka do przeczytania:<span className='randomBook'>{title}</span>
+            Next book to read:<span className='randomBook'>{title}</span>
           </p>
-          <button onClick={() => startReading(id, bookToStart)}>Zacznij czytać!</button>
+          <button onClick={() => startReading(id, bookToStart)}>Start reading!</button>
         </>
       ) : (
         <p>
-          <span className='randomBook'>{title}</span>dodana do aktualnie czytanych książek!
+          <span className='randomBook'>{title}</span>added to currently reading!
         </p>
       )}
     </StyledRandomBook>

@@ -4,7 +4,7 @@ const RandomBookButton = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 73%;
+  margin-right: 80%;
   width: 28px;
   height: 28px;
   vertical-align: center;

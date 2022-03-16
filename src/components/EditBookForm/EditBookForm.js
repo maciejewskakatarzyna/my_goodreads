@@ -42,7 +42,7 @@ const EditBookForm = ({ book, handleClose }) => {
 
   return (
     <Wrapper>
-      <h2>Edytuj książkę</h2>
+      <h2>Edit book</h2>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FormField
           label='title'
@@ -77,22 +77,22 @@ const EditBookForm = ({ book, handleClose }) => {
           Genre{' '}
           <FormField
             type='radio'
-            label='beletrystyka'
+            label='fiction'
             name='genre'
-            id='beletrystyka'
-            value='beletrystyka'
+            id='fiction'
+            value='fiction'
             {...register('genre')}
           />
           <FormField
             type='radio'
-            label='historia'
+            label='history'
             name='genre'
-            id='historia'
-            value='historia'
+            id='history'
+            value='history'
             {...register('genre')}
           />
         </label>
-        <BasicButton type='submit'>Zapisz zmiany</BasicButton>
+        <BasicButton type='submit'>Save changes</BasicButton>
       </Form>
     </Wrapper>
   );

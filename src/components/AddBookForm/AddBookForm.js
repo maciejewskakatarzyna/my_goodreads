@@ -35,7 +35,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
   return (
     <>
       <Wrapper>
-        <h2>Dodaj książkę</h2>
+        <h2>Add new book</h2>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <FormField
             label='title'
@@ -70,22 +70,22 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
             Genre{' '}
             <FormField
               type='radio'
-              label='beletrystyka'
+              label='fiction'
               name='genre'
-              id='beletrystyka'
-              value='beletrystyka'
+              id='fiction'
+              value='fiction'
               {...register('genre')}
             />
             <FormField
               type='radio'
-              label='historia'
+              label='history'
               name='genre'
-              id='historia'
-              value='historia'
+              id='history'
+              value='history'
               {...register('genre')}
             />
           </label>
-          <BasicButton type='submit'>Dodaj książkę</BasicButton>
+          <BasicButton type='submit'>Add book</BasicButton>
         </Form>
       </Wrapper>
     </>
