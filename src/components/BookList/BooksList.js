@@ -83,7 +83,12 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
           ))}
         </StyledBookList>
 
-        <Modal isOpen={isRandomModalOpen} handleClose={handleCloseRandomModal}>
+        <Modal
+          isOpen={isRandomModalOpen}
+          handleClose={handleCloseRandomModal}
+          width='300px'
+          height='200px'
+        >
           <RandomBook
             randomBook={randomBook}
             startReading={startReading}

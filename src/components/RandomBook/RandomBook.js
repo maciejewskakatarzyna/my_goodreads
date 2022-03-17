@@ -2,6 +2,7 @@ import React from 'react';
 import '../../index.css';
 import { StyledRandomBook } from './RandomBook.styles';
 import PropTypes from 'prop-types';
+import BasicButton from '../Buttons/BasicButton';
 
 const RandomBook = ({ randomBook: { id, title }, startReading, isAddedToCurrent }) => {
   const bookToStart = {
@@ -14,13 +15,13 @@ const RandomBook = ({ randomBook: { id, title }, startReading, isAddedToCurrent 
       {!isAddedToCurrent ? (
         <>
           <p>
-            Next book to read:<span className='randomBook'>{title}</span>
+            Next book to read:<span>{title}</span>
           </p>
-          <button onClick={() => startReading(id, bookToStart)}>Start reading!</button>
+          <BasicButton onClick={() => startReading(id, bookToStart)}>Start reading!</BasicButton>
         </>
       ) : (
         <p>
-          <span className='randomBook'>{title}</span>added to currently reading!
+          <span>{title}</span>added to currently reading!
         </p>
       )}
     </StyledRandomBook>

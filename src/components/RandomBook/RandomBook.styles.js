@@ -5,8 +5,6 @@ export const StyledRandomBook = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 90px;
-  position: relative;
 
   & p {
     display: flex;
@@ -14,8 +12,12 @@ export const StyledRandomBook = styled.div`
     align-items: center;
   }
 
-  & .randomBook {
+  span {
     font-weight: bold;
     margin: 10px 0px;
+  }
+
+  button {
+    margin-top: 20px;
   }
 `;
