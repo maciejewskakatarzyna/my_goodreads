@@ -1,6 +1,14 @@
 import React, { useState, useContext } from 'react';
-import { StyledBookCard } from './BookCard.styles';
-import { ButtonsWrapper, StyledBookDetails } from './BookDetails.styles';
+import {
+  StyledBookCard,
+  ButtonsWrapper,
+  StyledBookDetails,
+  StyledTitle,
+  StyledAuthor,
+  StyledPublisher,
+  StyledShelfName,
+  StyledGenre,
+} from './BookCard.styles';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
@@ -9,6 +17,7 @@ import EditBookForm from '../EditBookForm/EditBookForm';
 import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
 import BasicButton from '../Buttons/BasicButton';
+import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
 
 const BookCard = () => {
   const { currentBook, books, setBooks } = useContext(BookContext);
@@ -19,34 +28,7 @@ const BookCard = () => {
 
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
-
-  // const { updateBook } = useContext(BookContext);
-
-  // const [selectedOption, setSelectedOption] = useState(0);
-
-  // const options = [
-  //   {
-  //     value: 'to-read',
-  //     label: 'Chcę przeczytać',
-  //   },
-  //   {
-  //     value: 'read',
-  //     label: 'Przeczytana',
-  //   },
-  //   {
-  //     value: 'currently-reading',
-  //     label: 'Czytam',
-  //   },
-  // ];
-
-  // const changeShelf = (book, shelf) => {
-  //   updateBook(book.id, { ...book, exclusiveShelf: shelf });
-  // };
-
-  // const handleChange = e => {
-  //   setSelectedOption(e.target.value);
-  //   changeShelf(book, selectedOption);
-  // };
+  const [isError, setIsError] = useState(false);
 
   const handleRemove = () => {
     setIsDeleteModalOpen(true);
@@ -75,29 +57,48 @@ const BookCard = () => {
     navigate(-1);
   };
 
+  const imgErrorStyles = {
+    display: 'none',
+  };
+
+  const imgNoErrorStyles = {
+    display: 'block',
+  };
+
+  const shelfNames = {
+    'to-read': 'To read',
+    read: 'Read',
+    'currently-reading': 'Currently reading',
+  };
+
+  const getShelfName = shelf => {
+    return shelfNames[shelf];
+  };
+
   return (
     <StyledBookCard>
       <>
-        <div className='coverWrapper'>
-          {/*<div className='noCoverCard'></div>*/}
-          <img src={currentBook.cover} alt='book cover' />
+        <div>
+          <img
+            src={currentBook.cover}
+            onError={() => setIsError(true)}
+            alt='book cover'
+            style={isError ? imgErrorStyles : imgNoErrorStyles}
+          />
+          {isError && <div className='noCover'></div>}
         </div>
         <StyledBookDetails>
-          <p>{currentBook.title}</p>
-          <p>{currentBook.author}</p>
-          <p>{currentBook.yearPublished}</p>
-          <p>{currentBook.publisher}</p>
-          <p>{currentBook.shelf}</p>
-          <p>{currentBook.genre}</p>
-          {/*<div>*/}
-          {/*  <select value={selectedOption} onChange={e => handleChange(e)}>*/}
-          {/*    {options.map(o => (*/}
-          {/*      <option key={o.value} value={o.value}>*/}
-          {/*        {o.label}*/}
-          {/*      </option>*/}
-          {/*    ))}*/}
-          {/*  </select>*/}
-          {/*</div>*/}
+          <StyledTitle>{currentBook.title}</StyledTitle>
+          <StyledAuthor>by {currentBook.author}</StyledAuthor>
+          <StyledPublisher>
+            Published by: <br /> {currentBook.publisher}, {currentBook.yearPublished}
+          </StyledPublisher>
+          <StyledGenre>{currentBook.genre}</StyledGenre>
+          <StyledShelfName>
+            <BookShelfSvg />
+            <p>{getShelfName(currentBook.shelf)}</p>
+          </StyledShelfName>
+
           <ButtonsWrapper>
             <BasicButton onClick={() => handleOpenEditForm(currentBook.id)}>Edit</BasicButton>
             <BasicButton onClick={() => handleRemove(currentBook.id)}>Delete</BasicButton>

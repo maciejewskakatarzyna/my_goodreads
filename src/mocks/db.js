@@ -4,7 +4,7 @@ import faker from '@withshepherd/faker';
 faker.seed(123);
 
 const shelfs = ['to-read', 'read', 'currently-reading'];
-const genres = ['Fiction', 'Facts', 'History', 'Programming', 'Personal development'];
+const genres = ['Romance', 'Fantasy', 'History', 'Horror', 'Biographies'];
 
 const getRandomValue = (array, index) => array[index];
 const getRandomAverage = () => faker.datatype.number({ min: 2, max: 5, precision: 0.1 });

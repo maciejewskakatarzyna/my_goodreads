@@ -12,9 +12,10 @@ export const theme = {
   font: {
     size: {
       xl: '2.4rem',
-      l: '1.8rem',
-      m: '1.6rem',
-      s: '1.2rem',
+      l: '2.0rem',
+      m: '1.8rem',
+      s: '1.6rem',
+      xs: '1.2rem',
     },
     family: {
       lato: 'Lato, sans-serif',
