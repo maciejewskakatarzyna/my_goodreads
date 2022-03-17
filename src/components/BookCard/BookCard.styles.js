@@ -50,7 +50,7 @@ export const StyledGenre = styled.p`
 `;
 
 export const StyledShelfName = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,18 +58,9 @@ export const StyledShelfName = styled.div`
   p {
     font-size: ${({ theme }) => theme.font.size.m};
   }
-
-  svg {
-    width: 70px;
-    height: 70px;
-    fill: ${({ theme }) => theme.color.darkBrown};
-    background-color: transparent;
-    margin-right: 20px;
-  }
 `;
 
 export const ButtonsWrapper = styled.div`
-  margin: 30px;
   display: flex;
 
   button {

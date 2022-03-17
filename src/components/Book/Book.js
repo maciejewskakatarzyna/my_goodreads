@@ -1,7 +1,7 @@
 import React, { useContext, useState, useRef } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledButton, StyledGridBook, StyledListBook } from './Book.styles';
+import { StyledGridBook, StyledListBook } from './Book.styles';
 import useModal from '../Modal/useModal';
 import { useBooks } from '../../hooks/useBooks';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import DeleteModal from '../Modal/DeleteModal';
 import Modal from '../Modal/Modal';
 import { ReactComponent as DeleteBookSvg } from '../../assets/images/delete.svg';
+import { DeleteButton } from '../Buttons/DeleteButton';
 
 const Book = ({ book: { id, title, author, cover }, isList }) => {
   const ref = useRef();
@@ -69,9 +70,9 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
             <p>{title}</p>
             <p>{author}</p>
           </Link>
-          <StyledButton isVisible={isVisible} isDark={isList} onClick={() => handleRemove(id)}>
+          <DeleteButton isVisible={isVisible} isDark={isList} onClick={() => handleRemove(id)}>
             <DeleteBookSvg />
-          </StyledButton>
+          </DeleteButton>
         </StyledListBook>
       ) : (
         <StyledGridBook onMouseEnter={e => showButton(e)} onMouseLeave={e => hideButton(e)}>
@@ -92,9 +93,9 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
                 <p>{author}</p>
               </div>
             </Link>
-            <StyledButton isVisible={isVisible} onClick={() => handleRemove(id)}>
+            <DeleteButton isVisible={isVisible} onClick={() => handleRemove(id)}>
               <DeleteBookSvg />
-            </StyledButton>
+            </DeleteButton>
           </>
         </StyledGridBook>
       )}

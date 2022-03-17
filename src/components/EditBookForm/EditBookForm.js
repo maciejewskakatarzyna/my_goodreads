@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form';
 import BasicButton from '../Buttons/BasicButton';
 
 const EditBookForm = ({ book, handleClose }) => {
-  const { setBooks, books, setCurrentBook } = useContext(BookContext);
+  const { setBooks, books, currentBook, setCurrentBook } = useContext(BookContext);
 
   const { editBookById } = useBooks();
   const {
@@ -29,14 +29,13 @@ const EditBookForm = ({ book, handleClose }) => {
   const handleEditBook = (id, bookToEdit) => {
     editBookById(id, bookToEdit);
     update(book, bookToEdit);
-    setBooks(books);
     setCurrentBook(res);
+    setBooks([books, ...currentBook]);
   };
 
   const onSubmit = data => {
     bookToEdit = data;
     handleEditBook(book.id, bookToEdit);
-    console.log(data);
     handleClose();
   };
 
@@ -81,6 +80,7 @@ const EditBookForm = ({ book, handleClose }) => {
             name='genre'
             id='fiction'
             value='fiction'
+            isRadio
             {...register('genre')}
           />
           <FormField
@@ -89,6 +89,7 @@ const EditBookForm = ({ book, handleClose }) => {
             name='genre'
             id='history'
             value='history'
+            isRadio
             {...register('genre')}
           />
         </label>

@@ -74,6 +74,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
               name='genre'
               id='fiction'
               value='fiction'
+              isRadio
               {...register('genre')}
             />
             <FormField
@@ -82,6 +83,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
               name='genre'
               id='history'
               value='history'
+              isRadio
               {...register('genre')}
             />
           </label>

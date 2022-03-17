@@ -33,10 +33,14 @@ export const Form = styled.form`
   align-items: flex-start;
 `;
 export const FormItem = styled.div`
-  width: 100%;
+  width: ${({ isRadio }) => (isRadio ? '300px' : '100%')};
   margin: 24px 0;
   position: relative;
   flex-shrink: 0;
+  display: ${({ isRadio }) => (isRadio ? 'flex' : 'block')};
+  flex-direction: ${({ isRadio }) => (isRadio ? 'row' : 'none')};
+  justify-content: ${({ isRadio }) => (isRadio ? 'flex-start' : 'none')};
+  align-items: ${({ isRadio }) => (isRadio ? 'center' : 'none')};
 `;
 export const FormItemBar = styled.div`
   width: 100%;
@@ -49,9 +53,13 @@ export const Label = styled.label`
   top: 3px;
   left: 0;
   opacity: 0;
-  color: ${({ theme }) => theme.color.grey};
-  position: absolute;
+  color: ${({ isRadio, theme }) => (isRadio ? theme.color.darkBrown : theme.color.grey)};
+  position: ${({ isRadio }) => (isRadio ? 'static' : 'absolute')};
   font-size: ${({ theme }) => theme.font.size.m};
+
+  &:hover {
+    font-weight: ${({ isRadio }) => (isRadio ? 'bold' : 'normal')};
+  }
 `;
 
 export const Input = styled.input`
@@ -59,7 +67,7 @@ export const Input = styled.input`
   font-size: ${({ theme }) => theme.font.size.m};
   border: none;
   line-height: 22px;
-  width: 100%;
+  width: ${({ isRadio }) => (isRadio ? '30%' : '100%')};
   background: none;
 
   &:focus {

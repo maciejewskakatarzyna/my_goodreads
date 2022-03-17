@@ -18,6 +18,8 @@ import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
 import BasicButton from '../Buttons/BasicButton';
 import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
+import { ShelfButton } from '../Buttons/ShelfButton';
+import ChangeShelfForm from '../ChangeShelfForm/ChangeShelfForm';
 
 const BookCard = () => {
   const { currentBook, books, setBooks } = useContext(BookContext);
@@ -27,6 +29,7 @@ const BookCard = () => {
   const { handleOpenModal, handleCloseModal } = useModal();
 
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isShelfModalOpen, setIsShelfModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -41,6 +44,16 @@ const BookCard = () => {
 
   const handleCloseEditModal = () => {
     setIsEditModalOpen(false);
+    handleCloseModal();
+  };
+
+  const handleOpenShelfModal = async => {
+    setIsShelfModalOpen(true);
+    handleOpenModal();
+  };
+
+  const handleCloseShelfModal = () => {
+    setIsShelfModalOpen(false);
     handleCloseModal();
   };
 
@@ -95,7 +108,10 @@ const BookCard = () => {
           </StyledPublisher>
           <StyledGenre>{currentBook.genre}</StyledGenre>
           <StyledShelfName>
-            <BookShelfSvg />
+            <ShelfButton title='Change book shelf' onClick={() => handleOpenShelfModal()}>
+              <BookShelfSvg />
+            </ShelfButton>
+
             <p>{getShelfName(currentBook.shelf)}</p>
           </StyledShelfName>
 
@@ -126,6 +142,15 @@ const BookCard = () => {
           handleDeleteBook={() => deleteBook(currentBook.id)}
           handleCloseDeleteModal={handleCloseDeleteModal}
         />
+      </Modal>
+
+      <Modal
+        isOpen={isShelfModalOpen}
+        handleClose={handleCloseShelfModal}
+        width='350px'
+        height='300px'
+      >
+        <ChangeShelfForm book={currentBook} handleCloseShelfModal={handleCloseShelfModal} />
       </Modal>
     </StyledBookCard>
   );

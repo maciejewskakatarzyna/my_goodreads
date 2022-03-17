@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { FormItem, FormItemBar, Label, Input } from './FormField.styles';
 
 const FormField = React.forwardRef(
-  ({ onChange, value, label, name, id, placeholder, type = 'text', ...props }, ref) => {
+  ({ onChange, value, label, name, id, placeholder, isRadio, type = 'text', ...props }, ref) => {
     return (
-      <FormItem>
+      <FormItem isRadio={isRadio}>
         <Input
           name={name}
           id={id}
@@ -14,10 +14,13 @@ const FormField = React.forwardRef(
           placeholder={placeholder}
           onChange={onChange}
           data-testid={label}
+          isRadio={isRadio}
           {...props}
           ref={ref}
         />
-        <Label htmlFor={id}>{label}</Label>
+        <Label htmlFor={id} isRadio={isRadio}>
+          {label}
+        </Label>
 
         {type !== 'radio' && <FormItemBar />}
       </FormItem>
