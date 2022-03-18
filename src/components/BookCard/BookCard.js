@@ -116,8 +116,8 @@ const BookCard = () => {
           </StyledShelfName>
 
           <ButtonsWrapper>
-            <BasicButton onClick={() => handleOpenEditForm(currentBook.id)}>Edit</BasicButton>
-            <BasicButton onClick={() => handleRemove(currentBook.id)}>Delete</BasicButton>
+            <BasicButton onClick={handleOpenEditForm}>Edit</BasicButton>
+            <BasicButton onClick={handleRemove}>Delete</BasicButton>
           </ButtonsWrapper>
         </StyledBookDetails>
       </>

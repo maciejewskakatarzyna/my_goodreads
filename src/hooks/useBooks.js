@@ -58,7 +58,7 @@ export const useBooks = () => {
 
   const editBookById = useCallback(async (id, bookToEdit) => {
     try {
-      const result = await axios.post(`/books/${id}`, bookToEdit);
+      const result = await axios.put(`/books/${id}`, bookToEdit);
       const editedBook = result.data;
       return editedBook;
     } catch (e) {

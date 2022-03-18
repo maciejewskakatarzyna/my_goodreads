@@ -19,6 +19,11 @@ const EditBookForm = ({ book, handleClose }) => {
   } = useForm();
 
   let bookToEdit = {};
+  let bookData = {
+    id: book.id,
+    cover: book.cover,
+  };
+
   const res = {};
 
   function update(target, src) {
@@ -29,15 +34,14 @@ const EditBookForm = ({ book, handleClose }) => {
   const handleEditBook = (id, bookToEdit) => {
     editBookById(id, bookToEdit);
     update(book, bookToEdit);
-    // setCurrentBook(res);
     setBooks(books);
-    console.log(books);
   };
 
   const onSubmit = data => {
-    bookToEdit = data;
+    bookToEdit = { ...data, ...bookData };
     handleEditBook(book.id, bookToEdit);
     handleClose();
+    setCurrentBook(bookToEdit);
   };
 
   return (

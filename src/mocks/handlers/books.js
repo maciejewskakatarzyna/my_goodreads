@@ -82,7 +82,7 @@ export const books = [
     );
   }),
 
-  rest.post('/books/:id', (req, res, ctx) => {
+  rest.put('/books/:id', (req, res, ctx) => {
     const updatedBook = db.book.update({
       where: {
         id: {
