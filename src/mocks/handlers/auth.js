@@ -11,13 +11,13 @@ export const auth = [
   rest.post('/login', (req, res, ctx) => {
     const user = db.user.findFirst({
       where: {
-        login: {
-          equals: req.body.login,
+        email: {
+          equals: req.body.email,
         },
       },
     });
     if (user.password === req.body.password) {
-      const token = btoa(user.login);
+      const token = btoa(user.email);
       localStorage.setItem('__be_token__', token);
       return res(ctx.status(200), ctx.json({ ...sanitizeUser(user), token }));
     }

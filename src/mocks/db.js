@@ -19,8 +19,8 @@ export const db = factory({
     id: primaryKey(faker.datatype.uuid),
     title: () => getCapitalLetter(faker.fake('{{lorem.word}} {{lorem.word}}')),
     author: () => faker.fake('{{name.firstName}} {{name.lastName}}'),
-    myRating: getRandomAverage,
-    averageRating: getRandomAverage,
+    // myRating: getRandomAverage,
+    // averageRating: getRandomAverage,
     publisher: () => faker.fake('{{company.companyName}}'),
     yearPublished: () => `${faker.datatype.number({ min: 1950, max: 2022 })}`,
     shelf: () => getRandomValue(shelfs, faker.datatype.number({ min: 0, max: 2 })),
@@ -33,7 +33,7 @@ export const db = factory({
   user: {
     id: primaryKey(() => '1'),
     name: () => 'Anna Kowalska',
-    login: () => 'kowalska@mygoodreads.com',
+    email: () => 'kowalska@mygoodreads.com',
     password: () => 'Test123',
   },
 });

@@ -24,11 +24,11 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const signIn = async ({ login, password }) => {
-    console.log(login, password);
+  const signIn = async ({ email, password }) => {
+    console.log(email, password);
     try {
       const response = await axios.post('/login', {
-        login,
+        email,
         password,
       });
       setUser(response.data);

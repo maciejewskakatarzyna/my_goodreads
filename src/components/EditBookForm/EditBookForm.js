@@ -29,8 +29,9 @@ const EditBookForm = ({ book, handleClose }) => {
   const handleEditBook = (id, bookToEdit) => {
     editBookById(id, bookToEdit);
     update(book, bookToEdit);
-    setCurrentBook(res);
-    setBooks([books, ...currentBook]);
+    // setCurrentBook(res);
+    setBooks(books);
+    console.log(books);
   };
 
   const onSubmit = data => {
@@ -64,14 +65,6 @@ const EditBookForm = ({ book, handleClose }) => {
           placeholder='publisher'
           {...register('publisher')}
         />
-        <label>
-          Shelf{' '}
-          <select {...register('shelf')}>
-            <option value='to-read'>to read</option>
-            <option value='read'>read</option>
-            <option value='currently-reading'>currently reading</option>
-          </select>
-        </label>
         <label>
           Genre{' '}
           <FormField

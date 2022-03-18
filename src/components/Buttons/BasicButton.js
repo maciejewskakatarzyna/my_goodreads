@@ -8,6 +8,7 @@ const StyledButton = styled.button`
   border: 1px solid ${({ theme }) => theme.color.darkBrown};
   background-color: ${({ theme }) => theme.color.beige};
   color: ${({ theme }) => theme.color.darkBrown};
+  margin-top: ${({ isError }) => (isError ? '20px' : 'initial')};
 
   &:hover {
     background-color: ${({ theme }) => theme.color.darkBrown};

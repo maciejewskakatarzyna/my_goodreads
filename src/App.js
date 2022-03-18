@@ -11,7 +11,7 @@ import HeroImage from './components/HeroImage/HeroImage';
 import { useForm } from 'react-hook-form';
 import { useAuth } from './hooks/useAuth';
 import FormField from './components/Form/FormField';
-import { Wrapper, Form } from './components/Form/FormField.styles';
+import { Wrapper, Form, Error } from './components/Form/FormField.styles';
 import BasicButton from './components/Buttons/BasicButton';
 
 const AuthenticatedApp = () => {
@@ -143,23 +143,40 @@ const UnauthenticatedApp = () => {
           }}
         >
           <FormField
-            label='login'
-            name='login'
-            id='login'
-            placeholder='login'
-            {...register('login', { required: true })}
+            label='email'
+            name='email'
+            id='email'
+            placeholder='email'
+            isError={errors.email}
+            {...register('email', {
+              required: 'Email is required',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                message: 'Email is invalid',
+              },
+            })}
           />
-          {errors.login && <span>Login is required</span>}
+          {errors.email ? (
+            <>
+              {errors.email.type === 'required' && <Error>{errors.email.message}</Error>}
+              {errors.email.type === 'pattern' && <Error>{errors.email.message}</Error>}
+            </>
+          ) : null}
           <FormField
             label='password'
             name='password'
             id='password'
             type='password'
             placeholder='password'
-            {...register('password', { required: true })}
+            isError={errors.password}
+            {...register('password', { required: 'Password is required' })}
           />
-          {errors.password && <span>Password is required</span>}
-          <BasicButton type='submit'>Sign in</BasicButton>
+          {errors.password && errors.password.type === 'required' && (
+            <Error>{errors.password.message}</Error>
+          )}
+          <BasicButton isError={errors.email || errors.password} type='submit'>
+            Sign in
+          </BasicButton>
         </Form>
       </Wrapper>
     </div>

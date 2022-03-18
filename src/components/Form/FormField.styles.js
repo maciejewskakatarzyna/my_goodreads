@@ -13,7 +13,7 @@ const moveLabelToTop = keyframes`
     opacity: 1;
     top: -22px;
     left: 0;
-    font-size: ${({ theme }) => theme.font.size.s};
+    font-size: ${({ theme }) => theme.font.size.xs};
   }`;
 
 export const Wrapper = styled.div`
@@ -33,19 +33,16 @@ export const Form = styled.form`
   align-items: flex-start;
 `;
 export const FormItem = styled.div`
-  width: ${({ isRadio }) => (isRadio ? '300px' : '100%')};
-  margin: 24px 0;
+  width: 100%;
+  margin: ${({ isError, isRadio }) => (isError || isRadio ? '24px 0px 10px 0px' : '24px 0px')};
   position: relative;
   flex-shrink: 0;
-  display: ${({ isRadio }) => (isRadio ? 'flex' : 'block')};
-  flex-direction: ${({ isRadio }) => (isRadio ? 'row' : 'none')};
-  justify-content: ${({ isRadio }) => (isRadio ? 'flex-start' : 'none')};
-  align-items: ${({ isRadio }) => (isRadio ? 'center' : 'none')};
+  display: block;
 `;
 export const FormItemBar = styled.div`
   width: 100%;
   height: 2px;
-  background: ${({ theme }) => theme.color.formBar};
+  background: ${({ isError, theme }) => (isError ? theme.color.red : theme.color.formBar)};
   transition: 0.1s all;
 `;
 
@@ -53,13 +50,15 @@ export const Label = styled.label`
   top: 3px;
   left: 0;
   opacity: 0;
-  color: ${({ isRadio, theme }) => (isRadio ? theme.color.darkBrown : theme.color.grey)};
-  position: ${({ isRadio }) => (isRadio ? 'static' : 'absolute')};
-  font-size: ${({ theme }) => theme.font.size.m};
+  color: ${({ theme }) => theme.color.grey};
+  position: absolute;
+  font-size: ${({ theme }) => theme.font.size.xs};
+`;
 
-  &:hover {
-    font-weight: ${({ isRadio }) => (isRadio ? 'bold' : 'normal')};
-  }
+export const Error = styled.p`
+  color: ${({ theme }) => theme.color.red};
+  font-weight: bold;
+  font-size: ${({ theme }) => theme.font.size.s};
 `;
 
 export const Input = styled.input`
@@ -67,7 +66,7 @@ export const Input = styled.input`
   font-size: ${({ theme }) => theme.font.size.m};
   border: none;
   line-height: 22px;
-  width: ${({ isRadio }) => (isRadio ? '30%' : '100%')};
+  width: 100%;
   background: none;
 
   &:focus {
@@ -87,6 +86,6 @@ export const Input = styled.input`
   }
 
   &:focus ~ ${FormItemBar} {
-    background: ${({ theme }) => theme.color.darkBrown};
+    background: ${({ isError, theme }) => (isError ? theme.color.red : theme.color.darkBrown)};
   }
 `;
