@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+## About The Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MyGoodreads is application inspired by [Goodreads](https://www.goodreads.com/) website. 
 
-## Available Scripts
+I created it to learn React. Below you can find example screenshots from the current version.
 
-In the project directory, you can run:
+Main page view:
+![MainScreenshot](./main.png)
 
-### `npm start`
+Book Card view:
+![CardScreenshot](./card.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [React.js](https://reactjs.org/)
+* [Styled components](https://styled-components.com/)
+* [Mock Service Worker](https://mswjs.io/)
+* [React Router](https://reactrouter.com/)
+* [React Hook Form](https://react-hook-form.com/)
+* [Prop Types](https://github.com/facebook/prop-types)
+* [React Modal](https://github.com/reactjs/react-modal)
+* [Downshift](https://github.com/downshift-js/downshift)
+* [Axios](https://github.com/axios/axios)
+* [Cypress](https://www.cypress.io/)
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these steps.
 
-### `npm run build`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/maciejewskakatarzyna/my_goodreads.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the project
+   ```sh
+   npm start
+   ```
+4. To sign in to application, provide following credentials:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   Email: kowalska@mygoodreads.com
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   Password: Test123
+   ```
+   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+MyGoodreads application has a lot of features to manage your personal books library! Here are the most valuable ones:
+* Books listed by shelf: to read, read end currently reading
+* Search bar to search the book in database
+* New book adding form
+* Book card view with book's details
+* Delete book
+* Edit book
+* Change book's shelf
+* User authentication and authorization
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Roadmap
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MyGoodreads is still being developed. Below you can find the planned features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [ ] Unit and integration tests
+- [ ] End to end tests
+- [ ] Mobile view
+- [ ] Pagination
+- [ ] Books rating (star system)
+- [ ] Similar books recommendations
+- [ ] Reading progress
+- [ ] Dark mode
+- [ ] Draw a random book with parameters
+- [ ] User settings
+    
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
