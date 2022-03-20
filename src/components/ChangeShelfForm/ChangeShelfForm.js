@@ -7,7 +7,10 @@ import { FormWrapper } from './ChangeShelfForm.styles';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 
-const ChangeShelfForm = ({ book, handleCloseShelfModal }) => {
+const ChangeShelfForm = ({
+  book: { id, author, title, publisher, yearPublished, shelf, genre, cover },
+  handleCloseShelfModal,
+}) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
 
   const { editBookById } = useBooks();
@@ -19,23 +22,25 @@ const ChangeShelfForm = ({ book, handleCloseShelfModal }) => {
   } = useForm();
 
   let bookToEdit = {};
-  const res = {};
-
-  function update(target, src) {
-    Object.keys(target).forEach(k => (res[k] = src.hasOwnProperty(k) ? src[k] : target[k]));
-    return res;
-  }
+  let bookData = {
+    id,
+    author,
+    title,
+    publisher,
+    yearPublished,
+    cover,
+    genre,
+  };
 
   const handleEditBook = (id, bookToEdit) => {
     editBookById(id, bookToEdit);
-    update(book, bookToEdit);
     setBooks(books);
-    setCurrentBook(res);
+    setCurrentBook(bookToEdit);
   };
 
   const onSubmit = data => {
-    bookToEdit = data;
-    handleEditBook(book.id, bookToEdit);
+    bookToEdit = { ...data, ...bookData };
+    handleEditBook(id, bookToEdit);
     handleCloseShelfModal();
   };
 
@@ -51,6 +56,7 @@ const ChangeShelfForm = ({ book, handleCloseShelfModal }) => {
             id='to-read'
             value='to-read'
             isRadio
+            defaultChecked={shelf === 'to-read'}
             {...register('shelf')}
           />
           <FormField
@@ -60,6 +66,7 @@ const ChangeShelfForm = ({ book, handleCloseShelfModal }) => {
             id='read'
             value='read'
             isRadio
+            defaultChecked={shelf === 'read'}
             {...register('shelf')}
           />
           <FormField
@@ -69,6 +76,7 @@ const ChangeShelfForm = ({ book, handleCloseShelfModal }) => {
             id='currently-reading'
             value='currently-reading'
             isRadio
+            defaultChecked={shelf === 'currently-reading'}
             {...register('shelf')}
           />
         </label>
