@@ -8,7 +8,10 @@ import FormField from '../Form/FormField';
 import { useForm } from 'react-hook-form';
 import BasicButton from '../Buttons/BasicButton';
 
-const EditBookForm = ({ book, handleClose }) => {
+const EditBookForm = ({
+  book: { id, title, author, publisher, yearPublished, cover, genre, shelf },
+  handleClose,
+}) => {
   const { setBooks, books, currentBook, setCurrentBook } = useContext(BookContext);
 
   const { editBookById } = useBooks();
@@ -20,26 +23,19 @@ const EditBookForm = ({ book, handleClose }) => {
 
   let bookToEdit = {};
   let bookData = {
-    id: book.id,
-    cover: book.cover,
+    id,
+    cover,
+    shelf,
   };
-
-  const res = {};
-
-  function update(target, src) {
-    Object.keys(target).forEach(k => (res[k] = src.hasOwnProperty(k) ? src[k] : target[k]));
-    return res;
-  }
 
   const handleEditBook = (id, bookToEdit) => {
     editBookById(id, bookToEdit);
-    update(book, bookToEdit);
     setBooks(books);
   };
 
   const onSubmit = data => {
     bookToEdit = { ...data, ...bookData };
-    handleEditBook(book.id, bookToEdit);
+    handleEditBook(id, bookToEdit);
     handleClose();
     setCurrentBook(bookToEdit);
   };
@@ -49,44 +45,87 @@ const EditBookForm = ({ book, handleClose }) => {
       <h2>Edit book</h2>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FormField
-          label='title'
+          label='Title'
           name='title'
           id='title'
-          placeholder='title'
+          placeholder={title}
+          defaultValue={title}
           {...register('title')}
         />
         <FormField
-          label='author'
+          label='Author'
           name='author'
           id='author'
-          placeholder='author'
+          placeholder={author}
+          defaultValue={author}
           {...register('author')}
         />
         <FormField
-          label='publisher'
+          label='Publisher'
           name='publisher'
           id='publisher'
-          placeholder='publisher'
+          placeholder={publisher}
+          defaultValue={publisher}
           {...register('publisher')}
+        />
+        <FormField
+          label='Year'
+          name='yearPublished'
+          id='yearPublished'
+          placeholder={yearPublished}
+          defaultValue={yearPublished}
+          {...register('yearPublished')}
         />
         <label>
           Genre{' '}
           <FormField
             type='radio'
-            label='fiction'
+            label='Romance'
             name='genre'
-            id='fiction'
-            value='fiction'
+            id='romance'
+            value='Romance'
             isRadio
+            defaultChecked={genre === 'Romance'}
             {...register('genre')}
           />
           <FormField
             type='radio'
-            label='history'
+            label='Fantasy'
+            name='genre'
+            id='fantasy'
+            value='Fantasy'
+            isRadio
+            defaultChecked={genre === 'Fantasy'}
+            {...register('genre')}
+          />
+          <FormField
+            type='radio'
+            label='History'
             name='genre'
             id='history'
-            value='history'
+            value='History'
             isRadio
+            defaultChecked={genre === 'History'}
+            {...register('genre')}
+          />
+          <FormField
+            type='radio'
+            label='Horror'
+            name='genre'
+            id='horror'
+            value='Horror'
+            isRadio
+            defaultChecked={genre === 'Horror'}
+            {...register('genre')}
+          />
+          <FormField
+            type='radio'
+            label='Biographies'
+            name='genre'
+            id='biographies'
+            value='Biographies'
+            isRadio
+            defaultChecked={genre === 'Biographies'}
             {...register('genre')}
           />
         </label>
