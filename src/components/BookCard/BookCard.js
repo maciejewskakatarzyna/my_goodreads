@@ -98,6 +98,7 @@ const BookCard = () => {
             alt='book cover'
             style={isError ? imgErrorStyles : imgNoErrorStyles}
           />
+
           {isError && <div className='noCover'></div>}
         </div>
         <StyledBookDetails>
@@ -111,10 +112,8 @@ const BookCard = () => {
             <ShelfButton title='Change book shelf' onClick={() => handleOpenShelfModal()}>
               <BookShelfSvg />
             </ShelfButton>
-
             <p>{getShelfName(currentBook.shelf)}</p>
           </StyledShelfName>
-
           <ButtonsWrapper>
             <BasicButton onClick={handleOpenEditForm}>Edit</BasicButton>
             <BasicButton onClick={handleRemove}>Delete</BasicButton>

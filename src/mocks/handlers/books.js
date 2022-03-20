@@ -64,12 +64,14 @@ export const books = [
 
   rest.post('/books', (req, res, ctx) => {
     const newBook = {
-      id: faker.datatype.uuid(),
-      title: req.body.title,
-      author: req.body.author,
-      publisher: req.body.publisher,
+      id: db.book.id,
+      title: req.body.title || 'Title',
+      author: req.body.author || 'Author',
+      publisher: req.body.publisher || 'Publisher',
+      yearPublished: req.body.yearPublished || 'Year',
+      cover: db.book.cover,
       shelf: req.body.shelf,
-      genre: req.body.genre,
+      genre: req.body.genre || db.book.genre,
     };
 
     db.book.create(newBook);

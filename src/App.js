@@ -13,6 +13,7 @@ import { useAuth } from './hooks/useAuth';
 import FormField from './components/Form/FormField';
 import { Wrapper, Form, Error } from './components/Form/FormField.styles';
 import BasicButton from './components/Buttons/BasicButton';
+import { useNavigate } from 'react-router';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -24,6 +25,7 @@ const AuthenticatedApp = () => {
   const [currentBook, setCurrentBook] = useState(0);
 
   const { getShelfs, editBookById } = useBooks();
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
@@ -44,6 +46,7 @@ const AuthenticatedApp = () => {
     update(randomBook, bookToStart);
     setBooks(books);
     setIsAddedToCurrent(true);
+    navigate('/shelfs/currently-reading');
   };
 
   return (

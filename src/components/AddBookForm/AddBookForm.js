@@ -7,9 +7,10 @@ import { Form, Wrapper } from '../Form/FormField.styles';
 import { useForm } from 'react-hook-form';
 import FormField from '../Form/FormField';
 import BasicButton from '../Buttons/BasicButton';
+import { useNavigate } from 'react-router';
 
 const AddBookForm = ({ handleClose, handleShowConfirm }) => {
-  const { setBooks, books } = useContext(BookContext);
+  const { setBooks, books, setCurrentBook } = useContext(BookContext);
 
   const {
     register,
@@ -18,6 +19,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
   } = useForm();
 
   const { addNewBook } = useBooks();
+  const navigate = useNavigate();
 
   let newBook = {};
 
@@ -30,6 +32,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
     handleAddBook(newBook);
     handleClose();
     handleShowConfirm();
+    navigate(-1);
   };
 
   return (
@@ -38,25 +41,32 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
         <h2>Add new book</h2>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <FormField
-            label='title'
+            label='Title'
             name='title'
             id='title'
-            placeholder='title'
+            placeholder='Title'
             {...register('title')}
           />
           <FormField
-            label='author'
+            label='Author'
             name='author'
             id='author'
-            placeholder='author'
+            placeholder='Author'
             {...register('author')}
           />
           <FormField
-            label='publisher'
+            label='Publisher'
             name='publisher'
             id='publisher'
-            placeholder='publisher'
+            placeholder='Publisher'
             {...register('publisher')}
+          />
+          <FormField
+            label='Year'
+            name='yearPublished'
+            id='yearPublished'
+            placeholder='Year'
+            {...register('yearPublished')}
           />
           <label>
             Shelf{' '}
@@ -70,19 +80,46 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
             Genre{' '}
             <FormField
               type='radio'
-              label='fiction'
+              label='Romance'
               name='genre'
-              id='fiction'
-              value='fiction'
+              id='romance'
+              value='Romance'
               isRadio
               {...register('genre')}
             />
             <FormField
               type='radio'
-              label='history'
+              label='Fantasy'
+              name='genre'
+              id='fantasy'
+              value='Fantasy'
+              isRadio
+              {...register('genre')}
+            />
+            <FormField
+              type='radio'
+              label='History'
               name='genre'
               id='history'
-              value='history'
+              value='History'
+              isRadio
+              {...register('genre')}
+            />
+            <FormField
+              type='radio'
+              label='Horror'
+              name='genre'
+              id='horror'
+              value='Horror'
+              isRadio
+              {...register('genre')}
+            />
+            <FormField
+              type='radio'
+              label='Biographies'
+              name='genre'
+              id='biographies'
+              value='Biographies'
               isRadio
               {...register('genre')}
             />
