@@ -7,7 +7,6 @@ export const StyledEditBookForm = styled.form`
   align-items: center;
   justify-content: center;
   width: 350px;
-  height: 600px;
   margin-top: 20px;
 
   button {

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import FormField from '../Form/FormField';
 import BasicButton from '../Buttons/BasicButton';
 import { useNavigate } from 'react-router';
+import { StyledAddBookForm } from './AddBookForm.styles';
 
 const AddBookForm = ({ handleClose, handleShowConfirm }) => {
   const { setBooks, books, setCurrentBook } = useContext(BookContext);
@@ -39,7 +40,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
     <>
       <Wrapper>
         <h2>Add new book</h2>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <StyledAddBookForm onSubmit={handleSubmit(onSubmit)}>
           <FormField
             label='Title'
             name='title'
@@ -68,64 +69,94 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
             placeholder='Year'
             {...register('yearPublished')}
           />
-          <label>
-            Shelf{' '}
-            <select {...register('shelf')}>
-              <option value='to-read'>to read</option>
-              <option value='read'>read</option>
-              <option value='currently-reading'>currently reading</option>
-            </select>
-          </label>
-          <label>
-            Genre{' '}
-            <FormField
-              type='radio'
-              label='Romance'
-              name='genre'
-              id='romance'
-              value='Romance'
-              isRadio
-              {...register('genre')}
-            />
-            <FormField
-              type='radio'
-              label='Fantasy'
-              name='genre'
-              id='fantasy'
-              value='Fantasy'
-              isRadio
-              {...register('genre')}
-            />
-            <FormField
-              type='radio'
-              label='History'
-              name='genre'
-              id='history'
-              value='History'
-              isRadio
-              {...register('genre')}
-            />
-            <FormField
-              type='radio'
-              label='Horror'
-              name='genre'
-              id='horror'
-              value='Horror'
-              isRadio
-              {...register('genre')}
-            />
-            <FormField
-              type='radio'
-              label='Biographies'
-              name='genre'
-              id='biographies'
-              value='Biographies'
-              isRadio
-              {...register('genre')}
-            />
-          </label>
+          <fieldset>
+            <details>
+              <summary>
+                <p>Select a shelf</p>
+              </summary>
+              <FormField
+                type='radio'
+                label='To read'
+                name='shelf'
+                id='to-read'
+                value='to-read'
+                isRadio
+                {...register('shelf')}
+              />
+              <FormField
+                type='radio'
+                label='Read'
+                name='shelf'
+                id='read'
+                value='read'
+                isRadio
+                {...register('shelf')}
+              />
+              <FormField
+                type='radio'
+                label='Currently reading'
+                name='shelf'
+                id='currently-reading'
+                value='currently-reading'
+                isRadio
+                {...register('shelf')}
+              />
+            </details>
+          </fieldset>
+          <fieldset>
+            <details>
+              <summary>
+                <p>Select genre</p>
+              </summary>
+              <FormField
+                type='radio'
+                label='Romance'
+                name='genre'
+                id='romance'
+                value='Romance'
+                isRadio
+                {...register('genre')}
+              />
+              <FormField
+                type='radio'
+                label='Fantasy'
+                name='genre'
+                id='fantasy'
+                value='Fantasy'
+                isRadio
+                {...register('genre')}
+              />
+              <FormField
+                type='radio'
+                label='History'
+                name='genre'
+                id='history'
+                value='History'
+                isRadio
+                {...register('genre')}
+              />
+              <FormField
+                type='radio'
+                label='Horror'
+                name='genre'
+                id='horror'
+                value='Horror'
+                isRadio
+                {...register('genre')}
+              />
+              <FormField
+                type='radio'
+                label='Biographies'
+                name='genre'
+                id='biographies'
+                value='Biographies'
+                isRadio
+                {...register('genre')}
+              />
+            </details>
+          </fieldset>
           <BasicButton type='submit'>Add book</BasicButton>
-        </Form>
+        </StyledAddBookForm>
       </Wrapper>
     </>
   );

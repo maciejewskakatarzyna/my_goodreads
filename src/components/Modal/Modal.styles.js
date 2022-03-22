@@ -17,7 +17,7 @@ export const StyledModalWrapper = styled(ReactModal)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 1;
+  overflow-y: auto;
 
   &:focus {
     outline: none;
