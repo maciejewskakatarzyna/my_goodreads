@@ -5,17 +5,22 @@ export const StyledEditBookForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 350px;
   height: 600px;
   margin-top: 20px;
 
   button {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   fieldset {
     width: 100%;
     border: none;
+
+    div {
+      margin-top: 5px;
+    }
 
     input {
       width: 15%;
