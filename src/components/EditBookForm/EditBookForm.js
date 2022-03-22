@@ -7,6 +7,7 @@ import { Form, Wrapper } from '../Form/FormField.styles';
 import FormField from '../Form/FormField';
 import { useForm } from 'react-hook-form';
 import BasicButton from '../Buttons/BasicButton';
+import { StyledEditBookForm } from './EditBookForm.styles';
 
 const EditBookForm = ({
   book: { id, title, author, publisher, yearPublished, cover, genre, shelf },
@@ -43,7 +44,7 @@ const EditBookForm = ({
   return (
     <Wrapper>
       <h2>Edit book</h2>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <StyledEditBookForm onSubmit={handleSubmit(onSubmit)}>
         <FormField
           label='Title'
           name='title'
@@ -76,8 +77,8 @@ const EditBookForm = ({
           defaultValue={yearPublished}
           {...register('yearPublished')}
         />
-        <label>
-          Genre{' '}
+        <fieldset>
+          <legend>Genre</legend>
           <FormField
             type='radio'
             label='Romance'
@@ -128,9 +129,9 @@ const EditBookForm = ({
             defaultChecked={genre === 'Biographies'}
             {...register('genre')}
           />
-        </label>
+        </fieldset>
         <BasicButton type='submit'>Save changes</BasicButton>
-      </Form>
+      </StyledEditBookForm>
     </Wrapper>
   );
 };

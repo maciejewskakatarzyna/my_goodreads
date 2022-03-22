@@ -18,7 +18,7 @@ const moveLabelToTop = keyframes`
 
 export const Wrapper = styled.div`
   width: 50%;
-  margin: 50px auto 100px;
+  //margin: 50px auto 100px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -24,8 +24,12 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
 
   useEffect(() => {
     (async () => {
-      const books = await getBooksByShelf(id);
-      setBooks(books);
+      try {
+        const books = await getBooksByShelf(id);
+        setBooks(books);
+      } catch (e) {
+        return <p> error</p>;
+      }
     })();
   }, [getBooksByShelf, id]);
 
@@ -77,9 +81,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
 
         <StyledBookList view={isList}>
           {books.map(book => (
-            <>
-              <Book isList={isList} key={book.id} book={book} />
-            </>
+            <Book isList={isList} key={book.id} book={book} />
           ))}
         </StyledBookList>
 

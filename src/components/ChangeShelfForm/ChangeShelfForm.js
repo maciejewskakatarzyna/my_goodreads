@@ -46,9 +46,9 @@ const ChangeShelfForm = ({
 
   return (
     <FormWrapper>
-      <h2>Change book shelf</h2>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <label>
+        <fieldset>
+          <legend>Change book shelf</legend>
           <FormField
             type='radio'
             label='To read'
@@ -79,7 +79,7 @@ const ChangeShelfForm = ({
             defaultChecked={shelf === 'currently-reading'}
             {...register('shelf')}
           />
-        </label>
+        </fieldset>
         <BasicButton type='submit'>Save changes</BasicButton>
       </Form>
     </FormWrapper>

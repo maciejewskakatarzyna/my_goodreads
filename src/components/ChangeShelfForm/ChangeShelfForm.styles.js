@@ -15,24 +15,37 @@ export const FormWrapper = styled.div`
     align-items: center;
     height: 300px;
 
-    label:first-child {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      width: 50%;
+    fieldset {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid ${({ theme }) => theme.color.formBar};
+      padding-bottom: 20px;
     }
-    label:not(:first-child) {
+
+    legend {
       color: ${({ theme }) => theme.color.darkBrown};
+      font-size: ${({ theme }) => theme.font.size.l};
+      background: none;
+      padding: 3px 12px;
+      text-align: center;
+    }
+
+    label {
+      color: ${({ theme }) => theme.color.grey};
       font-size: ${({ theme }) => theme.font.size.m};
       position: static;
 
       &:hover {
-        font-weight: bold;
+        color: ${({ theme }) => theme.color.darkBrown};
       }
     }
     input {
       width: 15%;
+      accent-color: ${({ theme }) => theme.color.darkBrown};
+      &:checked + label {
+        color: ${({ theme }) => theme.color.darkBrown};
+      }
+    }
     }
   }
 `;

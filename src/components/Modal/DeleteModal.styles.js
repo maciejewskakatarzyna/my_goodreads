@@ -9,7 +9,7 @@ export const DeleteQuestion = styled.p`
 
 export const ButtonsWrapper = styled.div`
   margin-top: 30px;
-  width: 150px;
+  width: 185px;
   display: flex;
   justify-content: space-between;
 `;
