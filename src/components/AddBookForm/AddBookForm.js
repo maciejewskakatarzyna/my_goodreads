@@ -81,6 +81,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
                 id='to-read'
                 value='to-read'
                 isRadio
+                data-testid='toRead'
                 {...register('shelf')}
               />
               <FormField
@@ -133,6 +134,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
                 id='history'
                 value='History'
                 isRadio
+                data-testid='history'
                 {...register('genre')}
               />
               <FormField

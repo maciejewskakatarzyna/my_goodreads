@@ -93,7 +93,11 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
                 <p>{author}</p>
               </div>
             </Link>
-            <DeleteButton isVisible={isVisible} onClick={() => handleRemove(id)}>
+            <DeleteButton
+              isVisible={isVisible}
+              data-testid='deleteButton'
+              onClick={() => handleRemove(id)}
+            >
               <DeleteBookSvg />
             </DeleteButton>
           </>

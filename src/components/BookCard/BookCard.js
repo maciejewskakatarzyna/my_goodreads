@@ -112,7 +112,7 @@ const BookCard = () => {
             <ShelfButton title='Change book shelf' onClick={() => handleOpenShelfModal()}>
               <BookShelfSvg />
             </ShelfButton>
-            <p>{getShelfName(currentBook.shelf)}</p>
+            <p data-testid='shelfName'>{getShelfName(currentBook.shelf)}</p>
           </StyledShelfName>
           <ButtonsWrapper>
             <BasicButton onClick={handleOpenEditForm}>Edit</BasicButton>

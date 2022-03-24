@@ -14,7 +14,7 @@ const Modal = ({ handleClose, isOpen, children, width, height }) => {
     >
       {children}
 
-      <CloseButton title='Close' onClick={handleClose}></CloseButton>
+      <CloseButton title='Close' data-testid='closeButton' onClick={handleClose}></CloseButton>
     </StyledModalWrapper>
   );
 };

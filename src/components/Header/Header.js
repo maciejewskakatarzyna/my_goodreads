@@ -78,7 +78,11 @@ const Header = () => {
         </nav>
         <SearchBar />
 
-        <AddBookButton title='Add new book' onClick={handleShowForm}></AddBookButton>
+        <AddBookButton
+          title='Add new book'
+          data-testid='addNewBook'
+          onClick={handleShowForm}
+        ></AddBookButton>
 
         <StyledLoginMenu>
           {auth.user.name && <p>Hello {auth.user.name}</p>}

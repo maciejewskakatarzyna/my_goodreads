@@ -79,7 +79,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
           <GridListToggleButton onClick={toggleGridList} isList={isList}></GridListToggleButton>
         </ListHeader>
 
-        <StyledBookList view={isList}>
+        <StyledBookList view={isList} data-testid='booksList'>
           {books.map(book => (
             <Book isList={isList} key={book.id} book={book} />
           ))}
