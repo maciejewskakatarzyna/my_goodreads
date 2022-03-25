@@ -7,6 +7,7 @@ import HeroImage from '../HeroImage/HeroImage';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import BooksList from '../BookList/BooksList';
 import BookCard from '../BookCard/BookCard';
+import { Wrapper } from './AuthenticatedApp.style';
 
 const AuthenticatedApp = () => {
   const [books, setBooks] = useState([]);
@@ -61,7 +62,7 @@ const AuthenticatedApp = () => {
         <Header />
         <HeroImage />
 
-        <div className='wrapper'>
+        <Wrapper>
           <Routes>
             <Route path='/' element={<Navigate to='/shelfs' />} />
             <Route path='/shelfs/' element={<Navigate to='/shelfs/to-read' />} />
@@ -91,7 +92,7 @@ const AuthenticatedApp = () => {
             />
             <Route path='/books/:id' element={<BookCard />} />
           </Routes>
-        </div>
+        </Wrapper>
       </BookContext.Provider>
     </div>
   );

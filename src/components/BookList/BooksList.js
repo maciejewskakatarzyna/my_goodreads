@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Book from '../Book/Book';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledBookList, Wrapper, ListHeader, ShelfName } from './BookList.styles';
+import { StyledBooksList, Wrapper, ListHeader, ShelfName } from './BooksList.styles';
 import { useBooks } from '../../hooks/useBooks';
 import Modal from '../Modal/Modal';
 import RandomBook from '../RandomBook/RandomBook';
@@ -79,11 +79,11 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
           <GridListToggleButton onClick={toggleGridList} isList={isList}></GridListToggleButton>
         </ListHeader>
 
-        <StyledBookList view={isList} data-testid='booksList'>
+        <StyledBooksList view={isList} data-testid='booksList'>
           {books.map(book => (
             <Book isList={isList} key={book.id} book={book} />
           ))}
-        </StyledBookList>
+        </StyledBooksList>
 
         <Modal
           isOpen={isRandomModalOpen}

@@ -4,6 +4,7 @@ import { Error, Form, Wrapper } from '../Form/FormField.styles';
 import FormField from '../Form/FormField';
 import BasicButton from '../Buttons/BasicButton';
 import React from 'react';
+import { UnauthWrapper } from './UnauthenticatedApp.style';
 
 const UnauthenticatedApp = () => {
   const auth = useAuth();
@@ -14,38 +15,11 @@ const UnauthenticatedApp = () => {
   } = useForm();
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexDirection: 'column',
-      }}
-    >
-      <h1
-        style={{
-          margin: '100px 0 30px 0',
-        }}
-      >
-        MyGoodreads
-      </h1>
-      <h2
-        style={{
-          marginBottom: '100px',
-        }}
-      >
-        Sign in to application
-      </h2>
+    <UnauthWrapper>
+      <h1>MyGoodreads</h1>
+      <h2>Sign in to application</h2>
       <Wrapper>
-        <Form
-          onSubmit={handleSubmit(auth.signIn)}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-          }}
-        >
+        <Form onSubmit={handleSubmit(auth.signIn)}>
           <FormField
             label='email'
             name='email'
@@ -83,7 +57,7 @@ const UnauthenticatedApp = () => {
           </BasicButton>
         </Form>
       </Wrapper>
-    </div>
+    </UnauthWrapper>
   );
 };
 

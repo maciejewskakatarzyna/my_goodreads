@@ -6,11 +6,11 @@ export const StyledAddBookForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  margin-top: 20px;
+  width: 35rem;
+  margin-top: 2rem;
 
   button {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 
   fieldset {
@@ -18,7 +18,7 @@ export const StyledAddBookForm = styled.form`
     border: none;
 
     div {
-      margin-top: 5px;
+      margin-top: 5rem;
     }
 
     input {
@@ -64,7 +64,7 @@ export const StyledAddBookForm = styled.form`
   }
 
   details {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   details[open] > summary,

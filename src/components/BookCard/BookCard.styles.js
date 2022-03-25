@@ -2,28 +2,26 @@ import styled from 'styled-components';
 
 export const StyledBookCard = styled.div`
   width: 100%;
-  padding: 20px 40px;
-  margin: 20px auto;
+  padding: 2rem 4rem;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  img {
-    width: 350px;
-    height: 450px;
-    box-shadow: #ccc 5px 5px 5px;
+  img,
+  .noCover {
+    width: 35rem;
+    height: 45rem;
+    box-shadow: #ccc 0.5rem 0.5rem 0.5rem;
   }
 
   .noCover {
-    width: 350px;
-    height: 450px;
     background-color: lightgrey;
-    box-shadow: #ccc 5px 5px 5px;
   }
 `;
 
 export const StyledBookDetails = styled.div`
-  margin-left: 50px;
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
 `;
@@ -31,12 +29,12 @@ export const StyledBookDetails = styled.div`
 export const StyledTitle = styled.p`
   font-size: ${({ theme }) => theme.font.size.xl};
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 `;
 
 export const StyledAuthor = styled.p`
   font-size: ${({ theme }) => theme.font.size.l};
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 `;
 
 export const StyledPublisher = styled.p`

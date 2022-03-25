@@ -23,10 +23,9 @@ export const theme = {
     },
   },
   mq: {
-    phone: '@media (max-width: 768px)',
+    phone: '@media (min-width: 480px)',
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 1024px)',
-    bigDesktop: '@media (min-width: 1280px)',
-    huge: '@media(min-width: 1440px)',
+    hugeDesktop: '@media(min-width: 1280px)',
   },
 };

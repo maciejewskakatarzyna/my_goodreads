@@ -8,14 +8,14 @@ export const StyledGridBook = styled.div`
   position: relative;
 
   & .bookWrapper {
-    width: 150px;
-    height: 200px;
+    width: 15rem;
+    height: 20rem;
     text-decoration: none;
-    box-shadow: ${({ theme }) => theme.color.lightGrey} 5px 5px 5px;
+    box-shadow: ${({ theme }) => theme.color.lightGrey} 0.5rem 0.5rem 0.5rem;
 
     & img {
-      width: 150px;
-      height: 200px;
+      width: 15rem;
+      height: 20rem;
       filter: brightness(65%);
 
       &:hover {
@@ -24,14 +24,14 @@ export const StyledGridBook = styled.div`
     }
 
     .hasCover {
-      border-radius: 3px;
+      border-radius: 0.3rem;
       position: relative;
     }
 
     .noCover {
-      width: 150px;
-      height: 200px;
-      border-radius: 3px;
+      width: 15rem;
+      height: 20rem;
+      border-radius: 0.3rem;
       position: relative;
       background-color: ${({ theme }) => theme.color.lightGrey};
       display: flex;
@@ -46,16 +46,16 @@ export const StyledGridBook = styled.div`
 
     & p:first-of-type {
       position: absolute;
-      bottom: 30px;
-      left: 10px;
+      bottom: 3rem;
+      left: 1rem;
       color: ${({ theme }) => theme.color.beige};
       font-size: ${({ theme }) => theme.font.size.l};
     }
 
     & p:last-of-type {
       position: absolute;
-      bottom: 10px;
-      left: 10px;
+      bottom: 1rem;
+      left: 1rem;
       color: ${({ theme }) => theme.color.beige};
       font-size: ${({ theme }) => theme.font.size.s};
     }
@@ -66,23 +66,23 @@ export const StyledListBook = styled.div`
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 40px;
-  width: 740px;
+  height: 4rem;
+  width: 74rem;
 
   &:not(:last-child)::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -0.5rem;
     width: 100%;
-    height: 1px;
+    height: 0.1rem;
     background-color: ${({ theme }) => theme.color.lightGrey};
   }
 
   & .bookWrapper {
-    padding: 0px 20px 10px 20px;
+    padding: 0 2rem 1rem 2rem;
     text-decoration: none;
     color: ${({ theme }) => theme.color.darkBrown};
-    border-bottom: 2px solid ${({ theme }) => theme.color.formBar};
+    border-bottom: 0.2rem solid ${({ theme }) => theme.color.formBar};
 
     & p:first-of-type {
       font-size: ${({ theme }) => theme.font.size.l};
