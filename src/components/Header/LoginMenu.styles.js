@@ -5,5 +5,6 @@ export const StyledLoginMenu = styled.div`
 
   & p {
     margin-right: 30px;
+    font-size: ${({ theme }) => theme.font.size.s};
   }
 `;

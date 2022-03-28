@@ -12,11 +12,15 @@ import AddBookForm from '../AddBookForm/AddBookForm';
 import AddBookButton from '../Buttons/AddBookButton';
 import SearchBar from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
+import useMediaQuery from '../../hooks/useMediaQuery';
+import { ReactComponent as UserSvg } from '../../assets/images/user.svg';
+import UserSignOutButton from '../Buttons/UserSignOutButton';
 
 const Header = () => {
   const { shelfs } = useContext(BookContext);
 
   const { handleOpenModal, handleCloseModal } = useModal();
+  const isDesktop = useMediaQuery('(min-width: 960px)');
 
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
@@ -65,7 +69,7 @@ const Header = () => {
     <StyledHeader>
       <>
         <Link to={`/`} className='logo' onClick={handleScrollUp}>
-          My Goodreads
+          {isDesktop ? 'My Goodreads' : 'MG'}
         </Link>
         <nav>
           <StyledNavigation>
@@ -85,10 +89,10 @@ const Header = () => {
         ></AddBookButton>
 
         <StyledLoginMenu>
-          {auth.user.name && <p>Hello {auth.user.name}</p>}
-          <a href='#' onClick={auth.signOut}>
-            Sign out
-          </a>
+          {auth.user.name && isDesktop ? <p>Hello, {auth.user.name}</p> : null}
+          <UserSignOutButton onClick={auth.signOut}>
+            <UserSvg />
+          </UserSignOutButton>
         </StyledLoginMenu>
       </>
       <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal} width='500px' height='400px'>

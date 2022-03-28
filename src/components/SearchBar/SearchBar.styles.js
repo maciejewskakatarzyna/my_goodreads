@@ -2,14 +2,22 @@ import styled from 'styled-components';
 
 export const SearchInput = styled.input`
   background: ${({ theme }) => theme.color.white};
-  border-radius: 3px;
+  border-radius: 0.3rem;
   border: ${({ theme }) => theme.color.formBar} 1px solid;
   color: ${({ theme }) => theme.color.darkBrown};
-  height: 32px;
-  padding: 4px 26px 4px 8px;
   resize: none;
   width: 100%;
-  font-size: ${({ theme }) => theme.font.size.m};
+  ${({ theme }) => theme.mq.phone}, ${({ theme }) => theme.mq.tablet} {
+    font-size: ${({ theme }) => theme.font.size.s};
+    height: 2.4rem;
+    padding: 4px 8px 4px 4px;
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.m};
+    height: 3.2rem;
+    padding: 4px 20px 4px 8px;
+  }
 `;
 
 export const SearchWrapper = styled.div`
