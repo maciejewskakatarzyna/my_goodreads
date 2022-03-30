@@ -70,7 +70,7 @@ MyGoodreads is still being developed. Below you can find the planned features:
 
 - [ ] Unit and integration tests
 - [x] End to end tests
-- [ ] Mobile view
+- [x] Mobile view
 - [ ] Pagination
 - [ ] Books rating (star system)
 - [ ] Similar books recommendations
