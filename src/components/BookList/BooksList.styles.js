@@ -34,6 +34,17 @@ export const ListHeader = styled.div`
 `;
 
 export const ShelfName = styled.p`
-  font-size: ${({ theme }) => theme.font.size.l};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  line-height: 3.6rem;
+
+  ${({ theme }) => theme.mq.phone} {
+    font-size: ${({ theme }) => theme.font.size.m};
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.l};
+  }
 `;

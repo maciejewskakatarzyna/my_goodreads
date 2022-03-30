@@ -70,12 +70,15 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
     <>
       <Wrapper>
         <ListHeader>
-          <ShelfName>{getShelfName(id) || getShelfName(shelfs[0])}</ShelfName>
-          {getShelfName(id) === 'To read' ? (
-            <RandomBookButton onClick={handleOpenRandomModal} title='Choose random book to read'>
-              <RandomBookSvg />
-            </RandomBookButton>
-          ) : null}
+          <ShelfName>
+            {getShelfName(id) || getShelfName(shelfs[0])}{' '}
+            {getShelfName(id) === 'To read' ? (
+              <RandomBookButton onClick={handleOpenRandomModal} title='Choose random book to read'>
+                <RandomBookSvg />
+              </RandomBookButton>
+            ) : null}
+          </ShelfName>
+
           <GridListToggleButton onClick={toggleGridList} isList={isList}></GridListToggleButton>
         </ListHeader>
 
