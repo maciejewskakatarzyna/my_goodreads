@@ -136,10 +136,14 @@ const Header = () => {
       <Modal
         isOpen={isConfirmModalOpen}
         handleClose={handleCloseConfirmModal}
-        width='300px'
+        width={isDesktop || isTablet ? '300px' : '200px'}
         height='150px'
       >
-        <h2>Book added successfully!</h2>
+        {isDesktop || isTablet ? (
+          <h2>Book added successfully!</h2>
+        ) : (
+          <h3>Book added successfully!</h3>
+        )}
       </Modal>
     </HeaderWrapper>
   );
