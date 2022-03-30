@@ -18,10 +18,9 @@ export const SearchWrapper = styled.div`
 
 export const SearchResults = styled.ul`
   visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
-  z-index: 1000;
+  z-index: 10;
   max-height: 50rem;
   overflow-y: scroll;
-  padding: 1rem;
   border-radius: 0.3rem;
   list-style: none;
   width: 100%;
@@ -31,6 +30,10 @@ export const SearchResults = styled.ul`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.color.white};
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const SearchResultsItem = styled.li`
@@ -39,6 +42,7 @@ export const SearchResultsItem = styled.li`
   background-color: ${({ theme, isHighlighted }) =>
     isHighlighted ? theme.color.beige : theme.color.white};
   width: 100%;
+  padding: 1rem;
   &:hover {
     background-color: ${({ theme }) => theme.color.beige};
   }
