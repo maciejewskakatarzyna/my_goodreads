@@ -7,17 +7,9 @@ export const SearchInput = styled.input`
   color: ${({ theme }) => theme.color.darkBrown};
   resize: none;
   width: 100%;
-  ${({ theme }) => theme.mq.phone}, ${({ theme }) => theme.mq.tablet} {
-    font-size: ${({ theme }) => theme.font.size.s};
-    height: 2.4rem;
-    padding: 4px 8px 4px 4px;
-  }
-
-  ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.font.size.m};
-    height: 3.2rem;
-    padding: 4px 20px 4px 8px;
-  }
+  font-size: ${({ theme }) => theme.font.size.s};
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  height: 2.4rem;
 `;
 
 export const SearchWrapper = styled.div`

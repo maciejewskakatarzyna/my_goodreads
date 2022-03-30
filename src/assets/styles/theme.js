@@ -26,5 +26,6 @@ export const theme = {
     phone: '@media (min-width: 480px)',
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 960px)',
+    bigDesktop: '@media (min-width: 1235px)',
   },
 };

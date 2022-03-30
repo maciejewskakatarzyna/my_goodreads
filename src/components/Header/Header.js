@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
-import { StyledHeader } from './Header.styles';
+import { StyledHeader, HeaderWrapper } from './Header.styles';
 import { StyledLink, StyledNavigation } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import PropTypes from 'prop-types';
@@ -66,8 +66,8 @@ const Header = () => {
   const auth = useAuth();
 
   return (
-    <StyledHeader>
-      <>
+    <HeaderWrapper>
+      <StyledHeader>
         <Link to={`/`} className='logo' onClick={handleScrollUp}>
           {isDesktop ? 'My Goodreads' : 'MG'}
         </Link>
@@ -94,7 +94,7 @@ const Header = () => {
             <UserSvg />
           </UserSignOutButton>
         </StyledLoginMenu>
-      </>
+      </StyledHeader>
       <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal} width='500px' height='400px'>
         <AddBookForm handleClose={handleCloseAddModal} handleShowConfirm={handleShowConfirm} />
       </Modal>
@@ -106,7 +106,7 @@ const Header = () => {
       >
         <h2>Book added successfully!</h2>
       </Modal>
-    </StyledHeader>
+    </HeaderWrapper>
   );
 };
 

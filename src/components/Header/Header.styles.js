@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
+export const HeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const StyledHeader = styled.div`
   display: grid;
   justify-items: center;
   background-color: ${({ theme }) => theme.color.beige};
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
@@ -14,12 +19,21 @@ export const StyledHeader = styled.div`
   color: ${({ theme }) => theme.color.darkBrown};
   z-index: 2;
   
-  ${({ theme }) => theme.mq.phone}, ${({ theme }) => theme.mq.tablet} {
-    grid-template-columns: 1fr 4fr 2fr 1fr 1fr;
+  ${({ theme }) => theme.mq.phone}, ${({ theme }) => theme.mq.tablet}, ${({ theme }) =>
+  theme.mq.desktop} {
+    width: 100%;
+    grid-template-columns: 1fr 4fr 1fr 0.5fr 1fr;
   }
 
   ${({ theme }) => theme.mq.desktop} {
-    grid-template-columns: 2fr 5fr 2fr 1fr 3fr;
+  width: 90%;
+    grid-template-columns: 2fr 4fr 1fr 0.5fr 3fr;
+  }
+
+
+  ${({ theme }) => theme.mq.bigDesktop} {
+    width: 75%;
+    grid-template-columns: 3fr 5fr 1fr 0.5fr 3fr;
   }
   }
 
@@ -32,11 +46,11 @@ export const StyledHeader = styled.div`
       font-size: ${({ theme }) => theme.font.size.m};
     }
 
-    ${({ theme }) => theme.mq.tablet} {
+    ${({ theme }) => theme.mq.tablet},  ${({ theme }) => theme.mq.desktop} {
       font-size: ${({ theme }) => theme.font.size.l};
     }
 
-    ${({ theme }) => theme.mq.desktop} {
+    ${({ theme }) => theme.mq.bigDesktop} {
       font-size: ${({ theme }) => theme.font.size.xl};
     }
   }

@@ -61,7 +61,6 @@ const AuthenticatedApp = () => {
       >
         <Header />
         <HeroImage />
-
         <Wrapper>
           <Routes>
             <Route path='/' element={<Navigate to='/shelfs' />} />
