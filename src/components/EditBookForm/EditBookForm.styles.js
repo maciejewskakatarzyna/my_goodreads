@@ -5,11 +5,18 @@ export const StyledEditBookForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  margin-top: 20px;
+  margin-top: 2rem;
+
+  ${({ theme }) => theme.mq.phone} {
+    width: 25rem;
+  }
+
+  ${({ theme }) => theme.mq.tablet} {
+    width: 35rem;
+  }
 
   button {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 
   fieldset {
@@ -17,12 +24,19 @@ export const StyledEditBookForm = styled.form`
     border: none;
 
     div {
-      margin-top: 5px;
+      margin-top: 0.5rem;
     }
 
     input {
       width: 15%;
       accent-color: ${({ theme }) => theme.color.darkBrown};
+      ${({ theme }) => theme.mq.phone} {
+        font-size: ${({ theme }) => theme.font.size.s};
+      }
+
+      ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.m};
+      }
 
       &:checked + label {
         color: ${({ theme }) => theme.color.darkBrown};
@@ -32,6 +46,7 @@ export const StyledEditBookForm = styled.form`
     label {
       color: ${({ theme }) => theme.color.grey};
       position: static;
+      font-size: ${({ theme }) => theme.font.size.s};
 
       &:hover {
         color: ${({ theme }) => theme.color.darkBrown};
@@ -43,5 +58,12 @@ export const StyledEditBookForm = styled.form`
     color: ${({ theme }) => theme.color.grey};
     background: none;
     text-align: start;
+    ${({ theme }) => theme.mq.phone} {
+      font-size: ${({ theme }) => theme.font.size.s};
+    }
+
+    ${({ theme }) => theme.mq.desktop} {
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
   }
 `;

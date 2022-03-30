@@ -22,7 +22,7 @@ export const StyledModalWrapper = styled(ReactModal)`
     padding: 3rem 1rem;
   }
 
-  ${({ theme }) => theme.mq.desktop} {
+  ${({ theme }) => theme.mq.tablet} {
     padding: 3rem 5rem;
   }
 

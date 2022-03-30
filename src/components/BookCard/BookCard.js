@@ -20,6 +20,7 @@ import BasicButton from '../Buttons/BasicButton';
 import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
 import { ShelfButton } from '../Buttons/ShelfButton';
 import ChangeShelfForm from '../ChangeShelfForm/ChangeShelfForm';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const BookCard = () => {
   const { currentBook, books, setBooks } = useContext(BookContext);
@@ -27,6 +28,8 @@ const BookCard = () => {
   const navigate = useNavigate();
 
   const { handleOpenModal, handleCloseModal } = useModal();
+  const isDesktop = useMediaQuery('(min-width: 960px)');
+  const isTablet = useMediaQuery('(min-width: 768px)');
 
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isShelfModalOpen, setIsShelfModalOpen] = useState(false);
@@ -124,7 +127,7 @@ const BookCard = () => {
       <Modal
         isOpen={isEditModalOpen}
         handleClose={handleCloseEditModal}
-        width='500px'
+        width={isDesktop || isTablet ? '500px' : '300px'}
         height='400px'
       >
         <EditBookForm book={currentBook} handleClose={handleCloseEditModal} />
@@ -146,7 +149,7 @@ const BookCard = () => {
       <Modal
         isOpen={isShelfModalOpen}
         handleClose={handleCloseShelfModal}
-        width='350px'
+        width={isDesktop || isTablet ? '350px' : '300px'}
         height='300px'
       >
         <ChangeShelfForm book={currentBook} handleCloseShelfModal={handleCloseShelfModal} />

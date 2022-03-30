@@ -5,8 +5,15 @@ export const StyledAddBookForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 35rem;
   margin-top: 2rem;
+
+  ${({ theme }) => theme.mq.phone} {
+    width: 25rem;
+  }
+
+  ${({ theme }) => theme.mq.tablet} {
+    width: 35rem;
+  }
 
   button {
     margin-top: 3rem;
@@ -15,10 +22,6 @@ export const StyledAddBookForm = styled.form`
   fieldset {
     width: 100%;
     border: none;
-
-    div {
-      margin-top: 5rem;
-    }
 
     input {
       width: 15%;

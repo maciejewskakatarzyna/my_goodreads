@@ -125,7 +125,12 @@ const Header = () => {
           </UserSignOutButton>
         </StyledLoginMenu>
       </StyledHeader>
-      <Modal isOpen={isAddModalOpen} handleClose={handleCloseAddModal} width='500px' height='400px'>
+      <Modal
+        isOpen={isAddModalOpen}
+        handleClose={handleCloseAddModal}
+        width={isDesktop || isTablet ? '500px' : '300px'}
+        height='400px'
+      >
         <AddBookForm handleClose={handleCloseAddModal} handleShowConfirm={handleShowConfirm} />
       </Modal>
       <Modal
