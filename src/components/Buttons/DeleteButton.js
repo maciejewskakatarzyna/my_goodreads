@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const DeleteButton = styled.button`
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 5px;
-  bottom: 5px;
+  width: 2rem;
+  height: 2rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
   display: ${props => props.isVisible};
   background-color: transparent;
   cursor: pointer;

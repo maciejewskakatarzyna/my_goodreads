@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SearchInput = styled.input`
   background: ${({ theme }) => theme.color.white};
   border-radius: 0.3rem;
-  border: ${({ theme }) => theme.color.formBar} 1px solid;
+  border: ${({ theme }) => theme.color.formBar} 0.1rem solid;
   color: ${({ theme }) => theme.color.darkBrown};
   resize: none;
   width: 100%;
@@ -19,15 +19,15 @@ export const SearchWrapper = styled.div`
 export const SearchResults = styled.ul`
   visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
   z-index: 1000;
-  max-height: 500px;
+  max-height: 50rem;
   overflow-y: scroll;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 1rem;
+  border-radius: 0.3rem;
   list-style: none;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 5rem;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.color.white};
@@ -43,6 +43,6 @@ export const SearchResultsItem = styled.li`
     background-color: ${({ theme }) => theme.color.beige};
   }
   &:not(:last-child) {
-    border-bottom: 1px solid ${({ theme }) => theme.color.formBar};
+    border-bottom: 0.1rem solid ${({ theme }) => theme.color.formBar};
   }
 `;

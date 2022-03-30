@@ -4,15 +4,15 @@ export const ShelfButton = styled.button`
   border: none;
   background: transparent;
   svg {
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
     fill: ${({ theme }) => theme.color.darkBrown};
-    margin-right: 20px;
+    margin-right: 2rem;
 
     &:hover {
       path {
         stroke: ${({ theme }) => theme.color.darkBrown};
-        stroke-width: 3px;
+        stroke-width: 0.3rem;
       }
     }
   }

@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  border-radius: 3px;
-  border: 1px solid ${({ theme }) => theme.color.formBar};
+  border-radius: 0.3rem;
+  border: 0.1rem solid ${({ theme }) => theme.color.formBar};
   background-color: ${({ theme }) => theme.color.beige};
   color: ${({ theme }) => theme.color.darkBrown};
-  margin-top: ${({ isError }) => (isError ? '20px' : 'initial')};
+  margin-top: ${({ isError }) => (isError ? '2rem' : 'initial')};
   cursor: pointer;
 
   ${({ theme }) => theme.mq.phone} {
@@ -22,7 +22,7 @@ const StyledButton = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.color.darkBrown};
     color: ${({ theme }) => theme.color.beige};
-    border: 1px solid ${({ theme }) => theme.color.darkBrown};
+    border: 0.1rem solid ${({ theme }) => theme.color.darkBrown};
   }
 `;
 

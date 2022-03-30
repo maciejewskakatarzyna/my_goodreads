@@ -6,8 +6,8 @@ const UserSignOutButton = styled.button`
   background-color: transparent;
   height: 5rem;
   svg {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     fill: ${({ theme }) => theme.color.darkBrown};
   }
 `;

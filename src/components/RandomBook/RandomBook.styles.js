@@ -14,10 +14,10 @@ export const StyledRandomBook = styled.div`
 
   span {
     font-weight: bold;
-    margin: 10px 0px;
+    margin: 1rem 0;
   }
 
   button {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 `;

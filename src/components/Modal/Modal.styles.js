@@ -8,10 +8,10 @@ export const StyledModalWrapper = styled(ReactModal)`
   transform: translate(-50%, -50%);
   min-width: ${props => props.width};
   min-height: ${props => props.height};
-  border: ${({ theme }) => theme.color.beige} 1px solid;
-  border-radius: 5px;
+  border: ${({ theme }) => theme.color.beige} 0.1rem solid;
+  border-radius: 0.5rem;
   background-color: ${({ theme }) => theme.color.beige};
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
