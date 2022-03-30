@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-  min-width: 48rem;
+  min-width: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;

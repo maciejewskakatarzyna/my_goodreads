@@ -67,18 +67,18 @@ export const StyledListBook = styled.div`
   justify-content: space-between;
   position: relative;
   height: 4rem;
-  min-width: 40rem;
+  min-width: 30rem;
 
   ${({ theme }) => theme.mq.phone} {
-    width: 40rem;
+    width: 30rem;
   }
 
   ${({ theme }) => theme.mq.tablet} {
-    width: 60rem;
+    width: 50rem;
   }
 
   ${({ theme }) => theme.mq.desktop} {
-    width: 74rem;
+    width: 75rem;
   }
 
   &:not(:last-child)::after {
