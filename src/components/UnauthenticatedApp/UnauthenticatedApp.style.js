@@ -5,6 +5,7 @@ export const UnauthWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  min-width: 45rem;
 
   h1 {
     margin: 10rem 0 3rem 0;
