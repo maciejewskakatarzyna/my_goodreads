@@ -8,8 +8,8 @@ export const DeleteQuestion = styled.p`
 `;
 
 export const ButtonsWrapper = styled.div`
-  margin-top: 30px;
-  width: 185px;
+  margin-top: 3rem;
+  width: 18rem;
   display: flex;
   justify-content: space-between;
 `;

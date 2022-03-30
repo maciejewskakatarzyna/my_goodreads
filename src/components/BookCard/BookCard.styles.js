@@ -8,11 +8,27 @@ export const StyledBookCard = styled.div`
   align-items: center;
   justify-content: center;
 
+  ${({ theme }) => theme.mq.phone} {
+    flex-direction: column;
+  }
+
+  ${({ theme }) => theme.mq.tablet}, ${({ theme }) => theme.mq.desktop} {
+    flex-direction: row;
+  }
+
   img,
   .noCover {
-    width: 35rem;
-    height: 45rem;
     box-shadow: #ccc 0.5rem 0.5rem 0.5rem;
+
+    ${({ theme }) => theme.mq.phone} {
+      width: 20rem;
+      height: 30rem;
+    }
+
+    ${({ theme }) => theme.mq.desktop} {
+      width: 35rem;
+      height: 45rem;
+    }
   }
 
   .noCover {
@@ -21,20 +37,47 @@ export const StyledBookCard = styled.div`
 `;
 
 export const StyledBookDetails = styled.div`
-  margin-left: 5rem;
   display: flex;
   flex-direction: column;
+  ${({ theme }) => theme.mq.phone} {
+    margin: 3rem 0 0 0;
+
+  ${({ theme }) => theme.mq.tablet}, ${({ theme }) => theme.mq.desktop} {
+    margin-left: 5rem;  }
+  
 `;
 
 export const StyledTitle = styled.p`
-  font-size: ${({ theme }) => theme.font.size.xl};
   font-weight: bold;
   margin-bottom: 1rem;
+
+  ${({ theme }) => theme.mq.phone} {
+    font-size: ${({ theme }) => theme.font.size.m};
+  }
+
+  ${({ theme }) => theme.mq.tablet} {
+    font-size: ${({ theme }) => theme.font.size.l};
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.xl};
+  }
 `;
 
 export const StyledAuthor = styled.p`
-  font-size: ${({ theme }) => theme.font.size.l};
   margin-bottom: 3rem;
+
+  ${({ theme }) => theme.mq.phone} {
+    font-size: ${({ theme }) => theme.font.size.s};
+  }
+
+  ${({ theme }) => theme.mq.tablet} {
+    font-size: ${({ theme }) => theme.font.size.m};
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.l};
+  }
 `;
 
 export const StyledPublisher = styled.p`
@@ -43,8 +86,15 @@ export const StyledPublisher = styled.p`
 `;
 
 export const StyledGenre = styled.p`
-  font-size: ${({ theme }) => theme.font.size.m};
   margin-bottom: 30px;
+
+  ${({ theme }) => theme.mq.phone} {
+    font-size: ${({ theme }) => theme.font.size.s};
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.font.size.m};
+  }
 `;
 
 export const StyledShelfName = styled.div`
@@ -54,7 +104,13 @@ export const StyledShelfName = styled.div`
   align-items: center;
 
   p {
-    font-size: ${({ theme }) => theme.font.size.m};
+    ${({ theme }) => theme.mq.phone} {
+      font-size: ${({ theme }) => theme.font.size.s};
+    }
+
+    ${({ theme }) => theme.mq.desktop} {
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
   }
 `;
 
