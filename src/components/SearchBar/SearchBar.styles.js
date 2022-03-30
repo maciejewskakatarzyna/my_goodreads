@@ -19,7 +19,7 @@ export const SearchWrapper = styled.div`
 export const SearchResults = styled.ul`
   visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
   z-index: 10;
-  max-height: 50rem;
+  max-height: 29rem;
   overflow-y: scroll;
   border-radius: 0.3rem;
   list-style: none;
