@@ -2,7 +2,13 @@ import React, { useContext, useState } from 'react';
 import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { StyledHeader, HeaderWrapper } from './Header.styles';
-import { StyledLink, StyledNavigation } from './Navigation.styles';
+import {
+  StyledLink,
+  StyledNavigation,
+  ShelfLink,
+  ShelfsList,
+  MobileShelfButton,
+} from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
 import PropTypes from 'prop-types';
 import { useAuth } from '../../hooks/useAuth';
@@ -15,15 +21,19 @@ import { Link } from 'react-router-dom';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { ReactComponent as UserSvg } from '../../assets/images/user.svg';
 import UserSignOutButton from '../Buttons/UserSignOutButton';
+import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
+import { ShelfButton } from '../Buttons/ShelfButton';
 
 const Header = () => {
   const { shelfs } = useContext(BookContext);
 
   const { handleOpenModal, handleCloseModal } = useModal();
   const isDesktop = useMediaQuery('(min-width: 960px)');
+  const isTablet = useMediaQuery('(min-width: 768px)');
 
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
+  const [isShelfListVisible, setIsShelfListVisible] = useState(false);
 
   const handleShowForm = () => {
     setIsConfirmModalOpen(false);
@@ -65,6 +75,10 @@ const Header = () => {
 
   const auth = useAuth();
 
+  const toggleShowShelfs = () => {
+    setIsShelfListVisible(!isShelfListVisible);
+  };
+
   return (
     <HeaderWrapper>
       <StyledHeader>
@@ -72,21 +86,37 @@ const Header = () => {
           {isDesktop ? 'My Goodreads' : 'MG'}
         </Link>
         <nav>
-          <StyledNavigation>
-            {shelfs.map(({ id }) => (
-              <StyledLink key={id} to={`/shelfs/${id}`}>
-                {getShelfName(id)}
-              </StyledLink>
-            ))}
-          </StyledNavigation>
+          <>
+            {isDesktop || isTablet ? (
+              <StyledNavigation>
+                {shelfs.map(({ id }) => (
+                  <StyledLink key={id} to={`/shelfs/${id}`}>
+                    {getShelfName(id)}
+                  </StyledLink>
+                ))}
+              </StyledNavigation>
+            ) : (
+              <MobileShelfButton onClick={toggleShowShelfs}>
+                <BookShelfSvg />
+                {isShelfListVisible && (
+                  <>
+                    <ShelfsList>
+                      {shelfs.map(({ id }) => (
+                        <ShelfLink key={id} to={`/shelfs/${id}`}>
+                          {getShelfName(id)}
+                        </ShelfLink>
+                      ))}
+                    </ShelfsList>
+                  </>
+                )}
+              </MobileShelfButton>
+            )}
+          </>
         </nav>
+
         <SearchBar />
 
-        <AddBookButton
-          title='Add new book'
-          data-testid='addNewBook'
-          onClick={handleShowForm}
-        ></AddBookButton>
+        <AddBookButton title='Add new book' data-testid='addNewBook' onClick={handleShowForm} />
 
         <StyledLoginMenu>
           {auth.user.name && isDesktop ? <p>Hello, {auth.user.name}</p> : null}

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { ShelfButton } from '../Buttons/ShelfButton';
 
 export const StyledNavigation = styled.ul`
   display: flex;
@@ -26,5 +27,42 @@ export const StyledLink = styled(NavLink)`
 
   ${({ theme }) => theme.mq.desktop} {
     font-size: ${({ theme }) => theme.font.size.m};
+  }
+`;
+
+export const MobileShelfButton = styled(ShelfButton)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  svg {
+    height: 5rem;
+    margin: 0;
+    path {
+      stroke: ${({ theme }) => theme.color.darkBrown};
+      stroke-width: 3px;
+    }
+  }
+`;
+
+export const ShelfsList = styled.ul`
+  width: 15rem;
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: ${({ theme }) => theme.color.beige};
+`;
+
+export const ShelfLink = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.darkBrown};
+  font-size: ${({ theme }) => theme.font.size.s};
+  margin-bottom: 1rem;
+
+  &:hover {
+    font-weight: bold;
   }
 `;

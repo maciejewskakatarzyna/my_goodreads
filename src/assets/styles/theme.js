@@ -20,10 +20,11 @@ export const theme = {
     },
     family: {
       lato: 'Lato, sans-serif',
+      charm: 'Charm, serif',
     },
   },
   mq: {
-    phone: '@media (min-width: 480px)',
+    phone: '@media (min-width: 200px)',
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 960px)',
     bigDesktop: '@media (min-width: 1235px)',
