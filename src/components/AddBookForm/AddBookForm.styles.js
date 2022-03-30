@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledAddBookForm = styled.form`
-  font-size: ${({ theme }) => theme.font.size.m};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +42,15 @@ export const StyledAddBookForm = styled.form`
 
   p {
     color: ${({ theme }) => theme.color.grey};
-    font-size: ${({ theme }) => theme.font.size.m};
     cursor: pointer;
+
+    ${({ theme }) => theme.mq.phone} {
+      font-size: ${({ theme }) => theme.font.size.s};
+    }
+
+    ${({ theme }) => theme.mq.desktop} {
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
 
     &:hover {
       color: ${({ theme }) => theme.color.darkBrown};
