@@ -14,10 +14,10 @@ export const StyledHeader = styled.div`
   display: grid;
   justify-items: center;
   background-color: ${({ theme }) => theme.color.beige};
-  height: 50px;
+  height: 5rem;
   position: relative;
-  line-height: 50px;
-  padding: 0 25px;
+  line-height: 5rem;
+  padding: 0 2.5rem;
   color: ${({ theme }) => theme.color.darkBrown};
   z-index: 2;
 

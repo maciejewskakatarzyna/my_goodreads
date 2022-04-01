@@ -22,7 +22,6 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { ReactComponent as UserSvg } from '../../assets/images/user.svg';
 import UserSignOutButton from '../Buttons/UserSignOutButton';
 import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
-import { ShelfButton } from '../Buttons/ShelfButton';
 
 const Header = () => {
   const { shelfs } = useContext(BookContext);

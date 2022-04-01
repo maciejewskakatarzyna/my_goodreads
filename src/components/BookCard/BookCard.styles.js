@@ -82,11 +82,11 @@ export const StyledAuthor = styled.p`
 
 export const StyledPublisher = styled.p`
   font-size: ${({ theme }) => theme.font.size.s};
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 `;
 
 export const StyledGenre = styled.p`
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 
   ${({ theme }) => theme.mq.phone} {
     font-size: ${({ theme }) => theme.font.size.s};
@@ -98,7 +98,7 @@ export const StyledGenre = styled.p`
 `;
 
 export const StyledShelfName = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -118,6 +118,6 @@ export const ButtonsWrapper = styled.div`
   display: flex;
 
   button {
-    margin: 0 10px;
+    margin: 0 1rem;
   }
 `;

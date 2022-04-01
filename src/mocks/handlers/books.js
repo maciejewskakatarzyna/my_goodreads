@@ -1,6 +1,5 @@
 import { rest } from 'msw';
 import { db } from '../db';
-import faker from '@withshepherd/faker';
 
 export const books = [
   rest.get('/books/:id', (req, res, ctx) => {

@@ -9,8 +9,6 @@ const BookContext = React.createContext({
   setBooksRead: null,
   setRandomBook: null,
   setIsRandomBook: null,
-  setFilteredBooks: null,
-  filteredBooks: null,
   updateBook: null,
   shelfs: null,
   setShelfs: null,

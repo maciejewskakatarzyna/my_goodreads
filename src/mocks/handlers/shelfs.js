@@ -1,6 +1,5 @@
 import { rest } from 'msw';
 import { db } from '../db';
-import faker from '@withshepherd/faker';
 
 export const shelfs = [
   rest.get('/shelfs', (req, res, ctx) => {

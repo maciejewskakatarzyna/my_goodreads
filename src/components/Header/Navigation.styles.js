@@ -41,7 +41,7 @@ export const MobileShelfButton = styled(ShelfButton)`
     margin: 0;
     path {
       stroke: ${({ theme }) => theme.color.darkBrown};
-      stroke-width: 3px;
+      stroke-width: 0.3rem;
     }
   }
 `;

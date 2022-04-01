@@ -14,7 +14,6 @@ const AuthenticatedApp = () => {
   const [randomBook, setRandomBook] = useState(null);
   const [isRandomBook, setIsRandomBook] = useState(false);
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
-  const [filteredBooks, setFilteredBooks] = useState([]);
   const [shelfs, setShelfs] = useState([]);
   const [currentBook, setCurrentBook] = useState(0);
 
@@ -51,8 +50,6 @@ const AuthenticatedApp = () => {
           setBooks: setBooks,
           setIsRandomBook: setIsRandomBook,
           setRandomBook: setRandomBook,
-          filteredBooks: filteredBooks,
-          setFilteredBooks: setFilteredBooks,
           shelfs: shelfs,
           setShelfs: setShelfs,
           currentBook: currentBook,
