@@ -3,7 +3,7 @@ import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
-import { Wrapper } from '../Form/FormField.styles';
+import { Error, Wrapper } from '../Form/FormField.styles';
 import FormField from '../Form/FormField';
 import { useForm } from 'react-hook-form';
 import BasicButton from '../Buttons/BasicButton';
@@ -75,8 +75,21 @@ const EditBookForm = ({
           id='yearPublished'
           placeholder={yearPublished}
           defaultValue={yearPublished}
-          {...register('yearPublished')}
+          isError={errors.yearPublished}
+          {...register('yearPublished', {
+            pattern: {
+              value: /^[12][0-9]{3}$/i,
+              message: 'Provide year in format YYYY (1000 to 2999)',
+            },
+          })}
         />
+        {errors.yearPublished ? (
+          <>
+            {errors.yearPublished.type === 'pattern' && (
+              <Error>{errors.yearPublished.message}</Error>
+            )}
+          </>
+        ) : null}
         <fieldset>
           <legend>Genre</legend>
           <FormField

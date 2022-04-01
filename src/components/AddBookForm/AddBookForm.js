@@ -3,7 +3,7 @@ import '../../index.css';
 import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
-import { Form, Wrapper } from '../Form/FormField.styles';
+import { Error, Wrapper } from '../Form/FormField.styles';
 import { useForm } from 'react-hook-form';
 import FormField from '../Form/FormField';
 import BasicButton from '../Buttons/BasicButton';
@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router';
 import { StyledAddBookForm } from './AddBookForm.styles';
 
 const AddBookForm = ({ handleClose, handleShowConfirm }) => {
-  const { setBooks, books, setCurrentBook } = useContext(BookContext);
+  const { setBooks, books } = useContext(BookContext);
 
   const {
     register,
@@ -67,8 +67,21 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
             name='yearPublished'
             id='yearPublished'
             placeholder='Year'
-            {...register('yearPublished')}
+            isError={errors.yearPublished}
+            {...register('yearPublished', {
+              pattern: {
+                value: /^[12][0-9]{3}$/i,
+                message: 'Provide year in format YYYY (1000 to 2999)',
+              },
+            })}
           />
+          {errors.yearPublished ? (
+            <>
+              {errors.yearPublished.type === 'pattern' && (
+                <Error>{errors.yearPublished.message}</Error>
+              )}
+            </>
+          ) : null}
           <fieldset>
             <details>
               <summary>

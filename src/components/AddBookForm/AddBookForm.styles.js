@@ -43,28 +43,28 @@ export const StyledAddBookForm = styled.form`
     }
   }
 
-  p {
-    color: ${({ theme }) => theme.color.grey};
-    cursor: pointer;
-
-    ${({ theme }) => theme.mq.phone} {
-      font-size: ${({ theme }) => theme.font.size.s};
-    }
-
-    ${({ theme }) => theme.mq.desktop} {
-      font-size: ${({ theme }) => theme.font.size.m};
-    }
-
-    &:hover {
-      color: ${({ theme }) => theme.color.darkBrown};
-    }
-  }
-
   summary {
     color: ${({ theme }) => theme.color.grey};
 
     &:hover {
       color: ${({ theme }) => theme.color.darkBrown};
+    }
+
+    p {
+      color: ${({ theme }) => theme.color.grey};
+      cursor: pointer;
+
+      ${({ theme }) => theme.mq.phone} {
+        font-size: ${({ theme }) => theme.font.size.s};
+      }
+
+      ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.m};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.color.darkBrown};
+      }
     }
   }
 
