@@ -4,14 +4,14 @@ import BasicButton from '../Buttons/BasicButton';
 import { useForm } from 'react-hook-form';
 import FormField from '../Form/FormField';
 import { FormWrapper } from './ChangeShelfForm.styles';
-import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const ChangeShelfForm = ({
   book: { id, author, title, publisher, yearPublished, shelf, genre, cover },
   handleCloseShelfModal,
 }) => {
-  const { setBooks, books, setCurrentBook } = useContext(BookContext);
+  const { setBooks, books, setCurrentBook } = useContext(BooksContext);
 
   const { editBookById } = useBooks();
 

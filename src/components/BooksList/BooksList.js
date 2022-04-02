@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Book from '../Book/Book';
 import '../../index.css';
-import BookContext from '../../contexts/BookContext';
+import { BooksContext } from '../../providers/BooksProvider';
 import { StyledBooksList, Wrapper, ListHeader, ShelfName } from './BooksList.styles';
 import { useBooks } from '../../hooks/useBooks';
 import Modal from '../Modal/Modal';
@@ -13,7 +13,7 @@ import RandomBookButton from '../Buttons/RandomBookButton';
 import { ReactComponent as RandomBookSvg } from '../../assets/images/random.svg';
 
 const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCurrent }) => {
-  const { books, setBooks, setRandomBook, setIsRandomBook, shelfs } = useContext(BookContext);
+  const { books, setBooks, setRandomBook, setIsRandomBook, shelfs } = useContext(BooksContext);
 
   const [isList, setIsList] = useState(false);
 

@@ -9,7 +9,6 @@ import {
   StyledShelfName,
   StyledGenre,
 } from './BookCard.styles';
-import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
 import useModal from '../Modal/useModal';
@@ -21,9 +20,10 @@ import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.sv
 import { ShelfButton } from '../Buttons/ShelfButton';
 import ChangeShelfForm from '../ChangeShelfForm/ChangeShelfForm';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const BookCard = () => {
-  const { currentBook, books, setBooks } = useContext(BookContext);
+  const { currentBook, books, setBooks } = useContext(BooksContext);
   const { deleteBookById } = useBooks();
   const navigate = useNavigate();
 

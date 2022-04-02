@@ -12,6 +12,8 @@ export const HeaderWrapper = styled.div`
 
 export const StyledHeader = styled.div`
   display: grid;
+  width: 100%;
+
   justify-items: center;
   background-color: ${({ theme }) => theme.color.beige};
   height: 5rem;

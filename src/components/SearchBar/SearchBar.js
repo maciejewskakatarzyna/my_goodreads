@@ -3,14 +3,14 @@ import { useCombobox } from 'downshift';
 import debounce from 'lodash.debounce';
 import { SearchInput, SearchResults, SearchResultsItem, SearchWrapper } from './SearchBar.styles';
 import { useBooks } from '../../hooks/useBooks';
-import BookContext from '../../contexts/BookContext';
 import { Link } from 'react-router-dom';
+import BooksProvider from '../../providers/BooksProvider';
 
 const SearchBar = () => {
   const [matchingBooks, setMatchingBooks] = useState([]);
   const { findBooks } = useBooks();
 
-  const { setCurrentBook } = useContext(BookContext);
+  const { setCurrentBook } = BooksProvider;
   const { getBookById } = useBooks();
 
   const getMatchingBooks = debounce(async ({ inputValue }) => {

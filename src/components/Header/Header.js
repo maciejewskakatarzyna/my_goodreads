@@ -1,6 +1,4 @@
 import React, { useContext, useState } from 'react';
-import '../../index.css';
-import BookContext from '../../contexts/BookContext';
 import { StyledHeader, HeaderWrapper } from './Header.styles';
 import {
   StyledLink,
@@ -22,9 +20,10 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { ReactComponent as UserSvg } from '../../assets/images/user.svg';
 import UserSignOutButton from '../Buttons/UserSignOutButton';
 import { ReactComponent as BookShelfSvg } from '../../assets/images/bookshelf.svg';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const Header = () => {
-  const { shelfs } = useContext(BookContext);
+  const { shelfs } = useContext(BooksContext);
 
   const { handleOpenModal, handleCloseModal } = useModal();
   const isDesktop = useMediaQuery('(min-width: 960px)');

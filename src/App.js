@@ -1,4 +1,3 @@
-import './index.css';
 import React from 'react';
 import AuthenticatedApp from './components/AuthenticatedApp/AuthenticatedApp';
 import UnauthenticatedApp from './components/UnauthenticatedApp/UnauthenticatedApp';

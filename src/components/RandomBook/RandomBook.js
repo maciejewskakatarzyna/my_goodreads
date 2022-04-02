@@ -3,11 +3,19 @@ import '../../index.css';
 import { StyledRandomBook } from './RandomBook.styles';
 import PropTypes from 'prop-types';
 import BasicButton from '../Buttons/BasicButton';
+import { useNavigate } from 'react-router';
 
-const RandomBook = ({ randomBook: { id, title }, startReading, isAddedToCurrent }) => {
+const RandomBook = ({ randomBook: { id, title }, isAddedToCurrent, startReading }) => {
   const bookToStart = {
     id: id,
     shelf: 'currently-reading',
+  };
+
+  const navigate = useNavigate();
+
+  const startReadingWithNav = (id, bookToStart) => {
+    startReading(id, bookToStart);
+    navigate('/shelfs/currently-reading');
   };
 
   return (
@@ -17,7 +25,9 @@ const RandomBook = ({ randomBook: { id, title }, startReading, isAddedToCurrent 
           <p>
             Next book to read:<span>{title}</span>
           </p>
-          <BasicButton onClick={() => startReading(id, bookToStart)}>Start reading!</BasicButton>
+          <BasicButton onClick={() => startReadingWithNav(id, bookToStart)}>
+            Start reading!
+          </BasicButton>
         </>
       ) : (
         <p>

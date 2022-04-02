@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import '../../index.css';
-import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
 import { Error, Wrapper } from '../Form/FormField.styles';
@@ -8,12 +7,13 @@ import FormField from '../Form/FormField';
 import { useForm } from 'react-hook-form';
 import BasicButton from '../Buttons/BasicButton';
 import { StyledEditBookForm } from './EditBookForm.styles';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const EditBookForm = ({
   book: { id, title, author, publisher, yearPublished, cover, genre, shelf },
   handleClose,
 }) => {
-  const { setBooks, books, setCurrentBook } = useContext(BookContext);
+  const { setBooks, books, setCurrentBook } = useContext(BooksContext);
 
   const { editBookById } = useBooks();
   const {

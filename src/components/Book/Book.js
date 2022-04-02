@@ -1,6 +1,5 @@
 import React, { useContext, useState, useRef } from 'react';
 import '../../index.css';
-import BookContext from '../../contexts/BookContext';
 import { StyledGridBook, StyledListBook } from './Book.styles';
 import useModal from '../Modal/useModal';
 import { useBooks } from '../../hooks/useBooks';
@@ -10,6 +9,7 @@ import DeleteModal from '../Modal/DeleteModal';
 import Modal from '../Modal/Modal';
 import { ReactComponent as DeleteBookSvg } from '../../assets/images/delete.svg';
 import { DeleteButton } from '../Buttons/DeleteButton';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const Book = ({ book: { id, title, author, cover }, isList }) => {
   const ref = useRef();
@@ -21,7 +21,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
   const { getBookById, deleteBookById } = useBooks();
   const { handleCloseModal } = useModal();
 
-  const { setCurrentBook, books, setBooks } = useContext(BookContext);
+  const { setCurrentBook, books, setBooks } = useContext(BooksContext);
 
   const handleOpenBookCard = async id => {
     const book = await getBookById(id);

@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import '../../index.css';
-import BookContext from '../../contexts/BookContext';
 import { useBooks } from '../../hooks/useBooks';
 import PropTypes from 'prop-types';
 import { Error, Wrapper } from '../Form/FormField.styles';
@@ -9,9 +8,10 @@ import FormField from '../Form/FormField';
 import BasicButton from '../Buttons/BasicButton';
 import { useNavigate } from 'react-router';
 import { StyledAddBookForm } from './AddBookForm.styles';
+import { BooksContext } from '../../providers/BooksProvider';
 
 const AddBookForm = ({ handleClose, handleShowConfirm }) => {
-  const { setBooks, books } = useContext(BookContext);
+  const { setBooks, books } = useContext(BooksContext);
 
   const {
     register,
