@@ -5,7 +5,7 @@ import { worker } from './mocks/browser';
 import { AuthProvider } from './hooks/useAuth';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './assets/styles/theme';
-import { GlobalStyle } from './assets/styles/GlobalStyles';
+import { GlobalStyle } from './assets/styles/GlobalStyle';
 import BooksProvider from './providers/BooksProvider';
 
 worker.start();

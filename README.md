@@ -68,9 +68,9 @@ MyGoodreads application has a lot of features to manage your personal books libr
 
 MyGoodreads is still being developed. Below you can find the planned features:
 
-- [ ] Unit and integration tests
-- [x] End to end tests
 - [x] Mobile view
+- [x] End to end tests
+- [ ] Unit and integration tests
 - [ ] Pagination
 - [ ] Books rating (star system)
 - [ ] Similar books recommendations

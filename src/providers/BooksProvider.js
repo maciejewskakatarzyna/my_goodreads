@@ -23,13 +23,19 @@ const BooksProvider = ({ children }) => {
   const [shelfs, setShelfs] = useState([]);
   const [currentBook, setCurrentBook] = useState(0);
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
+  const [didMounted, setDidMounted] = useState(false);
 
   const { getShelfs, editBookById } = useBooks();
 
   useEffect(() => {
     (async () => {
       const shelfs = await getShelfs();
-      setShelfs(shelfs);
+      setDidMounted(true);
+      if (didMounted) {
+        setShelfs(shelfs);
+      } else {
+        return null;
+      }
     })();
   }, [getShelfs]);
 
