@@ -33,7 +33,7 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
     handleAddBook(newBook);
     handleClose();
     handleShowConfirm();
-    navigate(-1);
+    navigate('/');
   };
 
   return (
@@ -46,8 +46,15 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
             name='title'
             id='title'
             placeholder='Title'
-            {...register('title')}
+            isError={errors.title}
+            {...register('title', {
+              required: 'Title is required',
+              message: 'Title is required',
+            })}
           />
+          {errors.title ? (
+            <>{errors.title.type === 'required' && <Error>{errors.title.message}</Error>}</>
+          ) : null}
           <FormField
             label='Author'
             name='author'
