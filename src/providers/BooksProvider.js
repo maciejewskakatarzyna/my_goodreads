@@ -14,6 +14,7 @@ export const BooksContext = React.createContext({
   setIsAddedToCurrent: () => {},
   startReading: () => {},
   randomBook: null,
+  isRandomBook: false,
 });
 
 const BooksProvider = ({ children }) => {
@@ -37,7 +38,7 @@ const BooksProvider = ({ children }) => {
         return null;
       }
     })();
-  }, [getShelfs]);
+  }, [getShelfs, didMounted]);
 
   const res = {};
 
@@ -68,6 +69,7 @@ const BooksProvider = ({ children }) => {
         setIsAddedToCurrent,
         startReading,
         randomBook,
+        isRandomBook,
       }}
     >
       {children}

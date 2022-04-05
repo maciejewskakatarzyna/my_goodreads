@@ -15,11 +15,7 @@ const ChangeShelfForm = ({
 
   const { editBookById } = useBooks();
 
-  const {
-    register,
-    handleSubmit,
-    formState: {},
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   let bookToEdit = {};
   let bookData = {

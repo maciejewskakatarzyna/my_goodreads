@@ -31,7 +31,7 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
         return <p> error</p>;
       }
     })();
-  }, [getBooksByShelf, id]);
+  }, [setBooks, getBooksByShelf, id]);
 
   const shelfNames = {
     'to-read': 'To read',
