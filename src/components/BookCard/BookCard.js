@@ -118,7 +118,9 @@ const BookCard = () => {
             <p data-testid='shelfName'>{getShelfName(currentBook.shelf)}</p>
           </StyledShelfName>
           <ButtonsWrapper>
-            <BasicButton onClick={handleOpenEditForm}>Edit</BasicButton>
+            <BasicButton onClick={handleOpenEditForm} data-testid='changeShelfButton'>
+              Edit
+            </BasicButton>
             <BasicButton onClick={handleRemove}>Delete</BasicButton>
           </ButtonsWrapper>
         </StyledBookDetails>
