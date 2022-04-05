@@ -5,15 +5,15 @@ export const StyledGridBook = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 
-  & .bookWrapper {
+  .bookWrapper {
     width: 15rem;
     height: 20rem;
     text-decoration: none;
     box-shadow: ${({ theme }) => theme.color.lightGrey} 0.5rem 0.5rem 0.5rem;
+    position: relative;
 
-    & img {
+    img {
       width: 15rem;
       height: 20rem;
       filter: brightness(65%);
@@ -25,7 +25,6 @@ export const StyledGridBook = styled.div`
 
     .hasCover {
       border-radius: 0.3rem;
-      position: relative;
     }
 
     .noCover {
@@ -44,19 +43,27 @@ export const StyledGridBook = styled.div`
       }
     }
 
-    & p:first-of-type {
+    .infoWrapper {
       position: absolute;
-      bottom: 3rem;
-      left: 1rem;
+      bottom: 0;
+      height: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0 0 0.5rem 0.5rem;
+    }
+
+    p {
       color: ${({ theme }) => theme.color.beige};
+    }
+
+    p:first-of-type {
       font-size: ${({ theme }) => theme.font.size.l};
     }
 
-    & p:last-of-type {
-      position: absolute;
-      bottom: 1rem;
-      left: 1rem;
-      color: ${({ theme }) => theme.color.beige};
+    p:last-of-type {
+      margin-top: 0.5rem;
       font-size: ${({ theme }) => theme.font.size.s};
     }
   }
@@ -90,18 +97,18 @@ export const StyledListBook = styled.div`
     background-color: ${({ theme }) => theme.color.lightGrey};
   }
 
-  & .bookWrapper {
+  .bookWrapper {
     padding: 0 2rem 1rem 2rem;
     text-decoration: none;
     color: ${({ theme }) => theme.color.darkBrown};
     border-bottom: 0.2rem solid ${({ theme }) => theme.color.formBar};
 
-    & p:first-of-type {
-      font-size: ${({ theme }) => theme.font.size.l};
+    p:first-of-type {
+      font-size: ${({ theme }) => theme.font.size.m};
     }
 
-    & p:last-of-type {
-      font-size: ${({ theme }) => theme.font.size.m};
+    p:last-of-type {
+      font-size: ${({ theme }) => theme.font.size.s};
     }
 
     &:hover {

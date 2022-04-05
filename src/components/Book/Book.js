@@ -89,8 +89,10 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
                 style={isError ? imgErrorStyles : imgNoErrorStyles}
               />
               <div className={isError ? 'noCover' : 'hasCover'}>
-                <p>{title}</p>
-                <p>{author}</p>
+                <div className='infoWrapper'>
+                  <p>{title}</p>
+                  <p>{author}</p>
+                </div>
               </div>
             </Link>
             <DeleteButton
