@@ -84,6 +84,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
         </StyledGridBook>
       )}
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isDeleteModalOpen}
         handleClose={handleCloseDeleteModal}
         width='300px'

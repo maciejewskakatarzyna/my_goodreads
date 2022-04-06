@@ -116,6 +116,7 @@ const Header = () => {
         </StyledLoginMenu>
       </StyledHeader>
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isAddModalOpen}
         handleClose={handleCloseAddModal}
         width={isDesktop || isTablet ? '500px' : '300px'}
@@ -124,6 +125,7 @@ const Header = () => {
         <AddBookForm handleClose={handleCloseAddModal} handleShowConfirm={handleShowConfirm} />
       </Modal>
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isConfirmModalOpen}
         handleClose={handleCloseConfirmModal}
         width={isDesktop || isTablet ? '300px' : '200px'}

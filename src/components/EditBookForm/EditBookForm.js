@@ -156,7 +156,7 @@ EditBookForm.propTypes = {
     author: PropTypes.string,
     cover: PropTypes.string,
     publisher: PropTypes.string,
-    yearPublished: PropTypes.string || PropTypes.number,
+    yearPublished: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     shelf: PropTypes.string,
     genre: PropTypes.string,
   }),

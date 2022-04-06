@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '../../test-utils';
 import SearchBar from '../SearchBar/SearchBar';
 
-xdescribe('Search Bar', () => {
+describe('Search Bar', () => {
   it('Renders the component', () => {
     render(<SearchBar />);
     screen.getByPlaceholderText('Search');

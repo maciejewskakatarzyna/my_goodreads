@@ -15,7 +15,7 @@ const book = {
   genre: 'History',
 };
 
-xdescribe('Book Card', () => {
+describe('Book Card', () => {
   it('Renders the component with given data', () => {
     render(
       <BooksContext.Provider value={{ currentBook: book }}>

@@ -18,13 +18,13 @@ const HeroImage = () => {
         }
       })();
     }
-  }, []);
+  }, [isMounted]);
 
   useEffect(() => {
     return () => {
       setIsMounted(false);
     };
-  });
+  }, [isMounted]);
 
   return (
     <StyledHeroImage>

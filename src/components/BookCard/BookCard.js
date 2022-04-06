@@ -118,6 +118,7 @@ const BookCard = () => {
       </>
 
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isEditModalOpen}
         handleClose={handleCloseEditModal}
         width={isDesktop || isTablet ? '500px' : '300px'}
@@ -127,6 +128,7 @@ const BookCard = () => {
       </Modal>
 
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isDeleteModalOpen}
         handleClose={handleCloseDeleteModal}
         width='300px'
@@ -140,6 +142,7 @@ const BookCard = () => {
       </Modal>
 
       <Modal
+        appElement={document.getElementById('root')}
         isOpen={isShelfModalOpen}
         handleClose={handleCloseShelfModal}
         width={isDesktop || isTablet ? '350px' : '300px'}

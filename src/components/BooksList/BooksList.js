@@ -89,6 +89,7 @@ const BooksList = () => {
         </StyledBooksList>
 
         <Modal
+          appElement={document.getElementById('root')}
           isOpen={isRandomModalOpen}
           handleClose={handleCloseRandomModal}
           width='300px'

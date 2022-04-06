@@ -30,13 +30,13 @@ const FormField = React.forwardRef(
 
 FormField.propTypes = {
   onChange: PropTypes.func,
-  value: PropTypes.string || PropTypes.number,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   isRadio: PropTypes.bool,
   isError: PropTypes.bool,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
+  placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
 };
 

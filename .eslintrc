@@ -1,5 +1,5 @@
-{
-  "extends": ["react-app", "react-app/jest", "plugin:prettier/recommended"],
+{ "plugins": ["cypress"],
+  "extends": ["plugin:cypress/recommended", "react-app", "react-app/jest", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": ["error",
       {
@@ -12,11 +12,11 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "cypress/globals": true
   },
   "parser": "babel-eslint",
   "globals": {
     "cy": true
   }
-
 }
