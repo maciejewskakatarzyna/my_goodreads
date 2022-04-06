@@ -20,7 +20,7 @@ const DeleteModal = ({ handleDeleteBook, handleCloseDeleteModal, book }) => {
 DeleteModal.propTypes = {
   handleDeleteBook: PropTypes.func,
   handleCloseDeleteModal: PropTypes.func,
-  book: PropTypes.object,
+  book: PropTypes.string,
 };
 
 export default DeleteModal;

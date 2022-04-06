@@ -9,9 +9,7 @@ import {
   StyledShelfName,
   StyledGenre,
 } from './BookCard.styles';
-import { useBooks } from '../../hooks/useBooks';
 import { useNavigate } from 'react-router';
-import useModal from '../Modal/useModal';
 import EditBookForm from '../EditBookForm/EditBookForm';
 import Modal from '../Modal/Modal';
 import DeleteModal from '../Modal/DeleteModal';
@@ -23,11 +21,9 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { BooksContext } from '../../providers/BooksProvider';
 
 const BookCard = () => {
-  const { currentBook, books, setBooks } = useContext(BooksContext);
-  const { deleteBookById } = useBooks();
+  const { currentBook, deleteBook } = useContext(BooksContext);
   const navigate = useNavigate();
 
-  const { handleOpenModal, handleCloseModal } = useModal();
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const isTablet = useMediaQuery('(min-width: 768px)');
 
@@ -42,35 +38,22 @@ const BookCard = () => {
 
   const handleOpenEditForm = async => {
     setIsEditModalOpen(true);
-    handleOpenModal();
   };
 
   const handleCloseEditModal = () => {
     setIsEditModalOpen(false);
-    handleCloseModal();
   };
 
   const handleOpenShelfModal = async => {
     setIsShelfModalOpen(true);
-    handleOpenModal();
   };
 
   const handleCloseShelfModal = () => {
     setIsShelfModalOpen(false);
-    handleCloseModal();
   };
 
   const handleCloseDeleteModal = () => {
     setIsDeleteModalOpen(false);
-    handleCloseModal();
-  };
-
-  const deleteBook = id => {
-    deleteBookById(id);
-    const filteredBooks = books.filter(book => book.id !== id);
-    setBooks(filteredBooks);
-    handleCloseModal();
-    navigate(-1);
   };
 
   const imgErrorStyles = {
@@ -91,6 +74,11 @@ const BookCard = () => {
     return shelfNames[shelf];
   };
 
+  const deleteBookWithNav = id => {
+    deleteBook(id);
+    navigate(-1);
+  };
+
   return (
     <StyledBookCard>
       <>
@@ -101,7 +89,6 @@ const BookCard = () => {
             alt='book cover'
             style={isError ? imgErrorStyles : imgNoErrorStyles}
           />
-
           {isError && <div className='noCover'></div>}
         </div>
         <StyledBookDetails>
@@ -143,7 +130,7 @@ const BookCard = () => {
       >
         <DeleteModal
           book={currentBook.title}
-          handleDeleteBook={() => deleteBook(currentBook.id)}
+          handleDeleteBook={() => deleteBookWithNav(currentBook.id)}
           handleCloseDeleteModal={handleCloseDeleteModal}
         />
       </Modal>

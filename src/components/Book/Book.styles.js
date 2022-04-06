@@ -5,6 +5,7 @@ export const StyledGridBook = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   .bookWrapper {
     width: 15rem;

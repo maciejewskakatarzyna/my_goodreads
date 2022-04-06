@@ -10,8 +10,7 @@ const SearchBar = () => {
   const [matchingBooks, setMatchingBooks] = useState([]);
   const { findBooks } = useBooks();
 
-  const { setCurrentBook } = useContext(BooksContext);
-  const { getBookById } = useBooks();
+  const { handleOpenBookCard } = useContext(BooksContext);
 
   const getMatchingBooks = debounce(async ({ inputValue }) => {
     const { books } = await findBooks(inputValue);
@@ -24,11 +23,6 @@ const SearchBar = () => {
       onInputValueChange: getMatchingBooks,
       itemToString: item => (item ? item.title : ''),
     });
-
-  const handleOpenBookCard = async id => {
-    const book = await getBookById(id);
-    setCurrentBook(book);
-  };
 
   return (
     <SearchWrapper {...getComboboxProps()}>

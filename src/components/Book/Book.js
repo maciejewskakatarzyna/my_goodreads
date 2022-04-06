@@ -1,8 +1,6 @@
 import React, { useContext, useState, useRef } from 'react';
 import '../../index.css';
 import { StyledGridBook, StyledListBook } from './Book.styles';
-import useModal from '../Modal/useModal';
-import { useBooks } from '../../hooks/useBooks';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import DeleteModal from '../Modal/DeleteModal';
@@ -18,15 +16,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
   const [isError, setIsError] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
 
-  const { getBookById, deleteBookById } = useBooks();
-  const { handleCloseModal } = useModal();
-
-  const { setCurrentBook, books, setBooks } = useContext(BooksContext);
-
-  const handleOpenBookCard = async id => {
-    const book = await getBookById(id);
-    setCurrentBook(book);
-  };
+  const { handleOpenBookCard, deleteBook } = useContext(BooksContext);
 
   const showButton = e => {
     e.preventDefault();
@@ -48,18 +38,10 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
 
   const handleCloseDeleteModal = () => {
     setIsDeleteModalOpen(false);
-    handleCloseModal();
   };
 
   const handleRemove = () => {
     setIsDeleteModalOpen(true);
-  };
-
-  const deleteBook = id => {
-    deleteBookById(id);
-    const filteredBooks = books.filter(book => book.id !== id);
-    setBooks(filteredBooks);
-    handleCloseModal();
   };
 
   return (
@@ -70,7 +52,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
             <p>{title}</p>
             <p>{author}</p>
           </Link>
-          <DeleteButton isVisible={isVisible} isDark={isList} onClick={() => handleRemove(id)}>
+          <DeleteButton isVisible={isVisible} isDark={isList} onClick={handleRemove}>
             <DeleteBookSvg />
           </DeleteButton>
         </StyledListBook>
@@ -95,11 +77,7 @@ const Book = ({ book: { id, title, author, cover }, isList }) => {
                 </div>
               </div>
             </Link>
-            <DeleteButton
-              isVisible={isVisible}
-              data-testid='deleteButton'
-              onClick={() => handleRemove(id)}
-            >
+            <DeleteButton isVisible={isVisible} data-testid='deleteButton' onClick={handleRemove}>
               <DeleteBookSvg />
             </DeleteButton>
           </>

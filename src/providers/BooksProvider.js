@@ -15,6 +15,8 @@ export const BooksContext = React.createContext({
   startReading: () => {},
   randomBook: null,
   isRandomBook: false,
+  handleOpenBookCard: () => {},
+  deleteBook: () => {},
 });
 
 const BooksProvider = ({ children }) => {
@@ -26,7 +28,7 @@ const BooksProvider = ({ children }) => {
   const [isAddedToCurrent, setIsAddedToCurrent] = useState(false);
   const [didMounted, setDidMounted] = useState(false);
 
-  const { getShelfs, editBookById } = useBooks();
+  const { getShelfs, editBookById, getBookById, deleteBookById } = useBooks();
 
   useEffect(() => {
     (async () => {
@@ -54,6 +56,17 @@ const BooksProvider = ({ children }) => {
     setIsAddedToCurrent(true);
   };
 
+  const handleOpenBookCard = async id => {
+    const book = await getBookById(id);
+    setCurrentBook(book);
+  };
+
+  const deleteBook = id => {
+    deleteBookById(id);
+    const filteredBooks = books.filter(book => book.id !== id);
+    setBooks(filteredBooks);
+  };
+
   return (
     <BooksContext.Provider
       value={{
@@ -70,6 +83,8 @@ const BooksProvider = ({ children }) => {
         startReading,
         randomBook,
         isRandomBook,
+        handleOpenBookCard,
+        deleteBook,
       }}
     >
       {children}
