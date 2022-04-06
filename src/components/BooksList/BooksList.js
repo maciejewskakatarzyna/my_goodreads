@@ -7,13 +7,13 @@ import { StyledBooksList, Wrapper, ListHeader, ShelfName } from './BooksList.sty
 import { useBooks } from '../../hooks/useBooks';
 import Modal from '../Modal/Modal';
 import RandomBook from '../RandomBook/RandomBook';
-import PropTypes from 'prop-types';
 import GridListToggleButton from '../Buttons/GridListToggleButton';
 import RandomBookButton from '../Buttons/RandomBookButton';
 import { ReactComponent as RandomBookSvg } from '../../assets/images/random.svg';
 
-const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCurrent }) => {
-  const { books, setBooks, setRandomBook, setIsRandomBook, shelfs } = useContext(BooksContext);
+const BooksList = () => {
+  const { books, setBooks, setRandomBook, setIsRandomBook, shelfs, setIsAddedToCurrent } =
+    useContext(BooksContext);
 
   const [isList, setIsList] = useState(false);
 
@@ -94,23 +94,11 @@ const BooksList = ({ setIsAddedToCurrent, randomBook, startReading, isAddedToCur
           width='300px'
           height='200px'
         >
-          <RandomBook
-            randomBook={randomBook}
-            startReading={startReading}
-            handleClose={handleCloseRandomModal}
-            isAddedToCurrent={isAddedToCurrent}
-          />
+          <RandomBook handleClose={handleCloseRandomModal} />
         </Modal>
       </Wrapper>
     </>
   );
-};
-
-BooksList.propTypes = {
-  setIsAddedToCurrent: PropTypes.func,
-  randomBook: PropTypes.object,
-  startReading: PropTypes.func,
-  isAddedToCurrent: PropTypes.bool,
 };
 
 export default BooksList;

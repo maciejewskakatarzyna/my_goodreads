@@ -8,9 +8,7 @@ import {
   MobileShelfButton,
 } from './Navigation.styles';
 import { StyledLoginMenu } from './LoginMenu.styles';
-import PropTypes from 'prop-types';
 import { useAuth } from '../../hooks/useAuth';
-import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
 import AddBookForm from '../AddBookForm/AddBookForm';
 import AddBookButton from '../Buttons/AddBookButton';
@@ -24,8 +22,8 @@ import { BooksContext } from '../../providers/BooksProvider';
 
 const Header = () => {
   const { shelfs } = useContext(BooksContext);
+  const auth = useAuth();
 
-  const { handleOpenModal, handleCloseModal } = useModal();
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const isTablet = useMediaQuery('(min-width: 768px)');
 
@@ -36,7 +34,6 @@ const Header = () => {
   const handleShowForm = () => {
     setIsConfirmModalOpen(false);
     setIsAddModalOpen(true);
-    handleOpenModal();
   };
 
   const shelfNames = {
@@ -58,20 +55,15 @@ const Header = () => {
 
   const handleCloseConfirmModal = () => {
     setIsConfirmModalOpen(false);
-    handleCloseModal();
   };
 
   const handleCloseAddModal = () => {
     setIsAddModalOpen(false);
-    handleCloseModal();
   };
 
   const handleShowConfirm = () => {
     setIsConfirmModalOpen(true);
-    handleOpenModal();
   };
-
-  const auth = useAuth();
 
   const toggleShowShelfs = () => {
     setIsShelfListVisible(!isShelfListVisible);
@@ -94,7 +86,7 @@ const Header = () => {
                 ))}
               </StyledNavigation>
             ) : (
-              <MobileShelfButton onClick={toggleShowShelfs}>
+              <MobileShelfButton title='Choose shelf' onClick={toggleShowShelfs}>
                 <BookShelfSvg />
                 {isShelfListVisible && (
                   <>
@@ -118,7 +110,7 @@ const Header = () => {
 
         <StyledLoginMenu>
           {auth.user.name && isDesktop ? <p>Hello, {auth.user.name}</p> : null}
-          <UserSignOutButton onClick={auth.signOut}>
+          <UserSignOutButton title='Sign out' onClick={auth.signOut}>
             <UserSvg />
           </UserSignOutButton>
         </StyledLoginMenu>
@@ -145,10 +137,6 @@ const Header = () => {
       </Modal>
     </HeaderWrapper>
   );
-};
-
-Header.propTypes = {
-  setIsFormVisible: PropTypes.func,
 };
 
 export default Header;

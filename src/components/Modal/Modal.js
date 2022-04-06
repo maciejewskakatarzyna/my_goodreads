@@ -23,6 +23,8 @@ Modal.propTypes = {
   handleClose: PropTypes.func,
   isOpen: PropTypes.bool,
   children: PropTypes.element,
+  width: PropTypes.number || PropTypes.string,
+  height: PropTypes.number || PropTypes.string,
 };
 
 export default Modal;

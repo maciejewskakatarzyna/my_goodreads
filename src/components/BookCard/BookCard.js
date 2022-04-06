@@ -21,7 +21,11 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import { BooksContext } from '../../providers/BooksProvider';
 
 const BookCard = () => {
-  const { currentBook, deleteBook } = useContext(BooksContext);
+  const {
+    currentBook,
+    currentBook: { id, title, author, publisher, yearPublished, shelf, genre, cover },
+    deleteBook,
+  } = useContext(BooksContext);
   const navigate = useNavigate();
 
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -84,7 +88,7 @@ const BookCard = () => {
       <>
         <div>
           <img
-            src={currentBook.cover}
+            src={cover}
             onError={() => setIsError(true)}
             alt='book cover'
             style={isError ? imgErrorStyles : imgNoErrorStyles}
@@ -92,17 +96,17 @@ const BookCard = () => {
           {isError && <div className='noCover'></div>}
         </div>
         <StyledBookDetails>
-          <StyledTitle>{currentBook.title}</StyledTitle>
-          <StyledAuthor>by {currentBook.author}</StyledAuthor>
+          <StyledTitle>{title}</StyledTitle>
+          <StyledAuthor>by {author}</StyledAuthor>
           <StyledPublisher>
-            Published by: <br /> {currentBook.publisher}, {currentBook.yearPublished}
+            Published by: <br /> {publisher}, {yearPublished}
           </StyledPublisher>
-          <StyledGenre>{currentBook.genre}</StyledGenre>
+          <StyledGenre>{genre}</StyledGenre>
           <StyledShelfName>
             <ShelfButton title='Change book shelf' onClick={() => handleOpenShelfModal()}>
               <BookShelfSvg />
             </ShelfButton>
-            <p data-testid='shelfName'>{getShelfName(currentBook.shelf)}</p>
+            <p data-testid='shelfName'>{getShelfName(shelf)}</p>
           </StyledShelfName>
           <ButtonsWrapper>
             <BasicButton onClick={handleOpenEditForm} data-testid='changeShelfButton'>
@@ -129,8 +133,8 @@ const BookCard = () => {
         height='200px'
       >
         <DeleteModal
-          book={currentBook.title}
-          handleDeleteBook={() => deleteBookWithNav(currentBook.id)}
+          book={title}
+          handleDeleteBook={() => deleteBookWithNav(id)}
           handleCloseDeleteModal={handleCloseDeleteModal}
         />
       </Modal>

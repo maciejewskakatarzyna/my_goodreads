@@ -187,11 +187,8 @@ const AddBookForm = ({ handleClose, handleShowConfirm }) => {
 };
 
 AddBookForm.propTypes = {
-  onClose: PropTypes.func,
-  isConfirmVisible: PropTypes.bool,
-  setIsConfirmVisible: PropTypes.func,
-  setIsFormVisible: PropTypes.func,
-  isFormVisible: PropTypes.bool,
+  handleClose: PropTypes.func,
+  handleShowConfirm: PropTypes.func,
 };
 
 export default AddBookForm;

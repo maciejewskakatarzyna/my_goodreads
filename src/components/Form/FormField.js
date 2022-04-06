@@ -29,11 +29,19 @@ const FormField = React.forwardRef(
 );
 
 FormField.propTypes = {
+  onChange: PropTypes.func,
+  value: PropTypes.string || PropTypes.number,
+  isRadio: PropTypes.bool,
+  isError: PropTypes.bool,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   type: PropTypes.string,
+};
+
+FormField.defaultProps = {
+  type: 'text',
 };
 
 export default FormField;

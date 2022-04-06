@@ -1,11 +1,16 @@
-import React from 'react';
-import '../../index.css';
+import React, { useContext } from 'react';
 import { StyledRandomBook } from './RandomBook.styles';
-import PropTypes from 'prop-types';
 import BasicButton from '../Buttons/BasicButton';
 import { useNavigate } from 'react-router';
+import { BooksContext } from '../../providers/BooksProvider';
 
-const RandomBook = ({ randomBook: { id, title }, isAddedToCurrent, startReading }) => {
+const RandomBook = () => {
+  const {
+    randomBook: { id, title },
+    startReading,
+    isAddedToCurrent,
+  } = useContext(BooksContext);
+
   const bookToStart = {
     id: id,
     shelf: 'currently-reading',
@@ -36,15 +41,6 @@ const RandomBook = ({ randomBook: { id, title }, isAddedToCurrent, startReading 
       )}
     </StyledRandomBook>
   );
-};
-
-RandomBook.propTypes = {
-  randomBook: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string,
-  }),
-  startReading: PropTypes.func,
-  isAddedToCurrent: PropTypes.bool,
 };
 
 export default RandomBook;

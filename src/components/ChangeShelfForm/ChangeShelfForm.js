@@ -6,6 +6,7 @@ import FormField from '../Form/FormField';
 import { FormWrapper } from './ChangeShelfForm.styles';
 import { useBooks } from '../../hooks/useBooks';
 import { BooksContext } from '../../providers/BooksProvider';
+import PropTypes from 'prop-types';
 
 const ChangeShelfForm = ({
   book: { id, author, title, publisher, yearPublished, shelf, genre, cover },
@@ -80,6 +81,20 @@ const ChangeShelfForm = ({
       </Form>
     </FormWrapper>
   );
+};
+
+ChangeShelfForm.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string,
+    author: PropTypes.string,
+    cover: PropTypes.string,
+    publisher: PropTypes.string,
+    yearPublished: PropTypes.string || PropTypes.number,
+    shelf: PropTypes.string,
+    genre: PropTypes.string,
+  }),
+  handleCloseShelfModal: PropTypes.func,
 };
 
 export default ChangeShelfForm;
