@@ -66,19 +66,5 @@ MyGoodreads application has a lot of features to manage your personal books libr
 * Change book's shelf
 * User authentication and authorization
 
-## Roadmap
-
-MyGoodreads is still being developed. Below you can find the planned features:
-
-- [x] Mobile view
-- [x] End to end tests
-- [x] Unit and integration tests
-- [ ] Pagination
-- [ ] Books rating (star system)
-- [ ] Similar books recommendations
-- [ ] Reading progress
-- [ ] Dark mode
-- [ ] Draw a random book with parameters
-- [ ] User settings
     
 
